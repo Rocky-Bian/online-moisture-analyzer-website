@@ -8,6 +8,8 @@ type ImageVariant =
   | "technology"
   | "process";
 
+export type IndustrialImageVariant = ImageVariant;
+
 interface IndustrialImageProps {
   variant?: ImageVariant;
   label?: string;

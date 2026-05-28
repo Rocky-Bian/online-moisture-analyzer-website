@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Section, SectionHeader } from "@/components/ui/Section";
-import { IndustrialImage } from "@/components/ui/IndustrialImage";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { CTASection } from "@/components/ui/CTASection";
 import { createMetadata } from "@/lib/seo";
 import { products } from "@/content/products";
@@ -39,9 +39,10 @@ export default function ProductsPage() {
               href={`/products/${product.slug}`}
               className="group overflow-hidden rounded-sm border border-border bg-white shadow-sm hover:shadow-lg hover:border-accent/30 transition-all duration-300"
             >
-              <IndustrialImage
+              <SiteImage
+                src={product.image}
+                alt={product.name}
                 variant="product"
-                label={product.name}
                 className="aspect-[4/3] w-full"
               />
               <div className="p-6">

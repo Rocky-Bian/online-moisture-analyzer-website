@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { CheckCircle2, AlertTriangle, ArrowRight } from "lucide-react";
 import { Section, SectionHeader } from "@/components/ui/Section";
-import { IndustrialImage } from "@/components/ui/IndustrialImage";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { Button } from "@/components/ui/Button";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { CTASection } from "@/components/ui/CTASection";
@@ -100,9 +100,10 @@ export default async function IndustryPage({ params }: Props) {
                 </Button>
               </div>
             </div>
-            <IndustrialImage
+            <SiteImage
+              src={industry.image}
+              alt={industry.name}
               variant="industry"
-              label={industry.name}
               className="aspect-[4/3] w-full shadow-2xl"
             />
           </div>
@@ -191,7 +192,9 @@ export default async function IndustryPage({ params }: Props) {
                   href={`/products/${product.slug}`}
                   className="group flex gap-6 rounded-sm border border-border p-6 hover:border-accent/30 hover:shadow-lg transition-all"
                 >
-                  <IndustrialImage
+                  <SiteImage
+                    src={product.image}
+                    alt={product.name}
                     variant="product"
                     className="h-32 w-32 shrink-0"
                   />

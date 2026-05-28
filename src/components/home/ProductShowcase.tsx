@@ -2,16 +2,16 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Gauge, Layers, Radio } from "lucide-react";
+import { ArrowRight, Gauge, Radio } from "lucide-react";
 import { Section, SectionHeader } from "@/components/ui/Section";
-import { IndustrialImage } from "@/components/ui/IndustrialImage";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { products } from "@/content/products";
 import { FadeIn } from "@/components/ui/AnimatedCounter";
 
 const methodIcons: Record<string, React.ElementType> = {
   "Near-Infrared (NIR) Spectroscopy": Radio,
-  "Microwave Resonance Sensing": Layers,
-  "Microwave Transmission Technology": Gauge,
+  "Near-Infrared (NIR) — Over-Belt Mount": Radio,
+  "NIR Spectroscopy + Industrial HMI": Gauge,
 };
 
 export function ProductShowcase() {
@@ -32,9 +32,10 @@ export function ProductShowcase() {
                 whileHover={{ y: -4 }}
                 className="group flex flex-col overflow-hidden rounded-sm border border-border bg-white shadow-sm hover:shadow-lg hover:border-accent/30 transition-all duration-300 h-full"
               >
-                <IndustrialImage
+                <SiteImage
+                  src={product.image}
+                  alt={product.name}
                   variant="product"
-                  label={product.name}
                   className="aspect-[4/3] w-full"
                 />
                 <div className="flex flex-1 flex-col p-6">
