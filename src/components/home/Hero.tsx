@@ -3,15 +3,14 @@
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import { SiteImage } from "@/components/ui/SiteImage";
-import { siteImages } from "@/lib/images";
+import { IndustrialImage } from "@/components/ui/IndustrialImage";
 
 const keyPoints = [
-  "Continuous online monitoring — no sampling",
-  "±0.1% accuracy, 60–80 readings per second",
-  "No consumables — maintenance-free operation",
-  "4–20mA, RS485/Modbus industrial outputs",
-  "OEM/ODM and custom integration support",
+  "Continuous online monitoring",
+  "Improve product consistency",
+  "Reduce material waste",
+  "High precision industrial sensing",
+  "OEM/ODM support",
 ];
 
 export function Hero() {
@@ -68,13 +67,10 @@ export function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <SiteImage
-              src={siteImages.hero}
-              alt="ALZRO moisture analyzer field installation on industrial pipeline"
+            <IndustrialImage
               variant="hero"
-              label="Field Installation — Process Pipeline"
+              label="Production Line Monitoring"
               className="aspect-[4/3] w-full shadow-2xl shadow-black/30"
-              priority
             />
           </motion.div>
         </div>

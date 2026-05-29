@@ -1,5 +1,3 @@
-import { industryImages } from "@/lib/images";
-
 export interface Industry {
   slug: string;
   name: string;
@@ -56,7 +54,7 @@ export const industries: Industry[] = [
       result:
         "Yield improved by 2.8%, offline lab testing reduced by 70%, and coating defect rate dropped from 4.1% to 0.9% within 6 months.",
     },
-    image: industryImages["lithium-battery"],
+    image: "lithium-battery",
   },
   {
     slug: "powder-processing",
@@ -82,7 +80,7 @@ export const industries: Industry[] = [
       { title: "Packaging", description: "Final moisture verification before packaging" },
     ],
     recommendedProducts: ["online-nir-moisture-analyzer", "conveyor-belt-moisture-sensor"],
-    image: industryImages["powder-processing"],
+    image: "powder-processing",
   },
   {
     slug: "food-production",
@@ -108,7 +106,7 @@ export const industries: Industry[] = [
       { title: "Quality Control", description: "Automated release based on moisture specifications" },
     ],
     recommendedProducts: ["online-nir-moisture-analyzer", "microwave-moisture-system"],
-    image: industryImages["food-production"],
+    image: "food-production",
   },
   {
     slug: "chemical-industry",
@@ -134,7 +132,7 @@ export const industries: Industry[] = [
       { title: "Product Finishing", description: "Final moisture certification for shipment" },
     ],
     recommendedProducts: ["microwave-moisture-system", "online-nir-moisture-analyzer"],
-    image: industryImages["chemical-industry"],
+    image: "chemical-industry",
   },
   {
     slug: "biomass-wood",
@@ -160,7 +158,7 @@ export const industries: Industry[] = [
       { title: "Storage & Dispatch", description: "Final moisture check before shipment" },
     ],
     recommendedProducts: ["conveyor-belt-moisture-sensor"],
-    image: industryImages["biomass-wood"],
+    image: "biomass-wood",
   },
   {
     slug: "conveyor-monitoring",
@@ -186,7 +184,7 @@ export const industries: Industry[] = [
       { title: "Discharge", description: "Final verification before storage or processing" },
     ],
     recommendedProducts: ["conveyor-belt-moisture-sensor"],
-    image: industryImages["conveyor-monitoring"],
+    image: "conveyor-monitoring",
   },
 ];
 

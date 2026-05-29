@@ -1,8 +1,7 @@
 "use client";
 
 import { Section, SectionHeader } from "@/components/ui/Section";
-import { SiteImage } from "@/components/ui/SiteImage";
-import { siteImages } from "@/lib/images";
+import { IndustrialImage } from "@/components/ui/IndustrialImage";
 import { FadeIn } from "@/components/ui/AnimatedCounter";
 import { BarChart3, TrendingUp, Factory } from "lucide-react";
 
@@ -44,11 +43,9 @@ export function DataAnalytics() {
 
       <div className="grid gap-8 lg:grid-cols-2 items-center">
         <FadeIn>
-          <SiteImage
-            src={siteImages.products.nirAnalyzer}
-            alt="ALZRO moisture analyzer display with real-time reading"
+          <IndustrialImage
             variant="dashboard"
-            label="Live Moisture Display"
+            label="ALZRO Process Dashboard"
             className="aspect-[16/10] w-full shadow-lg"
           />
         </FadeIn>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Section, SectionHeader } from "@/components/ui/Section";
-import { SiteImage } from "@/components/ui/SiteImage";
+import { IndustrialImage } from "@/components/ui/IndustrialImage";
 import { industries } from "@/content/industries";
 import { FadeIn } from "@/components/ui/AnimatedCounter";
 
@@ -25,10 +25,9 @@ export function IndustrySolutions() {
               transition={{ duration: 0.2 }}
               className="group overflow-hidden rounded-sm border border-border bg-white shadow-sm hover:shadow-lg hover:border-accent/30 transition-all duration-300"
             >
-              <SiteImage
-                src={industry.image}
-                alt={industry.name}
+              <IndustrialImage
                 variant="industry"
+                label={industry.name}
                 className="aspect-[16/10] w-full"
               />
               <div className="p-6">

@@ -9,8 +9,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Section, SectionHeader } from "@/components/ui/Section";
-import { SiteImage } from "@/components/ui/SiteImage";
-import { siteImages } from "@/lib/images";
+import { IndustrialImage } from "@/components/ui/IndustrialImage";
 import { CTASection } from "@/components/ui/CTASection";
 import { createMetadata } from "@/lib/seo";
 
@@ -86,11 +85,9 @@ export default function TechnologyPage() {
 
       <Section>
         <div className="grid gap-12 lg:grid-cols-2 items-center mb-20">
-          <SiteImage
-            src={siteImages.products.nirSensorMount}
-            alt="ALZRO NIR sensor mounted for industrial process monitoring"
+          <IndustrialImage
             variant="technology"
-            label="NIR Sensor — Field Mount"
+            label="ALZRO Sensing Platform"
             className="aspect-[16/10] w-full shadow-lg"
           />
           <div>

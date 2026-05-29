@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Section, SectionHeader } from "@/components/ui/Section";
-import { SiteImage } from "@/components/ui/SiteImage";
+import { IndustrialImage } from "@/components/ui/IndustrialImage";
 import { CTASection } from "@/components/ui/CTASection";
 import { createMetadata } from "@/lib/seo";
 import { industries } from "@/content/industries";
@@ -39,10 +39,9 @@ export default function IndustriesPage() {
               href={`/industries/${industry.slug}`}
               className="group grid gap-6 overflow-hidden rounded-sm border border-border bg-white shadow-sm hover:shadow-lg hover:border-accent/30 transition-all duration-300 md:grid-cols-3"
             >
-              <SiteImage
-                src={industry.image}
-                alt={industry.name}
+              <IndustrialImage
                 variant="industry"
+                label={industry.name}
                 className="aspect-[16/10] md:aspect-auto md:h-full w-full"
               />
               <div className="p-6 md:col-span-2 flex flex-col justify-center">
