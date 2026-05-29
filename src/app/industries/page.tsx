@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Section, SectionHeader } from "@/components/ui/Section";
-import { IndustrialImage } from "@/components/ui/IndustrialImage";
+import { SiteImage } from "@/components/ui/SiteImage";
+import { PageBanner } from "@/components/ui/PageBanner";
 import { CTASection } from "@/components/ui/CTASection";
+import { siteImages } from "@/lib/images";
 import { createMetadata } from "@/lib/seo";
 import { industries } from "@/content/industries";
 
@@ -16,20 +18,12 @@ export const metadata = createMetadata({
 export default function IndustriesPage() {
   return (
     <>
-      <section className="industrial-gradient pt-32 pb-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-widest text-accent mb-4">
-            Industries
-          </p>
-          <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl max-w-3xl">
-            Moisture Measurement by Industry
-          </h1>
-          <p className="mt-4 text-lg text-white/70 max-w-2xl">
-            Purpose-built solutions for the world&apos;s most demanding
-            industrial moisture control applications.
-          </p>
-        </div>
-      </section>
+      <PageBanner
+        image={siteImages.aiIndustrial}
+        label="Industries"
+        title="Moisture Measurement by Industry"
+        description="Purpose-built solutions for the world's most demanding industrial moisture control applications."
+      />
 
       <Section>
         <div className="grid gap-8">
@@ -39,9 +33,10 @@ export default function IndustriesPage() {
               href={`/industries/${industry.slug}`}
               className="group grid gap-6 overflow-hidden rounded-sm border border-border bg-white shadow-sm hover:shadow-lg hover:border-accent/30 transition-all duration-300 md:grid-cols-3"
             >
-              <IndustrialImage
+              <SiteImage
+                src={industry.image}
+                alt={industry.name}
                 variant="industry"
-                label={industry.name}
                 className="aspect-[16/10] md:aspect-auto md:h-full w-full"
               />
               <div className="p-6 md:col-span-2 flex flex-col justify-center">

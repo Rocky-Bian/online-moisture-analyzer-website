@@ -1,7 +1,9 @@
 "use client";
 
 import { Section, SectionHeader } from "@/components/ui/Section";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { FadeIn } from "@/components/ui/AnimatedCounter";
+import { siteImages } from "@/lib/images";
 import {
   Radio,
   Wifi,
@@ -61,6 +63,15 @@ export function TechnologySection() {
           description="Industrial-grade measurement technology with full automation ecosystem compatibility."
           dark
         />
+
+        <FadeIn className="mb-12">
+          <SiteImage
+            src={siteImages.aiIndustrial}
+            alt="AI-integrated industrial moisture analysis in smart factory"
+            variant="technology"
+            className="aspect-[21/9] w-full max-h-80"
+          />
+        </FadeIn>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {technologies.map((tech, i) => (

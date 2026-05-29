@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Section, SectionHeader } from "@/components/ui/Section";
-import { IndustrialImage } from "@/components/ui/IndustrialImage";
+import { SiteImage } from "@/components/ui/SiteImage";
+import { PageBanner } from "@/components/ui/PageBanner";
 import { CTASection } from "@/components/ui/CTASection";
+import { siteImages } from "@/lib/images";
 import { createMetadata } from "@/lib/seo";
 import { products } from "@/content/products";
 
@@ -16,20 +18,12 @@ export const metadata = createMetadata({
 export default function ProductsPage() {
   return (
     <>
-      <section className="industrial-gradient pt-32 pb-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-widest text-accent mb-4">
-            Products
-          </p>
-          <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl max-w-3xl">
-            Industrial Moisture Measurement Systems
-          </h1>
-          <p className="mt-4 text-lg text-white/70 max-w-2xl">
-            Continuous inline moisture analyzers engineered for the world&apos;s
-            most demanding industrial processes.
-          </p>
-        </div>
-      </section>
+      <PageBanner
+        image={siteImages.productMain}
+        label="Products"
+        title="Industrial Moisture Measurement Systems"
+        description="Continuous inline moisture analyzers engineered for the world's most demanding industrial processes."
+      />
 
       <Section>
         <div className="grid gap-8 lg:grid-cols-3">
@@ -39,9 +33,10 @@ export default function ProductsPage() {
               href={`/products/${product.slug}`}
               className="group overflow-hidden rounded-sm border border-border bg-white shadow-sm hover:shadow-lg hover:border-accent/30 transition-all duration-300"
             >
-              <IndustrialImage
+              <SiteImage
+                src={product.image}
+                alt={product.name}
                 variant="product"
-                label={product.name}
                 className="aspect-[4/3] w-full"
               />
               <div className="p-6">

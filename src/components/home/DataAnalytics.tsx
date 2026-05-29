@@ -1,7 +1,8 @@
 "use client";
 
 import { Section, SectionHeader } from "@/components/ui/Section";
-import { IndustrialImage } from "@/components/ui/IndustrialImage";
+import { SiteImage } from "@/components/ui/SiteImage";
+import { siteImages } from "@/lib/images";
 import { FadeIn } from "@/components/ui/AnimatedCounter";
 import { BarChart3, TrendingUp, Factory } from "lucide-react";
 
@@ -43,9 +44,10 @@ export function DataAnalytics() {
 
       <div className="grid gap-8 lg:grid-cols-2 items-center">
         <FadeIn>
-          <IndustrialImage
+          <SiteImage
+            src={siteImages.dashboardMonitoring}
+            alt="Industrial moisture monitoring dashboard"
             variant="dashboard"
-            label="ALZRO Process Dashboard"
             className="aspect-[16/10] w-full shadow-lg"
           />
         </FadeIn>

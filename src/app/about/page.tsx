@@ -1,4 +1,6 @@
 import { CheckCircle2, Globe, Users, Award, Microscope } from "lucide-react";
+import { PageBanner } from "@/components/ui/PageBanner";
+import { siteImages } from "@/lib/images";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { CTASection } from "@/components/ui/CTASection";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
@@ -51,21 +53,12 @@ const milestones = [
 export default function AboutPage() {
   return (
     <>
-      <section className="industrial-gradient pt-32 pb-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-widest text-accent mb-4">
-            About
-          </p>
-          <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl max-w-3xl">
-            Pioneering Industrial Moisture Measurement
-          </h1>
-          <p className="mt-4 text-lg text-white/70 max-w-2xl">
-            ALZRO develops AI-driven moisture measurement systems that enable
-            industrial manufacturers to achieve unprecedented process control
-            and product quality.
-          </p>
-        </div>
-      </section>
+      <PageBanner
+        image={siteImages.aboutBackground}
+        label="About"
+        title="Pioneering Industrial Moisture Measurement"
+        description="ALZRO develops AI-driven moisture measurement systems that enable industrial manufacturers to achieve unprecedented process control and product quality."
+      />
 
       <Section>
         <div className="grid gap-12 lg:grid-cols-2 items-center">

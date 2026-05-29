@@ -1,8 +1,11 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { Clock, ArrowLeft } from "lucide-react";
 import { Section } from "@/components/ui/Section";
+import { PageBanner } from "@/components/ui/PageBanner";
 import { CTASection } from "@/components/ui/CTASection";
+import { siteImages } from "@/lib/images";
 import { JsonLd, articleSchema, breadcrumbSchema } from "@/components/seo/JsonLd";
 import { createMetadata } from "@/lib/seo";
 import { getBlogPost, getBlogSlugs } from "@/content/blog";
@@ -99,33 +102,32 @@ export default async function BlogPostPage({ params }: Props) {
         ])}
       />
 
-      <section className="industrial-gradient pt-32 pb-16">
-        <div className="mx-auto max-w-3xl px-6 lg:px-8">
+      <PageBanner
+        image={siteImages.blogBanner}
+        label={post.category}
+        title={post.title}
+        className="pb-16"
+        headerSlot={
           <Link
             href="/blog"
-            className="inline-flex items-center gap-1 text-sm text-white/50 hover:text-white transition-colors mb-6"
+            className="mb-6 inline-flex items-center gap-1 text-sm text-white/50 transition-colors hover:text-white"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to Blog
           </Link>
-          <span className="rounded-sm bg-accent/20 px-2 py-0.5 text-xs font-semibold text-accent">
-            {post.category}
+        }
+      >
+        <div className="mt-6 flex items-center gap-4 text-sm text-white/50">
+          <span>{post.author}</span>
+          <span>·</span>
+          <span>{formatDate(post.publishedAt)}</span>
+          <span>·</span>
+          <span className="flex items-center gap-1">
+            <Clock className="h-3.5 w-3.5" />
+            {post.readTime}
           </span>
-          <h1 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl">
-            {post.title}
-          </h1>
-          <div className="mt-6 flex items-center gap-4 text-sm text-white/50">
-            <span>{post.author}</span>
-            <span>·</span>
-            <span>{formatDate(post.publishedAt)}</span>
-            <span>·</span>
-            <span className="flex items-center gap-1">
-              <Clock className="h-3.5 w-3.5" />
-              {post.readTime}
-            </span>
-          </div>
         </div>
-      </section>
+      </PageBanner>
 
       <Section>
         <article className="mx-auto max-w-3xl">

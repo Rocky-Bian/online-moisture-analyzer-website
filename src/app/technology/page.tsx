@@ -9,7 +9,9 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Section, SectionHeader } from "@/components/ui/Section";
-import { IndustrialImage } from "@/components/ui/IndustrialImage";
+import { SiteImage } from "@/components/ui/SiteImage";
+import { PageBanner } from "@/components/ui/PageBanner";
+import { siteImages } from "@/lib/images";
 import { CTASection } from "@/components/ui/CTASection";
 import { createMetadata } from "@/lib/seo";
 
@@ -68,26 +70,19 @@ const technologies = [
 export default function TechnologyPage() {
   return (
     <>
-      <section className="industrial-gradient pt-32 pb-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-widest text-accent mb-4">
-            Technology
-          </p>
-          <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl max-w-3xl">
-            Advanced Moisture Sensing Technology
-          </h1>
-          <p className="mt-4 text-lg text-white/70 max-w-2xl">
-            Proprietary NIR and microwave sensing platforms with AI-assisted
-            calibration and full industrial automation ecosystem compatibility.
-          </p>
-        </div>
-      </section>
+      <PageBanner
+        image={siteImages.aiIndustrial}
+        label="Technology"
+        title="Advanced Moisture Sensing Technology"
+        description="Proprietary NIR and microwave sensing platforms with AI-assisted calibration and full industrial automation ecosystem compatibility."
+      />
 
       <Section>
         <div className="grid gap-12 lg:grid-cols-2 items-center mb-20">
-          <IndustrialImage
+          <SiteImage
+            src={siteImages.nirBeamEffect}
+            alt="NIR scanning technology on industrial conveyor"
             variant="technology"
-            label="ALZRO Sensing Platform"
             className="aspect-[16/10] w-full shadow-lg"
           />
           <div>

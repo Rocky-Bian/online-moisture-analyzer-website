@@ -2,7 +2,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowRight, Download, CheckCircle2 } from "lucide-react";
 import { Section, SectionHeader } from "@/components/ui/Section";
-import { IndustrialImage } from "@/components/ui/IndustrialImage";
+import { SiteImage } from "@/components/ui/SiteImage";
+import { siteImages } from "@/lib/images";
 import { Button } from "@/components/ui/Button";
 import { InquiryForm } from "@/components/ui/InquiryForm";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
@@ -93,10 +94,12 @@ export default async function ProductPage({ params }: Props) {
                 </Button>
               </div>
             </div>
-            <IndustrialImage
+            <SiteImage
+              src={product.image}
+              alt={product.name}
               variant="product"
-              label={product.name}
               className="aspect-[4/3] w-full shadow-2xl"
+              priority
             />
           </div>
         </div>
@@ -177,9 +180,10 @@ export default async function ProductPage({ params }: Props) {
             <p className="text-xs font-semibold uppercase tracking-widest text-accent mb-4">
               Installation Overview
             </p>
-            <IndustrialImage
+            <SiteImage
+              src={siteImages.nirBeamEffect}
+              alt="Typical NIR moisture analyzer installation"
               variant="process"
-              label="Typical Installation Configuration"
               className="aspect-[16/10] w-full mb-4"
             />
             <p className="text-sm text-muted leading-relaxed">
@@ -257,7 +261,9 @@ export default async function ProductPage({ params }: Props) {
                 href={`/products/${p.slug}`}
                 className="group flex items-center gap-4 rounded-sm border border-border p-4 hover:border-accent/30 transition-colors"
               >
-                <IndustrialImage
+                <SiteImage
+                  src={p.image}
+                  alt={p.name}
                   variant="product"
                   className="h-20 w-20 shrink-0"
                 />

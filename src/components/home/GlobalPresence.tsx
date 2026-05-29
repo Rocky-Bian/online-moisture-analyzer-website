@@ -1,8 +1,9 @@
 "use client";
 
 import { Section, SectionHeader } from "@/components/ui/Section";
+import { SiteImage } from "@/components/ui/SiteImage";
 import { AnimatedCounter, FadeIn } from "@/components/ui/AnimatedCounter";
-import { Globe2 } from "lucide-react";
+import { siteImages } from "@/lib/images";
 
 const stats = [
   { value: 30, suffix: "+", label: "Countries Served" },
@@ -30,31 +31,12 @@ export function GlobalPresence() {
 
       <div className="grid gap-12 lg:grid-cols-2 items-center">
         <FadeIn>
-          <div className="relative aspect-[16/10] rounded-sm border border-border bg-surface overflow-hidden">
-            <div className="absolute inset-0 industrial-grid opacity-30" />
-            <Globe2 className="absolute inset-0 m-auto h-48 w-48 text-accent/10" strokeWidth={0.5} />
-
-            {/* Map dots */}
-            {[
-              { top: "30%", left: "20%" },
-              { top: "35%", left: "48%" },
-              { top: "28%", left: "72%" },
-              { top: "55%", left: "25%" },
-              { top: "60%", left: "55%" },
-              { top: "70%", left: "80%" },
-              { top: "45%", left: "35%" },
-              { top: "50%", left: "65%" },
-            ].map((dot, i) => (
-              <div
-                key={i}
-                className="absolute h-3 w-3 -translate-x-1/2 -translate-y-1/2"
-                style={{ top: dot.top, left: dot.left }}
-              >
-                <div className="absolute inset-0 rounded-full bg-accent animate-pulse-glow" />
-                <div className="absolute inset-0 rounded-full bg-accent/30 scale-[2]" />
-              </div>
-            ))}
-          </div>
+          <SiteImage
+            src={siteImages.factoryApplication}
+            alt="Global industrial deployments"
+            variant="industry"
+            className="aspect-[16/10] w-full shadow-lg"
+          />
         </FadeIn>
 
         <div>

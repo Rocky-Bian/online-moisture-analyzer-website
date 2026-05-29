@@ -1,6 +1,8 @@
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { InquiryForm } from "@/components/ui/InquiryForm";
+import { PageBanner } from "@/components/ui/PageBanner";
+import { siteImages } from "@/lib/images";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
@@ -20,20 +22,12 @@ export default async function ContactPage({ searchParams }: Props) {
 
   return (
     <>
-      <section className="industrial-gradient pt-32 pb-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-widest text-accent mb-4">
-            Contact
-          </p>
-          <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl max-w-3xl">
-            Get in Touch with Our Engineering Team
-          </h1>
-          <p className="mt-4 text-lg text-white/70 max-w-2xl">
-            Request datasheets, application assessments, or speak directly with
-            our moisture measurement specialists.
-          </p>
-        </div>
-      </section>
+      <PageBanner
+        image={siteImages.contactBackground}
+        label="Contact"
+        title="Get in Touch with Our Engineering Team"
+        description="Request datasheets, application assessments, or speak directly with our moisture measurement specialists."
+      />
 
       <Section>
         <div className="grid gap-12 lg:grid-cols-5">

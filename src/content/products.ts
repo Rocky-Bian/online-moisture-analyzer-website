@@ -1,3 +1,5 @@
+import { productImages } from "@/lib/images";
+
 export interface Product {
   slug: string;
   name: string;
@@ -9,6 +11,7 @@ export interface Product {
   features: string[];
   specifications: Record<string, string>;
   heroImage: string;
+  image: string;
 }
 
 export const products: Product[] = [
@@ -44,6 +47,7 @@ export const products: Product[] = [
       "Calibration": "AI-assisted, factory + field calibration",
     },
     heroImage: "nir-analyzer",
+    image: productImages["online-nir-moisture-analyzer"],
   },
   {
     slug: "conveyor-belt-moisture-sensor",
@@ -77,6 +81,7 @@ export const products: Product[] = [
       "Mounting": "Over-belt, adjustable bracket",
     },
     heroImage: "conveyor-sensor",
+    image: productImages["conveyor-belt-moisture-sensor"],
   },
   {
     slug: "microwave-moisture-system",
@@ -110,6 +115,7 @@ export const products: Product[] = [
       "Array Configuration": "1–8 sensor points",
     },
     heroImage: "microwave-system",
+    image: productImages["microwave-moisture-system"],
   },
 ];
 

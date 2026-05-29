@@ -1,7 +1,10 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Clock, ArrowRight } from "lucide-react";
 import { Section } from "@/components/ui/Section";
+import { PageBanner } from "@/components/ui/PageBanner";
 import { CTASection } from "@/components/ui/CTASection";
+import { siteImages } from "@/lib/images";
 import { createMetadata } from "@/lib/seo";
 import { blogPosts } from "@/content/blog";
 import { formatDate } from "@/lib/utils";
@@ -16,20 +19,12 @@ export const metadata = createMetadata({
 export default function BlogPage() {
   return (
     <>
-      <section className="industrial-gradient pt-32 pb-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-widest text-accent mb-4">
-            Technical Blog
-          </p>
-          <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl max-w-3xl">
-            Engineering Insights & Application Guides
-          </h1>
-          <p className="mt-4 text-lg text-white/70 max-w-2xl">
-            Expert knowledge on moisture measurement technology, industry
-            applications, and best practices.
-          </p>
-        </div>
-      </section>
+      <PageBanner
+        image={siteImages.blogBanner}
+        label="Technical Blog"
+        title="Engineering Insights & Application Guides"
+        description="Expert knowledge on moisture measurement technology, industry applications, and best practices."
+      />
 
       <Section>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -39,7 +34,15 @@ export default function BlogPage() {
               href={`/blog/${post.slug}`}
               className="group flex flex-col rounded-sm border border-border bg-white shadow-sm hover:shadow-lg hover:border-accent/30 transition-all duration-300 overflow-hidden"
             >
-              <div className="h-2 bg-accent" />
+              <div className="relative aspect-[21/9] w-full overflow-hidden bg-surface">
+                <Image
+                  src={siteImages.blogBanner}
+                  alt=""
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+              </div>
               <div className="flex flex-1 flex-col p-6">
                 <div className="flex items-center gap-3 text-xs text-muted-light">
                   <span className="rounded-sm bg-accent/10 px-2 py-0.5 font-semibold text-accent">

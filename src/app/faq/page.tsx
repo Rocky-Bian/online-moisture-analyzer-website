@@ -1,6 +1,8 @@
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
+import { PageBanner } from "@/components/ui/PageBanner";
 import { CTASection } from "@/components/ui/CTASection";
+import { siteImages } from "@/lib/images";
 import { JsonLd, faqSchema } from "@/components/seo/JsonLd";
 import { createMetadata } from "@/lib/seo";
 import { faqs, faqCategories } from "@/content/faqs";
@@ -21,20 +23,12 @@ export default function FAQPage() {
         )}
       />
 
-      <section className="industrial-gradient pt-32 pb-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-widest text-accent mb-4">
-            FAQ
-          </p>
-          <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl max-w-3xl">
-            Frequently Asked Questions
-          </h1>
-          <p className="mt-4 text-lg text-white/70 max-w-2xl">
-            Technical answers about industrial moisture measurement, technology
-            selection, and system integration.
-          </p>
-        </div>
-      </section>
+      <PageBanner
+        image={siteImages.dashboardMonitoring}
+        label="FAQ"
+        title="Frequently Asked Questions"
+        description="Technical answers about industrial moisture measurement, technology selection, and system integration."
+      />
 
       <Section>
         {faqCategories.map((category) => {
