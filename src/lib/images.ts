@@ -1,5 +1,5 @@
 export const siteImages = {
-  hero: "/images/hero/hero-main.png",
+  hero: "/images/hero/field-installation.png",
   products: {
     nirAnalyzer: "/images/products/nir-display-unit.png",
     nirSensor: "/images/products/nir-sensor-head.png",
