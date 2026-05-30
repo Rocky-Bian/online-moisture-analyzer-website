@@ -27,7 +27,7 @@ export const faqs: FAQ[] = [
     id: "how-nir-moisture-measurement-works",
     question: "How does NIR moisture measurement work?",
     answer:
-      "Near-Infrared (NIR) moisture measurement works by illuminating the material with near-infrared light and analyzing the reflected or transmitted spectrum. Water molecules absorb specific NIR wavelengths (primarily around 1450nm and 1940nm), creating characteristic absorption peaks. The analyzer compares the measured spectrum against calibration models to determine moisture content. NIR is non-contact, fast (<1 second response), and suitable for powders, granules, and coatings. ALZRO NIR systems include AI-assisted calibration that adapts to material variations over time.",
+      "Near-Infrared (NIR) moisture measurement works by illuminating the material with near-infrared light and analyzing the reflected or transmitted spectrum. Water molecules absorb specific NIR wavelengths (primarily around 1450nm and 1940nm), creating characteristic absorption peaks. The analyzer compares the measured spectrum against calibration models to determine moisture content. NIR is non-destructive, non-contact, and suitable for powders, granules, and coatings — typically achieving ±0.1% accuracy with 60–120 measurements per second, high-speed sampling up to 1,000,000 samples/sec, and 16-bit ADC signal processing. ALZRO NIR systems include AI-assisted calibration that adapts to material variations over time.",
     category: "Technology",
     tags: ["NIR", "near-infrared", "moisture measurement"],
   },

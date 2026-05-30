@@ -20,7 +20,7 @@ export const products: Product[] = [
     name: "Online NIR Moisture Analyzer",
     tagline: "Continuous NIR moisture measurement for industrial process lines",
     description:
-      "The ALZRO NIR-5000 delivers real-time moisture analysis using near-infrared spectroscopy. Designed for continuous inline monitoring in powder, granule, and bulk material processing with industrial-grade accuracy and minimal maintenance.",
+      "The ALZRO NIR-5000 delivers real-time moisture analysis using near-infrared spectroscopy. High-speed 16-bit ADC processing with up to 1,000,000 samples/sec and 60–120 measurements/sec enables continuous inline monitoring in powder, granule, and bulk material processing with ±0.1% accuracy and minimal maintenance.",
     accuracy: "±0.1% moisture",
     method: "Near-Infrared (NIR) Spectroscopy",
     applications: [
@@ -30,15 +30,22 @@ export const products: Product[] = [
       "Chemical bulk solids",
     ],
     features: [
-      "Non-contact measurement",
+      "Non-destructive, non-contact measurement",
+      "±0.1% measurement accuracy",
+      "60–120 measurements per second",
+      "1,000,000 samples/sec high-speed sampling",
+      "16-bit high-speed ADC signal processing",
+      "Easy installation and maintenance",
       "AI-assisted calibration",
       "Modbus/Profibus/OPC UA integration",
       "IP65 industrial enclosure",
-      "Self-diagnostic monitoring",
     ],
     specifications: {
       "Measurement Range": "0.01% – 99.9% moisture",
       "Accuracy": "±0.1% (typical)",
+      "Detection Rate": "60–120 measurements/sec",
+      "Sampling Rate": "Up to 1,000,000 samples/sec",
+      "Signal Processing": "16-bit high-speed ADC",
       "Response Time": "< 1 second",
       "Operating Temperature": "-10°C to +60°C",
       "Enclosure Rating": "IP65",

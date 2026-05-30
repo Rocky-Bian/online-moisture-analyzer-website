@@ -19,7 +19,7 @@ export default function ProductsPage() {
   return (
     <>
       <PageBanner
-        image={siteImages.productMain}
+        image={siteImages.factoryApplication}
         label="Products"
         title="Industrial Moisture Measurement Systems"
         description="Continuous inline moisture analyzers engineered for the world's most demanding industrial processes."

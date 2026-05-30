@@ -27,8 +27,15 @@ const technologies = [
     icon: Radio,
     title: "NIR Spectroscopy",
     description:
-      "Near-infrared spectroscopy analyzes water absorption at 1450nm and 1940nm wavelengths. Non-contact, sub-second response, ±0.1% accuracy on homogeneous materials.",
-    specs: ["0.01–99.9% range", "Non-contact", "<1s response", "IP65 enclosure"],
+      "Near-infrared spectroscopy analyzes water absorption at 1450nm and 1940nm wavelengths. Non-destructive, non-contact measurement with ±0.1% accuracy, 60–120 measurements/sec, and 16-bit high-speed ADC processing.",
+    specs: [
+      "±0.1% accuracy",
+      "60–120/sec detection",
+      "1M samples/sec",
+      "16-bit ADC",
+      "Non-destructive",
+      "Easy maintenance",
+    ],
   },
   {
     icon: Wifi,

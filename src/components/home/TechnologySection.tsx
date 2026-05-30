@@ -18,7 +18,7 @@ const technologies = [
     icon: Radio,
     title: "NIR Technology",
     description:
-      "Near-infrared spectroscopy for non-contact, real-time moisture analysis of powders, granules, and coatings.",
+      "Near-infrared spectroscopy for non-destructive, real-time moisture analysis. ±0.1% accuracy, 60–120 measurements/sec, with 16-bit high-speed ADC and up to 1M samples/sec.",
   },
   {
     icon: Wifi,
