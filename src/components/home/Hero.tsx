@@ -3,7 +3,8 @@
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import { IndustrialImage } from "@/components/ui/IndustrialImage";
+import { SiteImage } from "@/components/ui/SiteImage";
+import { siteImages } from "@/lib/images";
 
 const keyPoints = [
   "Continuous online monitoring",
@@ -67,9 +68,11 @@ export function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
           >
-            <IndustrialImage
+            <SiteImage
+              src={siteImages.heroProduct}
+              alt="ALZRO online NIR moisture analyzer measuring granular material on a conveyor"
               variant="hero"
-              label="Production Line Monitoring"
+              priority
               className="aspect-[4/3] w-full shadow-2xl shadow-black/30"
             />
           </motion.div>

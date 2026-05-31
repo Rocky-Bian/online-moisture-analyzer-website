@@ -1,17 +1,19 @@
 const base = "/images/site";
+const v = "2"; // bump when replacing scene/product images to bust browser cache
 
 export const siteImages = {
-  productMain: `${base}/02-product-main.png`,
-  factoryApplication: `${base}/03-factory-application.png`,
-  nirBeamEffect: `${base}/04-nir-beam-effect.png`,
+  heroProduct: `${base}/hero-product-moisture-analyzer.png`,
+  productMain: `${base}/02-product-main.png?v=${v}`,
+  factoryApplication: `${base}/03-factory-application.png?v=${v}`,
+  nirBeamEffect: `${base}/04-nir-beam-effect.png?v=${v}`,
   dashboardMonitoring: `${base}/05-dashboard-monitoring.png`,
-  plasticIndustry: `${base}/06-plastic-industry.png`,
-  foodIndustry: `${base}/07-food-industry.png`,
-  chemicalIndustry: `${base}/08-chemical-industry.png`,
+  plasticIndustry: `${base}/06-plastic-industry.png?v=${v}`,
+  foodIndustry: `${base}/07-food-industry.png?v=${v}`,
+  chemicalIndustry: `${base}/08-chemical-industry.png?v=${v}`,
   aboutBackground: `${base}/09-about-background.png`,
   contactBackground: `${base}/10-contact-background.png`,
   blogBanner: `${base}/11-blog-banner.png`,
-  aiIndustrial: `${base}/12-ai-industrial-concept.png`,
+  aiIndustrial: `${base}/12-ai-industrial-concept.png?v=${v}`,
 } as const;
 
 export const productImages: Record<string, string> = {

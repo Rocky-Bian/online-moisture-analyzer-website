@@ -35,7 +35,7 @@ export default function IndustriesPage() {
             >
               <SiteImage
                 src={industry.image}
-                alt={industry.name}
+                alt={`ALZRO online NIR moisture analyzer — ${industry.name}`}
                 variant="industry"
                 className="aspect-[16/10] md:aspect-auto md:h-full w-full"
               />

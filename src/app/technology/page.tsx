@@ -88,8 +88,8 @@ export default function TechnologyPage() {
         <div className="grid gap-12 lg:grid-cols-2 items-center mb-20">
           <SiteImage
             src={siteImages.nirBeamEffect}
-            alt="NIR scanning technology on industrial conveyor"
-            variant="technology"
+            alt="ALZRO NIR moisture analyzer mounted above conveyor — lens facing downward toward material"
+            variant="industry"
             className="aspect-[16/10] w-full shadow-lg"
           />
           <div>

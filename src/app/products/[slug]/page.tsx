@@ -182,15 +182,16 @@ export default async function ProductPage({ params }: Props) {
             </p>
             <SiteImage
               src={siteImages.nirBeamEffect}
-              alt="Typical NIR moisture analyzer installation"
-              variant="process"
+              alt="ALZRO online NIR moisture analyzer installation above conveyor belt"
+              variant="industry"
               className="aspect-[16/10] w-full mb-4"
             />
             <p className="text-sm text-muted leading-relaxed">
-              Mount above or inline with your process line. Connect via standard
-              industrial protocols to your PLC or SCADA system. ALZRO provides
-              complete installation support including mounting hardware,
-              calibration, and commissioning.
+              Mount the sensor head above the process line with the circular NIR
+              lens facing directly downward toward the material surface. Connect
+              the display unit and link to your PLC or SCADA via standard industrial
+              protocols. ALZRO provides mounting hardware, calibration, and
+              commissioning support.
             </p>
           </div>
         </div>

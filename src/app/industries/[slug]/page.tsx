@@ -102,7 +102,7 @@ export default async function IndustryPage({ params }: Props) {
             </div>
             <SiteImage
               src={industry.image}
-              alt={industry.name}
+              alt={`ALZRO online NIR moisture analyzer — ${industry.name}`}
               variant="industry"
               className="aspect-[4/3] w-full shadow-2xl"
               priority

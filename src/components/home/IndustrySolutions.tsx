@@ -27,7 +27,7 @@ export function IndustrySolutions() {
             >
               <SiteImage
                 src={industry.image}
-                alt={industry.name}
+                alt={`ALZRO online NIR moisture analyzer — ${industry.name}`}
                 variant="industry"
                 className="aspect-[16/10] w-full"
               />

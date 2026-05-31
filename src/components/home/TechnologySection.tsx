@@ -67,8 +67,8 @@ export function TechnologySection() {
         <FadeIn className="mb-12">
           <SiteImage
             src={siteImages.aiIndustrial}
-            alt="AI-integrated industrial moisture analysis in smart factory"
-            variant="technology"
+            alt="ALZRO online NIR moisture analyzer in smart factory with AI process monitoring"
+            variant="industry"
             className="aspect-[21/9] w-full max-h-80"
           />
         </FadeIn>
