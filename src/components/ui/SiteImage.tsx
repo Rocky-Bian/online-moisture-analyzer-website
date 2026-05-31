@@ -14,6 +14,7 @@ interface SiteImageProps {
   priority?: boolean;
   overlay?: "dark" | "none";
   fit?: "cover" | "contain";
+  objectPosition?: string;
 }
 
 export function SiteImage({
@@ -25,8 +26,11 @@ export function SiteImage({
   priority = false,
   overlay = "none",
   fit,
+  objectPosition,
 }: SiteImageProps) {
-  const objectFit = fit ?? (variant === "product" ? "contain" : "cover");
+  const objectFit =
+    fit ??
+    (variant === "product" || variant === "hero" ? "contain" : "cover");
   if (!src) {
     return (
       <IndustrialImage
@@ -41,7 +45,11 @@ export function SiteImage({
     <div
       className={cn(
         "relative overflow-hidden rounded-sm",
-        variant === "product" ? "bg-white" : "bg-surface",
+        variant === "product"
+          ? "bg-white"
+          : variant === "hero"
+            ? "bg-transparent"
+            : "bg-surface",
         className
       )}
     >
@@ -51,8 +59,12 @@ export function SiteImage({
         fill
         priority={priority}
         className={cn(
-          objectFit === "contain" ? "object-contain p-4" : "object-cover"
+          objectFit === "contain" ? "object-contain" : "object-cover",
+          variant === "product" && objectFit === "contain" && "p-4"
         )}
+        style={
+          objectPosition ? { objectPosition } : undefined
+        }
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
       {overlay === "dark" && (

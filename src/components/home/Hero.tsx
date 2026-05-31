@@ -73,7 +73,7 @@ export function Hero() {
               alt="ALZRO online NIR moisture analyzer measuring granular material on a conveyor"
               variant="hero"
               priority
-              className="aspect-[4/3] w-full shadow-2xl shadow-black/30"
+              className="aspect-[16/10] w-full shadow-2xl shadow-black/30"
             />
           </motion.div>
         </div>
