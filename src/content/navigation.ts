@@ -12,14 +12,18 @@ export const mainNav = [
 export const footerLinks = {
   products: [
     { label: "Online NIR Moisture Analyzer", href: "/products/online-nir-moisture-analyzer" },
-    { label: "Conveyor Belt Moisture Sensor", href: "/products/conveyor-belt-moisture-sensor" },
     { label: "Microwave Moisture System", href: "/products/microwave-moisture-system" },
   ],
   industries: [
-    { label: "Lithium Battery Materials", href: "/industries/lithium-battery" },
-    { label: "Powder Processing", href: "/industries/powder-processing" },
-    { label: "Food Production", href: "/industries/food-production" },
-    { label: "Chemical Industry", href: "/industries/chemical-industry" },
+    { label: "Starch & Corn Processing", href: "/industries/starch-corn-processing" },
+    { label: "Grain & Noodle Processing", href: "/industries/grain-noodle-processing" },
+    { label: "Soda Ash & Calcium Carbonate", href: "/industries/soda-ash-bicarbonate-calcium-carbonate" },
+    { label: "Rubber Additives", href: "/industries/rubber-additives" },
+    { label: "Wood Fiber & Board Materials", href: "/industries/wood-fiber-board-materials" },
+    { label: "Sinter Mix", href: "/industries/sinter-mix" },
+    { label: "Washed Sand & Aggregates", href: "/industries/washed-sand-concrete-aggregates" },
+    { label: "PVC Additives & Fine Chemicals", href: "/industries/pvc-additives-fine-chemicals" },
+    { label: "View All Industries", href: "/industries" },
   ],
   company: [
     { label: "About ALZRO", href: "/about" },

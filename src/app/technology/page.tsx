@@ -18,7 +18,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Technology",
   description:
-    "ALZRO moisture measurement technology — NIR spectroscopy, microwave sensing, AI-assisted calibration, and industrial automation integration.",
+    "Online moisture measurement technology including NIR spectroscopy, microwave sensing, and practical integration options for industrial process lines.",
   path: "/technology",
 });
 
@@ -27,50 +27,50 @@ const technologies = [
     icon: Radio,
     title: "NIR Spectroscopy",
     description:
-      "Near-infrared spectroscopy analyzes water absorption at 1450nm and 1940nm wavelengths. Non-destructive, non-contact measurement with ±0.1% accuracy, 60–120 measurements/sec, and 16-bit high-speed ADC processing.",
+      "Near-infrared measurement is a strong choice for non-contact monitoring of powders, granules, and exposed material surfaces where fast process feedback matters.",
     specs: [
       "±0.1% accuracy",
-      "60–120/sec detection",
-      "1M samples/sec",
-      "16-bit ADC",
+      "Up to 60 checks/sec",
+      "Non-contact setup",
+      "250mm ± 50mm working distance",
       "Non-destructive",
-      "Easy maintenance",
+      "Easy maintenance access",
     ],
   },
   {
     icon: Wifi,
     title: "Microwave Sensing",
     description:
-      "Microwave transmission measures dielectric properties throughout material volume. Deep penetration up to 300mm for dense bulk materials and conveyor applications.",
+      "Microwave sensing is useful when the project needs deeper penetration into bulk material rather than a surface-focused non-contact reading.",
     specs: ["0.1–80% range", "300mm penetration", "Belt monitoring", "IP67 enclosure"],
   },
   {
     icon: Brain,
-    title: "AI-Assisted Calibration",
+    title: "Application Matching",
     description:
-      "Machine learning models continuously adapt to material and environmental changes, reducing manual calibration by 75% while maintaining long-term accuracy.",
-    specs: ["Adaptive learning", "Drift detection", "Auto-adjustment", "Traceable to reference"],
+      "Good performance depends on choosing the right measuring point, material model, and installation method for the process rather than relying on generic settings alone.",
+    specs: ["Material-specific setup", "Reference verification", "Field adjustment", "Process-based tuning"],
   },
   {
     icon: Activity,
     title: "Real-Time Process Control",
     description:
-      "Sub-second measurement with continuous data streaming enables closed-loop dryer control, automated quality release, and predictive process optimization.",
+      "Continuous moisture data supports faster process adjustment in drying, conveying, mixing, and batching applications where manual checks are too slow.",
     specs: ["Closed-loop control", "Alarm management", "Trend logging", "Shift analytics"],
   },
   {
     icon: Cpu,
     title: "PLC Integration",
     description:
-      "Native support for all major PLC platforms via Modbus RTU/TCP, Profibus DP, 4-20mA analog, and digital I/O for seamless automation integration.",
-    specs: ["Modbus RTU/TCP", "Profibus DP", "4-20mA output", "Digital I/O"],
+      "For many projects, the most important question is how the value will be used after measurement, whether for display, alarming, or process adjustment.",
+    specs: ["RS232", "4-20mA option", "Ethernet option", "Custom Wi-Fi"],
   },
   {
     icon: Monitor,
-    title: "SCADA & DCS Connectivity",
+    title: "Operator Visibility",
     description:
-      "OPC UA server, Ethernet/IP, and HART protocol support for direct integration with WinCC, FactoryTalk, Ignition, and major DCS platforms.",
-    specs: ["OPC UA", "Ethernet/IP", "HART", "Pre-configured packages"],
+      "The real value of online measurement appears when operators can actually see moisture trends in time to react before product quality shifts.",
+    specs: ["Trend display", "Alarm thresholds", "Shift visibility", "Remote data sharing"],
   },
 ];
 
@@ -81,7 +81,7 @@ export default function TechnologyPage() {
         image={siteImages.aiIndustrial}
         label="Technology"
         title="Advanced Moisture Sensing Technology"
-        description="Proprietary NIR and microwave sensing platforms with AI-assisted calibration and full industrial automation ecosystem compatibility."
+        description="A practical overview of NIR and microwave moisture measurement, typical installation logic, and common signal-integration needs for process lines."
       />
 
       <Section>
@@ -96,15 +96,16 @@ export default function TechnologyPage() {
             <SectionHeader
               label="Platform Overview"
               title="Unified Measurement Architecture"
-              description="ALZRO's sensing platform combines multi-technology measurement, intelligent calibration, and industrial-grade connectivity in a single integrated system."
+              description="The best moisture-measurement projects combine the right sensing method, a realistic measuring point, and a signal path the production team can actually use."
               align="left"
             />
             <p className="text-muted leading-relaxed">
-              Our platform architecture enables deployment of NIR, microwave, or
-              hybrid measurement configurations from a common hardware and
-              software base. This reduces integration complexity, simplifies
-              maintenance, and provides a consistent data interface regardless
-              of measurement technology.
+              In practice, successful online measurement depends on matching
+              the process goal to the measurement method. Some lines need
+              non-contact NIR measurement above the product, while others
+              benefit more from deeper microwave penetration. The engineering
+              decision should follow the material, line layout, and control
+              objective rather than a one-size-fits-all template.
             </p>
           </div>
         </div>
@@ -142,19 +143,19 @@ export default function TechnologyPage() {
       <Section className="bg-surface">
         <SectionHeader
           label="Integration"
-          title="Compatible Automation Ecosystems"
-          description="Pre-validated integration with the industry's leading automation platforms."
+          title="Common Integration Directions"
+          description="Typical ways production teams use online moisture signals once the instrument is installed."
         />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {[
-            "Siemens TIA Portal / WinCC",
-            "Rockwell FactoryTalk",
-            "Schneider EcoStruxure",
-            "Inductive Automation Ignition",
-            "ABB System 800xA",
-            "Emerson DeltaV",
-            "Honeywell Experion",
-            "Mitsubishi iQ-Platform",
+            "Local operator display",
+            "Dryer adjustment reference",
+            "Batching water correction",
+            "Quality trend records",
+            "Central control room sharing",
+            "Production shift comparison",
+            "Alarm and deviation warning",
+            "Remote process visibility",
           ].map((platform) => (
             <div
               key={platform}

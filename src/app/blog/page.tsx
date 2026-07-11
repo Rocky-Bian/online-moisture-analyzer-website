@@ -10,9 +10,9 @@ import { blogPosts } from "@/content/blog";
 import { formatDate } from "@/lib/utils";
 
 export const metadata = createMetadata({
-  title: "Technical Blog",
+  title: "Application Notes & Case Studies",
   description:
-    "Expert articles on industrial moisture measurement, NIR and microwave technology, lithium battery moisture control, and process optimization.",
+    "Application notes, case studies, and selection guidance for online moisture measurement in starch, chemicals, ceramics, sand, and bulk powder processes.",
   path: "/blog",
 });
 
@@ -21,9 +21,9 @@ export default function BlogPage() {
     <>
       <PageBanner
         image={siteImages.blogBanner}
-        label="Technical Blog"
-        title="Engineering Insights & Application Guides"
-        description="Expert knowledge on moisture measurement technology, industry applications, and best practices."
+        label="Resources"
+        title="Application Notes, Case Studies, and Selection Guides"
+        description="Use these articles to understand where online moisture measurement fits, what problems it solves, and how to choose the right setup for your line."
       />
 
       <Section>
@@ -76,7 +76,7 @@ export default function BlogPage() {
 
       <CTASection
         headline="Need Application-Specific Guidance?"
-        description="Our engineers publish insights based on real-world deployment experience across 500+ installations."
+        description="Share your material, target moisture range, and installation point, and we can help you evaluate the right measurement approach."
         primaryLabel="Talk to Engineer"
         primaryHref="/contact?type=engineer"
       />

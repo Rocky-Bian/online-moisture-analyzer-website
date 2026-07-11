@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Gauge, Layers, Radio } from "lucide-react";
+import { ArrowRight, Gauge, Radio } from "lucide-react";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { SiteImage } from "@/components/ui/SiteImage";
 import { products } from "@/content/products";
@@ -10,7 +10,6 @@ import { FadeIn } from "@/components/ui/AnimatedCounter";
 
 const methodIcons: Record<string, React.ElementType> = {
   "Near-Infrared (NIR) Spectroscopy": Radio,
-  "Microwave Resonance Sensing": Layers,
   "Microwave Transmission Technology": Gauge,
 };
 
@@ -19,8 +18,8 @@ export function ProductShowcase() {
     <Section id="products">
       <SectionHeader
         label="Products"
-        title="Industrial Moisture Measurement Systems"
-        description="Enterprise-grade analyzers engineered for continuous inline process monitoring."
+        title="Inline Moisture Measurement Systems"
+        description="Built around continuous online detection for industrial drying, conveying, and powder quality control."
       />
 
       <div className="grid gap-8 lg:grid-cols-3">

@@ -7,27 +7,27 @@ import { Droplets, TrendingDown, Activity, Clock } from "lucide-react";
 const reasons = [
   {
     icon: Droplets,
-    title: "Moisture Affects Product Quality",
+    title: "Moisture Directly Affects Product Quality",
     description:
-      "Even small moisture variations cause defects in coating, compaction, and chemical reactions — directly impacting yield and product performance.",
+      "In starch, calcium carbonate, ceramic powder, PVC additives, and washed sand, small moisture changes can quickly show up as caking, color drift, weak granules, or unstable batching.",
   },
   {
     icon: TrendingDown,
-    title: "Excess Moisture Creates Defects",
+    title: "Over-Drying Also Creates Losses",
     description:
-      "Over-moisture leads to caking, agglomeration, coating defects, and safety hazards in moisture-sensitive materials like lithium compounds.",
+      "Supplier case materials repeatedly show that excessive drying can waste energy, reduce whiteness, hurt flowability, and even increase dust or safety risk in powder applications.",
   },
   {
     icon: Activity,
-    title: "Real-Time Monitoring Improves Yield",
+    title: "Real-Time Monitoring Improves Control",
     description:
-      "Continuous inline measurement enables immediate process adjustments, reducing out-of-spec production and material waste by up to 30%.",
+      "Online NIR measurement gives operators moisture values during production, making it easier to tune dryer intensity, feed rate, air volume, or added water before quality drifts too far.",
   },
   {
     icon: Clock,
-    title: "Continuous Measurement Reduces Downtime",
+    title: "Continuous Measurement Replaces Delayed Sampling",
     description:
-      "Eliminate delays from offline laboratory testing. Online analyzers provide data every second, keeping production lines running at optimal efficiency.",
+      "Compared with oven methods or periodic grab samples, online measurement shortens feedback time dramatically and lowers the amount of manual checking needed on the line.",
   },
 ];
 
@@ -39,7 +39,7 @@ export function WhyMoistureControl() {
           <SectionHeader
             label="Why It Matters"
             title="Why Moisture Control Matters in Industrial Production"
-            description="Moisture is one of the most critical — and most overlooked — process variables in industrial manufacturing."
+            description="The supplier material makes one point very clear: across drying, conveying, and powder finishing, moisture is often the variable that decides cost, quality, and stability."
             align="left"
           />
 
@@ -71,10 +71,10 @@ export function WhyMoistureControl() {
             {/* Animated process diagram */}
             <div className="space-y-4">
               {[
-                { step: "01", label: "Material Feed", status: "Moisture: 4.2%" },
-                { step: "02", label: "Inline NIR Analysis", status: "Real-time: 3.8%" },
-                { step: "03", label: "Dryer Control Signal", status: "Adjust: -0.4%" },
-                { step: "04", label: "Quality Verification", status: "Pass: 3.4% ±0.1%" },
+                { step: "01", label: "Material Feed", status: "Initial moisture trend" },
+                { step: "02", label: "Inline NIR Analysis", status: "Up to 60 checks / sec" },
+                { step: "03", label: "Operator or PLC Adjustment", status: "Dryer / feed / water correction" },
+                { step: "04", label: "Final Quality Control", status: "Stable finished moisture" },
               ].map((item, i) => (
                 <div key={item.step} className="flex items-center gap-4">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-bold text-white">
@@ -101,9 +101,9 @@ export function WhyMoistureControl() {
 
             <div className="mt-6 rounded-sm bg-accent/5 border border-accent/20 p-4">
               <p className="text-sm text-primary">
-                <span className="font-bold">Result:</span> Closed-loop moisture
-                control reduces waste by 28% and improves batch consistency
-                across production shifts.
+                <span className="font-bold">Typical result:</span> Better
+                moisture visibility helps plants reduce manual intervention,
+                stabilize product quality, and avoid unnecessary over-drying.
               </p>
             </div>
           </div>

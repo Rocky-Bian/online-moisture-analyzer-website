@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
       {
         pathname: "/images/site/**",
       },
+      {
+        pathname: "/images/site-real/**",
+      },
     ],
   },
   turbopack: {

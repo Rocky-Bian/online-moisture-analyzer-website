@@ -11,7 +11,7 @@ import { products } from "@/content/products";
 export const metadata = createMetadata({
   title: "Industrial Moisture Analyzers",
   description:
-    "Enterprise-grade online moisture measurement systems — NIR analyzers, conveyor belt sensors, and microwave moisture systems for industrial process control.",
+    "Enterprise-grade online moisture measurement systems including near-infrared analyzers and microwave moisture systems for industrial process control.",
   path: "/products",
 });
 

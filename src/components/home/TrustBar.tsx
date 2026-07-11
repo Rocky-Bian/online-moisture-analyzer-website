@@ -2,21 +2,12 @@
 
 import { FadeIn } from "@/components/ui/AnimatedCounter";
 import { certifications } from "@/content/navigation";
-import { Globe, Shield, Clock } from "lucide-react";
-
-const partnerLogos = [
-  "SIEMENS",
-  "ABB",
-  "ROCKWELL",
-  "SCHNEIDER",
-  "EMERSON",
-  "HONEYWELL",
-];
+import { Activity, Shield, TimerReset } from "lucide-react";
 
 const trustItems = [
-  { icon: Globe, label: "Global Deployment", value: "30+ Countries" },
-  { icon: Shield, label: "Certified Quality", value: "ISO / CE / RoHS" },
-  { icon: Clock, label: "Industrial Uptime", value: "24/7 Operation" },
+  { icon: Activity, label: "Real-Time Detection", value: "60 checks / second" },
+  { icon: Shield, label: "Repeatability", value: "Up to ±0.02%" },
+  { icon: TimerReset, label: "Configurable Response", value: "1-80 seconds" },
 ];
 
 export function TrustBar() {
@@ -49,17 +40,11 @@ export function TrustBar() {
             </span>
           ))}
         </div>
-
-        <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-4 opacity-40">
-          {partnerLogos.map((logo) => (
-            <span
-              key={logo}
-              className="text-sm font-bold tracking-[0.2em] text-primary"
-            >
-              {logo}
-            </span>
-          ))}
-        </div>
+        <p className="mx-auto max-w-3xl text-center text-sm leading-relaxed text-muted">
+          Key parameters above come from the supplier brochure for the online
+          near-infrared moisture analyzer, including measurement frequency,
+          repeatability, and configurable response behavior.
+        </p>
       </div>
     </section>
   );

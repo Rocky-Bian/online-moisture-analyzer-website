@@ -16,39 +16,39 @@ import {
 const technologies = [
   {
     icon: Radio,
-    title: "NIR Technology",
+    title: "NIR Moisture Principle",
     description:
-      "Near-infrared spectroscopy for non-destructive, real-time moisture analysis. ±0.1% accuracy, 60–120 measurements/sec, with 16-bit high-speed ADC and up to 1M samples/sec.",
+      "The analyzer uses moisture-related infrared absorption changes to convert optical signals into stable electrical signals for real-time water-content calculation.",
   },
   {
     icon: Wifi,
-    title: "Microwave Sensing",
+    title: "Flexible Output Options",
     description:
-      "Deep-penetration microwave transmission for accurate measurement in dense bulk materials and high-moisture applications.",
+      "Standard RS232 is available, with optional 4-20mA and Ethernet outputs plus custom Wi-Fi for projects that need plant-wide data sharing.",
   },
   {
     icon: Activity,
-    title: "Real-Time Process Monitoring",
+    title: "High-Frequency Monitoring",
     description:
-      "Sub-second response times with continuous data streaming for closed-loop process control and alarm management.",
+      "The supplier brochure specifies up to 60 checks per second, which gives production teams fast enough feedback for practical process correction.",
   },
   {
     icon: Brain,
-    title: "AI-Assisted Calibration",
+    title: "Material & Background Recognition",
     description:
-      "Machine learning algorithms adapt to material variations, reducing manual calibration and maintaining long-term accuracy.",
+      "The system is positioned for automatic recognition of measured material and background conditions to support stable operation across changing process scenes.",
   },
   {
     icon: Cpu,
-    title: "PLC Compatibility",
+    title: "Configurable Timing",
     description:
-      "Native support for Modbus, Profibus, and 4-20mA outputs for seamless integration with all major PLC platforms.",
+      "Response time is configurable from 1 to 80 seconds, and sampling time from 1 to 99 seconds, so the analyzer can be tuned to different process speeds.",
   },
   {
     icon: Monitor,
-    title: "SCADA Compatibility",
+    title: "Non-Contact Installation",
     description:
-      "OPC UA and Ethernet connectivity for direct integration with WinCC, FactoryTalk, Ignition, and other SCADA systems.",
+      "The system can measure without touching the material and can work through a sight glass, which helps in dusty or hard-to-access installations.",
   },
 ];
 
@@ -59,8 +59,8 @@ export function TechnologySection() {
       <div className="relative">
         <SectionHeader
           label="Technology"
-          title="Advanced Sensing & Integration Technology"
-          description="Industrial-grade measurement technology with full automation ecosystem compatibility."
+          title="Supplier-Backed Measurement and Integration Features"
+          description="Key performance points adapted from the supplier brochure for the online near-infrared moisture analyzer."
           dark
         />
 

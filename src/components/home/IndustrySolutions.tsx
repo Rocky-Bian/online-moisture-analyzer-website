@@ -13,8 +13,8 @@ export function IndustrySolutions() {
     <Section id="industries">
       <SectionHeader
         label="Industries"
-        title="Moisture Solutions for Every Industry"
-        description="Purpose-built measurement systems for the most demanding industrial processes worldwide."
+        title="Application Areas from the Supplier Reference Materials"
+        description="Representative process lines where online near-infrared moisture control helps improve quality, reduce energy waste, and replace manual sampling."
       />
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

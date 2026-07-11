@@ -159,7 +159,7 @@ export default async function ProductPage({ params }: Props) {
             <SectionHeader
               label="Applications"
               title="Industrial Applications"
-              description="Proven performance across diverse industrial processes and material types."
+              description="Typical inline installation targets based on the current product positioning and supplier reference materials."
               align="left"
             />
             <ul className="space-y-3">
@@ -182,20 +182,95 @@ export default async function ProductPage({ params }: Props) {
             </p>
             <SiteImage
               src={siteImages.nirBeamEffect}
-              alt="ALZRO online NIR moisture analyzer installation above conveyor belt"
+              alt="Online NIR moisture analyzer installed outside an inspection window for non-contact measurement"
               variant="industry"
               className="aspect-[16/10] w-full mb-4"
             />
             <p className="text-sm text-muted leading-relaxed">
               Mount the sensor head above the process line with the circular NIR
               lens facing directly downward toward the material surface. Connect
-              the display unit and link to your PLC or SCADA via standard industrial
-              protocols. ALZRO provides mounting hardware, calibration, and
-              commissioning support.
+              the display unit and link to your control system through the
+              available output options. The supplier documentation highlights
+              non-contact measurement, configurable timing, and suitability for
+              difficult powder and bulk-material applications.
             </p>
           </div>
         </div>
       </Section>
+
+      {(product.bestFor || product.benefits || product.integration) && (
+        <Section className="bg-surface">
+          <div className="grid gap-8 lg:grid-cols-3">
+            {product.bestFor && (
+              <div className="rounded-sm border border-border bg-white p-6 shadow-sm">
+                <p className="text-xs font-semibold uppercase tracking-widest text-accent mb-4">
+                  Best Fit
+                </p>
+                <ul className="space-y-3">
+                  {product.bestFor.map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-sm text-primary">
+                      <CheckCircle2 className="h-4 w-4 shrink-0 text-accent mt-0.5" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {product.benefits && (
+              <div className="rounded-sm border border-border bg-white p-6 shadow-sm">
+                <p className="text-xs font-semibold uppercase tracking-widest text-accent mb-4">
+                  Process Benefits
+                </p>
+                <ul className="space-y-3">
+                  {product.benefits.map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-sm text-primary">
+                      <CheckCircle2 className="h-4 w-4 shrink-0 text-accent mt-0.5" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {product.integration && (
+              <div className="rounded-sm border border-border bg-white p-6 shadow-sm">
+                <p className="text-xs font-semibold uppercase tracking-widest text-accent mb-4">
+                  Integration Options
+                </p>
+                <ul className="space-y-3">
+                  {product.integration.map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-sm text-primary">
+                      <CheckCircle2 className="h-4 w-4 shrink-0 text-accent mt-0.5" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </Section>
+      )}
+
+      {product.referenceIndustries && product.referenceIndustries.length > 0 && (
+        <Section>
+          <SectionHeader
+            label="Reference Industries"
+            title="Supplier Brochure Application References"
+            description="Representative industries explicitly covered in the supplier presentation for this online NIR moisture analyzer."
+          />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {product.referenceIndustries.map((industry) => (
+              <div
+                key={industry}
+                className="rounded-sm border border-border bg-white px-5 py-4 text-sm font-medium text-primary shadow-sm"
+              >
+                {industry}
+              </div>
+            ))}
+          </div>
+        </Section>
+      )}
 
       {/* Inquiry + Related */}
       <Section className="bg-surface">

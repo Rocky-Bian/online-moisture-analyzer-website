@@ -8,7 +8,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "Contact Us",
   description:
-    "Contact ALZRO for moisture analyzer datasheets, application assessments, quotes, and engineering support. Response within 1 business day.",
+    "Contact ALZRO for moisture analyzer datasheets, application assessments, quotes, and engineering support.",
   path: "/contact",
 });
 
@@ -57,8 +57,8 @@ export default async function ContactPage({ searchParams }: Props) {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-primary">Phone</p>
-                  <p className="text-sm text-muted">+1 (800) ALZRO-01</p>
-                  <p className="text-sm text-muted">+86 400-ALZRO-01</p>
+                  <p className="text-sm text-muted">Available on request during project communication</p>
+                  <p className="text-sm text-muted">Email contact is preferred for first response</p>
                 </div>
               </div>
 
@@ -68,13 +68,13 @@ export default async function ContactPage({ searchParams }: Props) {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-primary">
-                    Global Headquarters
+                    Service Coverage
                   </p>
                   <p className="text-sm text-muted">
-                    ALZRO Industrial Technology Park
+                    Application support for China and overseas process lines
                   </p>
                   <p className="text-sm text-muted">
-                    Regional offices in US, EU, and APAC
+                    Remote evaluation for powders, fibers, aggregates, and conveyor applications
                   </p>
                 </div>
               </div>

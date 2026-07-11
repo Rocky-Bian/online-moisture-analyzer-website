@@ -19,7 +19,7 @@ export const faqs: FAQ[] = [
     id: "what-is-online-moisture-analyzer",
     question: "What is an online moisture analyzer?",
     answer:
-      "An online moisture analyzer is an industrial instrument that continuously measures moisture content in materials during production processes, without stopping the line or taking manual samples. Unlike laboratory methods that provide periodic spot checks, online analyzers deliver real-time data that enables immediate process adjustments, reducing waste and improving product consistency. ALZRO systems use NIR spectroscopy and microwave sensing technologies to measure moisture inline in powders, granules, slurries, and bulk materials on conveyor belts.",
+      "An online moisture analyzer is an industrial instrument that continuously measures moisture content during production, without stopping the line for repeated manual sampling. Unlike laboratory methods that provide delayed spot checks, online analyzers give process teams real-time values they can use to adjust drying, feeding, batching, or quality control earlier. Typical applications include powders, granules, bulk solids, and conveyor-based material handling.",
     category: "General",
     tags: ["online moisture analyzer", "industrial moisture measurement"],
   },
@@ -27,7 +27,7 @@ export const faqs: FAQ[] = [
     id: "how-nir-moisture-measurement-works",
     question: "How does NIR moisture measurement work?",
     answer:
-      "Near-Infrared (NIR) moisture measurement works by illuminating the material with near-infrared light and analyzing the reflected or transmitted spectrum. Water molecules absorb specific NIR wavelengths (primarily around 1450nm and 1940nm), creating characteristic absorption peaks. The analyzer compares the measured spectrum against calibration models to determine moisture content. NIR is non-destructive, non-contact, and suitable for powders, granules, and coatings — typically achieving ±0.1% accuracy with 60–120 measurements per second, high-speed sampling up to 1,000,000 samples/sec, and 16-bit ADC signal processing. ALZRO NIR systems include AI-assisted calibration that adapts to material variations over time.",
+      "Near-infrared moisture measurement works by shining NIR light onto the material and analyzing how water-related absorption changes the returned optical signal. The instrument converts those changes into an electrical signal and uses a calibration model to estimate moisture content. In practical terms, NIR is valued because it is non-contact, fast, and suitable for powders, granules, and exposed material surfaces in continuous production.",
     category: "Technology",
     tags: ["NIR", "near-infrared", "moisture measurement"],
   },
@@ -40,18 +40,18 @@ export const faqs: FAQ[] = [
     tags: ["online vs laboratory", "moisture analysis"],
   },
   {
-    id: "lithium-battery-moisture-measurement",
-    question: "Why is moisture measurement critical for lithium battery materials?",
+    id: "drying-process-moisture-measurement",
+    question: "Why is online moisture measurement important in drying processes?",
     answer:
-      "Moisture in lithium battery materials causes multiple critical issues: it degrades cathode active materials (NMC, LFP) reducing capacity, creates safety hazards with lithium metal reactions, affects slurry viscosity causing coating defects, and reduces cell cycle life. Industry standards typically require moisture below 200-500 ppm for electrode materials. ALZRO online NIR analyzers provide continuous monitoring at coating and drying stages, enabling closed-loop control that maintains moisture within specification throughout high-speed production lines.",
+      "Drying processes often change faster than laboratory checks can keep up with. In applications such as starch, baking soda, calcium carbonate, ceramics, PVC additives, and washed sand, moisture affects product quality, energy cost, flowability, storage stability, and downstream performance. Online measurement helps operators see those changes during production instead of after the product has already moved downstream.",
     category: "Applications",
-    tags: ["lithium battery", "cathode", "anode", "moisture control"],
+    tags: ["drying", "process control", "moisture control"],
   },
   {
     id: "how-to-choose-industrial-moisture-analyzer",
     question: "How to choose an industrial moisture analyzer?",
     answer:
-      "Key selection criteria include: (1) Material type — powders, granules, slurries, or bulk on belts; (2) Moisture range — typical operating range and required accuracy; (3) Process conditions — temperature, dust, chemical exposure, and hazardous area requirements; (4) Integration needs — PLC, SCADA, DCS connectivity (Modbus, Profibus, OPC UA); (5) Measurement method — NIR for surface/near-surface, microwave for deep penetration; (6) Installation constraints — space, mounting options, and maintenance access. ALZRO engineers provide free application assessments to recommend the optimal solution for your process.",
+      "Key selection points include: material type, expected moisture range, required accuracy, installation location, environmental conditions, and how you want to use the signal afterward. NIR is often preferred for non-contact measurement from above the material, while microwave is useful when deeper penetration into the bulk material is needed. Output needs such as RS232, 4-20mA, Ethernet, or other plant integration should also be confirmed early.",
     category: "Selection",
     tags: ["selection guide", "industrial moisture analyzer"],
   },
@@ -65,17 +65,17 @@ export const faqs: FAQ[] = [
   },
   {
     id: "plc-scada-integration",
-    question: "Can ALZRO moisture analyzers integrate with PLC and SCADA systems?",
+    question: "Can online moisture analyzers integrate with PLC and SCADA systems?",
     answer:
-      "Yes. All ALZRO analyzers support industrial communication protocols including Modbus RTU/TCP, Profibus DP, OPC UA, and 4-20mA analog outputs. This enables direct integration with Siemens, Allen-Bradley, Schneider Electric PLCs and SCADA systems such as WinCC, FactoryTalk, and Ignition. Our systems provide configurable alarm thresholds, trend data, and diagnostic information through standard industrial interfaces. We also offer pre-configured integration packages for common DCS platforms.",
+      "Yes. Many online moisture analyzers can share data with PLC, SCADA, or plant-network systems through interfaces such as RS232, 4-20mA, Ethernet, or other industrial protocols depending on configuration. Integration is most useful when the plant wants to trend moisture, alarm on deviations, or use the signal to support dryer or batching adjustments.",
     category: "Integration",
     tags: ["PLC", "SCADA", "Modbus", "OPC UA"],
   },
   {
     id: "calibration-maintenance",
-    question: "How often do ALZRO analyzers require calibration and maintenance?",
+    question: "How often do online NIR analyzers require calibration and maintenance?",
     answer:
-      "ALZRO analyzers feature AI-assisted calibration that continuously adapts to material and environmental changes, significantly reducing manual calibration frequency. Typical maintenance includes: annual verification against reference samples (recommended), quarterly optical window cleaning (NIR systems), and firmware updates as available. The self-diagnostic system monitors sensor health and alerts operators before performance degradation. Most customers report less than 4 hours of maintenance per year per instrument.",
+      "The exact schedule depends on the application, dust level, and material behavior. In general, plants should plan for regular verification against reference samples, periodic cleaning of optical surfaces or windows, and routine inspection of mounting stability and signal performance. The more difficult the environment, the more important it is to include the analyzer in normal preventive maintenance planning.",
     category: "General",
     tags: ["calibration", "maintenance"],
   },

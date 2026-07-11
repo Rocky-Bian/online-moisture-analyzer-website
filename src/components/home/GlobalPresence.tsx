@@ -33,7 +33,7 @@ export function GlobalPresence() {
         <FadeIn>
           <SiteImage
             src={siteImages.factoryApplication}
-            alt="Global industrial deployments"
+            alt="Real online moisture analyzer installation on an industrial washed sand processing line"
             variant="industry"
             className="aspect-[16/10] w-full shadow-lg"
           />

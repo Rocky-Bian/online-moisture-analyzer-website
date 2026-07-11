@@ -11,25 +11,25 @@ const dashboards = [
     icon: BarChart3,
     title: "Real-Time Moisture Trends",
     description:
-      "Live moisture trend charts with configurable alarm thresholds, historical data logging, and shift comparison analytics.",
+      "Live moisture trend charts help operators see process changes earlier and react before quality moves out of range.",
     metric: "1 sec",
     metricLabel: "Update Rate",
   },
   {
     icon: TrendingUp,
-    title: "Production Optimization",
+    title: "Faster Process Adjustment",
     description:
-      "AI-driven recommendations for dryer setpoints, feed rate adjustments, and energy optimization based on moisture feedback.",
-    metric: "28%",
-    metricLabel: "Waste Reduction",
+      "Moisture feedback supports dryer setpoint, feed-rate, and batching adjustments in starch, powder, and building-material applications.",
+    metric: "60x",
+    metricLabel: "Checks / Second",
   },
   {
     icon: Factory,
-    title: "Factory Monitoring",
+    title: "Networked Visibility",
     description:
-      "Multi-line dashboard with centralized monitoring of all moisture analyzers across your facility — accessible from any device.",
-    metric: "500+",
-    metricLabel: "Active Installations",
+      "Ethernet and digital output options make it easier to share moisture values across the line, control room, or quality team.",
+    metric: "4",
+    metricLabel: "Output Paths",
   },
 ];
 
@@ -38,15 +38,15 @@ export function DataAnalytics() {
     <Section className="bg-surface">
       <SectionHeader
         label="Data & Analytics"
-        title="Intelligent Process Data Platform"
-        description="Transform moisture measurement data into actionable production insights."
+        title="Make Moisture Data Easier to Use on the Line"
+        description="The value of online measurement is not just the sensor itself, but how quickly the data reaches operators and process decisions."
       />
 
       <div className="grid gap-8 lg:grid-cols-2 items-center">
         <FadeIn>
           <SiteImage
             src={siteImages.dashboardMonitoring}
-            alt="Industrial moisture monitoring dashboard"
+            alt="Online NIR moisture analyzer installed on industrial process equipment"
             variant="dashboard"
             className="aspect-[16/10] w-full shadow-lg"
           />

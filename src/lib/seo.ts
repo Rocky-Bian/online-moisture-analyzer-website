@@ -4,11 +4,10 @@ const siteConfig = {
   name: "ALZRO",
   title: "ALZRO — Online Moisture Analyzer for Industrial Process Control",
   description:
-    "AI-driven industrial moisture measurement solutions for lithium battery, powder processing, food, and chemical industries. Real-time NIR and microwave sensing systems.",
+    "Online industrial moisture measurement solutions for starch, chemicals, ceramics, aggregates, fibers, and bulk solids. Real-time NIR and microwave sensing systems.",
   url: "https://www.alzro.com",
   ogImage: "/og-image.jpg",
   locale: "en_US",
-  twitterHandle: "@alzro",
 };
 
 export function createMetadata({
@@ -48,7 +47,6 @@ export function createMetadata({
       title: pageTitle,
       description: pageDescription,
       images: [ogImage],
-      creator: siteConfig.twitterHandle,
     },
     robots: noIndex ? { index: false, follow: false } : { index: true, follow: true },
     keywords: [
@@ -56,7 +54,8 @@ export function createMetadata({
       "industrial moisture measurement",
       "NIR moisture sensor",
       "microwave moisture analyzer",
-      "lithium battery moisture control",
+      "starch moisture control",
+      "powder drying moisture control",
       "process moisture monitoring",
       "ALZRO",
     ],

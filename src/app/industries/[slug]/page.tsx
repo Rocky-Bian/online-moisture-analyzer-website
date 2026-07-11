@@ -220,7 +220,7 @@ export default async function IndustryPage({ params }: Props) {
 
       {/* Case Study */}
       {industry.caseStudy && (
-        <Section dark>
+      <Section dark>
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-sm font-semibold uppercase tracking-widest text-accent mb-4">
               Case Study
@@ -257,6 +257,86 @@ export default async function IndustryPage({ params }: Props) {
           </div>
         </Section>
       )}
+
+      {/* Field Application */}
+      {industry.gallery && industry.gallery.length > 0 && (
+        <Section className="bg-surface">
+          <SectionHeader
+            label="Field Photos"
+            title="Supplier Reference Images"
+            description="Real application photos adapted from the supplier materials for this industry."
+          />
+          <div className="grid gap-6 lg:grid-cols-2">
+            {industry.gallery.map((item) => (
+              <div
+                key={item.src}
+                className="overflow-hidden rounded-sm border border-border bg-white shadow-sm"
+              >
+                <SiteImage
+                  src={item.src}
+                  alt={item.alt}
+                  variant="industry"
+                  className="aspect-[4/3] w-full"
+                />
+                <div className="border-t border-border px-5 py-4">
+                  <p className="text-sm text-primary leading-relaxed">{item.alt}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Section>
+      )}
+
+      {/* Application Notes */}
+      <Section>
+        <div className="grid gap-10 lg:grid-cols-3">
+          <div>
+            <SectionHeader
+              label="Scope"
+              title="Typical Applications"
+              align="left"
+            />
+            <ul className="space-y-4">
+              {industry.applicationFocus.map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+                  <span className="text-sm text-primary leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <SectionHeader
+              label="Installation"
+              title="Recommended Measurement Positions"
+              align="left"
+            />
+            <ul className="space-y-4">
+              {industry.installationPoints.map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+                  <span className="text-sm text-primary leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <SectionHeader
+              label="Details"
+              title="Supplier Case Notes"
+              align="left"
+            />
+            <ul className="space-y-4">
+              {(industry.fieldNotes ?? []).map((item) => (
+                <li key={item} className="flex items-start gap-3">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+                  <span className="text-sm text-primary leading-relaxed">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </Section>
 
       {/* FAQ */}
       {industryFaqs.length > 0 && (

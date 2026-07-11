@@ -22,17 +22,16 @@ export function organizationSchema() {
     url: "https://www.alzro.com",
     logo: "https://www.alzro.com/logo.png",
     description:
-      "AI-driven industrial moisture measurement solutions for lithium battery, powder processing, food, and chemical industries.",
+      "Industrial moisture measurement solutions for drying, powder processing, bulk solids, chemicals, minerals, and building-material applications.",
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+1-800-ALZRO-01",
       contactType: "sales",
-      availableLanguage: ["English", "Chinese", "German"],
+      email: "sales@alzro.com",
+      availableLanguage: ["English", "Chinese"],
     },
-    sameAs: ["https://www.linkedin.com/company/alzro"],
     address: {
       "@type": "PostalAddress",
-      addressCountry: "US",
+      addressCountry: "CN",
     },
   };
 }

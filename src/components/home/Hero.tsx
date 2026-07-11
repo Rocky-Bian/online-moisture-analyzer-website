@@ -7,11 +7,11 @@ import { SiteImage } from "@/components/ui/SiteImage";
 import { siteImages } from "@/lib/images";
 
 const keyPoints = [
-  "Continuous online monitoring",
-  "Improve product consistency",
-  "Reduce material waste",
-  "High precision industrial sensing",
-  "OEM/ODM support",
+  "Non-contact measurement through a sight glass",
+  "Up to 60 moisture checks per second",
+  "±0.02% repeatability depending on material",
+  "RS232, Ethernet, and 4-20mA integration options",
+  "Suitable for starch, minerals, chemicals, and building materials",
 ];
 
 export function Hero() {
@@ -27,14 +27,16 @@ export function Hero() {
             transition={{ duration: 0.7 }}
           >
             <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-accent">
-              Industrial Moisture Measurement
+              Online Near-Infrared Moisture Analyzer
             </p>
             <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-[3.5rem] lg:leading-[1.1]">
-              Online Moisture Analyzer for Industrial Process Control
+              Real-Time Moisture Control for Drying, Conveying, and Powder Processing
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-white/70 max-w-xl">
-              Real-time moisture measurement solutions for lithium battery,
-              powder, food, and chemical industries.
+              Based on supplier-backed online NIR technology, this system helps
+              manufacturers replace delayed manual checks with continuous
+              moisture data across starch, soda ash, ceramic powder, PVC
+              additives, sand, and other process lines.
             </p>
 
             <ul className="mt-8 space-y-3">
@@ -70,7 +72,7 @@ export function Hero() {
           >
             <SiteImage
               src={siteImages.heroProduct}
-              alt="ALZRO online NIR moisture analyzer measuring granular material on a conveyor"
+              alt="Online NIR moisture analyzer installed on a real corn processing production line"
               variant="hero"
               priority
               className="aspect-[16/10] w-full shadow-2xl shadow-black/30"

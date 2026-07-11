@@ -11,7 +11,7 @@ import { industries } from "@/content/industries";
 export const metadata = createMetadata({
   title: "Industry Solutions",
   description:
-    "Online moisture measurement solutions for lithium battery, powder processing, food production, chemical, biomass, and conveyor belt monitoring.",
+    "Online near-infrared moisture measurement solutions for starch, soda ash, ceramics, PVC additives, rubber additives, wood fiber, sinter mix, washed sand, silica, PAM, and other industrial process lines.",
   path: "/industries",
 });
 

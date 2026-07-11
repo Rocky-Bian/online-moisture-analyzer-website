@@ -8,9 +8,9 @@ import { createMetadata } from "@/lib/seo";
 import { certifications } from "@/content/navigation";
 
 export const metadata = createMetadata({
-  title: "About ALZRO",
+  title: "About",
   description:
-    "ALZRO is a global leader in AI-driven industrial moisture measurement technology, serving lithium battery, powder, food, and chemical industries worldwide.",
+    "Learn more about this online moisture measurement website and its focus on practical NIR and microwave solutions for industrial process lines.",
   path: "/about",
 });
 
@@ -23,9 +23,9 @@ const values = [
   },
   {
     icon: Globe,
-    title: "Global Reach",
+    title: "Application Focus",
     description:
-      "Deployed in 30+ countries with regional support teams and local application engineering.",
+      "Focused on real industrial use cases such as starch drying, powders, chemicals, ceramics, and building materials.",
   },
   {
     icon: Users,
@@ -42,12 +42,10 @@ const values = [
 ];
 
 const milestones = [
-  { year: "2010", event: "Founded with focus on NIR moisture sensing R&D" },
-  { year: "2014", event: "First GWh-scale lithium battery installation" },
-  { year: "2017", event: "Microwave product line launch for bulk materials" },
-  { year: "2020", event: "AI-assisted calibration platform released" },
-  { year: "2023", event: "500+ global installations milestone" },
-  { year: "2026", event: "Next-generation multi-sensor platform launch" },
+  { year: "Step 1", event: "Understand the material, moisture range, and installation point" },
+  { year: "Step 2", event: "Match the process with NIR or microwave measurement logic" },
+  { year: "Step 3", event: "Confirm output method, operator workflow, and control objective" },
+  { year: "Step 4", event: "Support commissioning, verification, and routine plant use" },
 ];
 
 export default function AboutPage() {
@@ -56,8 +54,8 @@ export default function AboutPage() {
       <PageBanner
         image={siteImages.aboutBackground}
         label="About"
-        title="Pioneering Industrial Moisture Measurement"
-        description="ALZRO develops AI-driven moisture measurement systems that enable industrial manufacturers to achieve unprecedented process control and product quality."
+        title="Built Around Practical Industrial Moisture Applications"
+        description="This website is structured to explain where online moisture measurement creates value, how the technologies differ, and which application conditions matter most before selection."
       />
 
       <Section>
@@ -65,26 +63,25 @@ export default function AboutPage() {
           <div>
             <SectionHeader
               label="Our Mission"
-              title="Precision Measurement for Industrial Excellence"
-              description="We believe that real-time moisture data is the foundation of modern process control. Our mission is to make continuous moisture measurement accessible, reliable, and intelligent for every industrial manufacturer."
+              title="Make Online Moisture Measurement Easier to Understand"
+              description="Many buyers do not need more theory. They need a clearer way to connect process pain points with a realistic measurement approach."
               align="left"
             />
             <p className="text-muted leading-relaxed">
-              From our founding in 2010, ALZRO has focused exclusively on
-              industrial moisture measurement — developing proprietary NIR and
-              microwave sensing technologies, AI-assisted calibration
-              algorithms, and seamless automation integration. Today, our
-              systems monitor moisture in production lines across lithium
-              battery, pharmaceutical, food, chemical, and mining industries
-              worldwide.
+              The content in this site is organized around practical industrial
+              questions: where to measure, how quickly moisture changes, what
+              quality risks come from over-drying or excess residual moisture,
+              and how the measurement signal will actually be used on the line.
+              The goal is to make product pages, industry pages, and case-style
+              content more useful for real project discussions.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">
             {[
-              { value: 30, suffix: "+", label: "Countries" },
-              { value: 500, suffix: "+", label: "Installations" },
-              { value: 15, suffix: "+", label: "Years Experience" },
-              { value: 50, suffix: "+", label: "Engineers" },
+              { value: 60, suffix: "/s", label: "NIR Checks" },
+              { value: 80, suffix: "s", label: "Max Response" },
+              { value: 60, suffix: "%", label: "Range Ceiling" },
+              { value: 4, suffix: "", label: "Main Output Paths" },
             ].map((stat) => (
               <div
                 key={stat.label}
@@ -106,7 +103,7 @@ export default function AboutPage() {
       <Section className="bg-surface">
         <SectionHeader
           label="Our Values"
-          title="What Drives ALZRO"
+          title="What Drives This Site"
         />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {values.map((value) => (
@@ -127,13 +124,13 @@ export default function AboutPage() {
       </Section>
 
       <Section>
-        <SectionHeader label="History" title="Company Milestones" />
+        <SectionHeader label="Workflow" title="How We Think About Projects" />
         <div className="mx-auto max-w-2xl">
           {milestones.map((milestone, i) => (
             <div key={milestone.year} className="flex gap-6 pb-8 last:pb-0">
               <div className="flex flex-col items-center">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent text-xs font-bold text-white">
-                  {milestone.year.slice(2)}
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent px-2 text-[10px] font-bold text-white">
+                  {milestone.year}
                 </div>
                 {i < milestones.length - 1 && (
                   <div className="mt-2 w-px flex-1 bg-border" />
@@ -164,8 +161,8 @@ export default function AboutPage() {
       </Section>
 
       <CTASection
-        headline="Partner with ALZRO"
-        description="Whether you're an end-user, system integrator, or OEM partner — we'd like to hear from you."
+        headline="Discuss Your Moisture Measurement Project"
+        description="Whether you are comparing methods, checking installation points, or preparing an RFQ, the next step is usually a clearer application discussion."
         primaryLabel="Contact Us"
         primaryHref="/contact"
       />

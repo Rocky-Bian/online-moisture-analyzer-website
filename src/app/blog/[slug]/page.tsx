@@ -32,52 +32,54 @@ export async function generateMetadata({ params }: Props) {
 
 function getArticleContent(slug: string): string[] {
   const contentMap: Record<string, string[]> = {
-    "moisture-control-lithium-battery-production": [
-      "Lithium battery manufacturing demands unprecedented precision in moisture control. Cathode active materials like NMC (LiNiMnCoO₂) and LFP (LiFePO₄) are highly hygroscopic — even trace moisture causes irreversible degradation of electrochemical performance.",
-      "In GWh-scale production facilities, traditional offline Karl Fischer titration creates a critical gap: by the time lab results return, thousands of kilograms of material may have been processed out of specification.",
-      "ALZRO NIR-5000 analyzers deployed at coating and drying stages provide continuous moisture feedback with ±0.1% accuracy. The AI-assisted calibration adapts to batch variations in raw material moisture, maintaining measurement stability across production shifts.",
-      "Key integration points include: pre-mixing moisture verification, inline coating line measurement, post-dryer moisture confirmation, and automated quality release based on configurable moisture thresholds.",
-      "Results from a recent deployment at a 20 GWh cathode facility showed 2.8% yield improvement, 70% reduction in offline testing, and coating defect rate reduction from 4.1% to 0.9% within six months of installation.",
+    "corn-starch-drying-moisture-control": [
+      "Corn starch is highly hygroscopic, so moisture control affects both drying efficiency and finished-product stability. If final moisture drifts too high, starch can cake, spoil, or lose storage stability. If it drifts too low, plants may waste energy and reduce process efficiency without gaining any quality benefit.",
+      "In many starch plants, moisture is still judged by intermittent sampling or operator experience. The supplier material highlights that this creates a delay between what is happening in the dryer and what the team knows about it, especially when material moisture changes quickly.",
+      "An online NIR moisture analyzer installed at the dryer outlet or screw conveyor gives continuous feedback during production. Instead of waiting for periodic checks, operators can see moisture trends and adjust feed rate, air volume, or drying intensity much earlier.",
+      "This type of setup is especially useful where one operator needs to support both drying and packaging, or where production wants a more consistent final-moisture window without adding more manual checks.",
+      "The biggest value is usually practical rather than theoretical: more stable finished moisture, less operator guesswork, lower labor intensity, and better support for day-to-day process control.",
     ],
-    "real-time-moisture-monitoring-explained": [
-      "Real-time moisture monitoring represents a fundamental shift from reactive quality control to proactive process optimization. Instead of discovering moisture problems after production, inline analyzers enable immediate correction.",
-      "The measurement loop operates continuously: the sensor reads moisture content, transmits data to the control system via Modbus or OPC UA, the PLC compares against setpoints, and adjustment signals are sent to dryers, feeders, or diverters — all within seconds.",
-      "ROI calculation for online moisture analyzers typically considers: reduced material waste (15-30%), decreased laboratory testing costs, improved energy efficiency in drying operations, and reduced downtime from out-of-spec production runs.",
-      "Implementation best practices include selecting measurement points with representative material flow, ensuring proper sensor mounting for consistent material presentation, configuring alarm thresholds based on process capability studies, and establishing a verification protocol against laboratory reference methods.",
+    "baking-soda-moisture-measurement-guide": [
+      "In sodium bicarbonate production, moisture can vary significantly, while traditional testing often takes too long to help production in real time. The supplier presentation specifically notes that offline measurement may require many hours, which is too slow for active process correction.",
+      "That time gap matters because drying conditions can shift long before lab data comes back. By the time operators confirm the actual moisture result, a large amount of product may already have moved further down the line.",
+      "An online near-infrared moisture analyzer reduces that delay by measuring during production instead of after the fact. The value is not only faster data, but faster decisions: production can adjust drying conditions while material is still in process.",
+      "For baking soda lines, this usually supports three goals at once: improve detection efficiency, reduce reliance on delayed manual testing, and hold final moisture in a narrower control band.",
+      "When discussing a project, it helps to define the measurement point clearly, such as after primary drying, at the transfer section, or before final packaging. That makes it easier to match the instrument response time and output method to the process.",
     ],
-    "nir-vs-microwave-moisture-measurement": [
-      "Near-Infrared (NIR) and microwave technologies represent the two dominant approaches for industrial online moisture measurement, each with distinct advantages depending on application requirements.",
-      "NIR spectroscopy measures surface and near-surface moisture by analyzing water absorption at specific wavelengths (1450nm and 1940nm). It excels with homogeneous powders, granules, and coatings, offering non-contact measurement with sub-second response times and ±0.1% typical accuracy.",
-      "Microwave transmission technology measures moisture throughout the material volume by analyzing the dielectric properties of water. With penetration depths up to 300mm, microwave sensors are ideal for dense bulk materials, conveyor belt applications, and high-moisture ranges (up to 80%).",
-      "Selection criteria include: material homogeneity (NIR for uniform surfaces, microwave for heterogeneous bulk), moisture range (NIR: 0.01-99.9%, microwave: 0.1-80%), installation constraints (NIR: above material, microwave: through material), and environmental conditions (both offer IP65+ enclosures).",
-      "Many advanced installations combine both technologies at different process stages — NIR for precision coating measurement and microwave for bulk material verification.",
+    "nano-calcium-carbonate-drying-quality": [
+      "Moisture control in nano calcium carbonate is tied directly to appearance, flowability, and drying cost. According to the supplier material, poor control can create two opposite problems: too much moisture leads to agglomeration and weaker flow, while too little moisture can contribute to overheating and additive scorching.",
+      "That balance matters because over-drying can reduce whiteness or cause yellowing, while high final moisture can make the powder less stable in storage and more difficult in downstream use.",
+      "An online moisture analyzer helps by giving a continuous view of the drying endpoint instead of forcing the plant to rely only on periodic samples. This is especially helpful when the process is sensitive to small shifts in drying temperature or residence time.",
+      "In practice, plants often use online moisture data to protect quality and control cost at the same time. The goal is not just to dry harder, but to dry to the right point consistently.",
+      "For calcium carbonate projects, a good discussion usually includes the drying section, expected moisture window, product whiteness requirements, and whether the plant wants only indication or a signal that can be shared with the control system.",
     ],
-    "common-industrial-moisture-measurement-mistakes": [
-      "After deploying 500+ moisture analyzers globally, our engineering team has identified five critical mistakes that compromise measurement performance and ROI.",
-      "Mistake 1: Incorrect sensor placement. Mounting too far from the material or at an angle causes inconsistent readings. Solution: Follow ALZRO mounting guidelines for your specific material and process configuration.",
-      "Mistake 2: Skipping material-specific calibration. Generic factory calibrations may not account for your specific material matrix. Solution: Perform field calibration with representative production samples.",
-      "Mistake 3: Ignoring environmental factors. Temperature, dust, and vibration affect measurement stability. Solution: Use appropriate enclosure ratings and implement environmental compensation.",
-      "Mistake 4: No integration with process control. Measuring without acting on data wastes the investment. Solution: Connect to PLC/SCADA and configure closed-loop control or automated alarms.",
-      "Mistake 5: Inadequate maintenance planning. Optical windows and sensor surfaces require periodic cleaning. Solution: Include sensor maintenance in your preventive maintenance schedule.",
+    "ceramic-spray-drying-moisture-stability": [
+      "In ceramic raw-material preparation, moisture affects granule shape, pore structure, surface hardness, and the stability of later forming steps. The supplier reference material points out that spray-drying moisture conditions directly influence powder quality and eventually brick-body quality.",
+      "When evaporation is unstable, plants may see more hollow particles, uneven granules, or wider variation in powder behavior. Periodic manual checks are often too slow to catch those swings before quality moves.",
+      "Online moisture measurement gives a more continuous picture of the drying process. That makes it easier to stabilize the moisture profile through the spray-drying section and keep powder entering the next stage in a more consistent condition.",
+      "This does not remove the need for process know-how, but it gives the operating team a much more useful signal than occasional manual testing. In many projects, the improvement is as much about process visibility as it is about final accuracy.",
+      "For ceramic lines, it is usually worth discussing whether the target is tighter granule consistency, lower energy loss, fewer manual checks, or better forming stability, because that helps define the most useful installation point.",
     ],
-    "ai-assisted-calibration-industrial-sensors": [
-      "Traditional industrial sensors require periodic manual recalibration as materials, environments, and process conditions change over time. ALZRO's AI-assisted calibration system addresses this challenge through continuous adaptive learning.",
-      "The system collects measurement data alongside process variables (temperature, material type, production rate) and builds predictive models that detect calibration drift before it affects measurement accuracy. When drift is detected, the system automatically adjusts calibration parameters within validated bounds.",
-      "Machine learning models are trained on factory calibration data and refined with field data from each installation. This hybrid approach maintains traceability to reference methods while adapting to site-specific conditions.",
-      "Field results show AI-assisted calibration reduces manual calibration frequency by 75% and maintains measurement accuracy within specification for 3x longer periods compared to fixed-calibration approaches.",
+    "washed-sand-moisture-for-concrete-batching": [
+      "Washed sand moisture has a direct influence on actual water addition in concrete batching. Because mix ratios are commonly based on dry aggregate assumptions, changing sand moisture means the plant must also change added water if it wants stable concrete performance.",
+      "This becomes harder during seasonal shifts, rain, or changing storage conditions. If moisture moves and batching water does not, the result can be unstable workability, strength variation, and more operator correction.",
+      "Online moisture measurement helps by showing moisture changes continuously instead of relying only on occasional tests. That gives batching operators a faster basis for correcting water addition and keeping the process closer to target.",
+      "The supplier material also highlights the labor benefit: when moisture information is easier to access, one operator can manage production with less routine manual checking and less dependence on repeated laboratory measurements.",
+      "For sand and aggregate projects, the most useful planning details are usually conveyor location, material presentation, expected moisture range, and whether the plant wants real-time display only or integration into a batching workflow.",
     ],
-    "scada-integration-moisture-analyzers": [
-      "Integrating moisture analyzers with SCADA systems enables centralized process monitoring, historical trending, and automated reporting across your entire facility.",
-      "ALZRO analyzers support OPC UA (recommended for modern SCADA), Modbus TCP/RTU, and Profibus DP communication protocols. For legacy systems, 4-20mA analog outputs provide universal compatibility.",
-      "Step 1: Configure the analyzer's communication settings (IP address, Modbus register map, or OPC UA server endpoint). Step 2: Create tags in your SCADA system mapping to moisture value, alarm status, and diagnostic data. Step 3: Build trend displays and configure alarm thresholds. Step 4: Set up automated reporting for shift summaries and quality records.",
-      "Pre-configured integration packages are available for Siemens WinCC, Rockwell FactoryTalk, Inductive Automation Ignition, and Schneider Electric EcoStruxure platforms.",
+    "how-to-choose-nir-vs-microwave-moisture-measurement": [
+      "NIR and microwave methods solve different measurement problems, so the right choice usually depends more on installation conditions than on marketing language. A practical way to start is to ask what part of the material you need to measure and how the material is presented.",
+      "NIR is often a good fit when you want non-contact measurement from above the product, especially on powders, granules, or exposed material surfaces. It works well when the goal is fast inline feedback without touching the product and where a sight-glass or clear measuring path is available.",
+      "Microwave measurement becomes attractive when penetration depth matters more, such as on thicker bulk layers, denser material beds, or conveyor applications where surface-only information is not enough.",
+      "You should also compare the moisture range, available installation space, environmental conditions, and how the signal will be used. Some projects only need a local display, while others need RS232, 4-20mA, Ethernet, or plant-level integration.",
+      "In many real projects, the best next step is not choosing from a brochure alone, but reviewing the exact material, moisture target, installation distance, and control objective together before final selection.",
     ],
   };
 
   return contentMap[slug] ?? [
-    "Industrial moisture measurement is a critical process variable that directly impacts product quality, yield, and operational efficiency.",
-    "ALZRO provides comprehensive solutions for continuous inline moisture monitoring across diverse industrial applications.",
-    "Contact our engineering team for application-specific guidance and technical support.",
+    "Industrial moisture measurement affects product quality, drying efficiency, and process stability in a wide range of bulk-solid and powder applications.",
+    "Online measurement is most valuable when the process changes faster than manual sampling can keep up with.",
+    "Contact us with your material, line layout, and target moisture range if you want help evaluating a suitable setup.",
   ];
 }
 
@@ -154,7 +156,7 @@ export default async function BlogPostPage({ params }: Props) {
 
       <CTASection
         headline="Need Help with Your Application?"
-        description="Our engineers are ready to discuss your specific moisture measurement requirements."
+        description="Share your material, measurement point, and moisture target, and we can help you judge whether online measurement is a good fit."
         primaryLabel="Talk to Engineer"
         primaryHref="/contact?type=engineer"
       />
