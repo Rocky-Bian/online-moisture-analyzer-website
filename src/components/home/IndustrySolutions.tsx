@@ -9,6 +9,8 @@ import { industries } from "@/content/industries";
 import { FadeIn } from "@/components/ui/AnimatedCounter";
 
 export function IndustrySolutions() {
+  const featuredIndustries = industries.slice(0, 6);
+
   return (
     <Section id="industries">
       <SectionHeader
@@ -18,7 +20,7 @@ export function IndustrySolutions() {
       />
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {industries.map((industry, i) => (
+        {featuredIndustries.map((industry, i) => (
           <FadeIn key={industry.slug} delay={i * 0.08}>
             <motion.div
               whileHover={{ y: -4 }}
@@ -49,6 +51,16 @@ export function IndustrySolutions() {
             </motion.div>
           </FadeIn>
         ))}
+      </div>
+
+      <div className="mt-10 flex justify-center">
+        <Link
+          href="/industries"
+          className="inline-flex items-center gap-2 rounded-sm border border-accent/20 bg-accent px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-accent/90"
+        >
+          View More Industries
+          <ArrowRight className="h-4 w-4" />
+        </Link>
       </div>
     </Section>
   );

@@ -181,18 +181,22 @@ export default async function ProductPage({ params }: Props) {
               Installation Overview
             </p>
             <SiteImage
-              src={siteImages.nirBeamEffect}
-              alt="Online NIR moisture analyzer installed outside an inspection window for non-contact measurement"
+              src={
+                product.slug === "microwave-moisture-system"
+                  ? product.image
+                  : siteImages.nirBeamEffect
+              }
+              alt={
+                product.slug === "microwave-moisture-system"
+                  ? "Microwave moisture measurement installation across a conveyor-belt bulk material stream"
+                  : "Online NIR moisture analyzer installed outside an inspection window for non-contact measurement"
+              }
               variant="industry"
               className="aspect-[16/10] w-full mb-4"
             />
             <p className="text-sm text-muted leading-relaxed">
-              Mount the sensor head above the process line with the circular NIR
-              lens facing directly downward toward the material surface. Connect
-              the display unit and link to your control system through the
-              available output options. The supplier documentation highlights
-              non-contact measurement, configurable timing, and suitability for
-              difficult powder and bulk-material applications.
+              {product.installationOverview ??
+                "Mount the sensor head above the process line with the circular NIR lens facing directly downward toward the material surface. Connect the display unit and link to your control system through the available output options. The supplier documentation highlights non-contact measurement, configurable timing, and suitability for difficult powder and bulk-material applications."}
             </p>
           </div>
         </div>
@@ -257,7 +261,7 @@ export default async function ProductPage({ params }: Props) {
           <SectionHeader
             label="Reference Industries"
             title="Supplier Brochure Application References"
-            description="Representative industries explicitly covered in the supplier presentation for this online NIR moisture analyzer."
+            description="Representative industries explicitly covered in the supplier materials for this product."
           />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {product.referenceIndustries.map((industry) => (

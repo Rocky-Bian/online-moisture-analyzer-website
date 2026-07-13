@@ -7,7 +7,6 @@ import { TechnologySection } from "@/components/home/TechnologySection";
 import { DataAnalytics } from "@/components/home/DataAnalytics";
 import { FAQPreview } from "@/components/home/FAQPreview";
 import { BlogPreview } from "@/components/home/BlogPreview";
-import { GlobalPresence } from "@/components/home/GlobalPresence";
 import { FinalCTA } from "@/components/home/FinalCTA";
 import { JsonLd, faqSchema } from "@/components/seo/JsonLd";
 import { getFeaturedFAQs } from "@/content/faqs";
@@ -34,7 +33,6 @@ export default function HomePage() {
       <DataAnalytics />
       <FAQPreview />
       <BlogPreview />
-      <GlobalPresence />
       <FinalCTA />
     </>
   );

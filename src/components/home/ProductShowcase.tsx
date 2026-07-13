@@ -22,7 +22,7 @@ export function ProductShowcase() {
         description="Built around continuous online detection for industrial drying, conveying, and powder quality control."
       />
 
-      <div className="grid gap-8 lg:grid-cols-3">
+      <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
         {products.map((product, i) => {
           const MethodIcon = methodIcons[product.method] ?? Gauge;
           return (
