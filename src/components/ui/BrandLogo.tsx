@@ -10,8 +10,8 @@ export function BrandLogo({
   variant = "dark",
 }: BrandLogoProps) {
   const wordmarkColor = variant === "light" ? "#FFFFFF" : "#0B1F3A";
-  const iconStart = variant === "light" ? "#58A6FF" : "#1677E6";
-  const iconEnd = variant === "light" ? "#FFFFFF" : "#7FC3FF";
+  const iconStart = variant === "light" ? "#0066CC" : "#1677E6";
+  const iconEnd = variant === "light" ? "#0066CC" : "#7FC3FF";
 
   return (
     <svg
