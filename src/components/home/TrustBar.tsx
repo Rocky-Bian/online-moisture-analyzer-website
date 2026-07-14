@@ -13,7 +13,7 @@ export function TrustBar() {
   return (
     <section className="border-b border-border bg-surface py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid gap-8 md:grid-cols-3 mb-8">
+        <div className="grid gap-8 md:grid-cols-3">
           {trustItems.map((item, i) => (
             <FadeIn key={item.label} delay={i * 0.1}>
               <div className="flex items-center gap-4">
@@ -28,12 +28,6 @@ export function TrustBar() {
             </FadeIn>
           ))}
         </div>
-
-        <p className="mx-auto max-w-3xl text-center text-sm leading-relaxed text-muted">
-          Key parameters above come from the supplier brochure for the online
-          near-infrared moisture analyzer, including measurement frequency,
-          repeatability, and configurable response behavior.
-        </p>
       </div>
     </section>
   );
