@@ -1,7 +1,6 @@
 "use client";
 
 import { FadeIn } from "@/components/ui/AnimatedCounter";
-import { certifications } from "@/content/navigation";
 import { Activity, Shield, TimerReset } from "lucide-react";
 
 const trustItems = [
@@ -14,7 +13,7 @@ export function TrustBar() {
   return (
     <section className="border-b border-border bg-surface py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid gap-8 md:grid-cols-3 mb-12">
+        <div className="grid gap-8 md:grid-cols-3 mb-8">
           {trustItems.map((item, i) => (
             <FadeIn key={item.label} delay={i * 0.1}>
               <div className="flex items-center gap-4">
@@ -30,16 +29,6 @@ export function TrustBar() {
           ))}
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
-          {certifications.map((cert) => (
-            <span
-              key={cert}
-              className="rounded-sm border border-border bg-white px-4 py-2 text-xs font-semibold text-primary tracking-wide"
-            >
-              {cert}
-            </span>
-          ))}
-        </div>
         <p className="mx-auto max-w-3xl text-center text-sm leading-relaxed text-muted">
           Key parameters above come from the supplier brochure for the online
           near-infrared moisture analyzer, including measurement frequency,

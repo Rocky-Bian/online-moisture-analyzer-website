@@ -36,5 +36,3 @@ export const footerLinks = {
     { label: "Contact", href: "/contact" },
   ],
 };
-
-export const certifications = ["ISO 9001", "CE", "RoHS", "IEC 61326"];

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { footerLinks, certifications } from "@/content/navigation";
+import { footerLinks } from "@/content/navigation";
 import { BrandLogo } from "@/components/ui/BrandLogo";
 
 export function Footer() {
@@ -98,18 +98,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-8">
-          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-            <div className="flex flex-wrap gap-3">
-              {certifications.map((cert) => (
-                <span
-                  key={cert}
-                  className="rounded-sm border border-white/10 px-3 py-1 text-xs font-medium text-white/50"
-                >
-                  {cert}
-                </span>
-              ))}
-            </div>
-
+          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-end">
             <form className="flex gap-2 max-w-md w-full md:w-auto">
               <input
                 type="email"

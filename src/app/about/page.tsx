@@ -1,11 +1,10 @@
-import { CheckCircle2, Globe, Users, Award, Microscope } from "lucide-react";
+import { Globe, Users, Award, Microscope } from "lucide-react";
 import { PageBanner } from "@/components/ui/PageBanner";
 import { siteImages } from "@/lib/images";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { CTASection } from "@/components/ui/CTASection";
 import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { createMetadata } from "@/lib/seo";
-import { certifications } from "@/content/navigation";
 
 export const metadata = createMetadata({
   title: "About",
@@ -37,7 +36,7 @@ const values = [
     icon: Award,
     title: "Quality Assurance",
     description:
-      "ISO 9001 certified manufacturing with rigorous testing and validation protocols.",
+      "Manufacturing with rigorous testing and validation protocols for industrial process use.",
   },
 ];
 
@@ -140,21 +139,6 @@ export default function AboutPage() {
                 <p className="text-sm font-bold text-accent">{milestone.year}</p>
                 <p className="mt-1 text-sm text-primary">{milestone.event}</p>
               </div>
-            </div>
-          ))}
-        </div>
-      </Section>
-
-      <Section className="bg-surface">
-        <SectionHeader label="Certifications" title="Quality & Compliance" />
-        <div className="flex flex-wrap justify-center gap-4">
-          {certifications.map((cert) => (
-            <div
-              key={cert}
-              className="flex items-center gap-2 rounded-sm border border-border bg-white px-6 py-4 shadow-sm"
-            >
-              <CheckCircle2 className="h-5 w-5 text-accent" />
-              <span className="font-semibold text-primary">{cert}</span>
             </div>
           ))}
         </div>
