@@ -46,8 +46,7 @@ export default async function ContactPage({ searchParams }: Props) {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-primary">Email</p>
-                  <p className="text-sm text-muted">sales@alzro.com</p>
-                  <p className="text-sm text-muted">support@alzro.com</p>
+                  <p className="text-sm text-muted">rocky@alzro.com</p>
                 </div>
               </div>
 
@@ -56,9 +55,13 @@ export default async function ContactPage({ searchParams }: Props) {
                   <Phone className="h-5 w-5 text-accent" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-primary">Phone</p>
-                  <p className="text-sm text-muted">Available on request during project communication</p>
-                  <p className="text-sm text-muted">Email contact is preferred for first response</p>
+                  <p className="text-sm font-semibold text-primary">
+                    Phone / WhatsApp
+                  </p>
+                  <p className="text-sm text-muted">+86 15165848866</p>
+                  <p className="text-sm text-muted">
+                    Available for product, project, and technical communication
+                  </p>
                 </div>
               </div>
 
@@ -67,14 +70,10 @@ export default async function ContactPage({ searchParams }: Props) {
                   <MapPin className="h-5 w-5 text-accent" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-primary">
-                    Service Coverage
-                  </p>
+                  <p className="text-sm font-semibold text-primary">Address</p>
                   <p className="text-sm text-muted">
-                    Application support for China and overseas process lines
-                  </p>
-                  <p className="text-sm text-muted">
-                    Remote evaluation for powders, fibers, aggregates, and conveyor applications
+                    Electronic Information Industrial Park, Zibo, Shandong,
+                    China
                   </p>
                 </div>
               </div>

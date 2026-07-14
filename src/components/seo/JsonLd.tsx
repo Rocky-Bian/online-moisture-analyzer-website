@@ -26,11 +26,15 @@ export function organizationSchema() {
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "sales",
-      email: "sales@alzro.com",
+      email: "rocky@alzro.com",
+      telephone: "+86 15165848866",
       availableLanguage: ["English", "Chinese"],
     },
     address: {
       "@type": "PostalAddress",
+      addressLocality: "Zibo",
+      addressRegion: "Shandong",
+      streetAddress: "Electronic Information Industrial Park",
       addressCountry: "CN",
     },
   };

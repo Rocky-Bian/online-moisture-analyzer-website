@@ -11,7 +11,7 @@ export const siteImages = {
   chemicalIndustry: `${base}/online-nir-moisture-analyzer-calcium-carbonate-line.jpg`,
   aboutBackground: `${base}/online-nir-moisture-analyzer-fiber-processing-line.jpg`,
   contactBackground: `${base}/online-nir-moisture-analyzer-conveyor-installation.jpg`,
-  blogBanner: `${base}/online-nir-moisture-analyzer-conveyor-installation.jpg`,
+  blogBanner: `${base}/online-moisture-measurement-blog-diagram.png`,
   aiIndustrial: `${base}/online-nir-moisture-analyzer-explosion-proof-installation.jpg`,
 } as const;
 

@@ -81,11 +81,11 @@ export function WhyMoistureControl() {
                     {item.step}
                   </div>
                   <div className="flex-1 rounded-sm bg-surface px-4 py-3">
-                    <div className="flex items-center justify-between">
+                    <div className="grid gap-3 sm:grid-cols-[minmax(0,1fr)_15rem] sm:items-center">
                       <span className="text-sm font-semibold text-primary">
                         {item.label}
                       </span>
-                      <span className="text-xs font-mono text-accent">
+                      <span className="text-xs font-mono text-accent sm:text-right">
                         {item.status}
                       </span>
                     </div>

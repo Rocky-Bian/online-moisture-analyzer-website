@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react";
 import { mainNav } from "@/content/navigation";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/utils";
+import { BrandLogo } from "@/components/ui/BrandLogo";
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,18 +35,11 @@ export function Header() {
       )}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-sm bg-accent">
-            <span className="text-sm font-bold text-white">A</span>
-          </div>
-          <span
-            className={cn(
-              "text-xl font-bold tracking-wider",
-              isScrolled ? "text-primary" : "text-white"
-            )}
-          >
-            ALZRO
-          </span>
+        <Link href="/" className="flex items-center">
+          <BrandLogo
+            variant={isScrolled ? "dark" : "light"}
+            className="h-11 sm:h-12"
+          />
         </Link>
 
         <div className="hidden items-center gap-1 lg:flex">

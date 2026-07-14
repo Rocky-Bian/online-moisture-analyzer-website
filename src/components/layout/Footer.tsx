@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { footerLinks, certifications } from "@/content/navigation";
+import { BrandLogo } from "@/components/ui/BrandLogo";
 
 export function Footer() {
   return (
@@ -8,11 +9,8 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-2">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-sm bg-accent">
-                <span className="text-sm font-bold text-white">A</span>
-              </div>
-              <span className="text-xl font-bold tracking-wider">ALZRO</span>
+            <Link href="/" className="flex items-center">
+              <BrandLogo variant="light" className="h-12" />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/60">
               Supplier-backed online moisture measurement solutions for starch,
@@ -22,15 +20,15 @@ export function Footer() {
             <div className="mt-6 space-y-2 text-sm text-white/60">
               <p className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-accent" />
-                sales@alzro.com
+                rocky@alzro.com
               </p>
               <p className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-accent" />
-                +1 (800) ALZRO-01
+                +86 15165848866
               </p>
               <p className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-accent" />
-                Global HQ — Industrial Technology Park
+                Electronic Information Industrial Park, Zibo, Shandong, China
               </p>
             </div>
             <Link
