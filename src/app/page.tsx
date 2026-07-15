@@ -1,5 +1,4 @@
 import { Hero } from "@/components/home/Hero";
-import { TrustBar } from "@/components/home/TrustBar";
 import { IndustrySolutions } from "@/components/home/IndustrySolutions";
 import { WhyMoistureControl } from "@/components/home/WhyMoistureControl";
 import { ProductShowcase } from "@/components/home/ProductShowcase";
@@ -25,7 +24,6 @@ export default function HomePage() {
         )}
       />
       <Hero />
-      <TrustBar />
       <IndustrySolutions />
       <WhyMoistureControl />
       <ProductShowcase />
