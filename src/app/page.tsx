@@ -25,8 +25,8 @@ export default function HomePage() {
       />
       <Hero />
       <IndustrySolutions />
-      <WhyMoistureControl />
       <ProductShowcase />
+      <WhyMoistureControl />
       <TechnologySection />
       <DataAnalytics />
       <FAQPreview />
