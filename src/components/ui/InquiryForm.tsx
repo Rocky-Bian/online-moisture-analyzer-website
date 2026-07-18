@@ -18,6 +18,8 @@ export function InquiryForm({
   compact,
 }: InquiryFormProps) {
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
 
   if (submitted) {
     return (
@@ -32,12 +34,44 @@ export function InquiryForm({
 
   return (
     <form
-      onSubmit={(e) => {
+      onSubmit={async (e) => {
         e.preventDefault();
-        setSubmitted(true);
+        setError("");
+        setIsSubmitting(true);
+
+        const form = e.currentTarget;
+        const formData = new FormData(form);
+        formData.append("_subject", "New inquiry from ALZRO website");
+        formData.append("_template", "table");
+        formData.append("_captcha", "false");
+        formData.append("sourcePage", window.location.href);
+
+        try {
+          const response = await fetch("https://formsubmit.co/ajax/rocky@alzro.com", {
+            method: "POST",
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          });
+
+          if (!response.ok) {
+            throw new Error("Unable to submit inquiry");
+          }
+
+          setSubmitted(true);
+        } catch {
+          setError(
+            "We could not send your inquiry right now. Please email rocky@alzro.com or contact us on WhatsApp: +8615165848866."
+          );
+        } finally {
+          setIsSubmitting(false);
+        }
       }}
       className={cn("space-y-4", className)}
     >
+      <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
+
       {!compact && (
         <div className="grid gap-4 sm:grid-cols-2">
           <div>
@@ -129,8 +163,24 @@ export function InquiryForm({
         </>
       )}
 
-      <Button type="submit" variant="primary" size="md" className="w-full">
-        {defaultType === "datasheet" ? "Request Datasheet" : "Submit Inquiry"}
+      {error && (
+        <p className="rounded-sm border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+          {error}
+        </p>
+      )}
+
+      <Button
+        type="submit"
+        variant="primary"
+        size="md"
+        className="w-full"
+        disabled={isSubmitting}
+      >
+        {isSubmitting
+          ? "Sending..."
+          : defaultType === "datasheet"
+            ? "Request Datasheet"
+            : "Submit Inquiry"}
       </Button>
 
       <p className="text-xs text-muted-light text-center">

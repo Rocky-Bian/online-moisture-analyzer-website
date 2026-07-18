@@ -14,6 +14,7 @@ interface ButtonProps {
   className?: string;
   onClick?: () => void;
   type?: "button" | "submit";
+  disabled?: boolean;
 }
 
 const variants: Record<ButtonVariant, string> = {
@@ -42,11 +43,13 @@ export function Button({
   className,
   onClick,
   type = "button",
+  disabled,
 }: ButtonProps) {
   const classes = cn(
     "inline-flex items-center justify-center gap-2 font-semibold rounded-sm transition-all duration-200 tracking-wide",
     variants[variant],
     sizes[size],
+    disabled && "cursor-not-allowed opacity-60 hover:bg-accent",
     className
   );
 
@@ -59,7 +62,7 @@ export function Button({
   }
 
   return (
-    <button type={type} onClick={onClick} className={classes}>
+    <button type={type} onClick={onClick} disabled={disabled} className={classes}>
       {children}
     </button>
   );
