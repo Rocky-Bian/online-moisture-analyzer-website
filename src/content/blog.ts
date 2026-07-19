@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "wood-fiberboard-hot-press-moisture-control",
+    title: "Wood Fiberboard Hot Pressing: A Practical Guide to Moisture Control",
+    excerpt:
+      "How continuous wood-fiber moisture measurement can help MDF and particleboard plants stabilize mat preparation, pressing, and final board quality.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-07-20",
+    readTime: "8 min",
+    tags: [
+      "wood fiberboard",
+      "MDF moisture control",
+      "particleboard pressing",
+      "wood fiber moisture",
+      "online NIR measurement",
+      "hot press process",
+      "bulk solids control",
+    ],
+  },
+  {
     slug: "corn-starch-drying-moisture-control",
     title: "Corn Starch Drying Moisture Control with Online NIR Measurement",
     excerpt:
