@@ -48,6 +48,13 @@ export function createMetadata({
       description: pageDescription,
       images: [ogImage],
     },
+    icons: {
+      icon: [
+        { url: "/favicon.ico", sizes: "any" },
+        { url: "/icon.svg", type: "image/svg+xml" },
+      ],
+      apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    },
     robots: noIndex ? { index: false, follow: false } : { index: true, follow: true },
     keywords: [
       "online moisture analyzer",
