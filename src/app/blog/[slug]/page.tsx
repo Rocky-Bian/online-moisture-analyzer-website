@@ -160,6 +160,69 @@ function WoodFiberboardArticle() {
   );
 }
 
+function CarbonBlackPelletDryingArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Why residual moisture is a real carbon-black process variable</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Carbon black is commonly converted into pellets to improve handling after production. In the wet-pelletizing route, water and a binding agent are added in a pin mixer, then the pellets are dried in a rotary dryer. <SourceLink href="https://orioncarbons.com/wp-content/uploads/2025/03/What-is-carbon-black-brochure.pdf">Orion&apos;s 2025 carbon-black technical brochure</SourceLink> describes this sequence and notes that the binding agent helps the pellets resist attrition during processing and transport. The dryer therefore has two connected jobs: remove water reliably and preserve a pellet that can still be handled and dispersed as intended.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The relevant laboratory value is not always a pure water value. <SourceLink href="https://store.astm.org/d1509-24.html">ASTM D1509-24</SourceLink> defines heating loss for carbon black at 125°C and states that the loss is primarily moisture, while other volatile materials may also be lost. It also identifies carbon black as hygroscopic: uptake depends on surface area, relative humidity, ambient temperature, and exposure time. For process control, that means the online result, the laboratory reference method, the sampling time, and the product grade must be defined together rather than treated as interchangeable numbers.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: black pellets, changing bed depth, and a delayed reference</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A grab sample from dryer discharge can confirm a batch result, but it cannot show the trend while material is still moving through the dryer. Feed-water changes, pellet-size distribution, burner response, recycle, and residence-time shifts can all change residual moisture before the next laboratory result is available. Sampling also needs careful timing: a sample collected after cooling, screening, or storage may not represent the material that was at the sensor when the control decision was made.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Carbon black adds a second challenge. Its dark surface and the possibility of a thick or uneven moving bed make it important to distinguish surface moisture indication from a bulk measurement. Optical instruments should not be assumed to perform identically across all black grades and pellet presentations; a representative feasibility test is essential. Where the control question is the moisture through the material layer, a through-belt measurement with load compensation is often the more direct engineering choice.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a continuous belt or chute carrying a variable-depth bed of carbon black pellets, evaluate a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A microwave installation places the transmitter and receiver on opposite sides of the moving material so the signal passes through the full layer; its load-compensation option is intended for changing material thickness. That makes it a strong candidate where the control action is a dryer-energy, feed-water, or residence-time adjustment based on bulk residual moisture.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> may still be worth evaluating for a thin, consistently presented surface layer when rapid surface-trend information is the goal. However, the material&apos;s low reflectance, dust, and product-to-product optical differences must be proven during a site trial. Do not select the method from a nominal accuracy figure alone; select it from the material presentation and the control decision.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Installation points that produce useful data</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Dryer discharge conveyor:</strong> the preferred control point when the signal needs to reflect the final drying result before storage or screening.</li>
+        <li><strong>After cooling, before storage:</strong> useful for product-release trending and for identifying moisture pickup or process drift between hot discharge and the silo.</li>
+        <li><strong>Before bulk loading or bagging:</strong> a verification point when shipment condition is critical; it should complement, not replace, control at dryer discharge.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        At every location, inspect belt coverage, bed-depth range, vibration, metalwork clearance, dust deposition, access for maintenance, and the safe routing of cables or process connections. Carbon-black transfers also deserve special care for pellet breakage. Orion notes that conveying choice should account for pellet hardness, while Cabot&apos;s <SourceLink href="https://www.cabotcorp.com/solutions/applications/industrial-rubber-products/dispersion">dispersion guidance</SourceLink> describes the same tradeoff: pellets must be soft enough to break down in compounding, but hard enough to convey. The sensor should monitor the line without becoming a mechanical source of attrition.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and commissioning: align online and laboratory data</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Use the plant&apos;s approved reference method and record whether it reports moisture or heating loss. For an ASTM D1509 comparison, remember that the method&apos;s heating loss can include volatile material other than water; treated grades with added volatiles require separate consideration. Collect time-stamped samples from the exact stream seen by the sensor, allow for transport delay to the sample point, and cover the normal operating moisture range rather than calibrating only around one convenient value.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Commission in stages. First verify repeatable trend direction against laboratory results. Then set filtering and response time so the value is stable enough to use but not so slow that it hides a dryer upset. Only after repeatable operation should the signal be connected to an advisory or closed-loop control strategy. Recheck the model when the plant changes grade, pelletizer binder, bed depth, furnace feedstock, or laboratory method.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">What better moisture visibility can support</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Online moisture data does not replace pellet-strength, sieve, density, dispersion, or safety testing. It gives operators earlier visibility into a drying variable that affects the decisions around energy and product release. Used with a disciplined operating response, it can reduce reliance on delayed samples, help avoid an unnecessarily conservative drying margin, and make laboratory checks more targeted. This is relevant to both producer operations and downstream <Link href="/industries/rubber-additives" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">rubber-additive handling</Link>, where predictable pellet condition supports stable conveying and compounding.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A sound application review starts with the pellet grade, expected residual-moisture range, dryer and conveyor layout, bed-depth variation, dust conditions, reference-test procedure, and the decision the signal must support. Those details will determine whether an online measurement point can deliver an actionable process value.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://store.astm.org/d1509-24.html">ASTM D1509-24, Standard Test Methods for Carbon Black—Heating Loss</SourceLink>. Scope, 125°C conditioning, hygroscopicity, and the distinction between heating loss and moisture.</li>
+        <li><SourceLink href="https://orioncarbons.com/wp-content/uploads/2025/03/What-is-carbon-black-brochure.pdf">Orion, What Is Carbon Black? (2025)</SourceLink>. Wet pelletizing, rotary drying, pellet handling, and carbon-black application context.</li>
+        <li><SourceLink href="https://www.cabotcorp.com/solutions/applications/industrial-rubber-products/dispersion">Cabot, Dispersion in Industrial Rubber Products</SourceLink>. The tradeoff between pellet breakdown for dispersion and sufficient hardness for conveying.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -215,6 +278,8 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           {slug === "wood-fiberboard-hot-press-moisture-control" ? (
             <WoodFiberboardArticle />
+          ) : slug === "carbon-black-pellet-drying-moisture-control" ? (
+            <CarbonBlackPelletDryingArticle />
           ) : (
             paragraphs.map((paragraph, i) => (
               <p key={i} className="mb-6 text-base leading-relaxed text-primary/80">

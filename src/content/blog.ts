@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "carbon-black-pellet-drying-moisture-control",
+    title: "Carbon Black Pellet Drying: Moisture Control Without Sacrificing Pellet Quality",
+    excerpt:
+      "A practical guide to measuring residual moisture after carbon black pellet drying, selecting a suitable online method, and commissioning the signal for reliable process control.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-07-21",
+    readTime: "8 min",
+    tags: [
+      "carbon black pellet drying",
+      "carbon black moisture control",
+      "online microwave moisture measurement",
+      "rotary dryer control",
+      "rubber carbon black",
+      "bulk solids moisture",
+      "ASTM D1509",
+    ],
+  },
+  {
     slug: "wood-fiberboard-hot-press-moisture-control",
     title: "Wood Fiberboard Hot Pressing: A Practical Guide to Moisture Control",
     excerpt:
