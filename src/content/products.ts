@@ -96,7 +96,7 @@ export const products: Product[] = [
     name: "Microwave Moisture Measurement System",
     tagline: "Non-contact total-moisture measurement for conveyor belts and dense bulk solids",
     description:
-      "Based on microwave attenuation by water molecules, this system measures total moisture content through the full material layer rather than only the surface. The supplier brochure highlights stable performance on conveyor-belt bulk solids, load compensation for changing bed depth, and reliable operation even where color, dust, water vapor, or sunlight make optical methods less dependable.",
+      "Based on microwave attenuation by water molecules, this system measures total moisture content through the full material layer rather than only the surface. It is designed for conveyor-belt bulk solids, load compensation for changing bed depth, and reliable operation even where color, dust, water vapor, or sunlight make optical methods less dependable.",
     accuracy: "±0.1% – 0.3% moisture",
     method: "Microwave Transmission Technology",
     applications: [

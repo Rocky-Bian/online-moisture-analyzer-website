@@ -34,27 +34,27 @@ function getArticleContent(slug: string): string[] {
   const contentMap: Record<string, string[]> = {
     "corn-starch-drying-moisture-control": [
       "Corn starch is highly hygroscopic, so moisture control affects both drying efficiency and finished-product stability. If final moisture drifts too high, starch can cake, spoil, or lose storage stability. If it drifts too low, plants may waste energy and reduce process efficiency without gaining any quality benefit.",
-      "In many starch plants, moisture is still judged by intermittent sampling or operator experience. The supplier material highlights that this creates a delay between what is happening in the dryer and what the team knows about it, especially when material moisture changes quickly.",
+      "In many starch plants, moisture is still judged by intermittent sampling or operator experience. This creates a delay between what is happening in the dryer and what the team knows about it, especially when material moisture changes quickly.",
       "An online NIR moisture analyzer installed at the dryer outlet or screw conveyor gives continuous feedback during production. Instead of waiting for periodic checks, operators can see moisture trends and adjust feed rate, air volume, or drying intensity much earlier.",
       "This type of setup is especially useful where one operator needs to support both drying and packaging, or where production wants a more consistent final-moisture window without adding more manual checks.",
       "The biggest value is usually practical rather than theoretical: more stable finished moisture, less operator guesswork, lower labor intensity, and better support for day-to-day process control.",
     ],
     "baking-soda-moisture-measurement-guide": [
-      "In sodium bicarbonate production, moisture can vary significantly, while traditional testing often takes too long to help production in real time. The supplier presentation specifically notes that offline measurement may require many hours, which is too slow for active process correction.",
+      "In sodium bicarbonate production, moisture can vary significantly, while traditional testing often takes too long to help production in real time. Offline measurement may require many hours, which is too slow for active process correction.",
       "That time gap matters because drying conditions can shift long before lab data comes back. By the time operators confirm the actual moisture result, a large amount of product may already have moved further down the line.",
       "An online near-infrared moisture analyzer reduces that delay by measuring during production instead of after the fact. The value is not only faster data, but faster decisions: production can adjust drying conditions while material is still in process.",
       "For baking soda lines, this usually supports three goals at once: improve detection efficiency, reduce reliance on delayed manual testing, and hold final moisture in a narrower control band.",
       "When discussing a project, it helps to define the measurement point clearly, such as after primary drying, at the transfer section, or before final packaging. That makes it easier to match the instrument response time and output method to the process.",
     ],
     "nano-calcium-carbonate-drying-quality": [
-      "Moisture control in nano calcium carbonate is tied directly to appearance, flowability, and drying cost. According to the supplier material, poor control can create two opposite problems: too much moisture leads to agglomeration and weaker flow, while too little moisture can contribute to overheating and additive scorching.",
+      "Moisture control in nano calcium carbonate is tied directly to appearance, flowability, and drying cost. Poor control can create two opposite problems: too much moisture leads to agglomeration and weaker flow, while too little moisture can contribute to overheating and additive scorching.",
       "That balance matters because over-drying can reduce whiteness or cause yellowing, while high final moisture can make the powder less stable in storage and more difficult in downstream use.",
       "An online moisture analyzer helps by giving a continuous view of the drying endpoint instead of forcing the plant to rely only on periodic samples. This is especially helpful when the process is sensitive to small shifts in drying temperature or residence time.",
       "In practice, plants often use online moisture data to protect quality and control cost at the same time. The goal is not just to dry harder, but to dry to the right point consistently.",
       "For calcium carbonate projects, a good discussion usually includes the drying section, expected moisture window, product whiteness requirements, and whether the plant wants only indication or a signal that can be shared with the control system.",
     ],
     "ceramic-spray-drying-moisture-stability": [
-      "In ceramic raw-material preparation, moisture affects granule shape, pore structure, surface hardness, and the stability of later forming steps. The supplier reference material points out that spray-drying moisture conditions directly influence powder quality and eventually brick-body quality.",
+      "In ceramic raw-material preparation, moisture affects granule shape, pore structure, surface hardness, and the stability of later forming steps. Spray-drying moisture conditions directly influence powder quality and eventually brick-body quality.",
       "When evaporation is unstable, plants may see more hollow particles, uneven granules, or wider variation in powder behavior. Periodic manual checks are often too slow to catch those swings before quality moves.",
       "Online moisture measurement gives a more continuous picture of the drying process. That makes it easier to stabilize the moisture profile through the spray-drying section and keep powder entering the next stage in a more consistent condition.",
       "This does not remove the need for process know-how, but it gives the operating team a much more useful signal than occasional manual testing. In many projects, the improvement is as much about process visibility as it is about final accuracy.",
@@ -64,7 +64,7 @@ function getArticleContent(slug: string): string[] {
       "Washed sand moisture has a direct influence on actual water addition in concrete batching. Because mix ratios are commonly based on dry aggregate assumptions, changing sand moisture means the plant must also change added water if it wants stable concrete performance.",
       "This becomes harder during seasonal shifts, rain, or changing storage conditions. If moisture moves and batching water does not, the result can be unstable workability, strength variation, and more operator correction.",
       "Online moisture measurement helps by showing moisture changes continuously instead of relying only on occasional tests. That gives batching operators a faster basis for correcting water addition and keeping the process closer to target.",
-      "The supplier material also highlights the labor benefit: when moisture information is easier to access, one operator can manage production with less routine manual checking and less dependence on repeated laboratory measurements.",
+      "There is also a clear labor benefit: when moisture information is easier to access, one operator can manage production with less routine manual checking and less dependence on repeated laboratory measurements.",
       "For sand and aggregate projects, the most useful planning details are usually conveyor location, material presentation, expected moisture range, and whether the plant wants real-time display only or integration into a batching workflow.",
     ],
     "how-to-choose-nir-vs-microwave-moisture-measurement": [

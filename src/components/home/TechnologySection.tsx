@@ -30,7 +30,7 @@ const technologies = [
     icon: Activity,
     title: "High-Frequency Monitoring",
     description:
-      "The supplier brochure specifies up to 60 checks per second, which gives production teams fast enough feedback for practical process correction.",
+      "The online NIR system supports up to 60 checks per second, giving production teams fast enough feedback for practical process correction.",
   },
   {
     icon: Brain,
@@ -59,8 +59,8 @@ export function TechnologySection() {
       <div className="relative">
         <SectionHeader
           label="Technology"
-          title="Supplier-Backed Measurement and Integration Features"
-          description="Key performance points adapted from the supplier brochure for the online near-infrared moisture analyzer."
+          title="Measurement and Integration Features"
+          description="Key performance points for the online near-infrared moisture analyzer."
           dark
         />
 

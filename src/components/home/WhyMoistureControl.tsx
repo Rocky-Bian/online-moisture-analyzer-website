@@ -15,7 +15,7 @@ const reasons = [
     icon: TrendingDown,
     title: "Over-Drying Also Creates Losses",
     description:
-      "Supplier case materials repeatedly show that excessive drying can waste energy, reduce whiteness, hurt flowability, and even increase dust or safety risk in powder applications.",
+      "Field applications repeatedly show that excessive drying can waste energy, reduce whiteness, hurt flowability, and even increase dust or safety risk in powder applications.",
   },
   {
     icon: Activity,
@@ -39,7 +39,7 @@ export function WhyMoistureControl() {
           <SectionHeader
             label="Why It Matters"
             title="Why Moisture Control Matters in Industrial Production"
-            description="The supplier material makes one point very clear: across drying, conveying, and powder finishing, moisture is often the variable that decides cost, quality, and stability."
+            description="Across drying, conveying, and powder finishing, moisture is often the variable that decides cost, quality, and stability."
             align="left"
           />
 

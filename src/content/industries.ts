@@ -61,7 +61,7 @@ export const industries: Industry[] = [
       { title: "Quality Release", description: "Use online data to support shift-level process decisions" },
     ],
     fieldNotes: [
-      "The supplier materials show corn starch projects using the analyzer after drying to replace repeated manual oven checks.",
+      "Field application data from corn-starch drying lines shows that online measurement after drying can replace repeated manual oven checks.",
       "For modified starch and dextrin lines, stable final moisture helps balance reaction completion, anti-caking performance, and storage safety.",
       "Real-time values give operators a clear target for airflow, feed rate, and residence time adjustments during different shifts.",
     ],
@@ -121,7 +121,7 @@ export const industries: Industry[] = [
       { title: "Final Product", description: "Confirm stable moisture before storage and packing" },
     ],
     fieldNotes: [
-      "The PPT highlights that uneven noodle drying leads to cracking, low toughness, and unstable cooking quality.",
+      "Our application notes highlight that uneven noodle drying can lead to cracking, low toughness, and unstable cooking quality.",
       "For dough-sheet and dried-noodle lines, controlling final moisture helps reduce brittle strands, broken sheets, and inconsistent appearance.",
       "Continuous online readings help reduce energy waste from over-drying while protecting product appearance and texture.",
     ],
@@ -143,7 +143,7 @@ export const industries: Industry[] = [
     name: "Calcium Carbonate",
     shortDescription: "Stable moisture control for nano calcium carbonate drying, whiteness, and flowability.",
     description:
-      "In nano calcium carbonate production, moisture directly affects whiteness, drying cost, anti-caking performance, and downstream handling. The supplier case materials show that online NIR monitoring helps plants avoid both over-drying and excess residual moisture while keeping the drying process closer to target.",
+      "In nano calcium carbonate production, moisture directly affects whiteness, drying cost, anti-caking performance, and downstream handling. Online NIR monitoring helps plants avoid both over-drying and excess residual moisture while keeping the drying process closer to target.",
     painPoints: [
       "Excess drying in calcium carbonate can cause additive scorching and yellowing",
       "High moisture causes agglomeration, poor flowability, and reduced whiteness",
@@ -172,7 +172,7 @@ export const industries: Industry[] = [
       { title: "Final Powder Control", description: "Hold product inside target moisture before packing" },
     ],
     fieldNotes: [
-      "The supplier case for nano calcium carbonate emphasizes that over-drying can scorch additives, create yellowing, and reduce whiteness.",
+      "For nano calcium carbonate, over-drying can scorch additives, create yellowing, and reduce whiteness.",
       "If moisture stays too high, calcium carbonate can agglomerate, lose flowability, and show poorer finished performance.",
       "Online measurement lets operators hold the drying endpoint closer to target instead of waiting for delayed lab confirmation.",
     ],
@@ -183,7 +183,7 @@ export const industries: Industry[] = [
       },
       {
         src: "/images/site-real/online-nir-moisture-analyzer-calcium-carbonate-process-flow.jpg",
-        alt: "Nano calcium carbonate process flow from the supplier reference materials",
+        alt: "Nano calcium carbonate process flow for online moisture control",
       },
     ],
     recommendedProducts: ["online-nir-moisture-analyzer", "microwave-moisture-system"],
@@ -203,7 +203,7 @@ export const industries: Industry[] = [
     name: "Baking Soda",
     shortDescription: "Online moisture measurement for sodium bicarbonate drying and final product stabilization.",
     description:
-      "The baking-soda section of the supplier PPT highlights large moisture variation and very slow conventional testing. Online NIR measurement gives plants a faster way to track sodium bicarbonate moisture continuously instead of waiting many hours for an offline result.",
+      "Baking-soda production can face large moisture variation and slow conventional testing. Online NIR measurement gives plants a faster way to track sodium bicarbonate moisture continuously instead of waiting many hours for an offline result.",
     painPoints: [
       "Baking soda moisture can vary widely during production",
       "Traditional testing can take many hours and still be hard to keep precise",
@@ -232,7 +232,7 @@ export const industries: Industry[] = [
       { title: "Final Control", description: "Verify stable finished moisture before packing" },
     ],
     fieldNotes: [
-      "The PPT notes typical sodium bicarbonate moisture variation and very long traditional test times.",
+      "Production experience shows typical sodium bicarbonate moisture variation and long traditional test times.",
       "Online NIR measurement is positioned as a much faster way to keep drying under control.",
       "This application is mainly about efficiency and stable moisture confirmation rather than delayed manual checking.",
     ],
@@ -243,7 +243,7 @@ export const industries: Industry[] = [
       },
       {
         src: industryImages["baking-soda"],
-        alt: "Sodium bicarbonate application photo from the supplier case materials",
+        alt: "Sodium bicarbonate application photo for online moisture measurement",
       },
     ],
     recommendedProducts: ["online-nir-moisture-analyzer", "microwave-moisture-system"],
@@ -254,7 +254,7 @@ export const industries: Industry[] = [
     name: "Soda Ash",
     shortDescription: "Online moisture monitoring for soda ash caking control, drying stability, and powder handling.",
     description:
-      "The supplier materials describe soda ash as a hygroscopic powder that gradually absorbs moisture from air and tends to cake during storage and handling. Online moisture monitoring helps plants improve visibility into drying and final powder condition before downstream transfer and packaging.",
+      "Soda ash is a hygroscopic powder that gradually absorbs moisture from air and tends to cake during storage and handling. Online moisture monitoring helps plants improve visibility into drying and final powder condition before downstream transfer and packaging.",
     painPoints: [
       "Soda ash gradually absorbs moisture and can cake during handling or storage",
       "Residual moisture is difficult to manage with delayed testing alone",
@@ -283,7 +283,7 @@ export const industries: Industry[] = [
       { title: "Packaging", description: "Confirm stable finished condition before packing or dispatch" },
     ],
     fieldNotes: [
-      "The PPT describes soda ash as absorbent and prone to caking when exposed to air.",
+      "Soda ash is absorbent and prone to caking when exposed to air.",
       "This application is especially valuable where product flowability and powder stability matter in storage and transfer.",
       "Online moisture data helps move away from delayed, purely manual inspection routines.",
     ],
@@ -294,7 +294,7 @@ export const industries: Industry[] = [
       },
       {
         src: "/images/site-real/online-nir-moisture-analyzer-soda-ash-process-flow.jpg",
-        alt: "Soda ash process flow from the supplier reference materials",
+        alt: "Soda ash process flow for online moisture control",
       },
     ],
     recommendedProducts: ["online-nir-moisture-analyzer", "microwave-moisture-system"],
@@ -334,7 +334,7 @@ export const industries: Industry[] = [
       { title: "Press Feed", description: "Maintain stable moisture for forming quality" },
     ],
     fieldNotes: [
-      "The PPT notes that unstable spray-dried moisture changes pore structure, hollow-particle formation, and powder fineness.",
+      "Unstable spray-dried moisture can change pore structure, hollow-particle formation, and powder fineness.",
       "Keeping the final powder within range helps improve brick-body compactness, forming stability, and downstream yield.",
       "This application benefits from continuous monitoring where production output is large and process swings are costly.",
     ],
@@ -356,7 +356,7 @@ export const industries: Industry[] = [
     name: "PVC Additives & Fine Chemicals",
     shortDescription: "Inline moisture self-control for PVC additive production, with reduced labor dependence and safer powder handling.",
     description:
-      "In PVC additive production, residual moisture directly influences powder quality, drying efficiency, dust emission, and downstream storage safety. The supplier case materials show that online NIR moisture monitoring can replace delayed manual checks with continuous feedback, helping manufacturers hold a tighter moisture band while reducing excessive drying and operator workload.",
+      "In PVC additive production, residual moisture directly influences powder quality, drying efficiency, dust emission, and downstream storage safety. Online NIR moisture monitoring can replace delayed manual checks with continuous feedback, helping manufacturers hold a tighter moisture band while reducing excessive drying and operator workload.",
     painPoints: [
       "PVC additive quality becomes inconsistent when residual moisture drifts during drying and transfer",
       "Over-drying can increase dust discharge, energy use, and potential safety risk in powder handling",
@@ -385,7 +385,7 @@ export const industries: Industry[] = [
       { title: "Final Packaging", description: "Confirm stable moisture for safe handling and shipment" },
     ],
     fieldNotes: [
-      "The supplier case material highlights a PVC additive application where moisture self-control replaced manual, delayed judgment on the line.",
+      "PVC additive applications show how moisture self-control can replace manual, delayed judgment on the line.",
       "Reference feedback notes improved powder quality, reduced dust discharge, and a higher level of production safety and environmental control.",
       "This type of installation is particularly helpful where excessive drying may create avoidable quality loss or added explosion-risk concern in dusty powder systems.",
     ],
@@ -396,7 +396,7 @@ export const industries: Industry[] = [
       },
       {
         src: "/images/site-real/online-nir-moisture-analyzer-pvc-additives-case-study-photo.jpg",
-        alt: "Original supplier field photo of an online NIR moisture meter on a PVC additive production line",
+        alt: "Field photo of an online NIR moisture meter on a PVC additive production line",
       },
     ],
     recommendedProducts: ["online-nir-moisture-analyzer", "microwave-moisture-system"],
@@ -407,7 +407,7 @@ export const industries: Industry[] = [
       solution:
         "Install online NIR moisture monitoring directly on the PVC additive line so operators can keep final moisture inside a tighter control band without relying on delayed sampling.",
       result:
-        "Supplier reference feedback highlights moisture self-control, reduced labor dependence, better powder quality, lower dust emissions, and safer operation with less risk from over-drying.",
+        "Field feedback highlights moisture self-control, reduced labor dependence, better powder quality, lower dust emissions, and safer operation with less risk from over-drying.",
     },
     image: industryImages["pvc-additives-fine-chemicals"],
   },
@@ -445,7 +445,7 @@ export const industries: Industry[] = [
       { title: "Dispatch / Use", description: "Verify moisture before concrete mixing, sintering, or pressing" },
     ],
     fieldNotes: [
-      "The PPT's washed-sand case focuses on concrete batching accuracy, where unstable sand moisture changes the effective water-cement ratio.",
+      "Washed-sand moisture control focuses on concrete batching accuracy, where unstable sand moisture changes the effective water-cement ratio.",
       "For sinter mix, moisture directly impacts granulation behavior, permeability, and stable furnace charging.",
       "Wood-fiber and board-material applications use online moisture data to avoid warping, brittleness, and later product deformation.",
     ],
@@ -476,7 +476,7 @@ export const industries: Industry[] = [
     name: "Rubber Additives",
     shortDescription: "Online moisture control for flash-dried and airflow-dried rubber additive powders.",
     description:
-      "The supplier materials show rubber additive projects where inline moisture measurement replaces repeated manual checks in flash drying and secondary airflow drying. Better endpoint control improves powder stability while reducing solvent exposure, emissions, and unnecessary over-drying.",
+      "Rubber additive projects show how inline moisture measurement can replace repeated manual checks in flash drying and secondary airflow drying. Better endpoint control improves powder stability while reducing solvent exposure, emissions, and unnecessary over-drying.",
     painPoints: [
       "Manual sampling exposes operators to dusty or solvent-related production areas",
       "Over-drying increases exhaust load, energy waste, and product instability",
@@ -505,7 +505,7 @@ export const industries: Industry[] = [
       { title: "Powder Collection", description: "Verify moisture before storage or packaging" },
     ],
     fieldNotes: [
-      "The PPT notes reduced operator contact with harmful solvents and less reliance on manual sampling.",
+      "Online measurement can reduce operator contact with harmful solvents and lower reliance on manual sampling.",
       "Stable moisture helps improve drying efficiency, powder quality, and environmental performance.",
       "Reference projects emphasize avoiding over-drying and reducing tail-gas load.",
     ],
@@ -527,7 +527,7 @@ export const industries: Industry[] = [
     name: "Dextrin",
     shortDescription: "Online moisture control for dextrin reaction, drying, and final powder stabilization.",
     description:
-      "The dextrin section of the supplier materials shows that moisture directly affects gelatinization behavior, reaction efficiency, product color, solubility, viscosity, and storage stability. Online moisture monitoring helps plants keep the process window tighter through thermal conversion and final drying.",
+      "In dextrin production, moisture directly affects gelatinization behavior, reaction efficiency, product color, solubility, viscosity, and storage stability. Online moisture monitoring helps plants keep the process window tighter through thermal conversion and final drying.",
     painPoints: [
       "Too little moisture can lead to insufficient gelatinization and uneven reaction",
       "Too much moisture dilutes the system, slows the reaction, and raises energy consumption",
@@ -556,7 +556,7 @@ export const industries: Industry[] = [
       { title: "Packing", description: "Verify stable finished moisture for storage and shipment" },
     ],
     fieldNotes: [
-      "The PPT describes moisture as a key variable for reaction rate, product color, and molecular distribution.",
+      "Moisture is a key variable for reaction rate, product color, and molecular distribution.",
       "Finished dextrin with excess moisture becomes more hygroscopic and less stable in storage.",
       "This application benefits from continuous monitoring through both conversion and drying stages.",
     ],
@@ -578,7 +578,7 @@ export const industries: Industry[] = [
     name: "Wood Fiber & Board Raw Materials",
     shortDescription: "Moisture control for MDF, particle board, and wood-fiber preparation lines.",
     description:
-      "For board manufacturing, moisture before pressing is a critical quality variable. The supplier materials note that overly wet fiber can deform later boards, while material that is too dry increases brittleness and cracking risk. Inline monitoring helps keep raw material moisture inside the right window before pressing.",
+      "For board manufacturing, moisture before pressing is a critical quality variable. Overly wet fiber can deform later boards, while material that is too dry increases brittleness and cracking risk. Inline monitoring helps keep raw material moisture inside the right window before pressing.",
     painPoints: [
       "Moisture before pressing is hard to stabilize with periodic sampling",
       "Excess moisture can deform finished boards",
@@ -607,7 +607,7 @@ export const industries: Industry[] = [
       { title: "Press Feed", description: "Maintain moisture inside the target process window" },
     ],
     fieldNotes: [
-      "The supplier materials mention board qualification rates above 99% after moisture stabilization.",
+      "Field results show that moisture stabilization can support board qualification rates above 99% where the full process is properly controlled.",
       "This application focuses on protecting final board dimensional stability and mechanical performance.",
       "Online values help operators respond faster than periodic checks.",
     ],
@@ -629,7 +629,7 @@ export const industries: Industry[] = [
     name: "Viscose Staple Fiber",
     shortDescription: "Online regain and moisture monitoring for viscose staple fiber drying and packing.",
     description:
-      "The supplier PPT highlights moisture regain as one of the most important indicators in viscose staple fiber production, affecting production guidance, quality control, and trade settlement. Inline detection helps stabilize fiber moisture after drying and reduces manual workload.",
+      "Moisture regain is one of the most important indicators in viscose staple fiber production, affecting production guidance, quality control, and trade settlement. Inline detection helps stabilize fiber moisture after drying and reduces manual workload.",
     painPoints: [
       "Accurate online regain measurement has long been difficult in fiber plants",
       "Manual checking is labor-intensive and often delayed",
@@ -658,7 +658,7 @@ export const industries: Industry[] = [
       { title: "Packing", description: "Verify regain before bale release" },
     ],
     fieldNotes: [
-      "The supplier material frames regain as a central quality and settlement indicator in this industry.",
+      "In this industry, regain is a central quality and settlement indicator.",
       "Projects report lower labor intensity and improved stability of fiber moisture.",
       "Online measurement is especially valuable where traditional checks are delayed or difficult to scale.",
     ],
@@ -680,7 +680,7 @@ export const industries: Industry[] = [
     name: "Sinter Mix",
     shortDescription: "Real-time moisture control for ironmaking sinter mix and granulation.",
     description:
-      "The sinter mix case in the supplier materials emphasizes that moisture is one of the most tightly controlled parameters in metallurgical sintering. Too little moisture weakens granulation and bed permeability, while too much moisture harms airflow and sintering efficiency. Online monitoring acts as the eye of the water-control system.",
+      "In metallurgical sintering, moisture is one of the most tightly controlled process parameters. Too little moisture weakens granulation and bed permeability, while too much moisture harms airflow and sintering efficiency. Online monitoring acts as the eye of the water-control system.",
     painPoints: [
       "Harsh sintering environments are difficult for stable manual measurement",
       "Low moisture weakens granulation and lowers permeability",
@@ -709,7 +709,7 @@ export const industries: Industry[] = [
       { title: "Bed Feed", description: "Verify target moisture before charging" },
     ],
     fieldNotes: [
-      "The PPT describes online moisture detection as a key part of the sinter-water control system.",
+      "Online moisture detection is a key part of the sinter-water control system.",
       "Reference cases highlight reliable performance even under harsh site conditions.",
       "Better moisture stability improves both production efficiency and sinter quality.",
     ],
@@ -731,7 +731,7 @@ export const industries: Industry[] = [
     name: "Washed Sand & Concrete Aggregates",
     shortDescription: "Online moisture measurement for washed sand, aggregate correction, and concrete batching.",
     description:
-      "The washed-sand section of the supplier materials explains that real water addition in concrete must account for the moisture already contained in sand and aggregates. Because sand moisture changes with weather and season, online measurement helps batching plants keep concrete performance stable without repeated manual checks.",
+      "Real water addition in concrete must account for the moisture already contained in sand and aggregates. Because sand moisture changes with weather and season, online measurement helps batching plants keep concrete performance stable without repeated manual checks.",
     painPoints: [
       "Sand moisture changes with rain, season, and stockpile conditions",
       "Incorrect water correction destabilizes concrete workability and strength",
@@ -760,7 +760,7 @@ export const industries: Industry[] = [
       { title: "Batch Control", description: "Keep concrete performance inside the target window" },
     ],
     fieldNotes: [
-      "The PPT emphasizes strong value in both winter steam conditions and summer rainfall conditions.",
+      "Online sand-moisture data is especially valuable in both winter steam conditions and summer rainfall conditions.",
       "Reference projects highlight lower labor needs and more stable concrete performance.",
       "This is one of the clearest applications where online moisture directly improves batching accuracy.",
     ],
@@ -782,7 +782,7 @@ export const industries: Industry[] = [
     name: "Dye & Pigment Intermediates",
     shortDescription: "Moisture control for fine-chemical intermediates used in dye and pigment production.",
     description:
-      "Dye and pigment intermediates are an important fine-chemical branch where drying cost and process efficiency matter. The supplier materials point to online NIR moisture measurement as a way to reduce unnecessary drying cost and improve production efficiency in cleaner, more modern intermediate production.",
+      "Dye and pigment intermediates are an important fine-chemical branch where drying cost and process efficiency matter. Online NIR moisture measurement helps reduce unnecessary drying cost and improve production efficiency in cleaner, more modern intermediate production.",
     painPoints: [
       "Drying cost rises when residual moisture is controlled too conservatively",
       "Fine-chemical intermediates need tighter process consistency than periodic checks provide",
@@ -811,7 +811,7 @@ export const industries: Industry[] = [
       { title: "Final Control", description: "Verify target moisture before packing" },
     ],
     fieldNotes: [
-      "The PPT frames this application around cost reduction and efficiency improvement.",
+      "This application is primarily about cost reduction and efficiency improvement.",
       "The industry is described as increasingly focused on cleaner production methods.",
       "Online measurement fits plants looking to reduce unnecessary drying without sacrificing quality.",
     ],
@@ -833,7 +833,7 @@ export const industries: Industry[] = [
     name: "Sand & Glass Fiber",
     shortDescription: "Moisture measurement for aggregate handling and glass-fiber batching or drying control.",
     description:
-      "The supplier materials group sand and glass fiber around one core issue: moisture is a central production parameter that must be dynamically controlled. For sand, it changes process choice, screening, and dewatering cost. For glass fiber, it affects fiber formation stability and batching accuracy, while traditional oven checks are too slow.",
+      "Sand and glass fiber applications share one core issue: moisture is a central production parameter that must be dynamically controlled. For sand, it changes process choice, screening, and dewatering cost. For glass fiber, it affects fiber formation stability and batching accuracy, while traditional oven checks are too slow.",
     painPoints: [
       "Sand moisture affects screening efficiency, dewatering cost, and dust risk",
       "Glass-fiber moisture is hard to control in real time with traditional tests",
@@ -862,7 +862,7 @@ export const industries: Industry[] = [
       { title: "Quality Control", description: "Use live values to improve consistency and safety" },
     ],
     fieldNotes: [
-      "The PPT notes that traditional drying methods can take around 20 hours in glass-fiber related checks.",
+      "Traditional drying methods can take around 20 hours in some glass-fiber related checks.",
       "For sand, both process efficiency and dust or dewatering cost are linked to moisture.",
       "This industry benefits from dynamic control rather than fixed periodic sampling.",
     ],
@@ -884,7 +884,7 @@ export const industries: Industry[] = [
     name: "Carbon Black Production",
     shortDescription: "Inline moisture monitoring for carbon black powder drying, storage, and final handling.",
     description:
-      "The supplier PPT shows a carbon-black application where residual moisture directly affects drying efficiency, powder dispersion, storage stability, and packaging safety. Online moisture measurement helps operators control the drying endpoint more consistently, reduce caking risk, and protect downstream handling quality.",
+      "In carbon-black production, residual moisture directly affects drying efficiency, powder dispersion, storage stability, and packaging safety. Online moisture measurement helps operators control the drying endpoint more consistently, reduce caking risk, and protect downstream handling quality.",
     painPoints: [
       "High residual moisture raises drying energy and can extend the production cycle",
       "Unstable endpoint moisture can increase agglomeration and reduce downstream dispersion quality",
@@ -913,18 +913,18 @@ export const industries: Industry[] = [
       { title: "Packing", description: "Prevent caking and protect shipment quality" },
     ],
     fieldNotes: [
-      "The PPT highlights both process impact and storage-safety impact for carbon black moisture control.",
+      "Carbon black moisture control affects both process efficiency and storage safety.",
       "Residual moisture affects drying cost, particle behavior, packaging reliability, and warehouse stability.",
       "This is a strong fit for online systems because both over-drying and under-drying create clear cost and quality penalties.",
     ],
     gallery: [
       {
         src: industryImages["silica-production"],
-        alt: "Original supplier field photo of an online moisture analyzer on a carbon black production line",
+        alt: "Field photo of an online moisture analyzer on a carbon black production line",
       },
       {
         src: "/images/site-real/online-nir-moisture-analyzer-carbon-black-case-study-photo.jpg",
-        alt: "Carbon black process installation photo from the supplier PPT case materials",
+        alt: "Carbon black process installation photo for online moisture control",
       },
     ],
     recommendedProducts: ["online-nir-moisture-analyzer"],
@@ -935,7 +935,7 @@ export const industries: Industry[] = [
     name: "Polyacrylamide Production",
     shortDescription: "Online moisture control for polymerization, drying, and finishing of PAM products.",
     description:
-      "The PPT notes that in polyacrylamide production, moisture affects reaction rate, molecular-weight control, and drying efficiency. After polymerization, wet PAM must be dried to a controlled final range; online monitoring helps plants reduce energy use while protecting product consistency.",
+      "In polyacrylamide production, moisture affects reaction rate, molecular-weight control, and drying efficiency. After polymerization, wet PAM must be dried to a controlled final range; online monitoring helps plants reduce energy use while protecting product consistency.",
     painPoints: [
       "Moisture variation affects polymerization uniformity and final product performance",
       "Drying PAM to target moisture can be energy-intensive without live feedback",
@@ -964,7 +964,7 @@ export const industries: Industry[] = [
       { title: "Packaging", description: "Verify moisture before storage and shipment" },
     ],
     fieldNotes: [
-      "The supplier materials specifically mention reaction rate, molecular-weight control, and drying energy.",
+      "Moisture control is especially important for reaction rate, molecular-weight control, and drying energy.",
       "Wet PAM requires controlled drying to a stable final moisture target.",
       "Online measurement helps plants balance process efficiency with final product quality.",
     ],

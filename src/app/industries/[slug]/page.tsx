@@ -263,8 +263,8 @@ export default async function IndustryPage({ params }: Props) {
         <Section className="bg-surface">
           <SectionHeader
             label="Field Photos"
-            title="Supplier Reference Images"
-            description="Real application photos adapted from the supplier materials for this industry."
+            title="Field Application Images"
+            description="Real application photos for this industry and similar process conditions."
           />
           <div className="grid gap-6 lg:grid-cols-2">
             {industry.gallery.map((item) => (
@@ -323,7 +323,7 @@ export default async function IndustryPage({ params }: Props) {
           <div>
             <SectionHeader
               label="Details"
-              title="Supplier Case Notes"
+              title="Process Control Notes"
               align="left"
             />
             <ul className="space-y-4">

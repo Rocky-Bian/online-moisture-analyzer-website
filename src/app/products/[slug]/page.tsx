@@ -159,7 +159,7 @@ export default async function ProductPage({ params }: Props) {
             <SectionHeader
               label="Applications"
               title="Industrial Applications"
-              description="Typical inline installation targets based on the current product positioning and supplier reference materials."
+              description="Typical inline installation targets based on ALZRO product positioning and real process requirements."
               align="left"
             />
             <ul className="space-y-3">
@@ -196,7 +196,7 @@ export default async function ProductPage({ params }: Props) {
             />
             <p className="text-sm text-muted leading-relaxed">
               {product.installationOverview ??
-                "Mount the sensor head above the process line with the circular NIR lens facing directly downward toward the material surface. Connect the display unit and link to your control system through the available output options. The supplier documentation highlights non-contact measurement, configurable timing, and suitability for difficult powder and bulk-material applications."}
+                "Mount the sensor head above the process line with the circular NIR lens facing directly downward toward the material surface. Connect the display unit and link to your control system through the available output options. The system supports non-contact measurement, configurable timing, and difficult powder and bulk-material applications."}
             </p>
           </div>
         </div>
@@ -260,8 +260,8 @@ export default async function ProductPage({ params }: Props) {
         <Section>
           <SectionHeader
             label="Reference Industries"
-            title="Supplier Brochure Application References"
-            description="Representative industries explicitly covered in the supplier materials for this product."
+            title="Application References"
+            description="Representative industries where this product can support online process moisture control."
           />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {product.referenceIndustries.map((industry) => (

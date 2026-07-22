@@ -33,7 +33,7 @@ export function Hero() {
               Real-Time Moisture Control for Drying, Conveying, and Powder Processing
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-white/70 max-w-xl">
-              Based on supplier-backed online NIR technology, this system helps
+              Based on field-proven online NIR technology, this system helps
               manufacturers replace delayed manual checks with continuous
               moisture data across starch, soda ash, ceramic powder, PVC
               additives, sand, and other process lines.

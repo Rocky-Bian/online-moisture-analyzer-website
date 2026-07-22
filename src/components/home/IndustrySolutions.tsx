@@ -15,7 +15,7 @@ export function IndustrySolutions() {
     <Section id="industries">
       <SectionHeader
         label="Industries"
-        title="Application Areas from the Supplier Reference Materials"
+        title="Application Areas for Online Moisture Control"
         description="Representative process lines where online near-infrared moisture control helps improve quality, reduce energy waste, and replace manual sampling."
       />
 
