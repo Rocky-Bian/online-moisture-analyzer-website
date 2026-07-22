@@ -1,4 +1,4 @@
-import { Globe, Users, Award, Microscope } from "lucide-react";
+import { Award, Globe, Microscope, Users } from "lucide-react";
 import { PageBanner } from "@/components/ui/PageBanner";
 import { siteImages } from "@/lib/images";
 import { Section, SectionHeader } from "@/components/ui/Section";
@@ -7,44 +7,44 @@ import { AnimatedCounter } from "@/components/ui/AnimatedCounter";
 import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
-  title: "About",
+  title: "About ALZRO",
   description:
-    "Learn more about this online moisture measurement website and its focus on practical NIR and microwave solutions for industrial process lines.",
+    "Learn about ALZRO, an industrial online moisture measurement company providing NIR and microwave solutions for drying, conveying, powder processing, and bulk solids applications.",
   path: "/about",
 });
 
-const values = [
+const strengths = [
   {
     icon: Microscope,
-    title: "Engineering Excellence",
+    title: "Measurement Expertise",
     description:
-      "Deep expertise in NIR spectroscopy, microwave sensing, and industrial process integration.",
+      "We focus on online NIR and microwave moisture measurement for real process environments.",
   },
   {
     icon: Globe,
-    title: "Application Focus",
+    title: "Industrial Application Focus",
     description:
-      "Focused on real industrial use cases such as starch drying, powders, chemicals, ceramics, and building materials.",
+      "Our work covers starch, chemicals, minerals, ceramics, fibers, aggregates, carbon black, and other moisture-sensitive materials.",
   },
   {
     icon: Users,
-    title: "Customer Partnership",
+    title: "Project-Based Support",
     description:
-      "Long-term relationships with OEM partners, system integrators, and end-user manufacturers.",
+      "We help customers define the measurement point, method, output signal, and commissioning path before selection.",
   },
   {
     icon: Award,
-    title: "Quality Assurance",
+    title: "Practical Reliability",
     description:
-      "Manufacturing with rigorous testing and validation protocols for industrial process use.",
+      "We value stable installation, calibration discipline, and long-term usability more than brochure-only specifications.",
   },
 ];
 
-const milestones = [
-  { year: "Step 1", event: "Understand the material, moisture range, and installation point" },
-  { year: "Step 2", event: "Match the process with NIR or microwave measurement logic" },
-  { year: "Step 3", event: "Confirm output method, operator workflow, and control objective" },
-  { year: "Step 4", event: "Support commissioning, verification, and routine plant use" },
+const workflow = [
+  { step: "01", event: "Review the material, target moisture range, and process pain point" },
+  { step: "02", event: "Select NIR or microwave measurement based on material presentation and control objective" },
+  { step: "03", event: "Confirm installation position, communication output, and calibration plan" },
+  { step: "04", event: "Support commissioning, verification, operator use, and routine maintenance" },
 ];
 
 export default function AboutPage() {
@@ -52,45 +52,50 @@ export default function AboutPage() {
     <>
       <PageBanner
         image={siteImages.aboutBackground}
-        label="About"
-        title="Built Around Practical Industrial Moisture Applications"
-        description="This website is structured to explain where online moisture measurement creates value, how the technologies differ, and which application conditions matter most before selection."
+        label="About ALZRO"
+        title="Online Moisture Measurement for Real Industrial Processes"
+        description="ALZRO helps manufacturers monitor moisture continuously in drying, conveying, powder processing, and bulk-material handling lines using NIR and microwave measurement technologies."
       />
 
       <Section>
         <div className="grid gap-12 lg:grid-cols-2 items-center">
           <div>
             <SectionHeader
-              label="Our Mission"
-              title="Make Online Moisture Measurement Easier to Understand"
-              description="Many buyers do not need more theory. They need a clearer way to connect process pain points with a realistic measurement approach."
+              label="Who We Are"
+              title="A Practical Partner for Industrial Moisture Control"
+              description="We focus on helping plants move from delayed manual testing to continuous, process-level moisture visibility."
               align="left"
             />
             <p className="text-muted leading-relaxed">
-              The content in this site is organized around practical industrial
-              questions: where to measure, how quickly moisture changes, what
-              quality risks come from over-drying or excess residual moisture,
-              and how the measurement signal will actually be used on the line.
-              The goal is to make product pages, industry pages, and case-style
-              content more useful for real project discussions.
+              ALZRO provides online moisture measurement solutions for
+              industrial customers who need faster feedback from production
+              lines. Our products and application support are built around
+              practical questions: where the sensor should be installed, how the
+              material is presented, how quickly moisture changes, and how the
+              signal will be used by operators, PLC systems, or quality teams.
+            </p>
+            <p className="mt-4 text-muted leading-relaxed">
+              From near-infrared surface measurement to microwave bulk-moisture
+              monitoring, we help customers choose the right method for their
+              material and process. The goal is simple: reduce delayed manual
+              checks, stabilize product quality, avoid unnecessary over-drying,
+              and make moisture data useful in daily plant operation.
             </p>
           </div>
+
           <div className="grid grid-cols-2 gap-4">
             {[
-              { value: 60, suffix: "/s", label: "NIR Checks" },
-              { value: 80, suffix: "s", label: "Max Response" },
-              { value: 60, suffix: "%", label: "Range Ceiling" },
-              { value: 4, suffix: "", label: "Main Output Paths" },
+              { value: 60, suffix: "/s", label: "NIR Measurement Rate" },
+              { value: 80, suffix: "%", label: "Microwave Moisture Range" },
+              { value: 4, suffix: "", label: "Industrial Output Paths" },
+              { value: 18, suffix: "+", label: "Application Fields" },
             ].map((stat) => (
               <div
                 key={stat.label}
                 className="rounded-sm border border-border bg-surface p-6 text-center"
               >
                 <p className="text-3xl font-bold text-accent">
-                  <AnimatedCounter
-                    value={stat.value}
-                    suffix={stat.suffix}
-                  />
+                  <AnimatedCounter value={stat.value} suffix={stat.suffix} />
                 </p>
                 <p className="mt-1 text-sm text-muted">{stat.label}</p>
               </div>
@@ -101,21 +106,22 @@ export default function AboutPage() {
 
       <Section className="bg-surface">
         <SectionHeader
-          label="Our Values"
-          title="What Drives This Site"
+          label="What We Do"
+          title="Industrial Measurement, Application Engineering, and Integration"
+          description="Moisture measurement is not only a sensor choice. It is a project decision that connects material behavior, installation conditions, calibration, and plant control."
         />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {values.map((value) => (
+          {strengths.map((item) => (
             <div
-              key={value.title}
+              key={item.title}
               className="rounded-sm border border-border bg-white p-6 shadow-sm"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-sm bg-accent/10">
-                <value.icon className="h-6 w-6 text-accent" />
+                <item.icon className="h-6 w-6 text-accent" />
               </div>
-              <h3 className="mt-4 font-bold text-primary">{value.title}</h3>
+              <h3 className="mt-4 font-bold text-primary">{item.title}</h3>
               <p className="mt-2 text-sm text-muted leading-relaxed">
-                {value.description}
+                {item.description}
               </p>
             </div>
           ))}
@@ -123,21 +129,25 @@ export default function AboutPage() {
       </Section>
 
       <Section>
-        <SectionHeader label="Workflow" title="How We Think About Projects" />
+        <SectionHeader
+          label="Project Support"
+          title="How We Work With Customers"
+          description="A good online moisture project starts with the production problem, not only the instrument model."
+        />
         <div className="mx-auto max-w-2xl">
-          {milestones.map((milestone, i) => (
-            <div key={milestone.year} className="flex gap-6 pb-8 last:pb-0">
+          {workflow.map((item, i) => (
+            <div key={item.step} className="flex gap-6 pb-8 last:pb-0">
               <div className="flex flex-col items-center">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent px-2 text-[10px] font-bold text-white">
-                  {milestone.year}
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-accent px-2 text-xs font-bold text-white">
+                  {item.step}
                 </div>
-                {i < milestones.length - 1 && (
+                {i < workflow.length - 1 && (
                   <div className="mt-2 w-px flex-1 bg-border" />
                 )}
               </div>
               <div className="pt-2">
-                <p className="text-sm font-bold text-accent">{milestone.year}</p>
-                <p className="mt-1 text-sm text-primary">{milestone.event}</p>
+                <p className="text-sm font-bold text-accent">Step {item.step}</p>
+                <p className="mt-1 text-sm text-primary">{item.event}</p>
               </div>
             </div>
           ))}
@@ -146,7 +156,7 @@ export default function AboutPage() {
 
       <CTASection
         headline="Discuss Your Moisture Measurement Project"
-        description="Whether you are comparing methods, checking installation points, or preparing an RFQ, the next step is usually a clearer application discussion."
+        description="Tell us your material, process line, and control objective. We will help review whether NIR or microwave measurement is the better fit."
         primaryLabel="Contact Us"
         primaryHref="/contact"
       />
