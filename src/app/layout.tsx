@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { GoogleAnalytics } from "@/components/seo/GoogleAnalytics";
 import { JsonLd, organizationSchema } from "@/components/seo/JsonLd";
 import { createMetadata } from "@/lib/seo";
 import "./globals.css";
@@ -18,6 +19,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <GoogleAnalytics />
       </body>
     </html>
   );
