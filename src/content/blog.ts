@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "sinter-mix-moisture-control-granulation-permeability",
+    title: "Sinter Mix Moisture Control: Stabilizing Granulation and Bed Permeability",
+    excerpt:
+      "Why sinter-water control must follow ore blend and particle size, and how an online bulk-moisture signal can support more stable granulation and bed permeability.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-07-23",
+    readTime: "8 min",
+    tags: [
+      "sinter mix moisture control",
+      "iron ore granulation",
+      "sinter bed permeability",
+      "online microwave moisture measurement",
+      "ironmaking process control",
+      "bulk solids moisture",
+      "ore blend management",
+    ],
+  },
+  {
     slug: "carbon-black-pellet-drying-moisture-control",
     title: "Carbon Black Pellet Drying: Moisture Control Without Sacrificing Pellet Quality",
     excerpt:

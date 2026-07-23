@@ -223,6 +223,78 @@ function CarbonBlackPelletDryingArticle() {
   );
 }
 
+function SinterMixMoistureControlArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Why sinter-mix water is a process variable, not a fixed recipe number</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Before iron ore fines are charged to a sinter strand, they are blended with fluxes, fuel, and return fines, then granulated with water to form quasi-particles. The point of water addition is not simply to reach one percentage on a display. It is to create enough capillary binding for fine particles to adhere to coarser nuclei while preserving the voidage needed for gas to pass through the green bed.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The target must follow the actual blend. In a Kobe Steel study published in <SourceLink href="https://www.jstage.jst.go.jp/article/isijinternational/49/5/49_5_618/_article">ISIJ International</SourceLink>, the added moisture that maximized packed-bed permeability was below the saturation moisture for every ore tested when size distribution was held constant; adding more coarse particles also shifted the optimum toward lower moisture. That is a practical warning against copying a target from a different ore blend, season, or fines ratio.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: total water is not always water available for granulation</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Moisture that is absorbed into porous ore is not necessarily available at particle contacts to build stable granules. A 2018 <SourceLink href="https://www.jstage.jst.go.jp/article/isijinternational/58/8/58_ISIJINT-2018-141/_html/-char/en">ISIJ International granulation study</SourceLink> defines available granulation water as total water added minus water absorbed by the feed materials, and reports that a higher fraction near 0.1 mm tends to reduce permeability and increase the moisture needed for granulation. Incoming moisture, particle-size distribution, porosity, and blend composition therefore all belong in the control context.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Water distribution also has a time component. A review of iron-ore granulation research reports that the ores it cites reached 68% to 78% of final water saturation after 60 seconds of immersion, while complete saturation typically took 10<sup>5</sup> seconds. <SourceLink href="https://www.jstage.jst.go.jp/article/isijinternational/63/4/63_ISIJINT-2022-460/_html/-char/en">The review</SourceLink> uses this behavior to explain why ore texture and water migration matter during granulation. In plant terms, a sample or instrument reading taken immediately after spraying may not represent the same state as the material arriving at the strand.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">What the process impact looks like</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Too little available moisture can leave fines poorly attached and reduce bed permeability. Too much can over-wet the mix, deform granules, reduce voidage, and add water that must later be evaporated. The permeability response is usually a curve rather than a straight line: the 2018 study found permeability initially rose with added moisture, reached a maximum, then fell at higher moisture for the tested mixes.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The operating window can move when mixing changes. In a 2020 study of a 100% fine-grained iron-ore material, intensive mixing reduced the reported proper moisture consumption from 9.25% to 8.75% while improving granulation and sinter quality. <SourceLink href="https://www.sciencedirect.com/science/article/pii/S2238785420319037">That result</SourceLink> is not a recommended plant target; it is evidence that mixer action and water distribution can change the amount of water a specific blend needs.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a mixed, variable-depth sinter stream on a conveyor, start by evaluating a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-belt measurement is a logical fit when the control question is the average moisture through the moving layer rather than only the exposed surface. Load compensation should be included in the application review where bed depth varies, because a moisture signal that does not account for changing mass can confuse a thickness change with a water change.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> can be evaluated for a thin, even, exposed material layer where fast surface-trend information is the objective. It should not be assumed to represent the bulk of a deep or uneven sinter bed. Method selection should be based on the material presentation, dust and steam conditions, depth range, and the specific control decision—not a nominal accuracy figure alone.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Installation points that support a useful control loop</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>After water addition and primary mixing:</strong> use the trend to confirm whether the initial addition is moving with incoming-material changes.</li>
+        <li><strong>At granulator or mixer discharge:</strong> use a representative, settled material stream to judge the condition entering the sinter feed conveyor.</li>
+        <li><strong>Before strand feed:</strong> use as a verification point when transport, return-fines changes, or water migration could make the final feed differ from the earlier reading.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The <Link href="/industries/sinter-mix" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">ALZRO sinter-mix application page</Link> outlines these preparation, granulation, and bed-feed locations. At each candidate point, confirm belt coverage, material depth and segregation, chute geometry, vibration, metalwork clearance, dust buildup, and access for cleaning and reference sampling. A sensor must see a representative cross-section of the stream before its value can be used for water control.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and commissioning: connect the number to plant performance</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Calibrate against time-stamped, representative samples collected from the same stream and analyzed by the plant&apos;s approved moisture method. Document the wet-basis or dry-basis convention, transport delay between sensor and sample point, averaging window, and bed-depth range. Collect samples across normal operating conditions instead of fitting the model only around one convenient value.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        During commissioning, compare online moisture trends with permeability, mixer torque or power, suction conditions, granule-size observations, and sinter performance according to the plant&apos;s existing practice. Begin with operator guidance or a bounded advisory signal. Only consider automatic water trimming after the signal has remained stable through normal changes in ore source, return-fines rate, and weather. Revalidate the calibration when those material conditions change materially.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to evaluate</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Continuous moisture visibility does not replace granule-size checks, permeability testing, fuel control, or final sinter-quality testing. It provides an earlier input for keeping granulation near the plant&apos;s validated operating window. Used with disciplined operating rules, it can help teams identify moisture drift sooner, reduce trial-and-error adjustment after a blend change, and avoid carrying unnecessary water into the thermal process.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A sound project definition starts with the ore and return-fines recipe, incoming moisture variation, fines distribution, water-addition method, mixer residence time, belt depth, site conditions, reference method, and intended control action. Those facts determine whether an online moisture value will be a useful process variable rather than simply another number on the control screen.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.jstage.jst.go.jp/article/isijinternational/49/5/49_5_618/_article">Matsumura et al., ISIJ International 49 (2009), 618–624</SourceLink>. Ore-specific optimum moisture, saturation behavior, and particle-size effects.</li>
+        <li><SourceLink href="https://www.jstage.jst.go.jp/article/isijinternational/58/8/58_ISIJINT-2018-141/_html/-char/en">Zhou et al., ISIJ International 58 (2018)</SourceLink>. Available granulation water, particle-size distribution, and packed-bed permeability.</li>
+        <li><SourceLink href="https://www.jstage.jst.go.jp/article/isijinternational/63/4/63_ISIJINT-2022-460/_html/-char/en">Zhou et al., ISIJ International 63 (2023)</SourceLink>. Review of water migration, moisture capacity, and iron-ore granulation technology.</li>
+        <li><SourceLink href="https://www.sciencedirect.com/science/article/pii/S2238785420319037">Gan et al., Journal of Materials Research and Technology 9 (2020), 14443–14453</SourceLink>. Intensive mixing, water distribution, and fine-grained sinter-feed results.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -280,6 +352,8 @@ export default async function BlogPostPage({ params }: Props) {
             <WoodFiberboardArticle />
           ) : slug === "carbon-black-pellet-drying-moisture-control" ? (
             <CarbonBlackPelletDryingArticle />
+          ) : slug === "sinter-mix-moisture-control-granulation-permeability" ? (
+            <SinterMixMoistureControlArticle />
           ) : (
             paragraphs.map((paragraph, i) => (
               <p key={i} className="mb-6 text-base leading-relaxed text-primary/80">
