@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "dried-noodle-moisture-control-drying-curve",
+    title: "Dried Noodle Moisture Control: Managing the Drying Curve and Final Moisture",
+    excerpt:
+      "How noodle manufacturers can use continuous moisture trends to protect drying uniformity, reduce cracking risk, and verify a product-specific final-moisture target before packaging.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-07-27",
+    readTime: "9 min",
+    tags: [
+      "dried noodle moisture control",
+      "noodle drying curve",
+      "online NIR moisture measurement",
+      "instant noodle moisture",
+      "food drying process control",
+      "noodle crack prevention",
+      "final moisture verification",
+    ],
+  },
+  {
     slug: "sinter-mix-moisture-control-granulation-permeability",
     title: "Sinter Mix Moisture Control: Stabilizing Granulation and Bed Permeability",
     excerpt:

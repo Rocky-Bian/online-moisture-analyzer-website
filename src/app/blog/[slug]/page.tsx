@@ -295,6 +295,70 @@ function SinterMixMoistureControlArticle() {
   );
 }
 
+function DriedNoodleMoistureControlArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Why the drying curve matters as much as the final number</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Dried-noodle manufacture is a controlled water-removal process, not simply a final inspection step. As a noodle strand moves through a drying tunnel, moisture leaves the surface first and then migrates outward from the interior. Temperature, relative humidity, airflow, strand geometry, flour composition, and line loading all affect that balance. A study in <SourceLink href="https://www.mdpi.com/2304-8158/13/2/268">Foods</SourceLink> describes moisture content and water activity as strongly linked to texture transformation during Chinese dried-noodle drying, and notes that faster internal moisture diffusion at elevated temperature can create an overly hardened surface layer. The practical consequence is that a passing final average does not, by itself, prove that the drying process was uniform.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The product target must be tied to the relevant specification and market. For example, <SourceLink href="https://www.fao.org/input/download/standards/10658/CXS_249e.pdf">Codex CXS 249-2006</SourceLink> sets a maximum moisture content of 10% for fried instant noodles and 14% for non-fried instant noodles; it does not apply to pasta. For a separate U.S. procurement specification, <SourceLink href="https://www.ams.usda.gov/sites/default/files/media/CID%20Noodles%2C%20Egg%2C%20Enriched.pdf">USDA AMS enriched shelf-stable egg noodles</SourceLink> have a 13.00% maximum moisture requirement. These are examples, not universal production setpoints: each plant should use the legal, customer, formulation, and shelf-life requirements that govern its own product.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: a laboratory result arrives after the process has moved on</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A grab sample can establish the release value, but it is an intermittent result. It can miss short periods of under-drying after a humidity change, uneven airflow across a wide belt, a dryer-zone upset, or moisture pickup during cooling. It also provides limited warning when the outer surface dries faster than the strand interior. Research on dried spaghetti confirms that cracks formed during drying reduce commercial value and quality, which makes prevention and early process visibility more useful than finding defects only at final inspection.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Moisture content and water activity answer different questions. Moisture content is the mass of water in the product, while water activity describes the availability of that water. The <SourceLink href="https://www.mdpi.com/2304-8158/13/2/268">Foods study</SourceLink> reports that water activity can be a better predictor of texture change in practical testing. An online moisture instrument should therefore complement—not replace—the plant&apos;s validated water-activity, microbiological, sensory, and packaging verification program where those controls apply.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For exposed noodle strands or dough sheets travelling on a stable conveyor, a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> can be evaluated as a fast trend measurement. The most useful application is normally at the end of the main drying section, or after equilibration and cooling, where the signal represents the product sent to packaging. It should view a consistently covered, representative section of the belt rather than gaps, overlaps, or a single edge of the product flow.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        When the line uses a deep, dense bulk transfer rather than an exposed sheet or strand layer, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link> for a through-belt or chute installation. Microwave measurement can be a better fit when the control question is bulk moisture through a changing material layer. The right method depends on how the product is presented at the measurement point, not on a generic accuracy comparison.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Installation points that make the signal actionable</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>After the main drying zone:</strong> trend water removal before the product enters final conditioning, where operators can check the response to dryer temperature, humidity, airflow, or belt-speed changes.</li>
+        <li><strong>After equilibration or cooling:</strong> verify the moisture condition of material approaching packaging; this point can reveal whether the finished product differs from the earlier dryer-outlet trend.</li>
+        <li><strong>Before packaging:</strong> use a representative, stable product presentation for final online trending and targeted release sampling.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The <Link href="/industries/grain-noodle-processing" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">ALZRO dough sheet and dried noodle application page</Link> shows common locations from forming through final drying and packing. During the site survey, check optical stand-off distance, belt vibration, lane coverage, strand overlap, ambient light, dust or flour accumulation, cleaning access, and the transport time between the sensor and any reference-sample point.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and commissioning: keep the online value traceable to the approved method</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Define the reference method before fitting the online model. Codex CXS 249-2006 specifies an oven method at 105°C and reports moisture as loss in mass; it specifies two hours for fried instant noodles and four hours for non-fried noodles. A plant may be governed by another validated method, but it should document that method, its sample preparation, and whether results are reported on a wet basis or dry basis. Compare the online reading only with samples that come from the same material stream and are time-aligned for transport delay.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Build the calibration with representative samples across the normal product range: recipes, noodle thicknesses, flour changes, line speeds, drying conditions, and final moisture values. Keep routine checks after commissioning, especially after recipe or packaging changes. Begin with a displayed trend and operator response rules; introduce any automatic dryer adjustment only after the signal has proved stable through normal production variation and has been reviewed within the plant&apos;s food-safety and quality system.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to evaluate</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The immediate benefit of continuous measurement is earlier detection of drift, not a promise that a sensor alone will prevent every defect. Used with defined operating actions, an online trend can help a team investigate dryer-zone changes sooner, focus laboratory sampling where the trend moves, and avoid holding every product at an unnecessarily conservative drying margin. That supports more consistent texture, breakage control, and packaging readiness while protecting the plant&apos;s validated final-moisture target.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A useful project definition includes the noodle type, applicable product specification, normal moisture range, belt layout and coverage, strand or sheet geometry, dryer-zone configuration, cooling and packaging sequence, reference method, and intended operator or control-system response. Those facts determine whether a measurement point will provide a representative and actionable process signal.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.fao.org/input/download/standards/10658/CXS_249e.pdf">Codex CXS 249-2006, Standard for Instant Noodles</SourceLink>. Instant-noodle moisture limits and the specified oven determination method.</li>
+        <li><SourceLink href="https://www.ams.usda.gov/sites/default/files/media/CID%20Noodles%2C%20Egg%2C%20Enriched.pdf">USDA AMS, Noodles, Egg, Enriched, Shelf Stable</SourceLink>. U.S. procurement specification for 13.00% maximum moisture, analytical verification, and cracked-product limits.</li>
+        <li><SourceLink href="https://www.mdpi.com/2304-8158/13/2/268">Zhang et al., Foods 13 (2024), 268</SourceLink>. Moisture migration, water activity, drying conditions, and texture transformation in Chinese dried noodles.</li>
+        <li><SourceLink href="https://pubmed.ncbi.nlm.nih.gov/28067599/">Ogawa and Adachi, Journal of Food Engineering 207 (2017), 12–19</SourceLink>. Evidence that drying cracks in spaghetti reduce commercial value and quality.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -354,6 +418,8 @@ export default async function BlogPostPage({ params }: Props) {
             <CarbonBlackPelletDryingArticle />
           ) : slug === "sinter-mix-moisture-control-granulation-permeability" ? (
             <SinterMixMoistureControlArticle />
+          ) : slug === "dried-noodle-moisture-control-drying-curve" ? (
+            <DriedNoodleMoistureControlArticle />
           ) : (
             paragraphs.map((paragraph, i) => (
               <p key={i} className="mb-6 text-base leading-relaxed text-primary/80">
