@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "foundry-green-sand-moisture-control-compactability",
+    title: "Foundry Green Sand Moisture Control: From Water Percentage to Compactability",
+    excerpt:
+      "Why green-sand moisture needs to be managed with clay activity, temperature, and compactability—and how an online trend can support faster, more disciplined muller control.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-07-29",
+    readTime: "9 min",
+    tags: [
+      "foundry green sand moisture control",
+      "molding sand compactability",
+      "online NIR moisture measurement",
+      "bentonite green sand",
+      "foundry sand testing",
+      "sand casting quality",
+      "muller moisture control",
+    ],
+  },
+  {
     slug: "dried-noodle-moisture-control-drying-curve",
     title: "Dried Noodle Moisture Control: Managing the Drying Curve and Final Moisture",
     excerpt:

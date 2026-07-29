@@ -295,6 +295,73 @@ function SinterMixMoistureControlArticle() {
   );
 }
 
+function FoundryGreenSandMoistureControlArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Why water percentage is not the whole green-sand control problem</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Green sand is a working system of base sand, bentonite or another clay binder, water, and often carbonaceous or other additions. Water activates the clay so that it can bind the grains, but the same total water percentage can behave differently after a change in active clay, fines, return-sand temperature, new-sand addition, or mulling history. The <SourceLink href="https://www.afsinc.org/completed-afs-funded-research-projects-2018">American Foundry Society (AFS)</SourceLink> describes green-sand control as dynamic because water, clay, additives, and grain surface area all change during production. A useful moisture target is therefore a plant-specific operating window, not a number copied from a different foundry.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        This distinction matters at the molding machine. A foundry can have a moisture value that looks normal while compactability, green strength, permeability, or flow behavior has shifted. AFS identifies compactability as one of the industry&apos;s most widely used checks for confirming that discharged molding sand is adequately prepared before molding. Its sand-testing curriculum also lists separate moisture determination, active-clay, specimen-preparation, compression-strength, and wet-tensile procedures—evidence that moisture is important but not a stand-alone release test.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: water must be interpreted with clay and temperature</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        In bentonite-bonded sand, some water is held by the clay while some can remain more freely available. Foundry Management &amp; Technology reports that free water can contribute to penetration and surface defects, steam generation during pouring, and dimensional instability; it also notes that there is no accepted routine method to quantify the free-water-to-temper-water ratio. In other words, an online instrument can show total moisture quickly, but it cannot by itself diagnose every cause of a green-sand property change.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The moisture requirement also moves with clay level. The same technical review illustrates a 40 green-compression-strength example in which approximately 1.8% moisture was associated with 5% clay, about 3% with 7% clay, and more than 4.5% with 12% clay. These are illustrative relationships from one reference, not a recipe or production specification. They explain why a moisture controller should be commissioned against each foundry&apos;s own sand system, process temperature, and molding method.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Process impact: control the condition delivered to molding</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Moisture variation can begin with hot return sand, changing ambient humidity, delivery delay, or a production pause, then become visible only after the sand reaches the molding machine. In an AFS conference case study, the listed contributors included return-sand moisture fluctuations and no batch-weight measurement. A separate AFS presentation identifies temperature, humidity, delivery time, and production pauses as reasons that moisture and compactability can move between the muller and the molding line.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The practical consequence is not simply &ldquo;add water when the value is low.&rdquo; A change in moisture should trigger a structured check: verify sand temperature and batch mass, compare compactability and green properties, review active-clay or additive trends, then confirm that the response is reaching the point of use. For example, a materials study using AFS specimen preparation optimized one specific green-sand system at 3.125 wt% water and 8.33 wt% bentonite; it reported 40% compactability for river-bed sand and 32% for sea-beach sand. The contrast shows how base sand and formulation can alter the result even under controlled testing.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a representative, evenly distributed green-sand layer on a conveyor after the muller or cooler, evaluate a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> as a rapid total-moisture trend. The aim is to shorten the time between a changing return-sand condition and an operator&apos;s response; it is not to replace the foundry&apos;s compactability, strength, permeability, active-clay, or defect-analysis program.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The NIR method needs a stable optical presentation. Select a point with consistent belt coverage, limited segregation, an appropriate stand-off distance, and access to keep the viewing window clean. Where the control question is moisture through a deep or variable-depth bulk stream rather than the exposed surface, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link> and review bed-depth compensation. Method selection should follow material presentation and the control decision, not a brochure accuracy figure alone.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Installation and calibration checklist</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Measure after the condition is established:</strong> place the sensor after water addition and sufficient mulling or cooling, not immediately at a location where water is still unevenly distributed.</li>
+        <li><strong>Measure near the control decision:</strong> add a verification point near the molding machine if transport, storage, or temperature changes can make muller discharge unrepresentative.</li>
+        <li><strong>Time-align reference samples:</strong> pair the online value with samples from the same stream, accounting for belt travel and laboratory turnaround. Use the foundry&apos;s approved oven or infrared procedure; AFS lists both infrared and oven moisture methods for molding sand.</li>
+        <li><strong>Cover normal variation:</strong> collect calibration and verification data across return-sand temperatures, new-sand additions, clay/additive changes, and the normal moisture window—not only near one setpoint.</li>
+        <li><strong>Start with advisory control:</strong> verify repeatable direction and operating rules before automating water trims. Revalidate after material, additive, or process changes that materially affect the sand system.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The <Link href="/industries/sand-glass-fiber" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">ALZRO sand and glass-fiber application page</Link> outlines related bulk-material installation considerations. For a foundry project, also document conveyor geometry, material layer, dust, vibration, window-cleaning access, temperature, sampling location, and the PLC action expected from a moisture deviation.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and operating benefits to evaluate</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A credible benefit case is faster process visibility, not a promise that moisture sensing alone eliminates casting defects. When combined with compactability and sand-property testing, a continuous trend can help a team detect return-sand or muller drift earlier, target laboratory samples, and maintain a clearer record of the sand condition actually delivered to molding. That gives quality and process teams a better basis for investigating molding variation before it becomes a repeatable casting problem.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Before selecting a system, define the sand recipe, active-clay and additive controls, normal temperature and moisture ranges, muller and conveyor sequence, reference test method, response time, and the exact operator or control-system action. Those details turn an online moisture number into a useful part of green-sand control.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.afsinc.org/e-learning/sand-testing">American Foundry Society, Sand Testing</SourceLink>. AFS procedures for infrared and oven moisture determination, active clay, strength, and specimen preparation.</li>
+        <li><SourceLink href="https://www.afsinc.org/schedules/3867">American Foundry Society, 2022 Sand Casting Conference</SourceLink>. Compactability practice, line-to-molding variation, and the reported optical-analyzer case study.</li>
+        <li><SourceLink href="https://www.afsinc.org/completed-afs-funded-research-projects-2018">American Foundry Society, Completed Funded Research Projects</SourceLink>. Dynamic interaction of water, clay, additives, and sand grain surface area in green-sand control.</li>
+        <li><SourceLink href="https://www.foundrymag.com/molds-cores/article/21280808/classifying-h2o-in-green-sand">Ring, Foundry Management &amp; Technology (2024), Classifying Water in Green Sand</SourceLink>. Clay activation, free and temper water, and the clay-dependent moisture example.</li>
+        <li><SourceLink href="https://www.jstage.jst.go.jp/article/matertrans/advpub/0/advpub_MT-F2022003/_pdf">Pandya et al., Materials Transactions, Optimization of Sea Beach Sand Composition for Cast Iron Foundry Applications</SourceLink>. AFS-method test preparation and formulation-specific water, bentonite, and compactability results.</li>
+      </ul>
+    </>
+  );
+}
+
 function DriedNoodleMoistureControlArticle() {
   return (
     <>
@@ -418,6 +485,8 @@ export default async function BlogPostPage({ params }: Props) {
             <CarbonBlackPelletDryingArticle />
           ) : slug === "sinter-mix-moisture-control-granulation-permeability" ? (
             <SinterMixMoistureControlArticle />
+          ) : slug === "foundry-green-sand-moisture-control-compactability" ? (
+            <FoundryGreenSandMoistureControlArticle />
           ) : slug === "dried-noodle-moisture-control-drying-curve" ? (
             <DriedNoodleMoistureControlArticle />
           ) : (
