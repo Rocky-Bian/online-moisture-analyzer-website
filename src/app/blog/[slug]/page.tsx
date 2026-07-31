@@ -426,6 +426,74 @@ function DriedNoodleMoistureControlArticle() {
   );
 }
 
+function CalciumCarbonatePolymerCompoundingArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Why a dry-looking mineral still needs moisture control</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Ground and precipitated calcium carbonate are widely used mineral fillers in PVC, polyethylene, and other polymer compounds. For a high-filler formulation, moisture is not only a storage or housekeeping concern: water carried by the mineral, coating, polymer powder, or blend can become vapor at extrusion temperature. The result can be bubbles, voids, surface defects, or unstable processing rather than a visible problem at the bag-opening station.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A peer-reviewed <SourceLink href="https://doi.org/10.1016/j.powtec.2014.10.038">Powder Technology study</SourceLink> examined linear-low-density polyethylene compounds containing 45 and 55 wt.% stearic-acid-coated calcium carbonate. It found that moisture needed to be controlled through calcium-carbonate coating, polymer/mineral premixing, drying, and film generation; residual water evaporating during high-temperature processing produced macropores or holes that could cause rupture during stretching. This is strong evidence for process discipline, not a universal moisture specification: each resin, filler grade, coating system, and product must establish its own validated limit.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: the process sees a blend, not a single laboratory sample</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A lab result from a delivered bag is useful for incoming-material approval, but it may not describe the material entering the extruder hours later. Bulk solids can pick up moisture during silo storage, pneumatic or mechanical transfer, open blending, and shutdowns. The condition can also vary with particle size, surface treatment, temperature, relative humidity, and where water sits in the blend. Calcium carbonate is a fine powder with a reported specific gravity range of 2.7 to 2.95; its dust also requires practical controls during handling. <SourceLink href="https://www.osha.gov/chemicaldata/220">OSHA&apos;s calcium-carbonate record</SourceLink> lists a 15 mg/m³ 8-hour total-dust PEL and a 5 mg/m³ respirable-fraction PEL in the United States, reinforcing why the measurement installation must not add avoidable dust exposure or difficult maintenance.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Moisture is also not the only cause of extrusion defects. Filler dispersion, resin condition, stabilizer and lubricant choice, volatile contaminants, temperature profile, venting, screw design, and throughput can all affect the outcome. Treat an online moisture trend as an early process input that narrows troubleshooting and supports a documented operating response; do not use it as a substitute for compound testing or root-cause analysis.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Where moisture affects the compounding process</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Mineral drying and cooling:</strong> measure after the final drying stage or cooling section, where the value can guide dryer adjustments before product reaches storage.</li>
+        <li><strong>Silo discharge or day-bin feed:</strong> observe moisture close to dosing, especially when ambient conditions or storage time can change the condition after drying.</li>
+        <li><strong>Premix transfer to the extruder:</strong> trend the condition of the actual mineral/resin blend. This is useful when blend holding time or open handling creates a different risk than the delivered filler alone.</li>
+        <li><strong>Pre-extrusion verification:</strong> use an online value to focus lab sampling or hold decisions before a large quantity of compound enters a high-temperature process.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The control point should match the decision. A dryer-outlet signal is appropriate for drying control, while a point immediately before compounding is more relevant to protecting the extruder. If the plant needs both answers, two well-defined measurements can be more useful than one sensor installed at a convenient but unrepresentative location.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a thin, uniform, exposed layer of calcium carbonate or premix on a conveyor, evaluate a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> as a rapid surface-trend measurement. It is a practical option where a stable material presentation, controlled stand-off distance, and clean optical path can be maintained. A NIR result should be calibrated against samples from the same product stream, because surface coating, grade changes, particle-size distribution, and color can change the optical response.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a deep or variable-depth bulk stream where the question is average moisture through the material layer, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-belt or chute configuration can be a better engineering fit when a surface-only trend would not represent the bulk. Review bed-depth variation, loading compensation, metal clearances, conveying geometry, and the material&apos;s normal moisture range during the site survey. Select the method for the measurement task and material presentation, not from a nominal accuracy figure alone.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and installation considerations</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Define the reference value:</strong> agree whether the plant will compare against moisture by a validated oven, loss-on-drying, or Karl Fischer procedure. These methods can report different things when volatiles or surface-treatment components are present.</li>
+        <li><strong>Time-align samples:</strong> take samples from the stream seen by the sensor and account for conveying and laboratory delay. A nearby sample point that represents a different layer or blend is not a valid calibration pair.</li>
+        <li><strong>Cover normal variation:</strong> include filler grades, coating lots, moisture conditions, operating loads, and normal seasonal conditions. A model built around one dry production day is unlikely to remain representative.</li>
+        <li><strong>Protect the measurement window:</strong> plan for dust deposition, vibration, access for cleaning, safe isolation, and a consistent material layer. Dust-control requirements and maintenance access belong in the application review from the beginning.</li>
+        <li><strong>Commission in stages:</strong> first prove repeatable trend direction, then introduce alarm or operator guidance, and only later consider automatic drying or feed adjustments under the plant&apos;s approved quality procedures.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        ALZRO&apos;s <Link href="/industries/soda-ash-bicarbonate-calcium-carbonate" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">calcium-carbonate application page</Link> and <Link href="/industries/pvc-additives-fine-chemicals" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">PVC additives and fine-chemicals page</Link> show the relevant drying, transfer, and final-powder measurement stages. The final installation design should also document dust collection, hazardous-area requirements where applicable, product-contact constraints, and the PLC or quality action expected when the trend moves.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to evaluate</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The credible benefit of online moisture measurement is earlier visibility. It can help an operating team detect dryer drift, storage pickup, or a changed incoming condition before it becomes a large compounding run. With a validated target and clear response rules, that visibility can reduce unnecessary overdrying, focus laboratory checks on genuine excursions, and provide better traceability when a downstream extrusion or film-quality issue is investigated.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Begin an application review with the calcium-carbonate grade and coating, normal moisture range, resin and additive recipe, filler loading, dryer and storage layout, conveyor or chute geometry, reference method, dust conditions, and the exact quality or energy decision the signal must support. Those facts are what turn a moisture number into a controlled compounding variable.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://doi.org/10.1016/j.powtec.2014.10.038">Özen and Şimşek, Powder Technology 270 (2015), 320–328</SourceLink>. Calcium-carbonate moisture control from coating through high-filler polyethylene compounding and breathable-film generation.</li>
+        <li><SourceLink href="https://www.osha.gov/chemicaldata/220">Occupational Safety and Health Administration, Calcium Carbonate</SourceLink>. Physical description, dust sampling context, and U.S. exposure-limit reference.</li>
+        <li><SourceLink href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12429104/">PVC/CaCO₃ nanocomposite study, Polymer Testing (2025)</SourceLink>. Calcium-carbonate filler use in PVC and the importance of particle size, dispersion, and loading to composite performance.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -489,6 +557,8 @@ export default async function BlogPostPage({ params }: Props) {
             <FoundryGreenSandMoistureControlArticle />
           ) : slug === "dried-noodle-moisture-control-drying-curve" ? (
             <DriedNoodleMoistureControlArticle />
+          ) : slug === "calcium-carbonate-moisture-control-polymer-compounding" ? (
+            <CalciumCarbonatePolymerCompoundingArticle />
           ) : (
             paragraphs.map((paragraph, i) => (
               <p key={i} className="mb-6 text-base leading-relaxed text-primary/80">

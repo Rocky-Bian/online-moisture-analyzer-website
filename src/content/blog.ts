@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "calcium-carbonate-moisture-control-polymer-compounding",
+    title: "Calcium Carbonate Moisture Control for High-Filler Polymer Compounding",
+    excerpt:
+      "Why residual water in calcium-carbonate-filled compounds needs a defined control strategy—and how representative online measurement can support drying, storage, and extrusion decisions.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-07-31",
+    readTime: "9 min",
+    tags: [
+      "calcium carbonate moisture control",
+      "high filler polymer compounding",
+      "PVC additive moisture measurement",
+      "online NIR moisture analyzer",
+      "microwave bulk moisture measurement",
+      "calcium carbonate drying",
+      "polymer extrusion quality",
+    ],
+  },
+  {
     slug: "foundry-green-sand-moisture-control-compactability",
     title: "Foundry Green Sand Moisture Control: From Water Percentage to Compactability",
     excerpt:
