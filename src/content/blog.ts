@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "viscose-staple-fiber-moisture-regain-control",
+    title: "Viscose Staple Fiber Moisture Regain: From Dryer Outlet to Bale Control",
+    excerpt:
+      "Why viscose-fiber moisture must be managed as a dynamic process variable—and how a representative online measurement can support conditioning, bale consistency, and disciplined quality verification.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-08-02",
+    readTime: "8 min",
+    tags: [
+      "viscose staple fiber moisture",
+      "viscose moisture regain control",
+      "online NIR moisture measurement",
+      "textile fiber conditioning",
+      "fiber dryer outlet control",
+      "bale moisture consistency",
+      "regenerated cellulose fiber",
+    ],
+  },
+  {
     slug: "calcium-carbonate-moisture-control-polymer-compounding",
     title: "Calcium Carbonate Moisture Control for High-Filler Polymer Compounding",
     excerpt:

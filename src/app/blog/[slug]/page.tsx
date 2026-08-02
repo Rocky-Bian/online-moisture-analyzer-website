@@ -494,6 +494,72 @@ function CalciumCarbonatePolymerCompoundingArticle() {
   );
 }
 
+function ViscoseStapleFiberMoistureRegainArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Moisture regain is a control variable, not just a laboratory result</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Viscose staple fiber is a regenerated-cellulose material that exchanges water with the surrounding air. That means the condition at dryer discharge can change again during cooling, conveying, bale formation, warehousing, and opening at a downstream mill. In a controlled-humidity study of textile fibers, viscose absorbed 7.4% moisture after 30 minutes at 65% relative humidity, compared with 4.7% for cotton under the same test sequence. <SourceLink href="https://www.mdpi.com/2079-6439/11/5/47">The published study</SourceLink> also found that the humidity gradient changes the uptake rate. In plant terms, a fiber stream can continue moving toward a new equilibrium after it leaves the dryer.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        This is why a purchase, dispatch, or process target needs careful wording. ASTM D1909 lists commercial moisture regains and allowances used in textile transactions, but it explicitly says those values are defined for commercial purposes rather than experimentally determined material constants. Actual equilibrium regain can differ with material history and finish content. <SourceLink href="https://store.astm.org/d1909-13r20.html">ASTM D1909</SourceLink> is therefore useful context for weight and contract discussions, not a universal dryer setpoint for every viscose grade, finish, bale package, or customer specification.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: the sensor must see representative fiber</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Loose fibers are compressible and can present an uneven, intermittently covered surface. A reading taken over gaps, a single edge of a tow, or a momentary thick clump may be real for that small area but not representative of the fiber entering the next operation. Dryer non-uniformity, web thickness, air distribution, finish application, cooling-air humidity, and conveying residence time can all add variation between a convenient mounting point and the bale press.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The number itself also needs an agreed basis. Moisture content normally relates water mass to the as-received mass, while moisture regain relates water mass to dry mass; they are not numerically interchangeable. For reference testing, ASTM D2654 covers moisture content, pickup, equilibrium moisture, and regain in textiles. Its routine in-plant oven procedure uses ambient air heated to 105°C, and it cautions that when the evaporated loss is not known to be entirely water, the technically correct result is “volatiles loss.” <SourceLink href="https://store.astm.org/d2654-22.html">That distinction in ASTM D2654</SourceLink> is particularly relevant when a fiber finish or another volatile component is present.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Where moisture affects the viscose-fiber process</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Dryer outlet:</strong> use a rapid trend to identify a change in water removal while drying conditions can still be adjusted.</li>
+        <li><strong>Cooling and conditioning:</strong> watch for regain or uneven cooling before fiber is compacted into bales, especially where ambient air conditions change by shift or season.</li>
+        <li><strong>Before bale formation:</strong> verify the condition of the material that determines bale mass, package consistency, and the starting state for downstream opening or blending.</li>
+        <li><strong>At bale release:</strong> use online data to target reference samples and investigate exceptions; it should complement, not replace, the approved release test.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The intended decision should determine the point. A dryer-outlet instrument supports thermal-process control; a point after cooling and conditioning is more relevant to bale quality. If the plant needs both answers, two clearly defined measurements may be more useful than one convenient installation. ISO 139:2005, reconfirmed in 2025, defines the standard atmosphere used for conditioning and testing textiles, which reinforces the need to record the environmental conditions around any reference test. <SourceLink href="https://www.iso.org/standard/35179.html">ISO 139:2005</SourceLink> does not turn that test atmosphere into an operating target for a production line.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where fibers travel as a stable, evenly presented web or layer, a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> can be evaluated for fast surface-trend measurement. The application review should confirm consistent stand-off distance, usable field of view, web coverage, vibration, fiber fly, lighting, and access for cleaning the optical window. NIR is most useful when the exposed fiber surface is representative of the control decision; it should not be assumed to describe a deep, compacted bale.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        If the control question is average moisture through a dense, variable-depth stream, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link> for the actual conveyor or chute geometry. Method selection should start with fiber presentation and sampling representativeness, not a generic accuracy comparison. The <Link href="/industries/viscose-staple-fiber" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">ALZRO viscose staple-fiber application page</Link> shows the practical sequence from fiber drying through cooling, transfer, and bale release.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and commissioning: make the online signal traceable</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Define the reference method and basis:</strong> document moisture content, regain, or volatiles loss; state the calculation basis, conditioning rules, sample preparation, and accepted laboratory method.</li>
+        <li><strong>Sample the same material stream:</strong> time-align samples with the sensor location and account for transport delay. A bale-core sample cannot automatically validate a dryer-outlet reading.</li>
+        <li><strong>Cover operating variation:</strong> include fiber denier and cut length, finish level, line speed, dryer settings, web mass, cooling conditions, and normal seasonal humidity changes.</li>
+        <li><strong>Maintain the measuring environment:</strong> plan cleaning and inspection for fiber fly, window fouling, vibration, and changing material presentation before using the signal for alarms or control.</li>
+        <li><strong>Commission in stages:</strong> first demonstrate trend direction and repeatability, then introduce operator response rules; consider automatic adjustment only after performance is proven across normal production changes.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to evaluate</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Online moisture visibility cannot set a customer specification, prove a contractual commercial allowance, or replace controlled conditioning and laboratory verification. Its credible value is earlier detection of dryer drift and post-dryer regain. With a validated operating window, clear response rules, and representative sampling, the trend can help teams avoid using an unnecessarily conservative drying margin, focus lab checks on meaningful excursions, and better document the condition of fiber approaching bale release.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A sound project definition includes the viscose grade, denier and cut length, finish chemistry, normal moisture range, dryer and cooling arrangement, conveyor coverage, fiber depth, local humidity, reference method, sample-point layout, and the action expected when the signal moves. Those details determine whether the online value becomes an actionable control input rather than another isolated number on the screen.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://store.astm.org/d1909-13r20.html">ASTM D1909-13(2020), Standard Tables of Commercial Moisture Regains and Commercial Allowances for Textile Fibers</SourceLink>. Scope, commercial-weight purpose, and limits of commercial-regain values.</li>
+        <li><SourceLink href="https://store.astm.org/d2654-22.html">ASTM D2654-22, Standard Test Methods for Moisture in Textiles</SourceLink>. Moisture metrics, routine in-plant oven procedure, and the distinction between moisture and volatiles loss.</li>
+        <li><SourceLink href="https://www.iso.org/standard/35179.html">ISO 139:2005, Textiles — Standard atmospheres for conditioning and testing</SourceLink>. Current standard-atmosphere reference for textile conditioning and testing.</li>
+        <li><SourceLink href="https://www.mdpi.com/2079-6439/11/5/47">Khan et al., Fibers 11 (2023), 47</SourceLink>. Dynamic humidity response and reported 30-minute moisture uptake for viscose, wool, cotton, and polyester fabrics.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -559,6 +625,8 @@ export default async function BlogPostPage({ params }: Props) {
             <DriedNoodleMoistureControlArticle />
           ) : slug === "calcium-carbonate-moisture-control-polymer-compounding" ? (
             <CalciumCarbonatePolymerCompoundingArticle />
+          ) : slug === "viscose-staple-fiber-moisture-regain-control" ? (
+            <ViscoseStapleFiberMoistureRegainArticle />
           ) : (
             paragraphs.map((paragraph, i) => (
               <p key={i} className="mb-6 text-base leading-relaxed text-primary/80">
