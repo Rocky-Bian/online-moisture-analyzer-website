@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "ceramic-press-feed-moisture-silo-equalization",
+    title: "Ceramic Press-Feed Moisture: Why Silo Equalization Matters After Spray Drying",
+    excerpt:
+      "A practical guide to controlling the moisture and distribution of spray-dried ceramic powder between dryer discharge and press feed, with calibration and installation considerations for online measurement.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-08-04",
+    readTime: "8 min",
+    tags: [
+      "ceramic press feed moisture",
+      "spray dried ceramic powder",
+      "ceramic powder silo equalization",
+      "online NIR moisture measurement",
+      "microwave bulk moisture measurement",
+      "porcelain stoneware processing",
+      "green tile density control",
+    ],
+  },
+  {
     slug: "viscose-staple-fiber-moisture-regain-control",
     title: "Viscose Staple Fiber Moisture Regain: From Dryer Outlet to Bale Control",
     excerpt:

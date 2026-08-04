@@ -560,6 +560,75 @@ function ViscoseStapleFiberMoistureRegainArticle() {
   );
 }
 
+function CeramicPressFeedMoistureArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Press-feed moisture is a forming variable, not only a dryer result</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Spray drying turns a ceramic slip into flowable granules, but the drying stage is not the end of moisture control. The powder still has to cool, move through collection equipment, equalize in storage, flow through hoppers, fill a die, and compact into a green body. For porcelain stoneware, published process descriptions commonly place atomized-powder moisture around 5% to 7% before pressing. That is useful context, not a universal setpoint: the right window depends on body composition, binder system, granule-size distribution, press recipe, tile format, and the plant&apos;s own quality specification. <SourceLink href="https://www.sciencedirect.com/science/article/pii/S0032591023008112">A 2023 Powder Technology study</SourceLink> associates the 5% to 7% range with industrial porcelain-stoneware processing and notes that uneven powder preparation or moisture distribution can lead to density variation and dimensional distortion.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The practical objective is therefore not simply to make the average number look right at the dryer outlet. It is to deliver a representative, stable powder condition to the press. A granule stream that is still redistributing moisture or segregating by size can present a different condition at press feed than the value recorded at collection. That gap is where an online trend, correctly installed and validated, becomes useful.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: averages can conceal granule-to-granule variation</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Ceramic powder is a bulk solid, not a uniform liquid. Granule size, moisture, temperature, shape, fines content, and storage history can all vary at the same time. A laboratory sample can confirm a batch value, but a single grab sample may not reveal whether fine and coarse fractions carry different moisture or whether the powder has reached a stable state after spray drying.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        This is not merely theoretical. A 2024 industrial-data model for porcelain stoneware reported an initial 3.19 percentage-point moisture difference between coarse and fine granules after spray drying. In that study, the difference reduced to 1.62 percentage points after 24 hours of silo storage and 0.88 after 48 hours; the authors concluded that at least 24 hours of storage was required for temperature and moisture stabilization in the investigated process. <SourceLink href="https://tore.tuhh.de/entities/publication/1b6fe6f9-ff96-4983-90e8-d4ef6921ef0e">The published record and abstract</SourceLink> are valuable commissioning context, but they do not prescribe a universal holding time for every ceramic body, silo, climate, or production schedule.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Where moisture variation shows up in the process</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Spray-dryer discharge:</strong> identify a change in evaporation or feed condition early, while operators can investigate atomization, inlet/outlet conditions, or slurry consistency.</li>
+        <li><strong>Silo inlet and residence:</strong> distinguish fresh powder from material that has had time to cool and equalize; track whether a change coincides with a fill sequence or residence-time change.</li>
+        <li><strong>Silo outlet or transfer conveyor:</strong> measure the material that is actually approaching the press, while watching for segregation, rat-holing, or non-representative stream geometry.</li>
+        <li><strong>Press hopper:</strong> use a final trend point when the control decision is die filling and green-body consistency rather than dryer performance alone.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Powder rheology matters alongside moisture. A Journal of the European Ceramic Society study of twenty industrial spray-dried powders found that flow behavior reflects granule characteristics and that coarser, irregular agglomerates can influence flow and early compaction. <SourceLink href="https://www.sciencedirect.com/science/article/pii/S0955221918302541">Its results</SourceLink> are a useful reminder that moisture is an important process signal, but not the only explanation for a filling or density problem.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For an exposed, reasonably even layer of ceramic powder on a conveyor, a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> can be considered for rapid surface-trend measurement. It is most defensible where the top surface is consistently covered, the stand-off distance is controlled, and the surface is representative of the operating decision. The site review should confirm layer thickness, belt speed, vibration, dust, product temperature, window-cleaning access, and the effect of exposed belt or changing background.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where the control question is total moisture through a deeper or variable powder bed, review a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link> for the actual conveyor or chute configuration. It can be a better fit when bed depth varies and the measurement must represent the bulk layer rather than only its surface. The <Link href="/industries/ceramics-mineral-powders" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">ceramics and mineral powders application page</Link> outlines typical points from dryer discharge through powder collection and press feed. Instrument selection should follow material presentation and the action the signal must support, rather than a generic accuracy comparison.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and installation: make the trend representative</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Define the reference method:</strong> document the approved oven, moisture balance, or other laboratory method; state whether results are on a wet or dry basis and keep that basis consistent.</li>
+        <li><strong>Time-align samples:</strong> collect representative samples at the same location as the sensor and account for transport delay from dryer, silo, and conveyor. A press-hopper sample cannot automatically validate a dryer-outlet reading.</li>
+        <li><strong>Cover normal production variation:</strong> include body recipes, color bodies, recycled material, granule distribution, temperature, line rate, normal moisture range, and changes in silo residence time.</li>
+        <li><strong>Control the presentation:</strong> install over a stable, full stream where possible. Verify belt exposure, layer profile, buildup, vibration, dust, and any condition that changes what the sensor sees.</li>
+        <li><strong>Commission in stages:</strong> first demonstrate repeatable trend direction against reference samples; then define alarms and operator response. Consider automatic adjustment only after performance is proven across normal recipes and operating conditions.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        NIST&apos;s review of advanced-ceramic powder characterization identifies moisture content, binder content, bulk density, flow rate, green-body strength, and particle dispersion as related characterization concerns. <SourceLink href="https://www.nist.gov/publications/assessment-powder-characterization-methods-advanced-ceramics">That NIST publication</SourceLink> supports a broader commissioning practice: when press performance moves, investigate the powder system rather than attributing every excursion to moisture alone.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to evaluate</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Online moisture measurement does not replace laboratory release testing or solve a powder-rheology problem by itself. Its credible value is earlier visibility: operators can see dryer drift, changes after silo handling, or a press-feed shift before relying on delayed sampling. With a validated target window and clear response rules, the data can help teams avoid unnecessary drying margin, direct reference checks toward real excursions, and build a stronger link between powder condition, press response, and green-body consistency.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A useful application review records the body composition, normal moisture range, granule-size distribution, powder temperature, dust conditions, belt or chute geometry, layer thickness, silo arrangement and residence time, reference method, sample-point layout, and intended response to a signal change. Those details turn an online number into a decision-ready process measurement.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.sciencedirect.com/science/article/pii/S0032591023008112">Santos et al., Powder Technology 424 (2023), “Moisture sorption isotherm and effective diffusion coefficient of porcelain stoneware spray-dried powder”</SourceLink>. Industrial processing context, 5% to 7% atomized-powder moisture, and risks from uneven powder preparation.</li>
+        <li><SourceLink href="https://tore.tuhh.de/entities/publication/1b6fe6f9-ff96-4983-90e8-d4ef6921ef0e">Santos et al., Powder Technology 444 (2024), “Phenomenological model of moisture redistribution in porcelain stoneware spray-dried powder stored in silo”</SourceLink>. Industrial silo stabilization and measured coarse/fine moisture-difference data.</li>
+        <li><SourceLink href="https://www.sciencedirect.com/science/article/pii/S0955221918302541">Zanelli et al., Journal of the European Ceramic Society 39 (2019), “Characteristics and rheological behaviour of spray-dried powders for porcelain stoneware slabs”</SourceLink>. Granule characteristics, flowability, and early compaction context.</li>
+        <li><SourceLink href="https://www.nist.gov/publications/assessment-powder-characterization-methods-advanced-ceramics">NIST, “Assessment of Powder Characterization Methods for Advanced Ceramics”</SourceLink>. Related powder-characterization parameters for advanced-ceramics process evaluation.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -627,6 +696,8 @@ export default async function BlogPostPage({ params }: Props) {
             <CalciumCarbonatePolymerCompoundingArticle />
           ) : slug === "viscose-staple-fiber-moisture-regain-control" ? (
             <ViscoseStapleFiberMoistureRegainArticle />
+          ) : slug === "ceramic-press-feed-moisture-silo-equalization" ? (
+            <CeramicPressFeedMoistureArticle />
           ) : (
             paragraphs.map((paragraph, i) => (
               <p key={i} className="mb-6 text-base leading-relaxed text-primary/80">
