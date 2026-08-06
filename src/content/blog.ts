@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "gypsum-calcination-free-water-crystal-water-control",
+    title: "Gypsum Calcination Moisture Control: Separating Free Water from Crystal Water",
+    excerpt:
+      "A technical guide to measuring gypsum through drying and calcination, defining a useful reference value, and using online trends without confusing surface moisture with water of crystallization.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-08-06",
+    readTime: "9 min",
+    tags: [
+      "gypsum calcination moisture control",
+      "gypsum free water measurement",
+      "gypsum crystal water",
+      "stucco quality control",
+      "online NIR moisture analyzer",
+      "microwave bulk moisture measurement",
+      "gypsum wallboard process",
+    ],
+  },
+  {
     slug: "ceramic-press-feed-moisture-silo-equalization",
     title: "Ceramic Press-Feed Moisture: Why Silo Equalization Matters After Spray Drying",
     excerpt:

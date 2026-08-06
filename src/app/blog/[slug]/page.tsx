@@ -629,6 +629,74 @@ function CeramicPressFeedMoistureArticle() {
   );
 }
 
+function GypsumCalcinationMoistureArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">The first control decision: which water is being measured?</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Gypsum processing has a measurement problem that is easy to oversimplify. Material arriving from a mine, a scrubber, or a filter can carry <strong>free water</strong> on and between particles. The gypsum mineral itself also carries <strong>water of crystallization</strong>. These are not interchangeable process variables. A dryer, dewatering step, or stockpile-control point is usually concerned with free water; a calciner is deliberately changing the mineral&apos;s hydration state.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The distinction is substantial, not academic. Pure gypsum is calcium sulfate dihydrate (CaSO<sub>4</sub>·2H<sub>2</sub>O), with 20.9% water by mass according to the <SourceLink href="https://pubs.usgs.gov/bul/0223/report.pdf">U.S. Geological Survey&apos;s gypsum reference</SourceLink>. The EPA&apos;s gypsum-manufacturing background document describes calcination for plaster and wallboard as removing three quarters of that chemically bound water to form hemihydrate (stucco). For pure gypsum, that reaction corresponds to about 15.7% of the incoming mineral mass before any free water is considered. In production, impurities, synthetic-gypsum source, particle size, and the actual phase mix mean that this calculation is context—not a plant setpoint.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Why a single “moisture” number can mislead</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        If a raw-gypsum measurement rises, the cause may be wetter filter cake, a change in stockpile exposure, a feed-source shift, or a different particle-size distribution. At calciner discharge, a changing signal can instead indicate a change in residual free water, hydration state, temperature, fines, or the material background seen by the sensor. Treating all of those changes as one generic percent moisture risks adjusting fuel rate, feed rate, or drying time for the wrong reason.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        This is why gypsum projects should start with an agreed measurand. Examples include “free water in filter cake before calcination,” “total instrument response correlated to the plant&apos;s approved incoming-material method,” or “a validated post-calciner quality trend.” The laboratory method, sample temperature, sampling location, and reporting basis must be written down before an online value is placed in a control loop. ASTM maintains <SourceLink href="https://store.astm.org/c0471m-20a.html">C471M, Standard Test Methods for Chemical Analysis of Gypsum and Gypsum Products</SourceLink>, including moisture-balance analysis; plants should use the applicable revision and their own product specification to define the reference method.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Match the method to material presentation and the operating decision. On an exposed, reasonably even layer of cooled gypsum rock, powder, or filter-cake material, an <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> can provide fast non-contact trend data where a clean optical path and stable stand-off distance are practical. It is most useful when calibrated to representative samples of the same raw material and used to identify feed changes early.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a deep, dense, or variable bed on a conveyor, a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link> deserves evaluation because it is designed to measure through the material layer and can use load compensation. That does not remove the gypsum-specific calibration task: phase chemistry and the plant&apos;s chosen laboratory definition still govern what the displayed value means. Instrument selection should follow the control question, not a preference for a particular sensing technology.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A practical two-point strategy is often more informative than one sensor. Measure incoming free-water variation before the thermal process, then use a separate, validated trend at a later point to observe the condition delivered to grinding, storage, or board/plaster mixing. The <Link href="/industries/ceramics-mineral-powders" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">ceramics and mineral-powders application page</Link> outlines the same general principle: place measurement where the signal can support a real operating decision rather than where it is simply convenient to mount a device.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Installation points and conditions to review</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>After dewatering, before calcination:</strong> quantify feed variability so operators can separate wet-cake changes from calciner performance.</li>
+        <li><strong>After drying but before grinding or a hot calciner:</strong> use only if temperature, dust, access, and material presentation permit a stable installation and safe maintenance.</li>
+        <li><strong>At cooled calcined-product transfer:</strong> trend the material that will enter storage, blending, or the board/plaster process; do not assume it is a direct phase-analysis result.</li>
+        <li><strong>At silo discharge or mixer feed:</strong> look for moisture pickup, segregation, or storage effects that a discharge measurement upstream may not show.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Complete the site survey with belt coverage, bed depth, particle-size range, background material, material temperature, dust loading, vibration, optical-window cleaning access, electrical classification, and sample-collection safety. For a microwave installation, also document belt geometry and the full range of material loading. For NIR, document the usual material surface, viewing angle, stand-off distance, and any risk of deposits on the window.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and commissioning: create a value operators can trust</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Build the calibration from samples taken from the exact stream and time window seen by the sensor. Cover normal wet and dry conditions as well as source changes, particle-size shifts, and realistic temperature variation. Preserve the time stamp, conveyor travel time, laboratory method, and material identifier for every paired sample. A sample from a nearby bin or a later shift cannot validate an online reading from a moving process stream.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        During commissioning, first prove trend direction and repeatability before enabling automatic control. Review online-versus-lab residuals by feed source and operating state; if a phase change or source change creates a bias, treat it as a model-management issue rather than averaging it away. A 2023 industrial-calciner study in the <SourceLink href="https://www.scielo.org.za/scielo.php?pid=S2225-62532023001000005&amp;script=sci_arttext">Journal of the Southern African Institute of Mining and Metallurgy</SourceLink> likewise evaluated gypsum quality against phase analysis, reinforcing that a process quality indicator needs a defined relationship to material phase—not merely a convenient sensor signal.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to evaluate</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Online measurement does not replace chemical or phase analysis, but it can shorten the time between a feed disturbance and an operator response. With disciplined sampling and response rules, a plant can distinguish incoming wetness from thermal-process drift sooner, target laboratory checks at real excursions, and reduce the temptation to carry an unnecessarily conservative drying margin. Those are operational opportunities to validate with site data, not universal savings claims.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a gypsum application review, provide the source and form of gypsum, free-water range, phase target, product route, particle-size distribution, temperature, conveyor or chute geometry, dust conditions, laboratory method, and the decision to be made from the online signal. This converts “measure moisture” into a clear and testable control objective.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://pubs.usgs.gov/bul/0223/report.pdf">U.S. Geological Survey, Bulletin 223: Geology, Technology, and Statistics of Gypsum</SourceLink>. Gypsum composition and the 20.9% water-of-crystallization value for pure gypsum.</li>
+        <li><SourceLink href="https://www.epa.gov/air-emissions-factors-and-quantification/ap-42-fifth-edition-volume-i-chapter-11-mineral-products-0">U.S. EPA AP-42, Chapter 11.16: Gypsum Manufacturing</SourceLink>. Official gypsum-manufacturing reference and supporting background documentation for calcination.</li>
+        <li><SourceLink href="https://store.astm.org/c0471m-20a.html">ASTM C471M, Standard Test Methods for Chemical Analysis of Gypsum and Gypsum Products</SourceLink>. Laboratory-method framework; confirm the applicable licensed revision for production use.</li>
+        <li><SourceLink href="https://www.scielo.org.za/scielo.php?pid=S2225-62532023001000005&amp;script=sci_arttext">Van der Walt et al. (2023), Real-time gypsum quality estimation in an industrial calciner</SourceLink>. Industrial-calciner quality estimation and phase-analysis context.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -698,6 +766,8 @@ export default async function BlogPostPage({ params }: Props) {
             <ViscoseStapleFiberMoistureRegainArticle />
           ) : slug === "ceramic-press-feed-moisture-silo-equalization" ? (
             <CeramicPressFeedMoistureArticle />
+          ) : slug === "gypsum-calcination-free-water-crystal-water-control" ? (
+            <GypsumCalcinationMoistureArticle />
           ) : (
             paragraphs.map((paragraph, i) => (
               <p key={i} className="mb-6 text-base leading-relaxed text-primary/80">
