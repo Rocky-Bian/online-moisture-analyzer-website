@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "wood-chip-boiler-fuel-moisture-control-wet-basis",
+    title: "Wood-Chip Boiler Fuel Moisture Control: Why Wet-Basis Measurement Matters",
+    excerpt:
+      "A practical guide to defining wood-chip moisture on the right basis, choosing a representative online measurement point, and using continuous data to protect boiler fuel consistency without treating one target as universal.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-08-10",
+    readTime: "9 min",
+    tags: [
+      "wood chip moisture control",
+      "biomass boiler fuel moisture",
+      "wet basis moisture measurement",
+      "online microwave moisture measurement",
+      "wood chip drying control",
+      "biomass fuel quality",
+      "bulk solids moisture monitoring",
+    ],
+  },
+  {
     slug: "gypsum-calcination-free-water-crystal-water-control",
     title: "Gypsum Calcination Moisture Control: Separating Free Water from Crystal Water",
     excerpt:

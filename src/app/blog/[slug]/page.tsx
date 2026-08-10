@@ -697,6 +697,68 @@ function GypsumCalcinationMoistureArticle() {
   );
 }
 
+function WoodChipBoilerFuelMoistureArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Start by defining moisture on the right basis</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Wood-chip fuel is bought, stored, conveyed, and fired as an as-received bulk material, so its moisture definition must be unambiguous. ISO 18134-1:2022 specifies that the as-received moisture content of solid biofuels is reported on a <strong>wet basis</strong>: water mass divided by the total mass of the test sample. <SourceLink href="https://www.iso.org/standard/83191.html?browse=tc">The ISO reference-method summary</SourceLink> also identifies oven drying as the method to use when high precision is needed.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Wet-basis and dry-basis results are both useful, but they are not the same number. A one-tonne as-received chip sample at 40% wet-basis moisture contains 0.4 tonne of water and 0.6 tonne of dry solids; expressed on a dry basis, that is 66.7% moisture. The calculation is simple, but a wet/dry-basis mix-up can create a false alarm, a misleading purchase comparison, or the wrong dryer and boiler response. Put the basis in the PLC tag, laboratory report, trend screen, and supplier specification—not only in a commissioning spreadsheet.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The process impact: water changes the fuel delivered to the boiler</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Water has to be heated and evaporated before combustible dry matter can release useful heat. Forest Research notes that high-moisture biomass has lower net energy density by mass and by volume, and that water in a combustion system can reduce combustion temperature below its optimum. The same source links off-spec fuel to incomplete combustion, condensable deposits, particulate emissions, corrosion, and operational problems. <SourceLink href="https://www.forestresearch.gov.uk/tools-and-resources/fthr/biomass-energy-resources/fuel/woodfuel-production-and-supply/woodfuel-processing/effect-of-moisture-content/">Its moisture-content guidance</SourceLink> is a useful reminder that an online value should support combustion management, not simply fuel accounting.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        There is no universal moisture target. Boiler design, fuel species mix, chip-size distribution, ash, storage arrangement, feed system, emissions controls, and operating load all matter. Forest Research reports that freshly harvested wood commonly contains about 50% to 60% moisture on a wet basis, while many wood-chip boilers are designed around roughly 30% to 35%; it also notes that some systems are engineered for greener fuel. <SourceLink href="https://www.forestresearch.gov.uk/tools-and-resources/fthr/biomass-energy-resources/fuel/woodfuel-production-and-supply/woodfuel-processing/">That operating context</SourceLink> is not a setpoint—use the boiler supplier&apos;s fuel specification and site operating data to establish the permitted range.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: a stockpile average is not a conveyor measurement</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Chip moisture can shift with tree species, harvesting season, rainfall, drainage, pile age, air flow, chip geometry, and re-wetting during open storage. A grab sample near the top of a pile may be useful for an incoming-fuel check but may not describe the material on the live-floor discharge several hours later. In a moving stream, chip size, fines, bed depth, segregation, and changing belt coverage can all affect how representative a local reading is.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Separate the questions before selecting an instrument: Is the aim to verify delivered fuel, stabilize a dryer outlet, blend wet and dry chips, anticipate boiler heat-input variation, or investigate a storage problem? A sensor position that is useful for dryer control may be too early for firing control; a point just before the boiler may be better for feed-forward action but cannot explain where the moisture change originated. For a wood-materials process perspective, see ALZRO&apos;s <Link href="/industries/wood-fiber-board-materials" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">wood fiber and board-materials application page</Link>.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a deep, variable-depth layer of wood chips on a conveyor, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-belt or chute arrangement is designed to evaluate the material layer rather than only an exposed surface, and load compensation should be reviewed where bed depth changes. It is a sensible starting point when the control decision needs a bulk-stream value close to dryer discharge, fuel blending, or boiler feed.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where chips or fines form a stable, evenly presented, exposed layer and the need is rapid surface-trend feedback, a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> can also be evaluated. It needs a clear optical path, stable stand-off distance, representative coverage, and a practical cleaning plan. NIR and microwave are not interchangeable: choose the method for the material presentation and control question, then compare it with the plant&apos;s approved reference method. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">measurement-technology overview</Link> explains the general distinction between surface-oriented optical measurement and through-layer microwave measurement.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Installation, calibration, and control-loop considerations</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Choose a representative point:</strong> document the conveyor width, bed-depth range, chip-size distribution, fines level, metal clearance, belt construction, and any material segregation before selecting a location.</li>
+        <li><strong>Define the reference method:</strong> use the plant&apos;s approved oven method and report wet basis consistently. ISO 18134-1:2022 is a useful reference-method framework for solid biofuels; follow the applicable site and contractual procedure.</li>
+        <li><strong>Time-align samples:</strong> pair the laboratory result with the same moving material observed by the instrument. Account for conveyor travel, sample preparation, and lab turnaround rather than matching a later result to an earlier online value.</li>
+        <li><strong>Cover normal fuel variation:</strong> calibrate across the expected species mix, moisture range, chip sizes, loading levels, and seasonal conditions. A model built only with dry, uniform material will not describe wet, mixed deliveries reliably.</li>
+        <li><strong>Commission in stages:</strong> prove direction and repeatability first, then introduce operator guidance or blending/dryer actions. Consider automated boiler feed-forward only after the signal performs reliably through normal operating variation.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to evaluate</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Continuous moisture data cannot replace a boiler&apos;s fuel specification, combustion analysis, safety system, or laboratory acceptance test. Its credible value is earlier visibility of a changing fuel stream. With a defined wet-basis reference and clear operating response, a team can identify wetter deliveries or storage effects sooner, target laboratory checks at genuine excursions, improve fuel-blending decisions, and avoid running a dryer with an unnecessarily conservative margin. Quantify any energy, emissions, or availability improvement from the plant&apos;s own before-and-after operating data rather than assuming a universal savings figure.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A useful application review records fuel type and origin, normal moisture range and basis, boiler fuel specification, conveyor or chute geometry, material depth, chip and fines distribution, storage conditions, dust and fire-safety arrangements, reference method, sample-point layout, and the exact decision expected when the online value changes. These details turn a moisture percentage into an actionable boiler-fuel control input.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.iso.org/standard/83191.html?browse=tc">ISO 18134-1:2022, Solid biofuels — Determination of moisture content — Part 1: Reference method</SourceLink>. Reference oven method and as-received wet-basis reporting convention.</li>
+        <li><SourceLink href="https://www.forestresearch.gov.uk/tools-and-resources/fthr/biomass-energy-resources/fuel/woodfuel-production-and-supply/woodfuel-processing/effect-of-moisture-content/">Forest Research, “Effect of moisture content”</SourceLink>. Fuel-moisture effects on energy density, combustion, emissions, storage, and transport.</li>
+        <li><SourceLink href="https://www.forestresearch.gov.uk/tools-and-resources/fthr/biomass-energy-resources/fuel/woodfuel-production-and-supply/woodfuel-processing/">Forest Research, “Woodfuel processing”</SourceLink>. Fresh wood moisture context, common wood-chip boiler ranges, and the need to match fuel to equipment requirements.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -768,6 +830,8 @@ export default async function BlogPostPage({ params }: Props) {
             <CeramicPressFeedMoistureArticle />
           ) : slug === "gypsum-calcination-free-water-crystal-water-control" ? (
             <GypsumCalcinationMoistureArticle />
+          ) : slug === "wood-chip-boiler-fuel-moisture-control-wet-basis" ? (
+            <WoodChipBoilerFuelMoistureArticle />
           ) : (
             paragraphs.map((paragraph, i) => (
               <p key={i} className="mb-6 text-base leading-relaxed text-primary/80">
