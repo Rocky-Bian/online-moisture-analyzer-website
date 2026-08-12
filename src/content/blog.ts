@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "precipitated-silica-moisture-rubber-compounding",
+    title: "Precipitated Silica Moisture in Rubber Compounding: A Better Control Point for Silanization",
+    excerpt:
+      "How to define and trend precipitated-silica volatile content before rubber mixing, select a representative online measurement point, and use the signal to manage feed consistency without treating one moisture value as universal.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-08-12",
+    readTime: "9 min",
+    tags: [
+      "precipitated silica moisture",
+      "silica rubber compounding",
+      "silanization process control",
+      "rubber additive moisture measurement",
+      "online NIR moisture analyzer",
+      "microwave bulk moisture measurement",
+      "silica dryer control",
+    ],
+  },
+  {
     slug: "wood-chip-boiler-fuel-moisture-control-wet-basis",
     title: "Wood-Chip Boiler Fuel Moisture Control: Why Wet-Basis Measurement Matters",
     excerpt:

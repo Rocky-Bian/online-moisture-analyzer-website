@@ -697,6 +697,69 @@ function GypsumCalcinationMoistureArticle() {
   );
 }
 
+function PrecipitatedSilicaMoistureRubberCompoundingArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Why this moisture value belongs in the compounding conversation</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Precipitated silica is valued as a reinforcing filler, particularly where a silica–silane system is used to improve compatibility with a rubber matrix. Its surface is hydrophilic and carries silanol groups, so it can adsorb water; that water is not simply an incidental shipping variable. A peer-reviewed review in <SourceLink href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8471480/">Materials</SourceLink> explains that adsorbed water affects the ionization of surface hydroxyl groups and can influence cure characteristics and silica–elastomer interactions. For a plant, the practical implication is straightforward: changes in silica moisture should be visible before they become unexplained variation in the mixer.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Moisture is also not a reason to pursue a universally lowest possible reading. In silica–silane systems, water participates in hydrolysis and condensation reactions, while too much or too little water can change processing behavior. A University of Twente tire-rubber study reported that ethanol formation increased as silica moisture increased in its test formulation, with no further acceleration above 7% moisture. <SourceLink href="https://research.utwente.nl/files/6052776/thesis_E_Cichomski.pdf">That 7% observation</SourceLink> is an experimental result—not a production setpoint. Grade chemistry, silane type and dose, mixing temperature, sequence, residence time, and the customer&apos;s compound recipe all matter.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Define the reference value before calibrating an online signal</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Avoid using “moisture” as a shorthand without an agreed laboratory definition. ASTM D6738 is specifically titled <em>Standard Test Method for Precipitated Silica—Volatile Content</em>, while ISO 5794-1:2022 specifies non-rubber tests for precipitated hydrated silica used as a rubber compounding ingredient. Use the site&apos;s approved method and reporting convention as the calibration reference; do not assume an online value, a loss-on-drying result, and a supplier certificate are interchangeable without checking sample preparation and conditions.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Record the material grade, lot, storage duration, sample location, sample container, laboratory method, result basis, and the time the sample represented. A sample that gains or loses water after collection cannot fairly validate a sensor looking at a moving stream. This discipline also separates genuine feed variation from a change caused by packaging, warehouse humidity, or delayed sampling.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Measurement challenge: the bag, hopper, and mixer do not see the same material</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A receiving inspection can confirm the condition of a delivery, but it does not necessarily describe material at the weigh feeder hours or days later. Transfers can introduce segregation, fines, compaction, and non-uniform exposure to air. In a dense chute or a deep conveyor layer, a surface observation may not represent the average moisture entering the mixer. In a thin, even stream after conditioning, a rapid surface trend may be exactly the information operators need.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Start with the decision: is the plant protecting a silica dryer endpoint, verifying a conditioned filler before storage, identifying moisture pickup at silo discharge, or normalizing a batch recipe? The right control point is usually close to the decision it supports. ALZRO&apos;s <Link href="/industries/rubber-additives" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">rubber-additives application page</Link> provides related material-handling context for continuous moisture monitoring.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where cooled silica is presented as a stable, exposed and reasonably even layer, a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> can be evaluated for fast trend feedback after drying, during transfer, or before dosing. Verify a clean optical path, stable stand-off distance, representative coverage, temperature effects, dust control, and access for window cleaning. NIR is most useful when the measurement question concerns the surface presented to the sensor and the online result is calibrated against samples from that same stream.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a deep, dense, or changing material bed where the control question is bulk moisture, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-belt or chute arrangement may better represent the moving layer; document the full loading range and belt or chute geometry during application review. The choice is about material presentation and the required decision—not about declaring one technology inherently more accurate.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Installation and commissioning checklist</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Locate the point deliberately:</strong> place it after the moisture-changing operation and before the mixer, silo, or dosing decision the signal is meant to support.</li>
+        <li><strong>Document material presentation:</strong> capture particle and pellet form, layer depth, belt speed, feed rate, segregation risk, temperature, dust, vibration, and electrical-area classification.</li>
+        <li><strong>Time-align validation samples:</strong> account for conveyor travel and sample handling so each laboratory value corresponds to the material observed online.</li>
+        <li><strong>Calibrate across normal variation:</strong> include expected grades, lots, storage conditions, moisture range, and physical forms. Review residuals by grade rather than hiding a grade-specific bias in a single average.</li>
+        <li><strong>Commission in stages:</strong> prove repeatability and trend direction first; then add operator alarms, dryer guidance, or recipe actions only after the signal performs through normal shifts.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to evaluate</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Continuous data cannot certify rubber-compound quality, replace rheology or cure testing, or determine the correct silane formulation. Its credible value is earlier detection of a changing filler stream. With defined response rules, a team can target laboratory checks at excursions, distinguish dryer behavior from storage pickup, keep feed consistency visible to mixing, and avoid carrying an unverified drying margin. Validate any reduction in energy, scrap, or mixing variability with the plant&apos;s own before-and-after data rather than applying a generic savings claim.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A useful project brief includes silica grade and physical form, normal volatile-content range, storage and transfer layout, dryer and cooling conditions, expected process-temperature range, available mounting locations, reference method, sampling plan, dust and area-classification requirements, and the exact decision to be made from the online value. These details turn a percentage into a useful compounding-control input.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.iso.org/cms/live/live/en/sites/isoorg/contents/data/standard/08/20/82049.html?browse=tc">ISO 5794-1:2022, Rubber compounding ingredients — Silica, precipitated, hydrated — Part 1: Non-rubber tests</SourceLink>. Official scope for characterization tests on precipitated hydrated silica used in rubber compounding.</li>
+        <li><SourceLink href="https://store.astm.org/d6738-15r19.html">ASTM D6738, Standard Test Method for Precipitated Silica—Volatile Content</SourceLink>. Laboratory reference-method context; confirm the licensed revision used by the plant.</li>
+        <li><SourceLink href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8471480/">Kozakiewicz et al. (2021), Materials</SourceLink>. Peer-reviewed discussion of silica surface hydrophilicity, adsorbed water, and effects on rubber-compound interactions.</li>
+        <li><SourceLink href="https://research.utwente.nl/files/6052776/thesis_E_Cichomski.pdf">Cichomski (2002), Silica-Silane Reinforced Passenger Car Tire</SourceLink>. Experimental silica-moisture and silanization-rate context; formulation-specific findings should not be translated into a universal target.</li>
+      </ul>
+    </>
+  );
+}
+
 function WoodChipBoilerFuelMoistureArticle() {
   return (
     <>
@@ -830,6 +893,8 @@ export default async function BlogPostPage({ params }: Props) {
             <CeramicPressFeedMoistureArticle />
           ) : slug === "gypsum-calcination-free-water-crystal-water-control" ? (
             <GypsumCalcinationMoistureArticle />
+          ) : slug === "precipitated-silica-moisture-rubber-compounding" ? (
+            <PrecipitatedSilicaMoistureRubberCompoundingArticle />
           ) : slug === "wood-chip-boiler-fuel-moisture-control-wet-basis" ? (
             <WoodChipBoilerFuelMoistureArticle />
           ) : (
