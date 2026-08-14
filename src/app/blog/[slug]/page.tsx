@@ -96,6 +96,64 @@ function SourceLink({ href, children }: { href: string; children: ReactNode }) {
   );
 }
 
+function GlassFiberRovingDryingArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">The moisture value must describe the glass-fiber process actually being controlled</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        In continuous glass-fiber production, an aqueous sizing is applied to freshly formed filaments before the strand is gathered and wound into a forming package. Drying removes water from that sizing; a subsequent thermal stage can cure the dried sizing. This distinction matters because a plant may be controlling water removal, sizing condition, or a downstream package-release requirement—not simply “moisture” as one universal product property. A recent glass-fiber drying patent documents wet forming packages with 8% to 12% moisture by total undried package weight in its example set, then describes drying to much lower residual levels. <SourceLink href="https://patents.google.com/patent/US11981599B2">The published process description</SourceLink> is useful evidence of the large water-removal duty, but its example values are not a product specification for every glass type, sizing, tex, package geometry, or customer application.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Keep moisture separate from other laboratory properties. <SourceLink href="https://www.iso.org/standard/59249.html">ISO 1887:2014</SourceLink> specifies determination of <em>combustible-matter content</em> for textile-glass products including rovings, chopped strands, yarns, and mats. That test can be important for sizing or binder verification, but it is not automatically the same as an online water measurement. Before commissioning any instrument, state whether the reference value is package mass loss, water content, an oven-dry loss, or a separate sizing/combustible-matter test.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Why drying uniformity is harder than an average endpoint</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A forming package is a wound, permeable body, not a flat and uniform sheet. Its outer layers can experience drying conditions before its core. The difference is material: a peer-reviewed study of glass-fiber cakes measured temperature, vapour pressure, and water-content distribution during hot-air drying and attributed inward collapse to external pressure caused by steam pressure in the fibre layer. <SourceLink href="https://www.jstage.jst.go.jp/article/fiber1944/53/1/53_1_34/_article/-char/en">That study</SourceLink> is a useful reminder that a final average value can hide an internal drying gradient.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For production, variation can come from sizing add-on, strand count, tex, package diameter, winding density, package loading, dryer-zone temperature, air flow, residence time, and ambient conditions. A laboratory sample taken after cooling may validate a release result, but it does not show which dryer zone caused an excursion or whether the material was dry enough at the moment it left the dryer. Continuous, time-stamped process data is most useful when it is paired with those operating variables and with correctly time-aligned laboratory checks.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Choose the online measurement point around material presentation</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The choice between an optical surface reading and a through-layer bulk reading should follow the form of the glass fibre at the measurement point. On a consistently presented, exposed web or a thin, even layer of chopped strand, a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> can be evaluated for rapid trend information. It needs stable stand-off distance, good coverage, a clean optical path, and a validation set that includes the actual sizing, glass grade, strand geometry, and temperature range.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        When the control question is water through a thicker and changing material layer—for example, a conveyed fibre mat, a uniform chopped-strand bed, or another bulk presentation—evaluate a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-layer configuration and load compensation are relevant engineering questions where material mass or layer thickness varies. Neither approach should be assumed to measure reliably through a tightly wound package without a site-specific feasibility test; package geometry and the desired control action must come first.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Useful locations commonly include a continuous strand or chopped-fibre section after the main dryer, a post-cooling transfer point before packaging, or a conversion line where moisture pickup must be detected before downstream processing. ALZRO&apos;s <Link href="/industries/sand-glass-fiber" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">sand and glass-fiber application page</Link> provides the broader application context. Avoid installing only where access is convenient: the selected point must present material consistently and leave enough time to act on a dryer, air-flow, line-speed, or quality-hold decision.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and installation considerations</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Define the reference method and basis:</strong> record exactly what the laboratory reports, its conditioning and calculation basis, sample mass, and whether it includes any non-water volatile loss. Do not fit an online water signal to a combustible-matter result without understanding the difference.</li>
+        <li><strong>Collect representative, time-matched samples:</strong> pair laboratory samples with the exact material seen by the sensor, allowing for conveyor travel, dryer residence time, cooling, and sampling delay. Include the normal operating range rather than only nominally good product.</li>
+        <li><strong>Include process variation in the model:</strong> test the expected sizing formulations, glass types, tex, strand or mat thickness, temperature, and loading. A calibration built on one fibre presentation may not remain valid after a material or recipe change.</li>
+        <li><strong>Protect the measuring environment:</strong> document dust, moisture condensation, vibration, optical-window fouling, electrical noise, metal clearances, and safe access for cleaning and reference checks.</li>
+        <li><strong>Commission in stages:</strong> prove repeatable trend direction first; then set an averaging interval and alarm logic; only afterwards use the signal for operator guidance or automated dryer adjustments.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy questions worth measuring on site</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The value of online measurement is earlier process visibility, not a claim that one sensor fixes every roving-quality issue. A dryer supplier describes the potential sensitivity of glass-fibre drying to package density, fibre count, finishing chemistry, and final-moisture condition; its published comparison reports 2 to 4 hours for one radio-frequency roving process versus 20 to 30 hours for conventional hot-air circulation. <SourceLink href="https://www.stalam.com/en/technical/dryers-for-glass-fibres/">That supplier comparison</SourceLink> is technology-specific, but it illustrates why plants should measure their own residence time, energy input, product condition, and moisture variation rather than apply a generic energy-saving percentage.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        With a disciplined response plan, continuous data can help a team identify drying drift sooner, target laboratory checks at real excursions, and avoid operating an unnecessarily conservative drying margin. Track the site&apos;s own package rejection, repeat-drying, dryer energy, line speed, and laboratory verification results before and after implementation. For selection principles that apply across fibre and bulk-solid applications, see ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online moisture-measurement technology overview</Link>.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.iso.org/standard/59249.html">ISO 1887:2014, Textile glass — Determination of combustible-matter content</SourceLink>. Scope and test context for textile-glass products.</li>
+        <li><SourceLink href="https://www.jstage.jst.go.jp/article/fiber1944/53/1/53_1_34/_article/-char/en">Sato, Aratani &amp; Takeda (1997), “Experimental Research on Glass-Fiber Cake Deformation in Drying Process”</SourceLink>. Peer-reviewed evidence on water-content distribution, vapour pressure, and drying deformation.</li>
+        <li><SourceLink href="https://patents.google.com/patent/US11981599B2">US 11,981,599 B2, Process for drying wet glass-fibre forming packages</SourceLink>. Published process descriptions and example moisture-removal data; not a universal product target.</li>
+        <li><SourceLink href="https://www.stalam.com/en/technical/dryers-for-glass-fibres/">Stalam, Dryers for Glass Fibres</SourceLink>. Supplier process comparison and examples of package-density and finishing-chemistry considerations.</li>
+      </ul>
+    </>
+  );
+}
+
 function WoodFiberboardArticle() {
   return (
     <>
@@ -877,6 +935,8 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           {slug === "wood-fiberboard-hot-press-moisture-control" ? (
             <WoodFiberboardArticle />
+          ) : slug === "glass-fiber-roving-drying-moisture-control" ? (
+            <GlassFiberRovingDryingArticle />
           ) : slug === "carbon-black-pellet-drying-moisture-control" ? (
             <CarbonBlackPelletDryingArticle />
           ) : slug === "sinter-mix-moisture-control-granulation-permeability" ? (

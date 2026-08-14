@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "glass-fiber-roving-drying-moisture-control",
+    title: "Glass-Fiber Roving Drying: Moisture Control from Wet Package to Finished Strand",
+    excerpt:
+      "How glass-fiber producers can define a meaningful moisture reference, choose a representative online measurement point, and use continuous trends to manage drying without treating one residual-moisture value as universal.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-08-14",
+    readTime: "9 min",
+    tags: [
+      "glass fiber roving drying",
+      "glass fiber moisture control",
+      "textile glass moisture measurement",
+      "online NIR moisture analyzer",
+      "microwave bulk moisture measurement",
+      "glass fiber sizing cure",
+      "industrial dryer control",
+    ],
+  },
+  {
     slug: "precipitated-silica-moisture-rubber-compounding",
     title: "Precipitated Silica Moisture in Rubber Compounding: A Better Control Point for Silanization",
     excerpt:
