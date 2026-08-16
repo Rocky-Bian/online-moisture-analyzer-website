@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "wheat-tempering-moisture-control-roller-milling",
+    title: "Wheat Tempering Moisture Control: Measuring the Control Variable Before Roller Milling",
+    excerpt:
+      "How flour mills can define tempered-wheat moisture, verify water addition and equilibration, and use representative online data to support consistent roller-mill performance without treating one target as universal.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-08-16",
+    readTime: "9 min",
+    tags: [
+      "wheat tempering moisture control",
+      "roller milling moisture measurement",
+      "flour mill water addition",
+      "online NIR grain moisture",
+      "wheat moisture equilibration",
+      "bulk solids moisture monitoring",
+      "milling process control",
+    ],
+  },
+  {
     slug: "glass-fiber-roving-drying-moisture-control",
     title: "Glass-Fiber Roving Drying: Moisture Control from Wet Package to Finished Strand",
     excerpt:

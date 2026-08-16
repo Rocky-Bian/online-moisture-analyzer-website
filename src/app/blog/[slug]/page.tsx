@@ -818,6 +818,70 @@ function PrecipitatedSilicaMoistureRubberCompoundingArticle() {
   );
 }
 
+function WheatTemperingMoistureControlArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Tempering is a moisture-and-time process, not simply water addition</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Before roller milling, wheat is conditioned by adding water and holding the grain so that moisture can redistribute within each kernel. The objective is not a universal number on a moisture display. It is a grain condition that supports the mill&apos;s intended separation of bran and endosperm for the specific wheat class, grist, equipment, flour specification, and operating rate. In a USDA Agricultural Research Service study of three soft-red-winter cultivars, tempered-wheat moisture was the most critical factor among the tempering conditions evaluated; wheat tempered to 15% gave lower flour yield than wheat tempered to 12%, but the higher-moisture treatment produced flour with lower ash and polyphenol oxidase activity. <SourceLink href="https://www.ars.usda.gov/research/publications/publication/?seqNo115=227943">The USDA publication summary</SourceLink> is a useful reminder that the process trade-off must be validated for the mill&apos;s own wheat and quality goals.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Time matters as much as the calculated addition. USDA&apos;s Soft Wheat Quality Laboratory estimates whole-kernel moisture with NIR, tempers its laboratory samples to 15%, and holds them at room temperature for at least 24 hours to allow moisture equilibration before milling. <SourceLink href="https://www.ars.usda.gov/midwest-area/wooster-oh/corn-soybean-and-wheat-quality-research/docs/soft-wheat-quality-laboratory-materials-and-methods/">Its published milling method</SourceLink> describes a controlled laboratory procedure, not a production setpoint. It does, however, make the underlying control logic clear: a reading immediately after water addition is not necessarily the condition presented to the first break roll.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Why the target moves with wheat class and milling objective</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Target moisture and tempering time are specific to wheat type and milling method. Grain Research Canada&apos;s published quality-evaluation procedure, for example, uses 14.5% for Canada Western Soft White, 15.5% for Canada Western Red Winter, 16.0% for Canada Western Prairie Spring and Amber Durum, and 16.4% for several hard-wheat classes. It also reports a two-stage procedure for samples below 10% initial moisture and typically uses at least 18 hours of tempering. <SourceLink href="https://grainscanada.gc.ca/en/grain-research/scientific-reports/milling-evaluation/">Those documented class-specific conditions</SourceLink> demonstrate why a mill should not copy a target from another grist without validation.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Incoming moisture, kernel hardness and vitreousness, grain temperature, water distribution, rest-bin residence time, wheat blend, and final flour requirements can all shift the useful operating window. A peer-reviewed Journal of Cereal Science study likewise found that tempering moisture affected grinding energy, middlings and flour particle-size distribution, protein content, and dough-mixing behavior for the hard and medium-hard wheat tested. <SourceLink href="https://doi.org/10.1016/j.jcs.2016.04.007">The study&apos;s abstract</SourceLink> supports a cautious engineering conclusion: control moisture tightly, but establish the target from the product and mill response rather than from a generic benchmark.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: an average sample can conceal a changing grist</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A single intake sample may be useful for receiving, but it may not represent the moving blend that reaches dampening several hours later. Changes in supplier lot, weather, cleaning losses, blending, flow rate, and water-meter performance can all affect the moisture result seen by the mill. There is also a difference between average moisture and distribution: a stable average can hide short excursions that complicate water-addition control or leave unevenly conditioned grain entering the rest bins.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Define the value before choosing the hardware. Is the required signal incoming whole-wheat moisture, calculated water-addition verification, conditioned-wheat moisture after the rest bin, or a trend at first break? The answer determines the best location and response time. For formal reference work, USDA Agricultural Marketing Service identifies the air oven as its reference method for moisture in grains and oilseeds and explains that its reference laboratories support the calibration of rapid inspection instruments. <SourceLink href="https://www.ams.usda.gov/services/fgis/standardization/reference-methods">USDA AMS reference-method guidance</SourceLink> is a sound starting point for defining the plant&apos;s laboratory comparator.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a cleaned, evenly distributed stream of whole wheat where rapid feedback on an exposed surface is the goal, evaluate a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link>. It can be a practical candidate upstream of water addition or downstream of a rest bin when the optical path is clear, stand-off distance is stable, and the flow presents a representative layer. The application review should include dust control, vibration, grain depth, belt coverage, grain temperature, windows or optics cleaning, and the expected blend range.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where the control question is the average moisture through a deep or variable bulk layer, a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link> is worth assessing. A through-layer installation and load compensation are relevant when material depth changes enough that a surface indication could be misleading. The choice is not NIR versus microwave in the abstract; it follows material presentation, installation geometry, and the decision the mill needs to make. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">measurement-technology overview</Link> provides the general comparison.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Installation and calibration considerations</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Measure at a representative stream:</strong> avoid a chute edge, a partially covered belt, or a point immediately after an unblended water spray. Document belt loading, grain depth, segregation, dust, metal clearances, and the distance to the control action.</li>
+        <li><strong>Use time-aligned samples:</strong> collect and seal samples from the exact material stream that the instrument observed. Account for conveyor and rest-bin residence time before comparing online and laboratory values.</li>
+        <li><strong>Cover the real grist:</strong> calibrate and verify across expected wheat classes, crop years, incoming-moisture range, temperature, and blend ratios. Recheck after a material or reference-method change.</li>
+        <li><strong>Separate water-addition accuracy from equilibration:</strong> a correct water-flow total does not prove even kernel conditioning. Track pre-dampening moisture, water flow, grain flow, rest time, and a post-tempering verification point together.</li>
+        <li><strong>Commission in stages:</strong> first prove repeatable trend direction against the approved laboratory method, then use the result for operator guidance or bounded water trimming. Expand automation only after it remains reliable through normal production variation.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Process, quality, and energy benefits to evaluate</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Online moisture data does not replace wheat grading, flour ash testing, starch-damage testing, sieve analysis, or end-use quality checks. Its credible value is earlier visibility of a variable that affects the way grain behaves in the mill. With a validated target and response plan, the operating team can detect a changing intake blend sooner, verify whether calculated water addition is producing the intended condition, reduce reliance on delayed manual checks, and investigate quality deviations with time-stamped process evidence.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The energy case should also be measured, not assumed. Better visibility may help avoid operating with an unnecessarily wide conditioning margin or reworking a drifting process, but any improvement in milling energy, yield, or flour quality must be quantified from the mill&apos;s own production data. For wider food-process moisture applications, see ALZRO&apos;s <Link href="/industries/grain-noodle-processing" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">grain and noodle processing page</Link>.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.ars.usda.gov/research/publications/publication/?seqNo115=227943">USDA ARS, “Effect of Tempering Condition on Milling Performance and Flour Functionality” (2009)</SourceLink>. Cultivar-specific results showing tempered-wheat moisture as the most critical evaluated condition and the yield/quality trade-off in the tested soft-red-winter wheats.</li>
+        <li><SourceLink href="https://www.ars.usda.gov/midwest-area/wooster-oh/corn-soybean-and-wheat-quality-research/docs/soft-wheat-quality-laboratory-materials-and-methods/">USDA ARS Soft Wheat Quality Laboratory, Materials and Methods</SourceLink>. Published NIR estimation, 15% tempering, and 24-hour laboratory equilibration procedure.</li>
+        <li><SourceLink href="https://grainscanada.gc.ca/en/grain-research/scientific-reports/milling-evaluation/">Grain Research Canada, “Milling for quality evaluation of new wheat lines”</SourceLink>. Class-specific target moistures, two-stage procedure for low-moisture wheat, and published tempering-time context.</li>
+        <li><SourceLink href="https://www.ams.usda.gov/services/fgis/standardization/reference-methods">USDA AMS, Reference Methods</SourceLink>. Air-oven moisture reference-method context for grain and oilseed measurements.</li>
+        <li><SourceLink href="https://doi.org/10.1016/j.jcs.2016.04.007">Warechowska et al. (2016), Journal of Cereal Science</SourceLink>. Peer-reviewed evidence that tempering moisture affects milling energy, particle-size distribution, and dough-related properties in the wheat tested.</li>
+      </ul>
+    </>
+  );
+}
+
 function WoodChipBoilerFuelMoistureArticle() {
   return (
     <>
@@ -955,6 +1019,8 @@ export default async function BlogPostPage({ params }: Props) {
             <GypsumCalcinationMoistureArticle />
           ) : slug === "precipitated-silica-moisture-rubber-compounding" ? (
             <PrecipitatedSilicaMoistureRubberCompoundingArticle />
+          ) : slug === "wheat-tempering-moisture-control-roller-milling" ? (
+            <WheatTemperingMoistureControlArticle />
           ) : slug === "wood-chip-boiler-fuel-moisture-control-wet-basis" ? (
             <WoodChipBoilerFuelMoistureArticle />
           ) : (
