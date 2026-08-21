@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "soda-ash-moisture-control-post-dryer-caking",
+    title: "Soda Ash Moisture Control: Detecting Post-Dryer Pickup Before Caking and Glass Batch",
+    excerpt:
+      "How soda-ash producers can distinguish dryer-outlet moisture from post-dryer humidity pickup, choose a representative online measurement point, and calibrate against a reference method that separates water from bicarbonate-related loss on heating.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-08-21",
+    readTime: "9 min",
+    tags: [
+      "soda ash moisture control",
+      "sodium carbonate caking prevention",
+      "soda ash dryer outlet measurement",
+      "online NIR moisture analyzer",
+      "microwave bulk moisture measurement",
+      "glass batch raw materials",
+      "ASTM E359 soda ash analysis",
+    ],
+  },
+  {
     slug: "wheat-tempering-moisture-control-roller-milling",
     title: "Wheat Tempering Moisture Control: Measuring the Control Variable Before Roller Milling",
     excerpt:

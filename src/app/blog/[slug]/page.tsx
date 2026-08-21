@@ -944,6 +944,76 @@ function WoodChipBoilerFuelMoistureArticle() {
   );
 }
 
+function SodaAshMoistureControlArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Why a dry soda-ash product can become a wet handling problem</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Soda ash is sodium carbonate, an important raw material for glass, chemicals, detergents, and other industrial products. The <SourceLink href="https://www.usgs.gov/centers/national-minerals-information-center/soda-ash-statistics-and-information">U.S. Geological Survey</SourceLink> identifies it as an essential input to glass, chemicals, and detergents; the U.S. Environmental Protection Agency reports that glass manufacturing accounted for about 47% of U.S. soda-ash consumption in 2019. For a producer or glass-batch operator, moisture is therefore not merely a laboratory number: it can change how a high-throughput powder moves from the dryer through cooling, storage, conveying, and batch preparation.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Sodium carbonate is hygroscopic. NIST&apos;s certificate for a sodium-carbonate standard reference material states that it may form a cake on extended storage and specifies dry handling and desiccator storage for the reference material. <SourceLink href="https://tsapps.nist.gov/srmext/certificates/191d.pdf">That NIST certificate</SourceLink> is laboratory guidance rather than a commercial-product specification, but it confirms the central process risk: a satisfactory dryer-outlet value does not guarantee the condition of powder that has passed through humid air, a cooler, a bin, or a long transfer route.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: distinguish water pickup from the product chemistry</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Soda ash can contain or form sodium bicarbonate, so loss on heating is not automatically identical to water. ASTM E359-17 covers commercial soda-ash analysis and describes moisture as a calculation: it subtracts volatile products from sodium-bicarbonate decomposition from loss on heating. <SourceLink href="https://www.iteh.eu/catalog/standards/astm/6065a045-9166-4f61-aae2-54e420b16b6b/astm-e359-17">The published standard summary</SourceLink> is a useful warning against calibrating an online water signal to an undefined &ldquo;oven loss&rdquo; number. Before commissioning, decide whether the control variable is moisture by the plant&apos;s approved method, total loss on heating, sodium bicarbonate content, or a customer-specific acceptance value.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Humidity can also change the chemical form at the particle surface. In a peer-reviewed ATR-FTIR study of pure sodium-carbonate aerosol particles, the material first absorbed water to form sodium-carbonate monohydrate at 72.0% relative humidity and deliquesced at 84.5% RH. <SourceLink href="https://hero.epa.gov/reference/7716482/">The indexed study</SourceLink> used aerosol-scale particles, so these values are not plant alarm limits for dense or light soda ash. They do, however, show why a humidity upset, cooling-zone condensation, or poorly sealed transfer must be investigated as a process event—not dismissed as random instrument drift.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Map the process before selecting the control point</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        In natural soda-ash production, EPA describes trona processing that includes calcining, evaporative crystallization to sodium-carbonate monohydrate, concentration, dewatering, and drying to recover anhydrous sodium carbonate. That sequence creates more than one valid measurement question: control the dryer endpoint, verify the condition after cooling, detect moisture pickup before a storage bin, or confirm the material delivered to a glass batch. One sensor at a convenient location cannot answer all of them.
+      </p>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Dryer discharge:</strong> use the trend to see drying changes while there is still time to adjust thermal input, feed, gas flow, or residence time.</li>
+        <li><strong>After cooling and before storage:</strong> check whether cooling air, condensation, or product temperature changes the material presented to the bin.</li>
+        <li><strong>Bin discharge or final conveyor:</strong> detect humidity pickup and caking risk nearer to packaging, load-out, or glass-batch dosing.</li>
+        <li><strong>Glass-batch feed:</strong> use a representative final-material trend for investigation and targeted sampling; it is not a substitute for the batch recipe or glass-quality controls.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        ALZRO&apos;s <Link href="/industries/soda-ash" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">soda-ash application page</Link> gives the broader powder-handling context. A site survey should map air in-leakage, cooler discharge temperature, transfer duration, bin residence time, dust collection, ambient humidity, and where a laboratory sample can be collected from the same moving stream as the sensor.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a consistently covered, shallow, exposed powder layer or a stable viewing port, evaluate a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> for rapid moisture trending. The installation needs a stable stand-off distance, representative coverage, a clean optical path, and validation across the actual soda-ash grade, particle-size distribution, temperature, and moisture range. A surface-oriented signal is most useful when the material presentation itself is stable.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where the decision depends on moisture through a deeper, changing bulk layer on a belt or in a chute, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-layer arrangement with load compensation can be a better engineering fit when bed depth changes and a bulk-stream value is needed. The correct choice follows material presentation and the control action, not a generic accuracy claim; ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">measurement-technology overview</Link> explains the general distinction.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and installation: make online data traceable</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Name the reference value precisely:</strong> document the analytical method, sample preparation, reporting basis, and whether bicarbonate-related volatile loss is corrected before fitting the online model.</li>
+        <li><strong>Time-align material and sample:</strong> pair laboratory samples with the same material seen by the sensor, allowing for travel time through the cooler, conveyor, bin, and sampling point.</li>
+        <li><strong>Cover real process variation:</strong> include normal moisture conditions, soda-ash grades, particle-size shifts, product temperature, bed depth, and expected bicarbonate variation—not only nominally dry material.</li>
+        <li><strong>Engineer the measuring environment:</strong> document dust, window fouling, vibration, electrical noise, condensation, corrosion-compatible materials, access for cleaning, and safe maintenance isolation.</li>
+        <li><strong>Commission in stages:</strong> first prove repeatable trend direction; then define averaging, alarm, and sampling rules; only later consider using the value for dryer or material-handling control.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality, handling, and energy benefits to verify on site</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The defensible benefit of continuous moisture measurement is earlier visibility of a changing powder stream. With a defined reference method and a clear operator response, a plant can detect a dryer or cooler change sooner, investigate humidity pickup before it becomes a storage or conveying problem, and focus laboratory checks on meaningful excursions. It may also help teams avoid an unnecessarily conservative drying margin, but any energy benefit should be calculated from the plant&apos;s own fuel, airflow, throughput, and product-quality data rather than assumed from a sensor installation.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For glass-batch supply, the practical goal is a more traceable picture of the soda ash actually reaching the batch house. Define the allowable product condition with the customer and batch formulation, then track caking incidents, transfer interruptions, laboratory results, dryer energy, and moisture excursions before and after commissioning. This keeps online data tied to measurable process outcomes rather than to a generic claim of improved quality.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.usgs.gov/centers/national-minerals-information-center/soda-ash-statistics-and-information">U.S. Geological Survey, Soda Ash Statistics and Information</SourceLink>. Definition of soda ash and its industrial-use context.</li>
+        <li><SourceLink href="https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1017BOO.txt">U.S. EPA, Water Treatment Chemical Supply Chain Profile: Sodium Carbonate</SourceLink>. U.S. consumption data, industrial uses, trona processing sequence, and dry-storage guidance.</li>
+        <li><SourceLink href="https://tsapps.nist.gov/srmext/certificates/191d.pdf">NIST SRM 191d Certificate</SourceLink>. Hygroscopicity, caking, storage, and controlled drying guidance for sodium-carbonate reference material.</li>
+        <li><SourceLink href="https://www.iteh.eu/catalog/standards/astm/6065a045-9166-4f61-aae2-54e420b16b6b/astm-e359-17">ASTM E359-17, Standard Test Methods for Analysis of Soda Ash</SourceLink>. Commercial soda-ash analytical framework, loss-on-heating procedure, and calculated moisture approach.</li>
+        <li><SourceLink href="https://hero.epa.gov/reference/7716482/">Yang et al. (2020), Journal of Environmental Sciences</SourceLink>. Sodium-carbonate water uptake, monohydrate formation, and deliquescence observations under controlled relative humidity.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -1023,6 +1093,8 @@ export default async function BlogPostPage({ params }: Props) {
             <WheatTemperingMoistureControlArticle />
           ) : slug === "wood-chip-boiler-fuel-moisture-control-wet-basis" ? (
             <WoodChipBoilerFuelMoistureArticle />
+          ) : slug === "soda-ash-moisture-control-post-dryer-caking" ? (
+            <SodaAshMoistureControlArticle />
           ) : (
             paragraphs.map((paragraph, i) => (
               <p key={i} className="mb-6 text-base leading-relaxed text-primary/80">
