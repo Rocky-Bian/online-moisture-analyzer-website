@@ -1014,6 +1014,60 @@ function SodaAshMoistureControlArticle() {
   );
 }
 
+function GreenCoffeeMoistureControlArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Why green-coffee moisture is a process and logistics variable</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Green coffee passes through drying, cooling, storage, bagging, and transport before it reaches a roaster. Moisture therefore affects more than the dryer endpoint: it affects the condition in which beans enter a warehouse or container. The International Coffee Organization&apos;s quality-improvement guidance states that exported Arabica and Robusta should not be below 8% or above 12.5% moisture when measured by ISO 6673, with limited exceptions for identified specialty coffees. <SourceLink href="https://www.ico.org/documents/cy2012-13/pm-29e-quality-standards.pdf">The ICO quality-standard summary</SourceLink> is valuable because it names both the moisture window and the reference method; it is not a substitute for a buyer contract, origin-specific specification, or a processor&apos;s own drying validation.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Moisture needs to be read on the stated basis and method. FAO&apos;s coffee-processing guidance gives a broad green-bean context of 8% to 13%, reports average roasting mass loss of about 16%, and lists roasted coffee below 7% moisture. <SourceLink href="https://www.fao.org/4/x6939e/X6939e01.htm">That FAO reference</SourceLink> shows why green-bean handling and roasting are different control problems. A live signal at dryer discharge should be used to manage a changing process, while the agreed laboratory method remains the reference for release and commercial verification.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: beans are not a uniform powder bed</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A coffee stream can vary by species, origin, screen size, wet- or dry-process route, defect level, initial water content, bean temperature, drying rate, and cooling or storage exposure. A grab sample can confirm an average at one moment, but it may miss short-term variation across a dryer or the change that occurs while beans cool and move to storage. The practical task is to decide what material the sensor must represent: an exposed bean layer, a full conveyor bed, or a bulk transfer stream.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Drying endpoint should not be selected from a generic number alone. In a 2026 peer-reviewed study of Caturra coffee, samples were monitored during 30 to 60 °C drying until 12% wet-basis moisture, using oven-dry determination for the initial value and a calibrated portable meter for process monitoring. <SourceLink href="https://www.mdpi.com/2304-8158/15/8/1284">The published drying study</SourceLink> provides a useful example of reference testing plus rapid trend monitoring. Its temperature programme and coffee material are experimental conditions, not an industrial setpoint for every estate, mill, or mechanical dryer.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a consistently spread, exposed bean layer after drying or during a stable conveyor transfer, evaluate a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> for rapid moisture trending. It needs stable sensor-to-product distance, representative coverage, minimal dust or steam interference, and a calibration set spanning the actual coffee types, screen sizes, temperatures, and normal moisture range. An optical reading should be treated as a measurement of the presented bean surface and layer, not assumed to characterize a deep or uneven pile.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        When the decision depends on moisture through a deeper, changing bulk stream in a belt or chute, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-layer arrangement and load compensation may be the more suitable engineering approach when bed depth or mass flow changes. The right method follows the material presentation, process geometry, and control action—not a generic accuracy claim. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online moisture-measurement technology overview</Link> explains these selection principles.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Installation and calibration plan</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Choose a control point with time to act:</strong> dryer discharge, post-cooling conveyor, or a transfer point before storage are usually more useful than a location after bagging, provided the stream is well presented.</li>
+        <li><strong>Define the reference result:</strong> document the agreed laboratory method, sample preparation, reporting basis, sample size, conditioning, and acceptance window. Do not fit an online calibration to an undefined handheld-meter number.</li>
+        <li><strong>Time-align samples:</strong> collect reference samples from the same beans seen by the instrument and account for dryer residence time, conveyor travel, cooling, and laboratory delay.</li>
+        <li><strong>Include expected variation:</strong> validate across origin, variety, bean size, temperature, drying route, surface condition, layer depth, and both normal and excursion moisture values.</li>
+        <li><strong>Commission in stages:</strong> first establish repeatable trend direction; then set averaging, alarms, and operator actions; only then evaluate closed-loop changes to dryer heat, airflow, or feed rate.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits worth verifying locally</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Continuous measurement can give operators earlier evidence of a wet feed change, dryer loading shift, or cooling and storage pickup. That can focus laboratory checks on real excursions and reduce the temptation to run an unnecessarily conservative drying margin. It does not prove a fixed energy saving by itself: actual energy, throughput, coffee quality, re-drying, and rejected-lot data should be measured before and after commissioning.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The most useful result is a traceable connection between the material in the dryer, the live online trend, and the accepted storage or dispatch result. Pair the online value with dryer temperature, airflow, feed rate, product temperature, ambient humidity, and laboratory verification. This turns moisture from a delayed inspection result into a process variable that the production team can investigate and manage.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.ico.org/documents/cy2012-13/pm-29e-quality-standards.pdf">International Coffee Organization, Coffee Quality Standards</SourceLink>. Export moisture context and ISO 6673 method reference.</li>
+        <li><SourceLink href="https://www.fao.org/4/x6939e/X6939e01.htm">FAO, Coffee Processing</SourceLink>. Green-bean and roasted-coffee moisture context and processing properties.</li>
+        <li><SourceLink href="https://www.mdpi.com/2304-8158/15/8/1284">Montalvo et al. (2026), Foods, “Effect of Temperature on the Drying Kinetics of Caturra Coffee”</SourceLink>. Peer-reviewed drying, reference-method, and monitoring context.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -1095,6 +1149,8 @@ export default async function BlogPostPage({ params }: Props) {
             <WoodChipBoilerFuelMoistureArticle />
           ) : slug === "soda-ash-moisture-control-post-dryer-caking" ? (
             <SodaAshMoistureControlArticle />
+          ) : slug === "green-coffee-moisture-control-drying-storage" ? (
+            <GreenCoffeeMoistureControlArticle />
           ) : (
             paragraphs.map((paragraph, i) => (
               <p key={i} className="mb-6 text-base leading-relaxed text-primary/80">

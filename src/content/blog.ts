@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "green-coffee-moisture-control-drying-storage",
+    title: "Green Coffee Moisture Control: From Drying Endpoint to Storage-Ready Beans",
+    excerpt:
+      "How coffee processors can define a traceable green-bean moisture reference, use online measurement at a representative transfer point, and protect drying consistency without confusing a live process trend with the export test result.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-08-23",
+    readTime: "9 min",
+    tags: [
+      "green coffee moisture control",
+      "coffee bean drying endpoint",
+      "green coffee storage moisture",
+      "online NIR moisture analyzer",
+      "bulk coffee moisture measurement",
+      "ISO 6673 coffee moisture",
+      "coffee dryer process control",
+    ],
+  },
+  {
     slug: "soda-ash-moisture-control-post-dryer-caking",
     title: "Soda Ash Moisture Control: Detecting Post-Dryer Pickup Before Caking and Glass Batch",
     excerpt:
