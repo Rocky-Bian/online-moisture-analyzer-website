@@ -96,6 +96,66 @@ function SourceLink({ href, children }: { href: string; children: ReactNode }) {
   );
 }
 
+function GlassBatchSilicaSandMoistureArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Why silica-sand moisture belongs in the batch-house control plan</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Industrial silica sand is a principal glassmaking raw material. The <SourceLink href="https://pubs.usgs.gov/myb/vol1/2019/myb1-2019-silica.pdf">U.S. Geological Survey&apos;s 2019 silica yearbook</SourceLink> reports that silica sand accounted for more than 70% of total batch composition in glassmaking. At that proportion, a change in water carried by the sand can affect two connected calculations: the dry silica mass actually introduced by a wet-weight feeder and the water introduced with the raw material. Neither effect proves that a furnace problem will occur, but both are reasons to make the sand&apos;s condition visible before the mixer and charger.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The relevant moisture value should be defined before choosing a sensor. <SourceLink href="https://store.astm.org/c0566-19.html">ASTM C566</SourceLink> describes total evaporable moisture in aggregate as water on the surface and in the pores, while excluding chemically combined water. That is a useful reference-method concept for silica sand, but a glass plant still needs to document its own reporting basis, sampling plan, material temperature, and control limits. An online value is only useful when it is traceable to the laboratory value that the batch house has agreed to manage.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">A practical process impact: water changes the batch, not just the dryer load</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Many container- and sheet-glass operations use damp sand directly, while other glass applications dry and screen sand before use. A United Nations Industrial Development Organization technical guide gives a useful, process-specific illustration: it lists up to 4% sand moisture as acceptable without technological problems for the container- and sheet-glass cases discussed, and reports 2.3% total sheet-glass batch moisture when the sand contains 4% water versus 3.1% when it contains 5%. <SourceLink href="https://downloads.unido.org/ot/48/39/4839958/10001-15000_14709.pdf">The UNIDO guide</SourceLink> should be read as historical technical context—not a universal target for a modern furnace, recipe, cullet ratio, or batch system.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        In day-to-day operation, rainfall, stockpile drainage, washing performance, reclamation, and residence time in a silo can shift the sand condition faster than intermittent sampling reveals it. If a feeder doses sand by wet mass, rising moisture reduces the dry-sand fraction of that delivered mass. If the batch recipe assumes a stable raw-material condition, the plant can unintentionally move both the dry-material proportion and batch water. The right response is recipe- and plant-specific: trend the change, verify it against samples, and define who adjusts the feed calculation or process conditions.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a conveyor carrying a changing-depth layer of silica sand, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-layer measurement with load compensation is a strong engineering option when the control question is total moisture through the moving bed, particularly where thickness, dust, or outdoor light can vary. Place it where the material is well distributed and where the result arrives early enough to support a feeder or drying decision.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> can be evaluated for a consistently presented, exposed sand surface when rapid surface-trend information is the required signal. Its suitability depends on layer uniformity, particle-size distribution, sensor stand-off, background, and window cleanliness. The selection should follow the material presentation and the control action, not a generic accuracy claim. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">technology overview</Link> explains the distinction between these measurement approaches.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Choose a measurement point that represents the dosing decision</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>After dewatering or drying, before storage:</strong> use this point to observe the condition sent to the batch-house silo and to distinguish process changes from later moisture pickup.</li>
+        <li><strong>On the reclaim conveyor from the sand silo:</strong> use this point when the feeder correction must reflect the material actually going to weighing. It is often the most actionable location.</li>
+        <li><strong>Before the mixer:</strong> use it as a verification point when multiple storage or transfer steps may change the material. It should complement, rather than replace, control upstream.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The final location should be confirmed by a site survey: examine belt coverage, bed-depth range, speed changes, vibration, metal clearance, buildup, wash-down exposure, access for reference samples, and the time delay between the sensor and the feeder. For broader application context, see ALZRO&apos;s <Link href="/industries/sand-glass-fiber" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">sand and glass-fiber materials page</Link>.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and commissioning: build a usable online-to-lab relationship</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Collect time-stamped reference samples from the same stream observed by the sensor, then analyze them using the plant&apos;s approved method. ASTM C566 notes that a test result can be more reliable than the representativeness of the sample itself; that warning is especially relevant for segregating bulk materials. Cover ordinary and wet excursions, as well as realistic changes in particle size, source, temperature, bed depth, and operating rate. Account for conveyor travel and laboratory delay before pairing any result with the online record.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Commission in stages. First confirm signal stability and trend direction; then set averaging, alarms, and the operator response; only after that evaluate automatic feed or dryer adjustments. Review the calibration after a new sand source, a material-size change, a major equipment modification, or a mismatch between the online trend and verification samples.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to verify locally</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The practical benefit of continuous measurement is earlier evidence of a raw-material change. It can help the batch team target laboratory checks, identify wet-stockpile events sooner, and avoid relying on an unnecessarily conservative dryer setting. It does not guarantee a fixed furnace-energy reduction, batch-quality gain, or feeder correction on its own. Track moisture, wet and dry feed mass, batch-water correction, dryer energy, and verification results before and after commissioning to establish a plant-specific business case.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://pubs.usgs.gov/myb/vol1/2019/myb1-2019-silica.pdf">U.S. Geological Survey, Mineral Yearbook: Silica, 2019</SourceLink>. Glassmaking-sand use and batch-composition context.</li>
+        <li><SourceLink href="https://store.astm.org/c0566-19.html">ASTM C566, Standard Test Method for Total Evaporable Moisture Content of Aggregate by Drying</SourceLink>. Reference-method definition and sampling context.</li>
+        <li><SourceLink href="https://downloads.unido.org/ot/48/39/4839958/10001-15000_14709.pdf">UNIDO, Glass Production Technology in Developing Countries</SourceLink>. Glass-batch moisture examples, sand handling, and batch-house context.</li>
+      </ul>
+    </>
+  );
+}
+
 function GlassFiberRovingDryingArticle() {
   return (
     <>
@@ -1123,6 +1183,8 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           {slug === "wood-fiberboard-hot-press-moisture-control" ? (
             <WoodFiberboardArticle />
+          ) : slug === "glass-batch-silica-sand-moisture-control" ? (
+            <GlassBatchSilicaSandMoistureArticle />
           ) : slug === "glass-fiber-roving-drying-moisture-control" ? (
             <GlassFiberRovingDryingArticle />
           ) : slug === "carbon-black-pellet-drying-moisture-control" ? (

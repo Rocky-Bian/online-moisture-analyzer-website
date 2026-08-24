@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "glass-batch-silica-sand-moisture-control",
+    title: "Glass-Batch Silica Sand Moisture Control: Weighing, Mixing, and Furnace Feed",
+    excerpt:
+      "How glass plants can define silica-sand moisture at the batch house, select a representative online measurement point, and use continuous data to protect dry-material dosing and batch consistency without applying a universal moisture target.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-08-24",
+    readTime: "9 min",
+    tags: [
+      "glass batch silica sand moisture",
+      "glassmaking sand moisture control",
+      "glass batch house weighing",
+      "online microwave moisture measurement",
+      "silica sand dryer control",
+      "bulk solids moisture monitoring",
+      "ASTM C566 moisture testing",
+    ],
+  },
+  {
     slug: "green-coffee-moisture-control-drying-storage",
     title: "Green Coffee Moisture Control: From Drying Endpoint to Storage-Ready Beans",
     excerpt:
