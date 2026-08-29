@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "granular-urea-moisture-control-cooling-caking",
+    title: "Granular Urea Moisture Control: Cooling, Hygroscopic Pickup, and Caking Risk",
+    excerpt:
+      "How fertilizer producers can distinguish process moisture from humidity pickup, select a representative online measurement point after cooling, and use continuous data to protect granule flowability without applying a universal moisture limit.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-08-29",
+    readTime: "9 min",
+    tags: [
+      "granular urea moisture control",
+      "urea fertilizer caking prevention",
+      "urea cooler discharge measurement",
+      "online NIR moisture analyzer",
+      "microwave bulk moisture measurement",
+      "fertilizer hygroscopicity",
+      "urea storage flowability",
+    ],
+  },
+  {
     slug: "glass-batch-silica-sand-moisture-control",
     title: "Glass-Batch Silica Sand Moisture Control: Weighing, Mixing, and Furnace Feed",
     excerpt:

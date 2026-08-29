@@ -96,6 +96,80 @@ function SourceLink({ href, children }: { href: string; children: ReactNode }) {
   );
 }
 
+function GranularUreaMoistureControlArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Why granular urea needs a moisture-control point after solids formation</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Solid fertilizer-grade urea is supplied as granular, prilled, or pastilled material. <SourceLink href="https://www.iso.org/standard/63123.html">ISO 18642:2016</SourceLink>, confirmed in 2022, covers requirements for solid fertilizer-grade urea including sampling, test-sample preparation, marking, transport, and storage. That scope is a useful reminder that an acceptable product condition is not defined by one instrument reading alone: the sample basis, material temperature, package condition, and point in the process all matter.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        In a typical granulation route, urea solids are formed around seed granules, then cooled, screened, and either recycled or sent forward as product. The <SourceLink href="https://www.epa.gov/sites/default/files/2020-09/documents/final_background_document_for_urea_section_8.2.pdf">U.S. EPA&apos;s urea background document</SourceLink> notes that cooling may occur during formation and that auxiliary cooling is used in some granulation and agricultural-prill operations. This makes the cooler discharge and the first protected transfer especially useful places to distinguish a drying or cooling change from moisture picked up later in storage or loading.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: an average value can conceal granule-level and humidity effects</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Urea is hygroscopic, but that does not mean every site should use the same moisture alarm. A 2024 peer-reviewed paper summarises a reported critical-relative-humidity range for urea from 82% at 10°C to 73% at 35°C; critical relative humidity is the condition at which a material begins to take up water from air. <SourceLink href="https://acsess.onlinelibrary.wiley.com/doi/full/10.1002/saj2.20778">The paper</SourceLink> uses those values to contrast solid urea with much more hygroscopic urea-ammonium-nitrate solution. Temperature, air exposure, coating, granule condition, packaging, and storage time still determine what that risk means at an individual plant.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The reported bulk result also may not describe every part of a prill or granule. In a Journal of the Science of Food and Agriculture study, Karl Fischer measurements and a grain model indicated that the moisture at the centre of tested urea prills was four times the average moisture content. The authors related caking to the moisture and contact area at flattened or damaged-granule interfaces. <SourceLink href="https://scijournals.onlinelibrary.wiley.com/doi/abs/10.1002/jsfa.2933">That study</SourceLink> does not provide a universal release specification, but it explains why temperature, granule damage, pressure, and local humidity should be considered alongside an online bulk trend.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Process impact: protect flowability, screening, and bagging decisions</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Moisture is only one contributor to caking. The International Fertilizer Development Center (IFDC) describes fertilizer-quality tests for critical relative humidity, moisture absorption, flowability, caking tendency, granule strength, abrasion, and conditioner adherence. <SourceLink href="https://hub.ifdc.org/handle/20.500.14297/1712">Its physical-properties manual</SourceLink> is useful process context because it treats these properties as connected rather than assuming that a moisture number alone predicts warehouse behavior.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For operations, the practical question is whether the measurement is early enough to change an action: adjust cooling or airflow, investigate a wet recycle stream, check a coating application, redirect a suspect lot, or protect a bagging and storage decision. A value measured only after a long, humid transfer may be useful for verification, but it cannot isolate whether the material left the cooler wet or picked up water afterwards. Track the online trend with product temperature, cooler-air conditions, recycle ratio, coating status, and laboratory verification before assigning a root cause.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a stable, exposed layer of granules on a conveyor after cooling, a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> can be evaluated for fast surface-trend measurement. It needs repeatable bed coverage, a controlled stand-off distance, limited steam and dust interference, and a clean optical window. Establish the calibration with the actual grade, coating, particle-size range, temperature, and moisture conditions rather than assuming that one model applies to every urea product.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where the decision depends on the average moisture through a deep or changing layer on a belt or chute, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-layer measurement can be the more appropriate engineering option when a surface trend would not represent the bulk stream. Bed-depth variation, loading compensation, metal clearance, product temperature, and safe access for maintenance must all be reviewed at the proposed point. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online moisture-measurement technology overview</Link> explains why material presentation should guide this selection.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Installation points that make the data actionable</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Cooler discharge:</strong> use this point to see the condition delivered by solids formation and cooling, before storage humidity can obscure the source of a change.</li>
+        <li><strong>After screening and product conditioning:</strong> use this point to trend saleable-size material and check whether recycle, fines handling, or coating coincides with a shift.</li>
+        <li><strong>Immediately before bagging or bulk loading:</strong> use a representative, protected transfer for shipment-condition trending and targeted release sampling.</li>
+        <li><strong>Warehouse reclaim:</strong> use a separate verification point when storage exposure is a known risk; it complements, rather than replaces, dryer or cooler control.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        During the site survey, document belt coverage, layer depth, speed, vibration, dust deposition, ambient humidity, product temperature, anti-caking-coating position, sample access, and the transport time from sensor to the decision point. Avoid locating a sensor solely where there is space: the signal must represent the material involved in the operating action.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and commissioning: preserve a traceable relationship to the reference test</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Agree the laboratory reference method and reporting basis before building the online model. Collect time-stamped samples from the same material stream seen by the sensor, immediately seal them to limit humidity pickup or loss, and record product temperature. Include normal production variation as well as expected excursions: granule size, coating, recycle rate, cooler load, ambient conditions, and product grade. A sample taken later from a bagging hopper can be a poor calibration pair for a cooler-discharge signal.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Commission in stages: first demonstrate repeatable trend direction against the approved laboratory result; then set averaging, alarms, and named operator responses; only after that consider a closed-loop cooling or conditioning adjustment. Recheck the model after material, coating, cooling configuration, sample method, or conveyance conditions change. Online moisture data should support—not replace—granule-strength, size, dust, caking, and packaging tests.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits worth proving locally</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Continuous measurement gives the operating team earlier visibility of a changing process condition. With a defined response plan, it can help isolate cooler drift, direct laboratory checks to real excursions, and reduce the need to operate with an unnecessarily conservative cooling or conditioning margin. It does not prove a fixed reduction in caking, energy, or rejected product by itself. Compare the plant&apos;s own flowability, bagging interruptions, caking observations, cooler energy, product temperature, and reference-test results before and after commissioning.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A useful project definition includes the urea grade, normal moisture and temperature range, granule-size distribution, cooling and coating sequence, conveyor or chute geometry, storage environment, reference method, hazardous-area requirements, and the exact operator or PLC action expected when the trend changes. These details turn an online measurement into a credible process-control input rather than a standalone display.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.iso.org/standard/63123.html">ISO 18642:2016, Fertilizer and soil conditioners — Fertilizer grade urea — General requirements</SourceLink>. Current scope for solid fertilizer-grade urea, including sampling, preparation, storage, and transport context.</li>
+        <li><SourceLink href="https://www.epa.gov/sites/default/files/2020-09/documents/final_background_document_for_urea_section_8.2.pdf">U.S. EPA, AP-42 Final Background Document for Urea, Section 8.2</SourceLink>. Granulation, cooling, screening, recycling, and anti-caking process context.</li>
+        <li><SourceLink href="https://hub.ifdc.org/handle/20.500.14297/1712">IFDC, Manual for Determining Physical Properties of Fertilizer</SourceLink>. Test-method context for critical relative humidity, moisture absorption, flowability, caking, and granule properties.</li>
+        <li><SourceLink href="https://scijournals.onlinelibrary.wiley.com/doi/abs/10.1002/jsfa.2933">García Barneto &amp; Ariza Carmona (2007), Journal of the Science of Food and Agriculture</SourceLink>. Karl Fischer moisture-profile work and its implications for urea-prill caking.</li>
+        <li><SourceLink href="https://acsess.onlinelibrary.wiley.com/doi/full/10.1002/saj2.20778">Cabrera et al. (2024), Soil Science Society of America Journal</SourceLink>. Urea hygroscopicity and temperature-dependent critical-relative-humidity context.</li>
+      </ul>
+    </>
+  );
+}
+
 function GlassBatchSilicaSandMoistureArticle() {
   return (
     <>
@@ -1183,6 +1257,8 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           {slug === "wood-fiberboard-hot-press-moisture-control" ? (
             <WoodFiberboardArticle />
+          ) : slug === "granular-urea-moisture-control-cooling-caking" ? (
+            <GranularUreaMoistureControlArticle />
           ) : slug === "glass-batch-silica-sand-moisture-control" ? (
             <GlassBatchSilicaSandMoistureArticle />
           ) : slug === "glass-fiber-roving-drying-moisture-control" ? (
