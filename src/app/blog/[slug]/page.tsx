@@ -96,6 +96,74 @@ function SourceLink({ href, children }: { href: string; children: ReactNode }) {
   );
 }
 
+function WoodPelletMoistureControlArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Start with the finished-pellet specification, not a generic dryer number</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Wood pellets are a densified fuel, not simply dried wood chips. Natural Resources Canada describes them as fuel made from compressed wood shavings, bark, sawdust, and chips, and its ISO 17225-2-based bulletin says all of the graded wood-pellet classes it summarizes have moisture content below 10%. <SourceLink href="https://natural-resources.canada.ca/sites/www.nrcan.gc.ca/files/files/NRCAN_BB_no4_e.pdf">The bulletin</SourceLink> also pairs that requirement with calorific value, ash, bulk density, and durability. That is the practical engineering point: moisture is one component of a finished-pellet specification, so the product target must come from the applicable grade, buyer agreement, raw material, and production validation—not from a copied alarm limit.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Put the reporting basis beside every value. The standard context above reports moisture on a wet basis: water mass divided by total sample mass. For example, a 1,000 kg pellet sample at 8% wet-basis moisture contains 80 kg water and 920 kg dry solids; the same water amount is 8.7% on a dry basis. The difference is modest at low moisture but still large enough to create a false comparison between a production trend, a certificate, and a laboratory result if the basis is not explicit.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: dryer exit, cooler exit, and shipped pellets are different process states</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A pellet can lose moisture during cooling and then gain it again if it is exposed to humid air during transfer or storage. Pellet temperature, airflow, residence time, pellet diameter, species mix, fines, bulk density, surface condition, conveyor loading, and packaging delay can all change what an instrument or grab sample represents. A dryer-outlet reading is valuable for thermal control, but it cannot by itself prove the moisture condition that reaches the bagging line. Conversely, a final packaging check may be too late to distinguish an upstream drying change from post-cooling pickup.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Storage is part of the moisture-control problem. The Wood Pellet Association of Canada reports that pellet self-heating is influenced by silo size and humidity and notes that dry pellets adsorb more moisture than moist pellets. <SourceLink href="https://pellet.org/news/managing-silo-size-and-humidity-key-to-controlling-self-heating-in-pellets/">Its storage guidance</SourceLink> is not a substitute for a site&apos;s dust, fire, and process-safety review, but it reinforces the need to trend humidity exposure and temperature alongside moisture after the cooler.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Where an online signal can support the process</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Dryer discharge:</strong> use a representative stream to see whether feed moisture, dryer heat, airflow, or residence time is moving the drying result. This is the earliest point for a corrective action, but the material may still be hot.</li>
+        <li><strong>After cooler and screening:</strong> use this point to trend saleable pellets after a major change in temperature and after fines removal. It is often a stronger location for comparing product condition with the laboratory reference result.</li>
+        <li><strong>Before bagging, bulk loading, or a finished-goods silo:</strong> use a protected, well-presented transfer to verify the moisture condition entering distribution and to investigate post-cooling pickup.</li>
+        <li><strong>Storage reclaim:</strong> where long storage or humid-air exposure is material, use a separate verification point to distinguish stock-condition changes from dryer performance.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Select one point for one decision. A plant may need a fast dryer-control trend and a later product-verification trend; those do not need to share the same alarm or response logic. Record the expected transport time from sensor to control action, then align the online history with dryer temperature, cooling air, throughput, pellet temperature, bagging delay, and ambient humidity. This provides evidence for root-cause investigation rather than a standalone percentage with no process context.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a consistently spread, exposed pellet layer on a conveyor, a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> can be evaluated for rapid moisture trending. A USDA Agricultural Research Service publication on NIR measurement of wood pellets used samples conditioned from 0.63% to 14.16% wet-basis moisture and verified them with a standard oven method; its best reported model had R² of 0.95. <SourceLink href="https://www.ars.usda.gov/research/publications/publication/?seqNo115=319167">That validation work</SourceLink> supports NIR as a credible measurement approach, but its result belongs to the tested pellets, spectra, and reference method. A production installation still needs its own calibration across the actual species, bark content, pellet geometry, temperature, fines level, and presentation.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where the decision depends on average moisture through a deep or changing pellet bed on a belt or chute, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-layer arrangement and load compensation are worth reviewing when bed depth, belt coverage, or mass flow changes enough that an exposed-surface signal would not be representative. The choice is determined by the material presentation and decision needed, not by a generic claim that one technique is always more accurate. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">moisture-measurement technology overview</Link> explains the difference between an optical surface measurement and a bulk through-layer approach.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and installation: preserve the link to the reference test</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Define the laboratory comparator before fitting an online model. ASTM E871-24 covers moisture analysis of particulate wood fuels, while the approved plant method should specify sample collection, sealed handling, preparation, oven conditions, reporting basis, and calculation. <SourceLink href="https://store.astm.org/standards/e871">The ASTM standard listing</SourceLink> is a useful starting point for the reference-method discussion. Collect time-stamped samples from the same moving stream seen by the sensor; a sample from a hopper several minutes later, after cooling or humidity exposure, is not necessarily a valid calibration pair.
+      </p>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Survey the material presentation:</strong> document pellet diameter and length, fines fraction, belt width, layer-depth range, coverage, speed, segregation, vibration, dust, steam, and metal clearances.</li>
+        <li><strong>Include real product variation:</strong> calibrate and verify across expected wood species, raw-material sources, bark fraction, pellet temperature, moisture range, throughput, and packaging or storage conditions.</li>
+        <li><strong>Protect the measuring environment:</strong> for NIR, establish a clean optical path and practical window-maintenance routine; for microwave, review through-layer geometry, belt or chute construction, loading compensation, and safe access.</li>
+        <li><strong>Commission in stages:</strong> first prove trend direction and repeatability against the agreed laboratory result; then add averaging, alarm limits, and named operator responses; consider closed-loop dryer control only after normal variation is represented reliably.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to verify on site</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Continuous moisture data gives operators earlier visibility of a wet feed change, dryer-load shift, cooler change, or storage exposure. That can focus laboratory checks on true excursions, support earlier dryer adjustments, and reduce the temptation to run with an unnecessarily wide drying margin. It does not by itself establish a fixed energy saving, durability improvement, or storage-life result. Measure the site&apos;s own thermal energy, throughput, product moisture, bulk density, fines, durability, complaints, and rework before and after commissioning.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Wood-pellet producers also need to manage upstream fiber condition. For processes that receive or condition wood material before pelletizing, ALZRO&apos;s <Link href="/industries/wood-fiber-board-materials" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">wood fiber and board-materials application page</Link> provides related bulk-material measurement context. The strongest project definition names the pellet grade, product specification, normal moisture range and basis, control point, expected action, reference test, and sample plan before a sensor is selected.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://natural-resources.canada.ca/sites/www.nrcan.gc.ca/files/files/NRCAN_BB_no4_e.pdf">Natural Resources Canada, Solid Biofuels Bulletin Series #4: Graded Wood Pellets</SourceLink>. ISO 17225-2-based Canadian quality context, including moisture below 10% for the grades summarized, calorific value, and bulk-density information.</li>
+        <li><SourceLink href="https://www.ars.usda.gov/research/publications/publication/?seqNo115=319167">Sundaram et al. (2015), USDA Agricultural Research Service: Application of NIR Reflectance Spectroscopy on Rapid Determination of Moisture Content of Wood Pellets</SourceLink>. Oven-verified NIR calibration and validation across 0.63% to 14.16% wet-basis moisture for the tested pellets.</li>
+        <li><SourceLink href="https://store.astm.org/standards/e871">ASTM E871-24, Standard Test Method for Moisture Analysis of Particulate Wood Fuels</SourceLink>. Reference-method framework for a laboratory comparator.</li>
+        <li><SourceLink href="https://pellet.org/news/managing-silo-size-and-humidity-key-to-controlling-self-heating-in-pellets/">Wood Pellet Association of Canada, Managing Silo Size and Humidity Key to Controlling Self-heating in Pellets</SourceLink>. Storage-humidity and silo-management context for wood pellets.</li>
+      </ul>
+    </>
+  );
+}
+
 function GranularUreaMoistureControlArticle() {
   return (
     <>
@@ -1257,6 +1325,8 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           {slug === "wood-fiberboard-hot-press-moisture-control" ? (
             <WoodFiberboardArticle />
+          ) : slug === "wood-pellet-moisture-control-dryer-bagging-storage" ? (
+            <WoodPelletMoistureControlArticle />
           ) : slug === "granular-urea-moisture-control-cooling-caking" ? (
             <GranularUreaMoistureControlArticle />
           ) : slug === "glass-batch-silica-sand-moisture-control" ? (

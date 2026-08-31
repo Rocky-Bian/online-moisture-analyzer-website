@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "wood-pellet-moisture-control-dryer-bagging-storage",
+    title: "Wood Pellet Moisture Control: From Dryer Discharge to Bagging and Storage",
+    excerpt:
+      "How pellet producers can define moisture on a wet basis, place online measurement where it represents the finished stream, and use continuous data to manage drying, cooling, and protected storage without assuming one target fits every grade or customer specification.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-08-31",
+    readTime: "9 min",
+    tags: [
+      "wood pellet moisture control",
+      "wood pellet dryer discharge measurement",
+      "pellet storage humidity control",
+      "online NIR moisture analyzer",
+      "microwave bulk moisture measurement",
+      "wood pellet quality testing",
+      "biomass pellet drying",
+    ],
+  },
+  {
     slug: "granular-urea-moisture-control-cooling-caking",
     title: "Granular Urea Moisture Control: Cooling, Hygroscopic Pickup, and Caking Risk",
     excerpt:
