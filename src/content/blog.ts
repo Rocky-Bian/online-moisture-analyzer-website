@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "animal-feed-pellet-moisture-control-cooling-storage",
+    title: "Animal Feed Pellet Moisture Control: Cooling, Storage, and a Better Online Measurement Point",
+    excerpt:
+      "How feed mills can distinguish conditioning moisture from finished-pellet moisture, select a representative post-cooler measurement point, and use continuous data to investigate cooling and storage risk without treating one moisture limit as universal.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-09-04",
+    readTime: "9 min",
+    tags: [
+      "animal feed pellet moisture control",
+      "feed pellet cooler moisture measurement",
+      "post-pellet cooling and storage",
+      "online NIR moisture analyzer",
+      "microwave bulk moisture measurement",
+      "feed mill moisture calibration",
+      "pellet storage mold prevention",
+    ],
+  },
+  {
     slug: "wood-pellet-moisture-control-dryer-bagging-storage",
     title: "Wood Pellet Moisture Control: From Dryer Discharge to Bagging and Storage",
     excerpt:

@@ -1270,6 +1270,73 @@ function GreenCoffeeMoistureControlArticle() {
   );
 }
 
+function AnimalFeedPelletMoistureControlArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Separate conditioning moisture from the value that matters at storage</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Feed pelleting deliberately changes the moisture and temperature of the mash before it becomes a finished pellet. FAO&apos;s feed-milling reference describes adding roughly 4% to 6% water, usually as steam, during conditioning; it reports a typical transition from about 10% to 12% moisture at ambient temperature to 15% to 16% at 80 to 90°C before compression and extrusion. <SourceLink href="https://www.fao.org/4/X5738E/x5738e0j.htm">That process description</SourceLink> explains why a conditioner or pellet-mill reading cannot be treated as a finished-product result. It describes a necessary intermediate state whose heat and water must subsequently be managed by cooling and, where needed, drying.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The final target is product- and market-specific. In one FAO hazard-analysis example for maize-based feed, pellets are cooled with sufficient aeration and a critical limit of 13% moisture is set just before packaging. <SourceLink href="https://www.fao.org/4/y1390e/y1390e0k.htm">The example</SourceLink> is useful because it names a measurement location and requires representative sampling with a calibrated meter; it is not a universal specification for every poultry, swine, ruminant, pet-food, or aquafeed formulation. Formula, fat level, pellet size, water activity, packaging, shelf life, climate, customer requirements, and local regulations must determine the approved release condition.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: a cooler can create a false sense of uniformity</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Hot pellets leave the die with an internal temperature and moisture profile, then pass through a cooler whose performance depends on air flow, bed depth, bed uniformity, pellet temperature, relative humidity, pellet size and density, moisture, and residence time. Kansas State University&apos;s feed-manufacturing guide specifically calls out those variables and notes that thicker, denser pellets need more cooling time and air flow for moisture to migrate to the surface. <SourceLink href="https://www.grains.k-state.edu/research/AnimalFeedandPetFood/feed_science_research_extension/quality_assurance_guidelines_resources/4.4%20Pelleting_FORMATTED.pdf">Its cooler guidance</SourceLink> also recommends an even pellet bed for uniform air flow and drying.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        That makes an average grab sample valuable but incomplete. A short-lived change in steam addition, die condition, fan performance, fines accumulation, cooler loading, or ambient humidity can move through the line between routine checks. A sample collected after a bin may also hide whether the event began at conditioning, cooling, or later re-wetting. For stored feeds, moisture content and relative humidity influence deterioration, insects, and fungal growth; FAO notes that a feed&apos;s moisture equilibrates with the air in storage. <SourceLink href="https://www.fao.org/4/s4314e/s4314e08.htm">Its storage guidance</SourceLink> is a reminder that a good cooler-outlet result alone does not guarantee the condition in a humid warehouse, bag, or bulk bin.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Map the control questions before choosing the measurement point</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Conditioner or pellet-mill discharge:</strong> use a temperature and process-moisture trend to investigate steam addition, mash flow, conditioning, and die behaviour. This point is early enough to act, but it is not the finished-pellet moisture value.</li>
+        <li><strong>Cooler discharge:</strong> this is usually the most useful location for managing the production endpoint because it represents the material after the intended heat and moisture removal, while still allowing an operator to investigate cooler air, residence time, loading, or upstream conditioning.</li>
+        <li><strong>Before bagging or bulk load-out:</strong> use a final transfer point to detect moisture pickup after cooling, post-pellet liquid application, long conveying, or temporary bin residence. It is especially useful if the release sample is taken there.</li>
+        <li><strong>Warehouse or dispatch checks:</strong> use quality verification to study storage, packaging, and distribution exposure. It is normally too late for direct cooler control, but it closes the loop between the process trend and delivered product.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A site survey should follow the stream rather than the easiest mounting location: formulation and pellet diameter, nominal and peak throughput, cooler type, bed-depth range, fan status and air temperature, ambient humidity, fines behaviour, post-pellet liquids, conveyor and bin residence time, and the approved sampling point all affect what the measurement represents. The aim is a location with a stable material presentation and enough response time for a defined action.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a well-spread, exposed, and consistently presented pellet layer on a post-cooler conveyor, evaluate a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> for fast trend information. The engineering requirements are a stable sensor-to-product distance, good coverage across the belt, a clean optical path, and a model validated across the actual pellet recipes, sizes, temperatures, colours, surface conditions, and normal moisture range. Treat the value as a measurement of the surface and layer presented to the sensor; do not assume it describes a deep or segregated bulk bed.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        When the control question is the water content through a deeper, changing pellet or crumble layer in a belt or chute, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-layer arrangement and load compensation can be the stronger engineering fit where bed depth or mass flow changes materially. Selection should follow material presentation and the decision the signal will support—not a generic accuracy claim. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online moisture-measurement technology overview</Link> explains the surface-oriented NIR and bulk-oriented microwave distinction.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and installation: make the signal comparable with the plant reference</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Define the reference result:</strong> record the approved moisture method, sample preparation, sample mass, reporting basis, conditioning, and release limit. Moisture content and water activity are related but not interchangeable; do not calibrate a water-content signal against an undefined storage-risk indicator.</li>
+        <li><strong>Time-align samples:</strong> collect laboratory samples from the exact stream the instrument sees, allowing for cooler residence time, conveyor travel, sampling delay, and the instrument&apos;s configured averaging interval.</li>
+        <li><strong>Include real formulation variation:</strong> validate across recipe families, pellet diameters, fat and liquid additions, colour, temperature, fines level, moisture range, and normal loading. Re-check the model when the formulation or pellet presentation changes materially.</li>
+        <li><strong>Engineer the measurement environment:</strong> review dust, steam, condensation, vibration, window fouling, metal clearances, belt geometry, electrical noise, safe access, and cleaning. Fines can affect both air flow in the cooler and measurement conditions downstream.</li>
+        <li><strong>Commission in stages:</strong> first demonstrate repeatable trend direction; then set averaging, alarm, and sample-investigation rules; only later consider operator guidance or automated changes to cooling or conditioning inputs.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits worth proving on site</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Continuous data can give a feed-mill team earlier evidence of a cooling upset or a wet stream before a large volume reaches storage. That supports targeted laboratory checks, more disciplined cooler maintenance, investigation of post-cooler pickup, and a more informed decision about when to hold product. It does not eliminate microbiological, mycotoxin, storage, packaging, or release-control programmes. A peer-reviewed review of feed ingredients notes that water activity affects yeast and mould growth as well as pellet-quality characteristics, and that the relationship between moisture content and water activity varies by material. <SourceLink href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8146707/">The review</SourceLink> is why a site should not substitute a single moisture number for broader storage-risk assessment.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The credible energy opportunity is avoiding a permanently conservative cooling or drying margin after the signal has been verified against the plant&apos;s own quality data. Track cooler air and fan energy, product temperature, moisture variation, pellet durability, rework or hold events, laboratory results, and complaints before and after implementation. This links the online value to measurable operational outcomes instead of assuming a universal saving from sensor installation.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.fao.org/4/X5738E/x5738e0j.htm">FAO, Chapter 18: Feed Milling Processes</SourceLink>. Conditioning moisture and temperature context, cooler operation, and the instruction to cool and dry pellets before storage or bagging.</li>
+        <li><SourceLink href="https://www.fao.org/4/y1390e/y1390e0k.htm">FAO, Example 2: Maize-Based Animal Feed</SourceLink>. HACCP-style example of steam addition, cooler aeration, representative sampling, calibrated meter use, and a 13% pre-packaging critical limit for that example.</li>
+        <li><SourceLink href="https://www.grains.k-state.edu/research/AnimalFeedandPetFood/feed_science_research_extension/quality_assurance_guidelines_resources/4.4%20Pelleting_FORMATTED.pdf">Kansas State University, Quality Feed Manufacturing Guide: Pelleting</SourceLink>. Cooler variables, bed uniformity, air-flow, density, and fines-maintenance considerations.</li>
+        <li><SourceLink href="https://www.fao.org/4/s4314e/s4314e08.htm">FAO, How Should I Store My Feeds?</SourceLink>. Moisture, relative humidity, feed-equilibrium moisture, fungal-growth, and storage context.</li>
+        <li><SourceLink href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8146707/">Zhang et al. (2021), Measures Matter—Determining the True Nutri-Physiological Value of Feed Ingredients for Swine</SourceLink>. Water-activity relationship to spoilage and pellet-quality context.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -1359,6 +1426,8 @@ export default async function BlogPostPage({ params }: Props) {
             <SodaAshMoistureControlArticle />
           ) : slug === "green-coffee-moisture-control-drying-storage" ? (
             <GreenCoffeeMoistureControlArticle />
+          ) : slug === "animal-feed-pellet-moisture-control-cooling-storage" ? (
+            <AnimalFeedPelletMoistureControlArticle />
           ) : (
             paragraphs.map((paragraph, i) => (
               <p key={i} className="mb-6 text-base leading-relaxed text-primary/80">
