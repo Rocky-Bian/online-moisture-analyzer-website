@@ -1337,6 +1337,72 @@ function AnimalFeedPelletMoistureControlArticle() {
   );
 }
 
+function PvcResinMoistureControlArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Start by defining the laboratory value: water and volatile matter are not automatically the same control variable</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Suspension PVC leaves polymerization as a water-bearing slurry, so drying is a material-quality and process-capacity step—not merely a final inspection. The U.S. Environmental Protection Agency&apos;s historical PVC process review describes centrifuged wet cake with usually about 25% moisture going to a rotary dryer and identifies drying as a critical phase because excess resin temperature can lead to degradation and discoloration. <SourceLink href="https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=91010K0G.TXT">That EPA process description</SourceLink> is useful background, but it is not a modern product specification or a recommended operating temperature.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For resin quality, the first question is what the laboratory is actually reporting. <SourceLink href="https://store.astm.org/d3030-23.html">ASTM D3030</SourceLink> is titled <em>Standard Test Method for Volatile Matter (Including Water) of Vinyl Chloride Resins</em>; its scope says the method quantitatively determines volatile matter, including water, and that it does not identify the components. <SourceLink href="https://committee.iso.org/cms/live/live/es/sites/isoorg/contents/data/standard/03/91/39135.html?browse=ics">ISO 1269:2006</SourceLink>, confirmed by ISO in 2024, likewise specifies two methods for volatile matter, including water, in vinyl chloride homopolymer and copolymer resins. That wording matters: a loss-on-heating or volatile-matter result may be the approved release value, while an online moisture signal is a calibrated process measurement. Do not present those values as interchangeable unless the site&apos;s method, sample preparation, and validation demonstrate that relationship.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: the dryer is only one part of the material history</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The condition at centrifuge discharge, dryer discharge, cooler discharge, silo outlet, and dry-blend feed can differ materially. A peer-reviewed PVC-drying study made with an industrial partner reports wet cake in the range of 0.2 to 0.35 kg water per kg dry PVC after centrifugation and describes pneumatic plus fluidized-bed drying to lower the remaining humidity below 0.05 kg/kg dry PVC. <SourceLink href="https://www.sciencedirect.com/science/article/abs/pii/S0032591013005305">The study</SourceLink> also reports 800 to 1,500 kJ per kg dry PVC for drying under the conditions and grades it examined. These are process-study values, not a universal resin specification, but they show why a short drying excursion can have both quality and energy consequences.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A convenient instrument location may not answer the right question. A signal immediately at dryer discharge can help operators investigate feed-cake condition, air flow, heater performance, and residence time. It does not prove the condition entering an extruder after cooling, conveying, storage, or blending with stabilizers, lubricants, pigments, impact modifiers, and fillers. Conversely, a late sample at a bagging station may confirm release condition but be too late to isolate whether a change began in dewatering, drying, cooling, or downstream pickup. Map the material route and the control action before specifying the measurement point.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Choose the measurement point around the decision</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Dryer discharge:</strong> use this position to trend drying response while there is still time to investigate feed rate, air conditions, residence time, or heat input. Account for hot-product effects and confirm that the stream is consistently presented.</li>
+        <li><strong>After cooling and before storage:</strong> use this point to see the resin condition after the intended thermal treatment. It can reveal a cooling or transfer change before a large silo inventory is affected.</li>
+        <li><strong>Silo outlet or pre-blend transfer:</strong> use a representative signal here when the quality question is the condition actually delivered to high-speed mixing or compounding. This is often more relevant than a supplier certificate for material that has been stored or handled on site.</li>
+        <li><strong>Finished dry blend:</strong> use laboratory verification to confirm the approved compound condition. A live trend can support earlier investigation, but it should not replace the formulation&apos;s agreed release and thermal-stability checks.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A site survey should document resin grade and morphology, normal and excursion volatile-matter range, feed and belt geometry, bed-depth range, throughput, product temperature, storage time, additives, dust collection, electrical-area classification, and the sampling point. The right location has a stable, representative material presentation and enough transport time for an operator to take a defined action.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where resin powder or a dry blend forms a shallow, well-covered, exposed layer with stable stand-off distance, evaluate a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> for rapid trend measurement. Its suitability depends on a clean optical path, repeatable surface presentation, controlled dust and vibration, and a calibration built from the actual resin, additive package, particle-size distribution, colour, temperature, and expected process range. An optical result should be treated as a measurement of the presented surface and layer, not assumed to represent a deep or segregating hopper.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        If the control question concerns total moisture through a deeper or changing bulk layer on a belt or chute, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. Through-layer measurement with load compensation can be the stronger engineering fit when bed depth and mass loading vary. The choice should follow the material presentation and intended response—not a generic accuracy claim. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">technology overview</Link> explains the practical difference between surface-oriented NIR and bulk-oriented microwave measurement.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and installation: prove comparability before controlling the line</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Define the reference method:</strong> record whether the plant controls ASTM D3030, ISO 1269, another validated method, or a material-specific internal procedure. Document sample mass, conditioning, heating program, result basis, and acceptance rules.</li>
+        <li><strong>Sample the same material:</strong> take time-stamped reference samples from the stream observed by the sensor. Allow for dryer residence time, cooling, conveyor travel, sensor averaging, and laboratory delay before matching a laboratory result to an online record.</li>
+        <li><strong>Include real variation:</strong> cover normal dry and wet conditions along with resin grade, particle-size changes, product temperature, additives, pigment or filler content, bulk density, and bed-depth variation. Revalidate after a meaningful formulation or supplier change.</li>
+        <li><strong>Engineer the environment:</strong> assess dust deposition, condensation, static control, cleaning access, vibration, metal clearances, cable routing, and hazardous-area requirements. The sensor installation must not create an avoidable powder-handling or maintenance hazard.</li>
+        <li><strong>Commission progressively:</strong> establish a repeatable trend first; then agree averaging, alarms, sample investigation, and operator response; only after that evaluate advisory or closed-loop changes to drying conditions.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits worth verifying locally</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The credible benefit of continuous moisture data is earlier visibility. It can show a wet-feed change, dryer drift, cooling issue, or storage-related pickup before a large quantity reaches blending or extrusion. That supports targeted laboratory checks, traceable lot investigation, and a more informed decision to hold, blend, or adjust material. It does not replace resin quality testing, dry-blend flowability checks, thermal-stability tests, dust controls, or the site&apos;s release programme.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The energy opportunity is to reduce an unnecessarily conservative drying margin only after the online trend has been verified against product quality. Track energy per tonne, throughput, product temperature, volatile-matter variation, laboratory results, off-spec events, and rework before and after commissioning. That links an instrument reading to a decision the plant can audit, rather than promising a fixed saving for every PVC grade or line.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://store.astm.org/d3030-23.html">ASTM D3030-23, Standard Test Method for Volatile Matter (Including Water) of Vinyl Chloride Resins</SourceLink>. Official scope and limitation that the method does not identify the volatile components.</li>
+        <li><SourceLink href="https://committee.iso.org/cms/live/live/es/sites/isoorg/contents/data/standard/03/91/39135.html?browse=ics">ISO 1269:2006, Plastics — Homopolymer and copolymer resins of vinyl chloride — Determination of volatile matter (including water)</SourceLink>. Official scope; ISO confirms this edition as current in 2024.</li>
+        <li><SourceLink href="https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=91010K0G.TXT">U.S. EPA, Vinyl Chloride — A Review of National Emission Standards</SourceLink>. Historical suspension-PVC centrifuging and drying-process context.</li>
+        <li><SourceLink href="https://www.sciencedirect.com/science/article/abs/pii/S0032591013005305">Aubin et al. (2014), Powder Technology, “Modeling and simulation of drying operations in PVC powder production line”</SourceLink>. Peer-reviewed case-study values for cake humidity, residual humidity, and drying energy; grade- and condition-specific.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -1428,6 +1494,8 @@ export default async function BlogPostPage({ params }: Props) {
             <GreenCoffeeMoistureControlArticle />
           ) : slug === "animal-feed-pellet-moisture-control-cooling-storage" ? (
             <AnimalFeedPelletMoistureControlArticle />
+          ) : slug === "pvc-resin-moisture-control-dryer-discharge-compounding" ? (
+            <PvcResinMoistureControlArticle />
           ) : (
             paragraphs.map((paragraph, i) => (
               <p key={i} className="mb-6 text-base leading-relaxed text-primary/80">

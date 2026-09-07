@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "pvc-resin-moisture-control-dryer-discharge-compounding",
+    title: "PVC Resin Moisture Control: From Dryer Discharge to a Traceable Compounding Signal",
+    excerpt:
+      "How PVC producers and compounders can define volatile matter correctly, select a representative online measurement point after drying or before blending, and connect continuous data to laboratory verification without copying a generic moisture target.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-09-07",
+    readTime: "10 min",
+    tags: [
+      "PVC resin moisture control",
+      "vinyl chloride resin volatile matter",
+      "PVC dryer discharge measurement",
+      "PVC dry blend moisture monitoring",
+      "online NIR moisture analyzer",
+      "microwave bulk moisture measurement",
+      "PVC compounding quality control",
+    ],
+  },
+  {
     slug: "animal-feed-pellet-moisture-control-cooling-storage",
     title: "Animal Feed Pellet Moisture Control: Cooling, Storage, and a Better Online Measurement Point",
     excerpt:
