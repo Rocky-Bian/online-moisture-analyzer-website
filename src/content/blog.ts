@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "spray-dried-detergent-powder-moisture-control-post-tower",
+    title: "Spray-Dried Detergent Powder Moisture Control: Separate Tower Drying from Post-Tower Pickup",
+    excerpt:
+      "How detergent-powder producers can define a defensible water reference, locate online measurement after the spray tower or before packing, and use continuous trends to investigate flow and caking risk without treating one moisture value as a universal specification.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-09-10",
+    readTime: "10 min",
+    tags: [
+      "spray-dried detergent powder moisture",
+      "detergent tower outlet measurement",
+      "detergent powder caking control",
+      "detergent powder flowability",
+      "online NIR moisture analyzer",
+      "microwave bulk moisture measurement",
+      "Karl Fischer detergent water content",
+    ],
+  },
+  {
     slug: "pvc-resin-moisture-control-dryer-discharge-compounding",
     title: "PVC Resin Moisture Control: From Dryer Discharge to a Traceable Compounding Signal",
     excerpt:

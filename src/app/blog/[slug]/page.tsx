@@ -1403,6 +1403,71 @@ function PvcResinMoistureControlArticle() {
   );
 }
 
+function SprayDriedDetergentPowderMoistureArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Define the water reference before controlling the spray tower</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Spray-dried laundry powders are multi-component materials, not simple mineral solids. Their water result can depend on the method, formulation, sampling point, and whether the sample has had time to equilibrate with humid air. <SourceLink href="https://www.iso.org/standard/55762.html">ISO 4317:2011</SourceLink> specifies volumetric and coulometric Karl Fischer methods for water in surface-active agents and detergents, including powders. The same standard cautions that alkaline salts such as alkali-metal silicates, carbonates, hydroxides, and borates can react with Karl Fischer reagent and produce results that are too high. This is a material-specific limitation worth resolving before an online signal is calibrated to a laboratory number.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Agree what the line actually needs to manage: total water by a validated procedure, a product-specific loss-on-drying value, a moisture trend related to handling, or a defined release test. Record sample mass, container and sealing method, conditioning time, reporting basis, and the accepted laboratory procedure. An online reading is most useful as a continuously available process variable tied to that approved reference; it is not automatically interchangeable with a different test conducted later on a packed product.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Why a tower-outlet result can differ from the condition delivered to packing</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        In a spray tower, the feed slurry, atomization, inlet air, exhaust conditions, and particle formation all shape the powder leaving the tower. A peer-reviewed pilot study of model detergent powders used slurries with 30.0 and 63.0 wt% initial water at a reported 280°C inlet and 100°C exhaust condition. <SourceLink href="https://www.sciencedirect.com/science/article/pii/S0921883122000103">Its results</SourceLink> found that slurry water content and matrix composition changed powder flow behaviour; the authors attributed the improved flow of some formulations primarily to matrix mechanical robustness rather than particle shape. Those values are study conditions, not a recipe or operating target for another tower, but they show why a single moisture number does not fully describe downstream handling.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The tower outlet answers a drying-control question. A cooler discharge, pneumatic-transfer line, post-dose blender, or packing feed answers a different question: what condition is the finished blend actually receiving after cooling, screening, perfume or other additions, and exposure to plant air? Research on spray-dried detergent powders notes that moisture uptake above a formulation-dependent relative-humidity threshold can lead to surface dissolution, stickiness, sintering, and caking. <SourceLink href="https://www.sciencedirect.com/science/article/abs/pii/S0021979719304990">The sorption study</SourceLink> supports treating humidity exposure and formulation as part of the control plan, rather than attributing every flow problem to tower drying alone.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Select the measurement point around the operating decision</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Spray-tower discharge or first enclosed conveyor:</strong> use this position to see drying response early enough to investigate slurry solids, atomization, air conditions, or tower load. Protect the sensing zone from steam, hot dust, and an unstable falling curtain.</li>
+        <li><strong>After cooling and screening:</strong> use this point to trend the powder condition after the intended thermal treatment and before long transfer or storage can mask its origin.</li>
+        <li><strong>After post-dosing or final blending:</strong> use a representative stream when the quality question is the condition of the formulated powder entering the packer. Confirm that segregation does not make a surface sample unrepresentative.</li>
+        <li><strong>Immediately before packing:</strong> use this point for shipment-condition trending and targeted release sampling, while recognising that it may be too late to correct a tower excursion without holding product.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        During the site survey, document product grades, normal and excursion water range, bulk density, particle-size distribution, bed coverage, throughput, product temperature, post-dose sequence, dust extraction, ambient humidity, and sampling access. A measurement point is credible only when its material presentation matches the decision the operator or PLC is expected to make.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a shallow, stable, exposed layer of relatively uniform powder, evaluate a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> for rapid process trending. The installation needs a repeatable stand-off distance, a clean optical path, controlled dust deposition, and calibration samples from the actual formulation, particle-size range, temperature, and moisture range. Its signal represents the material presented at the surface; it should not be assumed to average a deep hopper or segregated stream.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where the decision depends on average water through a deeper or changing bulk layer, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-layer arrangement with load compensation may be the better engineering fit for a belt or chute where a surface signal cannot represent the full powder mass. Review bed depth, density, metal clearances, dust, temperature, safe maintenance access, and electrical-area requirements. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">technology overview</Link> explains why material presentation should lead the NIR-versus-microwave decision.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and commissioning: link the signal to a traceable sample plan</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Qualify the reference method:</strong> confirm interferences and suitability for the formula before using a laboratory water result as calibration truth. If Karl Fischer is used, address the ISO 4317 alkaline-salt caution with the laboratory.</li>
+        <li><strong>Sample the same stream:</strong> take time-stamped, promptly sealed samples at the sensor location. Align the sample with conveyor travel, sensor averaging, cooler residence time, and laboratory delay before pairing data.</li>
+        <li><strong>Model real production variation:</strong> include expected changes in formulation, slurry solids, bulk density, particle size, product temperature, perfumes or post-doses, and ambient conditions. Revalidate after meaningful recipe or equipment changes.</li>
+        <li><strong>Stage the response:</strong> first prove a repeatable trend; then set averaging, alarms, sample investigation, and named operating actions; only after that consider advisory or closed-loop changes to tower or cooling conditions.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits worth proving on the plant&apos;s own line</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A continuous water trend can shorten the time between a process change and an investigation. It can help distinguish a tower-drying drift from a cooler, transfer, or humidity-exposure problem; target laboratory checks at genuine excursions; and give production a traceable basis to hold, blend, or adjust product. It does not by itself prove that a powder will flow, dissolve, resist caking, or meet every formulation requirement.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        This caution is supported by a separate powder-handling study: spray-dried detergent samples with higher moisture showed lower bulk porosity but higher compressibility and cake strength under the conditions tested. <SourceLink href="https://www.sciencedirect.com/science/article/abs/pii/S167420011300179X">The authors&apos; findings</SourceLink> reinforce the need to trend moisture alongside bulk density, particle size, storage humidity, consolidation, flow test results, and packer interruptions. Before claiming energy or quality improvement, compare the plant&apos;s own energy per tonne, tower and cooler conditions, laboratory results, rejected product, flowability, and packing performance before and after commissioning.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.iso.org/standard/55762.html">ISO 4317:2011, Surface-active agents and detergents — Determination of water content — Karl Fischer methods</SourceLink>. Official scope for powders, pastes, and solutions, plus the alkaline-salt interference caution.</li>
+        <li><SourceLink href="https://www.sciencedirect.com/science/article/pii/S0921883122000103">Farshchi et al. (2022), Advanced Powder Technology, “Effect of matrix composition on the flowability of spray-dried detergent powders”</SourceLink>. Peer-reviewed study of slurry-water content, matrix composition, and powder flow.</li>
+        <li><SourceLink href="https://www.sciencedirect.com/science/article/abs/pii/S0021979719304990">Farshchi et al. (2019), Journal of Colloid and Interface Science, “Evolution of surface micro-structure and moisture sorption characteristics of spray-dried detergent powders”</SourceLink>. Peer-reviewed humidity-sorption and caking context.</li>
+        <li><SourceLink href="https://www.sciencedirect.com/science/article/abs/pii/S167420011300179X">Hassanpour et al. (2014), Particuology, “An experimental and numerical study of packing, compression, and caking behaviour of detergent powders”</SourceLink>. Peer-reviewed handling results for detergent powders at different moisture contents.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -1496,6 +1561,8 @@ export default async function BlogPostPage({ params }: Props) {
             <AnimalFeedPelletMoistureControlArticle />
           ) : slug === "pvc-resin-moisture-control-dryer-discharge-compounding" ? (
             <PvcResinMoistureControlArticle />
+          ) : slug === "spray-dried-detergent-powder-moisture-control-post-tower" ? (
+            <SprayDriedDetergentPowderMoistureArticle />
           ) : (
             paragraphs.map((paragraph, i) => (
               <p key={i} className="mb-6 text-base leading-relaxed text-primary/80">
