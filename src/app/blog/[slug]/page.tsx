@@ -1468,6 +1468,68 @@ function SprayDriedDetergentPowderMoistureArticle() {
   );
 }
 
+function IronOrePelletizingMoistureControlArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Why pelletizing needs a moisture-control strategy, not a single inherited setpoint</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Iron-ore pelletizing converts finely ground concentrate into green pellets that must survive handling, drying, induration, and downstream ironmaking. Water is an active part of the balling mechanism: too little can leave incomplete liquid bridges and weak growth, while too much can change pellet plasticity, size distribution, and drying behaviour. The right operating window is therefore specific to the concentrate&apos;s fineness and mineralogy, filter-cake condition, bentonite or other binder, flux additions, process-water chemistry, disc or drum settings, and pellet-quality requirements. An online value should be used to hold a validated plant window—not to apply a moisture target borrowed from another orebody.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Published laboratory work makes the point quantitatively. In one magnetite-concentrate study with 0.5% bentonite, the reported ballable range was 8.2% to 9.4% moisture; raising bentonite to 1.5% expanded the tested range to 10.5%. <SourceLink href="https://www.sciencedirect.com/science/article/pii/S003259100600338X">The authors&apos; work on wet green-pellet binding</SourceLink> is evidence that binder dosage changes the water response, not a recommended production setting for every plant. Treat moisture, binder performance, and pellet tests as one connected control problem.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: filter-cake water and green-pellet water are different process states</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Filter-cake moisture describes the concentrate received from filtration. Green-pellet moisture is the result after blending, binder and flux dosing, water addition, mixing, and balling; it is also influenced by particle-size distribution and porosity. A sensor immediately after the filter can identify an upstream dewatering shift, but it cannot prove the water condition at the balling disc. A measurement after the mixer can support water-addition control, while a result on finished green pellets may best explain drop strength, compression strength, or thermal-shock observations. These points need separate control limits and response plans.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Bentonite makes this separation especially important. A peer-reviewed comparison of bentonites reports that their montmorillonite content, water absorption, swelling, and methylene-blue absorption differed alongside green-pellet strength and shock-temperature results. <SourceLink href="https://onlinelibrary.wiley.com/doi/full/10.1155/2017/7639326">The 2017 study</SourceLink> found that reducing one tested bentonite from 1.5% to 1.0% reduced both green-pellet strength and shock temperature. This is not proof that more binder is always better; it shows why a moisture trend should be interpreted with the actual binder lot, dosage, and process-water condition.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a consistent, exposed layer of concentrate or mixed feed on a conveyor, evaluate a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> for rapid surface-trend measurement. It needs repeatable belt coverage, a controlled measurement distance, a clean optical path, and samples from the same material presented to the sensor. NIR is most useful where the measured surface represents the stream involved in the operating action; it should not be treated as an automatic average of a deep, segregated bed.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where the decision depends on average moisture through a deeper, changing bulk layer on a belt or chute, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-layer approach with loading compensation can be a stronger engineering fit when surface information alone is not representative. Review bed depth, density, belt loading, metal clearances, ore temperature, dust, vibration, maintenance access, and the transport time from sensing point to water-addition or balling response. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">technology overview</Link> explains why material presentation should lead the NIR-versus-microwave decision.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Installation points that give operators an actionable signal</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Filter-cake discharge:</strong> trend dewatering performance and incoming water load before dry additives and deliberate water addition change the material.</li>
+        <li><strong>After intensive mixing, before balling:</strong> use a representative stream to support water-addition, binder, and feed-consistency decisions; validate that sampling can be safely synchronized.</li>
+        <li><strong>Green-pellet transfer to the induration machine:</strong> use this point for product-condition trending alongside size distribution, drop number, and green compression tests rather than as a direct substitute for them.</li>
+        <li><strong>After drying or induration:</strong> use a separate quality or energy-verification point when the goal is to investigate furnace behaviour; it cannot provide a timely correction to balling.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Do not locate an instrument solely where the structure is convenient. Document the material path, residence time, recycle streams, water-injection location, binder addition, belt speed, and sampling access. The useful location is the one that makes the sensor value comparable with the laboratory sample and early enough for a named action.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and sampling: maintain a defensible reference relationship</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Agree the reference method, reporting basis, and sampling protocol before modeling an online signal. <SourceLink href="https://www.iso.org/standard/72159.html">ISO 3087:2020</SourceLink>, confirmed in 2026, specifies a method for determining the moisture content of a lot of natural or processed iron ore; its scope is useful context for disciplined sampling and sample preparation. It is not, by itself, a green-pellet control specification. For online calibration, take time-stamped, promptly sealed samples from the same stream and align them with material travel time, sensor averaging, laboratory handling, and the relevant control decision.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Include real production variation in the calibration set: concentrate blend, particle-size distribution, filter-vacuum performance, binder type and lot, additive dosage, water chemistry, moisture range, bed depth, temperature, and recycle ratio. Commission in stages: first prove a repeatable trend against the agreed method; then establish averaging, alarms, verification sampling, and operator responses; only later evaluate closed-loop water addition. Revalidate after a meaningful change in ore source, binder, filtration, mixing, or material presentation.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to prove on the plant&apos;s own data</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A continuous moisture trend can shorten the time between a filtration or mixing change and a targeted investigation. With a defined response plan, it can help operators distinguish a dewatering shift from a water-addition or binder issue, direct laboratory checks to genuine excursions, and avoid operating unnecessarily far from a validated window. It does not establish a guaranteed increase in pellet strength, productivity, or energy performance on its own. Compare the plant&apos;s own moisture, pellet-size distribution, drop number, green and dry compression strength, induration energy, and fired-pellet quality before and after commissioning.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.iso.org/standard/72159.html">ISO 3087:2020, Iron ores — Determination of the moisture content of a lot</SourceLink>. Current, confirmed scope for moisture determination of natural and processed iron ore.</li>
+        <li><SourceLink href="https://www.sciencedirect.com/science/article/pii/S003259100600338X">Forsmo et al. (2006), Powder Technology, “Binding mechanisms in wet iron ore green pellets with a bentonite binder”</SourceLink>. Peer-reviewed green-pellet moisture, liquid-saturation, and binder-dose results.</li>
+        <li><SourceLink href="https://onlinelibrary.wiley.com/doi/full/10.1155/2017/7639326">Liu et al. (2017), Journal of Chemistry, “Effect of Bentonite on the Pelleting Properties of Iron Concentrate”</SourceLink>. Peer-reviewed evidence on bentonite properties, dosage, and green-pellet performance.</li>
+        <li><SourceLink href="https://www.sciencedirect.com/science/article/pii/S0254058426007662">Impact of filter cake water chemistry on bentonite functionality and pellet quality in magnetite pelletizing (2026)</SourceLink>. Recent peer-reviewed process study on residual moisture chemistry and bentonite functionality.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -1563,6 +1625,8 @@ export default async function BlogPostPage({ params }: Props) {
             <PvcResinMoistureControlArticle />
           ) : slug === "spray-dried-detergent-powder-moisture-control-post-tower" ? (
             <SprayDriedDetergentPowderMoistureArticle />
+          ) : slug === "iron-ore-pelletizing-moisture-control-green-pellets" ? (
+            <IronOrePelletizingMoistureControlArticle />
           ) : (
             paragraphs.map((paragraph, i) => (
               <p key={i} className="mb-6 text-base leading-relaxed text-primary/80">

@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "iron-ore-pelletizing-moisture-control-green-pellets",
+    title: "Iron Ore Pelletizing Moisture Control: From Filter Cake to Stronger Green Pellets",
+    excerpt:
+      "How pellet plants can distinguish filter-cake moisture from green-pellet moisture, place online measurement where it supports a specific operating decision, and connect continuous trends to representative sampling without copying a universal setpoint.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-09-12",
+    readTime: "10 min",
+    tags: [
+      "iron ore pelletizing moisture control",
+      "green pellet moisture measurement",
+      "magnetite filter cake moisture",
+      "bentonite pelletizing binder",
+      "online NIR moisture analyzer",
+      "microwave bulk moisture measurement",
+      "iron ore moisture sampling",
+    ],
+  },
+  {
     slug: "spray-dried-detergent-powder-moisture-control-post-tower",
     title: "Spray-Dried Detergent Powder Moisture Control: Separate Tower Drying from Post-Tower Pickup",
     excerpt:
