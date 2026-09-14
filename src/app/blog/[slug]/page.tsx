@@ -1468,6 +1468,68 @@ function SprayDriedDetergentPowderMoistureArticle() {
   );
 }
 
+function MilkPowderMoistureControlArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Begin with the finished-powder specification, not a tower outlet number</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        In milk-powder production, moisture is a finished-product attribute with a process history. It is influenced by evaporator solids, atomisation, spray-dryer air conditions, fines return, fluid-bed residence time, cooling, instantising or lecithination, and the humidity exposure between the dryer and the packer. A value from the spray tower is therefore useful for controlling the tower, but it does not by itself demonstrate the condition of powder placed into a bag or bulk container.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Product requirements must come from the applicable specification, customer agreement, and national market rules. As important public reference context, <SourceLink href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/ua/?lnk=1&url=https://workspace.fao.org/sites/codex/Standards/CXS+207-1999/CXS_207e.pdf">Codex CXS 207-1999</SourceLink> sets a maximum water content of 5% m/m for cream powder and for whole, partly skimmed, and skimmed milk powder within its scope. The same standard explicitly excludes lactose water of crystallization from its water value. That is a useful warning against treating any one oven-loss, online reading, or supplier target as interchangeable with a product-compliance result.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: multi-stage drying creates several valid but different moisture states</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A multi-stage line deliberately separates drying duties. Tetra Pak&apos;s Dairy Processing Handbook explains that powder can leave the drying chamber at a higher residual moisture and be dried and cooled in downstream fluid beds. For its two-stage example, the tower discharge is about four percentage points higher in moisture than the required final result; it also reports that multi-stage systems can save about 10% energy versus single-stage drying and operate at outlet-air temperatures roughly 15–20 °C lower. <SourceLink href="https://dairyprocessinghandbook.tetrapak.com/chapter/milk-and-whey-powdered-ingredients">Those figures are process-design context, not universal setpoints</SourceLink>: product formulation, dryer configuration, throughput, agglomeration target, and plant validation determine the operating window.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        This separation matters when investigating a trend. A wetter-than-expected tower discharge can indicate an evaporator-solids change, atomiser or air-condition shift, feed-rate disturbance, fines return, or sampling mismatch. A final-powder excursion with a stable tower trend can instead point to fluid-bed drying, cooling, pneumatic transfer, silo dwell, or pack-room humidity. Use different limits, reference samples, and operator responses for each process state. Otherwise, a single downstream laboratory value will be asked to diagnose several physically different steps.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a hygienically designed, exposed, and repeatably presented layer of cooled powder on a belt, chute, or enclosed viewing point, evaluate a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link>. It can provide a fast process trend when the optical path stays clean and the observed surface represents the material that will be sampled and acted on. Its installation review should cover dust deposition, condensation, window cleaning and verification access, particle-size changes, product temperature, belt coverage, and hygienic design requirements. A surface measurement should not be represented as an automatic average through a deep or segregated powder bed.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where the production decision depends on average moisture through a deeper or variable-depth stream, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link> with suitable loading compensation and product-contact safeguards. Review bed depth, bulk density, metal clearances, conveyor geometry, cleaning access, and the effect of formulation changes before selecting it. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online moisture-measurement technology overview</Link> describes why material presentation and the control question should guide the NIR-versus-microwave decision.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Put the signal where it supports a defined operating decision</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>After the spray tower, before final drying:</strong> trend the water load presented to the fluid bed and investigate changes in evaporation, atomisation, air conditions, or feed rate. Treat this as a dryer-control point, not a final-release test.</li>
+        <li><strong>Fluid-bed discharge after cooling:</strong> use a representative, cooled stream to verify final drying and investigate fluidising-air, residence-time, or cooling shifts before storage. This is often the stronger point for a finished-powder process trend.</li>
+        <li><strong>After agglomeration or instantising:</strong> establish a separate reference if fines return, liquid addition, lecithin application, or particle structure changes mean the pre-treatment calibration no longer represents the product.</li>
+        <li><strong>Immediately before packing:</strong> monitor the condition entering the packer and identify moisture pickup during conveying, silo storage, or humid-air exposure. It is valuable for release support but may be too late for a quick drying correction.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Before installation, map material travel time from the sensor to the action, including any silo, recycle, or buffer capacity. A trend can only support control when the operator knows which material it represents, how long a correction takes to appear, and which actuator—feed rate, air temperature, airflow, fluid-bed condition, or diversion decision—has been validated for that response.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and verification: build a traceable relationship to the agreed reference method</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Establish the laboratory reference, reporting basis, sampling point, and sample-handling time before calibrating an online result. <SourceLink href="https://www.iso.org/standard/84796.html">ISO 5537:2023</SourceLink> specifies a reference method for determining moisture in all types of dried milk and dried milk products. The method provides the basis for a laboratory result; it does not remove the need to define how a production sample is collected, sealed, cooled where appropriate, and matched to the instrument&apos;s time average and material transport delay.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Take time-stamped, promptly protected samples from the same stream seen by the sensor. Include normal production variation in the validation set: whole versus skim composition, fat and protein level, concentrate solids, powder temperature, particle-size distribution, agglomeration state, fines fraction, lecithin or other permitted additions, season, and normal moisture range. Commission in stages: first prove a repeatable trend; then set averaging, verification frequency, and excursion handling; only after that assess automatic drying control. Recheck the model after a formulation, dryer, fluid-bed, or sampling-plan change.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to prove with plant data</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A continuous moisture trend can shorten the delay between a process disturbance and a targeted investigation. It can help operations avoid unnecessarily conservative drying, direct laboratory work toward genuine excursions, and distinguish a tower issue from downstream moisture pickup. It does not by itself guarantee a lower energy bill, longer shelf life, better solubility, or product compliance. Prove value with the plant&apos;s own data: matched ISO-reference results, moisture variability, dryer and fluid-bed energy, air conditions, product temperature, bulk density, dispersibility or solubility measures, packaging rejects, and humidity-exposure events.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/ua/?lnk=1&url=https://workspace.fao.org/sites/codex/Standards/CXS+207-1999/CXS_207e.pdf">Codex CXS 207-1999, Standard for Milk Powders and Cream Powder</SourceLink>. Current Codex composition table, including the 5% m/m maximum-water criterion and its lactose-water note.</li>
+        <li><SourceLink href="https://www.iso.org/standard/84796.html">ISO 5537:2023, Dried milk and dried milk products — Determination of moisture content (reference method)</SourceLink>. Official scope of the current reference method.</li>
+        <li><SourceLink href="https://dairyprocessinghandbook.tetrapak.com/chapter/milk-and-whey-powdered-ingredients">Tetra Pak Dairy Processing Handbook, “Milk and Whey Powdered Ingredients”</SourceLink>. Multi-stage spray drying, fluid-bed finishing, and cited energy/process context.</li>
+        <li><SourceLink href="https://www.tandfonline.com/doi/full/10.1080/07373937.2018.1492614">Ribeiro et al. (2019), Drying Technology, “Real-time monitoring of milk powder moisture content during drying in a spouted bed dryer using a hybrid neural soft sensor”</SourceLink>. Peer-reviewed example of online-estimation performance and its sensitivity to unmodelled powder accumulation.</li>
+      </ul>
+    </>
+  );
+}
+
 function IronOrePelletizingMoistureControlArticle() {
   return (
     <>
@@ -1625,6 +1687,8 @@ export default async function BlogPostPage({ params }: Props) {
             <PvcResinMoistureControlArticle />
           ) : slug === "spray-dried-detergent-powder-moisture-control-post-tower" ? (
             <SprayDriedDetergentPowderMoistureArticle />
+          ) : slug === "milk-powder-moisture-control-spray-dryer-fluid-bed" ? (
+            <MilkPowderMoistureControlArticle />
           ) : slug === "iron-ore-pelletizing-moisture-control-green-pellets" ? (
             <IronOrePelletizingMoistureControlArticle />
           ) : (

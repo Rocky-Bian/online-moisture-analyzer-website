@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "milk-powder-moisture-control-spray-dryer-fluid-bed",
+    title: "Milk Powder Moisture Control: From Spray Dryer to Fluid Bed and Packing",
+    excerpt:
+      "How dairy processors can distinguish tower-discharge moisture from the finished packed-powder result, use a representative online signal at the right process point, and maintain a traceable relationship with ISO reference testing.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-09-14",
+    readTime: "10 min",
+    tags: [
+      "milk powder moisture control",
+      "spray dryer outlet moisture",
+      "fluid bed drying dairy powder",
+      "online NIR moisture analyzer",
+      "milk powder packaging moisture",
+      "ISO 5537 dried milk moisture",
+      "dairy powder process control",
+    ],
+  },
+  {
     slug: "iron-ore-pelletizing-moisture-control-green-pellets",
     title: "Iron Ore Pelletizing Moisture Control: From Filter Cake to Stronger Green Pellets",
     excerpt:
