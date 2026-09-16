@@ -1468,6 +1468,74 @@ function SprayDriedDetergentPowderMoistureArticle() {
   );
 }
 
+function CoalConveyorMoistureControlArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Start with an agreed total-moisture reference, not an instrument number alone</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Coal moisture influences material handling, preparation, blending, drying, and fuel use, but “moisture” is only useful when the plant agrees exactly what it means. ASTM D3302/D3302M covers total moisture in coal as it exists at the place, time, and conditions of sampling, for coal as mined, processed, shipped, or used. <SourceLink href="https://store.astm.org/d3302_d3302m-22a.html">Its scope</SourceLink> emphasizes gross-sample collection, sample preparation, and the determination itself because coal can range from water-saturated to dry. Treat that laboratory result as the approved comparator for an online signal; do not assume that a later sample from a different conveyor, stockpile, or hopper represents the same material.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Record the reporting basis beside every value. On an as-received, wet basis, a 1,000 kg conveyor sample at 12% total moisture contains 120 kg of water and 880 kg of dry solids. The same water is 13.6% on a dry basis. This distinction becomes material when production trends, laboratory certificates, supplier data, and energy calculations are compared. It also prevents a live control trend from being incorrectly treated as a settlement or referee result.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: a conveyor bed is not a uniform laboratory sample</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Rain, drainage, wash-plant operation, coal rank, particle-size distribution, fines fraction, bulk density, belt speed, loading, and segregation can all change the relationship between an instrument response and a grab sample. Water may also be unevenly distributed through the bed. The U.S. Geological Survey advises that coal samples should be shipped to the laboratory within a few days to limit the effects of oxidation and air exposure on moisture, a useful reminder that sampling and handling are part of the measurement system. <SourceLink href="https://pubs.usgs.gov/circ/c735/guideline.htm">Its coal-sampling guidance</SourceLink> also stresses that the representative sampling plan depends on the material and site.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a conveyor application, two questions need separate answers: does the sensor see the same cross-section and time window as the reference sample, and can it distinguish water from changing mass per unit area? A 2002 Fuel Processing Technology study selected the feeder point in a thermal-power fuel circuit and used a microwave installation that passed through the material layer. <SourceLink href="https://www.sciencedirect.com/science/article/pii/S0378382002000978">The authors reported</SourceLink> that through-layer measurement removed the vertical coal-and-water segregation seen by a single-point capacitive approach. That is evidence for reviewing geometry and load compensation, not a universal accuracy claim for every coal, belt, or installation.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        When the operating decision depends on average moisture through a thick, dense, or variable-depth coal stream, evaluate a through-layer <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. The transmitter and receiver should be located so that the signal passes through a stable, well-defined material layer, and a load or distance measurement should be considered when belt burden changes. The goal is to create a repeatable representation of the moving stream, rather than to infer total-bed moisture from an exposed surface alone.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> can also be evaluated where the coal is presented as a consistently spread, exposed surface and the process needs rapid surface-trend feedback. In a deep, segregated, dusty, or rapidly changing conveyor bed, confirm that a surface result supports the intended operating decision before adopting it. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">measurement-technology overview</Link> outlines the practical difference between optical surface sensing and microwave through-layer measurement.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Put the signal at the process decision point</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>After dewatering or wash-plant discharge:</strong> identify a wet-feed shift early enough to adjust handling, blending, or dryer loading. Sample and calibrate on the same transfer where feasible.</li>
+        <li><strong>After a dryer or crusher-dryer:</strong> trend the condition being sent to a bunker, mill, gasifier, or downstream process. Treat it as a drying-control point, not proof of moisture after later storage or transfer.</li>
+        <li><strong>On a blend conveyor before a preparation or combustion circuit:</strong> correlate the average moisture of the actual feed with belt load, coal source, size distribution, and process response.</li>
+        <li><strong>At loadout:</strong> use a separate, representative point when the commercial or logistics question concerns the coal shipped, recognizing that a process instrument does not replace the agreed contractual sampling and test procedure.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Map each measurement to one response: change dryer conditions, manage a wet-coal diversion, adjust blending, schedule verification sampling, or investigate a handling issue. Include transport and averaging delay in the control narrative. An online average that arrives after the relevant material has already entered a bunker is still valuable for diagnosis, but it may not be suitable for immediate closed-loop action.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and installation: protect representativeness from day one</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Build the calibration around paired, time-stamped data. Collect the reference sample from the same material stream and time period seen by the sensor, seal it promptly, and analyze it using the site&apos;s agreed method. Match the laboratory result to the online time average after allowing for material travel time. Include routine production variation—coal sources and ranks, particle-size distribution, fines, ash-related mineral content, bed depth, throughput, temperature, and normal moisture range—rather than calibrating only with one dry and one wet condition.
+      </p>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Survey the belt:</strong> document width, speed, trough shape, bed-depth range, cross-belt profile, coverage, particle size, dust, vibration, metal clearances, and access for safe maintenance.</li>
+        <li><strong>Review loading compensation:</strong> measure or otherwise account for changing layer thickness and mass per unit area. Do not apply a model built at one belt loading to a very different burden without verification.</li>
+        <li><strong>Prove performance in stages:</strong> first check trend direction and repeatability; then establish a sampling schedule, operating alarms, and operator action plan; assess automatic control only after expected coal and loading variation are represented.</li>
+        <li><strong>Revalidate after a change:</strong> new coal sources, wash-plant settings, crusher screens, belt geometry, operating range, or sampling method can shift the model-to-reference relationship.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality, handling, and energy benefits to prove with site data</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Continuous coal-moisture data can make a wet-feed event visible sooner, support more disciplined laboratory sampling, and help operators separate a feed-change issue from a downstream process disturbance. It does not justify a universal dryer target or a fixed energy-saving promise. In one U.S. Department of Energy NETL design case, coal at 11.12% moisture by weight was dried to about 5% using indirect low-pressure-steam heating; the values belong to that modeled gasification configuration, not to every coal or plant. <SourceLink href="https://netl.doe.gov/sites/default/files/2020-04/AST-CoalFirst-Tech-Gap-Analysis-15April2020.pdf">The NETL report</SourceLink> nevertheless illustrates why a traceable incoming and outgoing moisture balance matters to drying and feed consistency.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Verify value with plant evidence: paired laboratory and online results, moisture variability, belt loading, dryer heat, throughput, handling interruptions, blend performance, and downstream stability. This evidence-based approach is more useful than a generic return-on-investment number because it ties the analyzer to a specific operational decision and a specific material stream.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://store.astm.org/d3302_d3302m-22a.html">ASTM D3302/D3302M-22a, Standard Test Method for Total Moisture in Coal</SourceLink>. Scope and sampling/reference-method context for total moisture in coal.</li>
+        <li><SourceLink href="https://pubs.usgs.gov/circ/c735/guideline.htm">U.S. Geological Survey Circular 735, Guidelines on Collecting Coal Samples</SourceLink>. Guidance on representative sampling and limiting moisture changes during handling.</li>
+        <li><SourceLink href="https://www.sciencedirect.com/science/article/pii/S0378382002000978">Ponte et al. (2002), Fuel Processing Technology, “Generating a representative signal of coal moisture content to anticipate combustion control in thermal power stations”</SourceLink>. Peer-reviewed discussion of feeder selection and through-layer microwave measurement.</li>
+        <li><SourceLink href="https://netl.doe.gov/sites/default/files/2020-04/AST-CoalFirst-Tech-Gap-Analysis-15April2020.pdf">U.S. DOE NETL, Coal-Based Power Plants of the Future</SourceLink>. Modeled fluid-bed coal-drying context, including stated feed and product moisture values.</li>
+      </ul>
+    </>
+  );
+}
+
 function MilkPowderMoistureControlArticle() {
   return (
     <>
@@ -1687,6 +1755,8 @@ export default async function BlogPostPage({ params }: Props) {
             <PvcResinMoistureControlArticle />
           ) : slug === "spray-dried-detergent-powder-moisture-control-post-tower" ? (
             <SprayDriedDetergentPowderMoistureArticle />
+          ) : slug === "coal-conveyor-moisture-control-microwave-measurement" ? (
+            <CoalConveyorMoistureControlArticle />
           ) : slug === "milk-powder-moisture-control-spray-dryer-fluid-bed" ? (
             <MilkPowderMoistureControlArticle />
           ) : slug === "iron-ore-pelletizing-moisture-control-green-pellets" ? (

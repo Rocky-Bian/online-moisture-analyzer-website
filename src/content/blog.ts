@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "coal-conveyor-moisture-control-microwave-measurement",
+    title: "Coal Conveyor Moisture Control: Building a Representative Microwave Measurement",
+    excerpt:
+      "How coal-handling and preparation plants can link a live conveyor moisture trend to an agreed total-moisture reference, compensate for changing bed depth, and use the signal for earlier process decisions.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-09-16",
+    readTime: "10 min",
+    tags: [
+      "coal conveyor moisture measurement",
+      "online microwave coal moisture analyzer",
+      "coal total moisture sampling",
+      "coal preparation plant moisture control",
+      "conveyor bed depth compensation",
+      "ASTM D3302 coal moisture",
+      "bulk solids moisture monitoring",
+    ],
+  },
+  {
     slug: "milk-powder-moisture-control-spray-dryer-fluid-bed",
     title: "Milk Powder Moisture Control: From Spray Dryer to Fluid Bed and Packing",
     excerpt:
