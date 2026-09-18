@@ -1468,6 +1468,79 @@ function SprayDriedDetergentPowderMoistureArticle() {
   );
 }
 
+function RpetFlakeDryingMoistureControlArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">The production question is not only “is the flake dry?”</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        In an rPET line, moisture has two different jobs. At the wet end, it describes the variable load delivered by washing, rinsing, centrifuging, and mechanical dewatering. Before the extruder, it is a low-level material condition that must be compatible with the specific resin grade, extrusion process, and customer requirement. Treating those two states as one number is a common source of bad control decisions. A dryer-inlet trend can be very useful for managing energy and residence time, yet it is not automatically suitable for releasing resin to the melt process.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The scale difference matters. Fifty parts per million by mass is 0.005% moisture. EREMA cites predrying to below 50 ppm for its PET vacuum-reactor process, while a PET processing data sheet from Indorama reports undried pellets at 0.2% to 0.3% and typical dried material below 50 ppm. <SourceLink href="https://www.erema.com/us/vacurema_mpr/">These are process-specific examples</SourceLink>, not a universal release limit for every virgin PET, rPET flake, regrind, bottle, sheet, fibre, or food-contact application. The applicable resin specification and process-validation data must govern the final limit.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Why residual water becomes a quality risk at the extruder</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        PET is susceptible to hydrolytic chain scission when residual water is present during high-temperature melt processing. In a peer-reviewed study of post-consumer PET, the authors state that water promotes chain scission during extrusion and report lower intrinsic viscosity for the recycled material before reactive extrusion. <SourceLink href="https://www.mdpi.com/2073-4360/13/20/3531">Their results</SourceLink> do not establish one allowable moisture number for all plants, but they explain why a drying upset can emerge downstream as viscosity, melt-strength, colour, or product-performance variability rather than as an obvious wet-flake problem.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The process context is becoming more important as recycled-content requirements and circular-packaging investments expand. The European Commission says its Packaging and Packaging Waste Regulation entered into force in February 2025 and began applying from mid-2026, with recycled-content requirements that increase over time. <SourceLink href="https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste/packaging-packaging-waste-regulation_en">That regulatory background</SourceLink> is not a moisture specification, but it is a reason to make drying performance, lot traceability, and material-condition data easier to investigate.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: a single sensor cannot cover every moisture decision</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Washed rPET can arrive with changing surface water, flake size, fines, label or polyolefin carryover, colour, bulk density, temperature, and bed depth. Those changes affect both drying demand and how representative a sensor sees the material. At the other end of the line, a 50 ppm example is far below 0.1% moisture. An online trend tool should therefore be selected and validated for the decision it supports; it should not be presented as an automatic replacement for a low-level release method without demonstrated, material-specific performance.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        ISO 15512:2019 provides useful reference-method context. Its official summary describes several water-content methods for plastics, including a Karl Fischer approach in which water is vaporized and carried to a titration cell. It states a detection limit of 0.001% for Method E, subject to sample mass. <SourceLink href="https://committee.iso.org/standard/73834.html?browse=ics">The ISO summary</SourceLink> is a strong reason to define the laboratory method, sample mass, sample handling, and reporting basis before comparing a live process signal with a final low-moisture result.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach: separate feed management from final release</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a stable, exposed layer of washed or mechanically dewatered flake on a conveyor, evaluate a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> as a fast trend for incoming water load, dewatering performance, or a drying upset. The installation needs consistent material coverage, a controlled optical distance, an accessible clean window, and paired samples from the same stream. Its practical purpose is to detect a meaningful change early enough to adjust dryer loading, thermal input, or verification sampling.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        If the operating decision depends on average moisture through a deeper, changing bulk layer, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link> with suitable loading compensation. Through-layer measurement can be a better engineering fit where surface condition is not representative, but its accuracy and useful range must still be proven on the actual flake stream. For a final low-ppm extrusion-release value, retain the agreed laboratory or validated at-line method unless an alternative has been fully qualified. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">technology overview</Link> explains why material presentation should determine the NIR-versus-microwave choice.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Choose the location by the action it enables</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>After mechanical dewatering:</strong> trend wet-feed changes before the thermal dryer. Link the signal to centrifuge, press, or washer checks and to dryer feed-rate decisions.</li>
+        <li><strong>At dryer discharge or buffer-hopper inlet:</strong> use a separate process point to identify whether the drying system is moving toward its validated operating window. Consider material temperature and the delay to the extruder.</li>
+        <li><strong>At the extruder feed throat:</strong> use a protected, well-defined point for process correlation, but verify that conveying and hopper residence have not allowed re-absorption or segregation.</li>
+        <li><strong>At final quality release:</strong> take a representative, promptly sealed sample for the agreed low-level reference method. This is the point for a lot decision, not the first opportunity to discover a dryer problem.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Map every display, alarm, and sample to a named response. For example, a wetter post-dewatering trend might prompt a washer or centrifuge review, while a dryer-discharge shift might prompt a check of desiccant performance, air dew point, airflow, temperature, residence time, or a material bridge. Avoid connecting a live trend directly to a final pass/fail decision until the response across normal feed variation has been demonstrated.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and validation: build the comparison around timing and range</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Start with a written measurement plan: the reference method; whether results are mass fraction, percent, or ppm; the sampling tool and sample mass; the maximum time before sealing and testing; material travel time; sensor averaging period; and the operating decision each result supports. Collect time-stamped paired samples over normal production variation, including wet and dry incoming flake, flake-size distribution, fines, colour mix, temperature, throughput, bulk density, contamination level, and dryer operating states. A model built only during steady operation will not necessarily remain representative during the event it is meant to detect.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Commission in stages. First confirm safe installation, repeatable material presentation, and trend direction. Next establish the relationship to the reference method in the intended operating range, as well as alarm handling and verification sampling. Only then assess control use. Revalidate after a material-source change, washer or centrifuge modification, major dryer work, changes in flake mix or colour, new additive use, conveying changes, or a revised laboratory method.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to prove with site data</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A well-placed continuous trend can reduce the time between a wet-feed or dryer disturbance and a targeted investigation. It can help keep operators from compensating blindly with excessive heat or residence time, direct Karl Fischer checks to genuine excursions, and create a better record for correlating moisture with intrinsic viscosity, melt pressure, filter loading, colour, acetaldehyde where relevant, and downstream rejects. It does not by itself guarantee a lower specific-energy number, viscosity retention, food-contact compliance, or product approval.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Prove the value on the plant&apos;s own data: incoming and dried moisture distributions, paired reference tests, dryer energy per tonne, desiccant-dew-point history, throughput, residence time, intrinsic viscosity or other agreed polymer-quality checks, extrusion stability, and rejected material. This connects the analyzer to a real operating decision while preserving the traceable measurement needed for low-level quality release.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://committee.iso.org/standard/73834.html?browse=ics">ISO 15512:2019, Plastics — Determination of water content</SourceLink>. Official summary of the plastics water-content methods, including low-level Karl Fischer capability.</li>
+        <li><SourceLink href="https://www.mdpi.com/2073-4360/13/20/3531">Bordes et al. (2021), Polymers, “Structure and Properties of Reactively Extruded Opaque Post-Consumer Recycled PET”</SourceLink>. Peer-reviewed evidence connecting water, hydrolytic chain scission, and PET extrusion behaviour.</li>
+        <li><SourceLink href="https://www.erema.com/us/vacurema_mpr/">EREMA VACUREMA MPR</SourceLink>. Manufacturer&apos;s current PET processing example stating predrying below 50 ppm; application-specific, not a universal material specification.</li>
+        <li><SourceLink href="https://environment.ec.europa.eu/topics/waste-and-recycling/packaging-waste/packaging-packaging-waste-regulation_en">European Commission, Packaging and Packaging Waste Regulation</SourceLink>. Current policy context for recyclable packaging and recycled-content requirements.</li>
+      </ul>
+    </>
+  );
+}
+
 function CoalConveyorMoistureControlArticle() {
   return (
     <>
@@ -1755,6 +1828,8 @@ export default async function BlogPostPage({ params }: Props) {
             <PvcResinMoistureControlArticle />
           ) : slug === "spray-dried-detergent-powder-moisture-control-post-tower" ? (
             <SprayDriedDetergentPowderMoistureArticle />
+          ) : slug === "rpet-flake-drying-moisture-control-before-extrusion" ? (
+            <RpetFlakeDryingMoistureControlArticle />
           ) : slug === "coal-conveyor-moisture-control-microwave-measurement" ? (
             <CoalConveyorMoistureControlArticle />
           ) : slug === "milk-powder-moisture-control-spray-dryer-fluid-bed" ? (

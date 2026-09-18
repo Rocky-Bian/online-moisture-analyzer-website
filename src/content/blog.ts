@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "rpet-flake-drying-moisture-control-before-extrusion",
+    title: "rPET Flake Drying Before Extrusion: Where Online Moisture Measurement Helps",
+    excerpt:
+      "How rPET processors can use a continuous moisture trend to manage variable washed-flake feed and dryer performance—while keeping a traceable low-level reference test for final extrusion release.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-09-18",
+    readTime: "10 min",
+    tags: [
+      "rPET flake moisture control",
+      "PET drying before extrusion",
+      "recycled PET residual moisture",
+      "online moisture measurement for plastics",
+      "PET hydrolysis prevention",
+      "Karl Fischer PET moisture testing",
+      "plastic recycling process control",
+    ],
+  },
+  {
     slug: "coal-conveyor-moisture-control-microwave-measurement",
     title: "Coal Conveyor Moisture Control: Building a Representative Microwave Measurement",
     excerpt:
