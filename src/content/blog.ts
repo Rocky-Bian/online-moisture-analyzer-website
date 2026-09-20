@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "alumina-hydrate-filter-cake-moisture-calciner-feed",
+    title: "Alumina Hydrate Filter-Cake Moisture: An Online Measurement Strategy for Calciner Feed",
+    excerpt:
+      "How alumina refineries can separate free filter-cake water from chemically bound hydrate water, place a representative online measurement before calcination, and connect the trend to a traceable mass-balance and laboratory plan.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-09-20",
+    readTime: "10 min",
+    tags: [
+      "alumina hydrate filter cake moisture",
+      "alumina calciner feed measurement",
+      "Bayer process moisture control",
+      "aluminium trihydrate dewatering",
+      "online microwave moisture measurement",
+      "alumina calcination energy",
+      "ISO 806 alumina moisture on ignition",
+    ],
+  },
+  {
     slug: "rpet-flake-drying-moisture-control-before-extrusion",
     title: "rPET Flake Drying Before Extrusion: Where Online Moisture Measurement Helps",
     excerpt:

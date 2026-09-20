@@ -1671,6 +1671,80 @@ function MilkPowderMoistureControlArticle() {
   );
 }
 
+function AluminaHydrateFilterCakeMoistureArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Start by separating free filter-cake water from hydrate chemistry</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Alumina-refinery moisture control is easy to oversimplify. After Bayer-process precipitation, aluminium hydroxide hydrate is filtered, washed, and dewatered before calcination. The free liquid remaining in the filter cake is a controllable feed-load variable. The water built into aluminium trihydrate is different: it is part of the material chemistry and is released during calcination. The International Aluminium Institute describes the precipitated material as hydrate and notes that calciners operate at temperatures up to 1100°C to drive off chemically bound moisture. <SourceLink href="https://alustory.international-aluminium.org/mining-refining/process-refining/">Its Bayer-process overview</SourceLink> is a useful reminder that one “moisture” signal cannot represent both states without a clearly defined basis.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        That distinction determines what an online measurement should control. A signal on washed filter cake can reveal a change in filtration, wash-water carryover, cake presentation, or feed load to the calciner. It is not a direct measurement of the chemically bound water that calcination must remove, and it should not be compared casually with a finished-alumina loss-on-heating result. Define the material state and action before choosing the sensor or the alarm.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Why a small free-water change matters to the calciner feed balance</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The mass balance makes the engineering case without claiming a universal energy saving. The International Aluminium Institute uses the 156:102 molecular-weight ratio between dried hydrate and nominal Al₂O₃ when converting refinery production. Its worked example states that 100,000 tonnes of wet hydrate at 10% free moisture contains 90,000 tonnes of dried hydrate and is equivalent to 58,846 tonnes of nominal alumina. <SourceLink href="https://international-aluminium.org/wp-content/uploads/2024/03/production_reporting_guidelines_2020_alumina.pdf">The reporting guideline</SourceLink> therefore treats free water explicitly rather than hiding it inside total wet mass.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        On a running line, that same logic can be used to trend free-water tonnes per hour alongside wet-cake feed rate. If cake moisture rises while wet tonnes per hour stay constant, the calciner receives less dry hydrate and more liquid water than the display of wet mass alone suggests. The right response depends on the plant&apos;s validated operating window: investigate filtration vacuum, cake thickness, wash sequence, liquor drainage, material handling, or feed-rate planning. A live trend does not establish the cause by itself, but it can show the shift early enough for targeted checks.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: reference methods use different thermal definitions</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A laboratory result must be named precisely. <SourceLink href="https://www.iso.org/standard/36360.html">ISO 806:2004</SourceLink> specifies mass loss at 300°C and further loss on ignition at 1,000°C for aluminium oxide used in aluminium production. By convention, the standard calls these moisture on ignition (MOI) and loss on ignition (LOI); its stated calcined-alumina ranges are 0.2% to 5% mass loss at 300°C and 0.1% to 2% at 1,000°C. Those are method-scope ranges for calcined alumina, not a filter-cake specification or an online-calibration target for wet hydrate.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        ISO 806 also warns that air equilibration can greatly affect MOI and significantly affect LOI. That is important for sample design: a sample taken from a covered, washed-cake transfer and a sample left exposed at the laboratory do not necessarily describe the same condition. For the online project, agree whether the reference is free moisture of wet cake, a defined loss-on-drying test, or a finished-alumina MOI/LOI result. Do not use the same word for measurements with different temperatures, material states, and purposes.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        At a stable, exposed cake stream after filtration or washing, a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> can be evaluated for a rapid surface-trend measurement. It needs consistent cake coverage, a controlled working distance, manageable vapour and dust, an optical window that can be kept clean, and samples from the same material seen by the instrument. Use it where surface condition represents the filtration or conveyor decision—not as an automatic average of a deep or segregated bed.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where the decision depends on average water through a thicker, changing cake layer or chute stream, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-layer method with loading compensation can be a better engineering fit when the surface cannot represent the bulk material. Review cake thickness, bulk density, belt loading, residual liquor, temperature, metal clearances, vibration, access, and the travel time from measurement to calciner action. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">moisture-measurement technology overview</Link> explains why material presentation should guide the NIR-versus-microwave choice.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Place the sensor where it supports a named decision</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Filter discharge, after the final wash:</strong> trend the free-water condition delivered by dewatering before conveying changes the material presentation.</li>
+        <li><strong>Representative transfer to the calciner feed system:</strong> verify whether the feed condition arriving at the thermal section matches the upstream trend; record transport delay and any blending or recycle.</li>
+        <li><strong>Calciner outlet or cooler discharge:</strong> use a separate, appropriately protected point for finished-product condition. It cannot provide a timely correction to filter performance and needs its own reference method.</li>
+        <li><strong>Storage or loadout:</strong> use a separate verification point when adsorbed moisture during handling is a concern, rather than treating it as a proxy for the hydrate-feed condition.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The U.S. Centers for Disease Control and Prevention&apos;s alumina-facility description lists hydrate storage, density control, pan filtration, washing, dewatering, calcination, cooling, and gas cleaning as separate functions. <SourceLink href="https://stacks.cdc.gov/view/cdc/206809/cdc_206809_DS1.pdf">That process description</SourceLink> supports a practical installation rule: keep each measurement tied to the specific unit operation it is meant to diagnose.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and commissioning: build a defensible free-water reference</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Before modeling an online signal, write down the reference method, reporting basis, sample mass, sampling location, container, maximum hold time, material travel time, sensor averaging time, and action linked to each alarm. Take time-stamped samples from the same cake stream observed by the sensor, seal them promptly, and record filter operating state, cake thickness, particle-size distribution, liquor condition, wash sequence, temperature, and wet feed rate. A laboratory sample taken later from a hopper may be useful operationally, but it is not automatically a valid calibration pair for a filter-discharge measurement.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Commission in stages. First demonstrate safe installation, stable material presentation, and trend direction against the agreed reference. Then establish averaging, alarm limits, sample verification, and named operator responses. Consider an automated feed or filter response only after normal production variation has been represented reliably. Revalidate after meaningful changes to bauxite source, precipitation size distribution, filtration media or vacuum, wash practice, conveyor geometry, calciner-feed routing, or the laboratory method.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to prove with site data</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Continuous free-water data can shorten the time between a dewatering shift and a focused investigation. With a defined response plan, it can help operators distinguish a filter or wash change from a calciner event, direct laboratory work to genuine excursions, and improve the visibility of feed-water load in the production balance. It does not itself guarantee a fixed reduction in calciner energy, emissions, soda loss, or product-MOI variation. Those outcomes depend on the refinery&apos;s equipment, heat recovery, feed characteristics, control strategy, and operating constraints.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Prove the value with plant data: wet and dry hydrate feed, paired reference results, free-water tonnes per hour, filter vacuum and wash conditions, calciner fuel or energy, product MOI/LOI where relevant, alumina quality, and unplanned operating events. <SourceLink href="https://www.iso.org/standard/51389.html">ISO 12315:2010</SourceLink>, confirmed in 2024, provides further context by defining how smelter-grade alumina is reported on dry or ignited bases. The strongest project preserves that chain of measurement rather than reducing all water-related results to one number.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://alustory.international-aluminium.org/mining-refining/process-refining/">International Aluminium Institute, Refining Process</SourceLink>. Current Bayer-process overview, including hydrate calcination up to 1100°C and chemically bound water.</li>
+        <li><SourceLink href="https://international-aluminium.org/wp-content/uploads/2024/03/production_reporting_guidelines_2020_alumina.pdf">International Aluminium Institute, Alumina Production Reporting Guidelines</SourceLink>. Free-moisture accounting and the 156:102 hydrate-to-alumina conversion example.</li>
+        <li><SourceLink href="https://www.iso.org/standard/36360.html">ISO 806:2004, Aluminium oxide — Determination of loss of mass at 300°C and 1,000°C</SourceLink>. Official MOI/LOI method scope, ranges, and air-equilibration caution for calcined alumina.</li>
+        <li><SourceLink href="https://stacks.cdc.gov/view/cdc/206809/cdc_206809_DS1.pdf">U.S. CDC, Alumina Calcination and Storage Facility Description</SourceLink>. Process context for hydrate filtration, washing, dewatering, calcination, cooling, and gas cleaning.</li>
+        <li><SourceLink href="https://www.iso.org/standard/51389.html">ISO 12315:2010, Aluminium oxide — Calculation of Al₂O₃ content of smelter-grade alumina</SourceLink>. Current, confirmed reporting framework for dry and ignited alumina bases.</li>
+      </ul>
+    </>
+  );
+}
+
 function IronOrePelletizingMoistureControlArticle() {
   return (
     <>
@@ -1834,6 +1908,8 @@ export default async function BlogPostPage({ params }: Props) {
             <CoalConveyorMoistureControlArticle />
           ) : slug === "milk-powder-moisture-control-spray-dryer-fluid-bed" ? (
             <MilkPowderMoistureControlArticle />
+          ) : slug === "alumina-hydrate-filter-cake-moisture-calciner-feed" ? (
+            <AluminaHydrateFilterCakeMoistureArticle />
           ) : slug === "iron-ore-pelletizing-moisture-control-green-pellets" ? (
             <IronOrePelletizingMoistureControlArticle />
           ) : (
