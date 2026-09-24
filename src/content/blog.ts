@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "cement-raw-mill-feed-moisture-control",
+    title: "Cement Raw-Mill Feed Moisture: A Measurement Strategy Before Grinding",
+    excerpt:
+      "How cement plants can make wet raw-material variation visible before grinding, relate an online trend to a defined laboratory reference, and use it to support dry-feed and drying decisions without assuming a universal moisture limit.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-09-24",
+    readTime: "10 min",
+    tags: [
+      "cement raw mill moisture control",
+      "cement raw material drying",
+      "limestone moisture measurement",
+      "online microwave moisture measurement",
+      "online NIR moisture analyzer",
+      "cement raw meal consistency",
+      "bulk solids moisture monitoring",
+    ],
+  },
+  {
     slug: "alumina-hydrate-filter-cake-moisture-calciner-feed",
     title: "Alumina Hydrate Filter-Cake Moisture: An Online Measurement Strategy for Calciner Feed",
     excerpt:

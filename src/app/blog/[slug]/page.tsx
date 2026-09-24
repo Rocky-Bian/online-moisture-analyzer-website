@@ -1745,6 +1745,76 @@ function AluminaHydrateFilterCakeMoistureArticle() {
   );
 }
 
+function CementRawMillFeedMoistureArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Moisture is both a drying load and a dry-solids accounting variable</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Cement raw materials do not arrive in one predictable condition. The U.S. Environmental Protection Agency&apos;s current AP-42 section on Portland-cement manufacturing says initial moisture can range from 1% to more than 50%; in dry-process plants, it is usually reduced to below 1% before or during grinding. <SourceLink href="https://gaftp.epa.gov/ap42/ch11/s06/final/c11s06_march2022.pdf">That EPA process reference</SourceLink> establishes the scale of the drying task, but it does not create a universal control target for limestone, clay, shale, corrective materials, or any individual raw-mill design.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The first practical step is to state the reporting basis. On a wet basis, a 100 t/h stream at 10% moisture contains 90 t/h dry solids and 10 t/h water. At the same wet feed rate and 12% moisture, it contains 88 t/h dry solids and 12 t/h water. That two-point change therefore moves both the water load and the dry-material mass entering a feeder or mill. It is a transparent mass-balance illustration, not a recipe correction: each plant must decide which materials are measured, how their wet and dry masses are reconciled, and who owns the resulting adjustment.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: one name can hide different water definitions</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A stockpile sample, a belt measurement, a raw-mill outlet result, and a loss-on-ignition result may all be described casually as “moisture,” even though they represent different material states and test conditions. For mineral aggregate, <SourceLink href="https://www.astm.org/c0566-19.html">ASTM C566</SourceLink> defines total evaporable moisture as water on the surface and in pores, excluding chemically combined water. Its scope is aggregate testing, so it should not be copied automatically as a cement-raw-meal method; it is useful context for agreeing what an online signal is intended to correlate with.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Before evaluating an instrument, document the plant&apos;s reference method, moisture basis, sample location, sample container, maximum hold time, drying temperature, and treatment of chemically bound water. Keep raw-material free water separate from raw-meal chemistry and clinker-related loss on ignition. A clearly named reference prevents a plausible online trend from being calibrated against a laboratory result that answers a different question.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Process impact: make the wet-feed change visible early enough to act</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The Portland Cement Association describes cement manufacture as proportioning and grinding raw materials before kiln processing; it also notes that plants may grind raw materials dry or use a wet-grinding process. <SourceLink href="https://www.cement.org/learn/concrete-technology/how-cement-is-made">Its process overview</SourceLink> is a useful boundary for an online-moisture project: the measurement must support a specific raw-material, proportioning, grinding, or drying decision—not stand in for a complete raw-meal-quality system.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        In a dry-process line, a sudden rise in quarry limestone, clay, or alternative-raw-material moisture can change the hot-gas demand and the material condition presented to grinding. It can also change the dry fraction of a wet-weight feed. A continuous trend helps the team distinguish a wet-stockpile or transfer event from a downstream mill event sooner, then check the relevant feeder, material balance, mill differential pressure, gas condition, and laboratory result. It does not prove the cause or justify an automatic correction without site validation.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a consistent, exposed layer of limestone, clay, shale, or blended raw material on a conveyor, assess a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> when a fast surface trend is the control need. It needs repeatable coverage, a controlled stand-off distance, a clean optical path, manageable dust and vapour, and reference samples from the material actually seen by the sensor. It should not be assumed to report the average moisture through a deep, segregated bed.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where the decision depends on average water through a deeper or changing conveyor layer, evaluate a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-layer approach with loading compensation can be the stronger engineering option when bed depth, density, or particle presentation vary. Confirm belt loading, speed, material temperature, metal clearances, vibration, dust, wash-down exposure, access, and travel time to the feeder or mill. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">technology overview</Link> explains why material presentation should guide the NIR-versus-microwave choice.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Installation points that support an operating decision</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Quarry or crusher discharge conveyor:</strong> use the trend to identify a changing incoming-water load before blending and storage dilute the evidence of its source.</li>
+        <li><strong>Reclaim conveyor from the preblending pile:</strong> measure the material actually headed toward proportioning when the control action concerns dry-feed accounting or raw-mill drying demand.</li>
+        <li><strong>Before raw-mill feed:</strong> use a representative, well-mixed location to verify the condition reaching the mill; it can be the most actionable point when multiple stockpiles or corrective materials are involved.</li>
+        <li><strong>Raw-mill outlet:</strong> treat this as a separate process-verification point. It may be valuable for mill operation, but it is too late to diagnose an upstream quarry-water event on its own.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Select the location through a site survey, not convenience. Map each raw-material stream, buffer capacity, blending, belt scale, normal layer depth, dust control, hot-gas interaction, sample access, and material travel time. The correct point is the one where a sensor reading represents the material linked to a named operator or PLC response.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and commissioning: preserve the link between trend and reference</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Collect time-stamped samples from the same stream and period observed by the instrument. Seal samples promptly where evaporation matters, then record raw-material identity, particle-size distribution, source bench or stockpile, belt loading, layer depth, temperature, rain or wash-down exposure, and process rate. Include the normal range and genuine wet excursions; a calibration built only on steady, dry material will not reliably describe the disturbance that operations needs to see.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Commission in stages: prove safe installation and stable presentation first; demonstrate repeatable direction and agreement with the approved reference next; then define averaging, alarm limits, verification-sample frequency, and named responses. Consider automatic feed, gas, or drying adjustments only after transport delays and effects on raw-meal chemistry have been validated. Recheck the model after a quarry-face change, new alternative raw material, altered blending practice, material-size shift, conveyor modification, or reference-method change.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to prove with plant data</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Continuous moisture data can reduce the time between a raw-material change and a focused investigation. With a defined response plan, it can make wet-feed events visible earlier, direct laboratory work to genuine excursions, and help teams avoid operating with an unnecessarily broad drying margin. It does not guarantee a fixed fuel reduction, throughput increase, chemistry improvement, or emissions result. Establish the business case with the plant&apos;s own paired reference results, wet and dry feed masses, raw-meal chemistry, mill stability, gas and drying conditions, energy use, and event records before and after commissioning.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://gaftp.epa.gov/ap42/ch11/s06/final/c11s06_march2022.pdf">U.S. EPA, AP-42 Section 11.6: Portland Cement Manufacturing (March 2022)</SourceLink>. Official process context for raw-material moisture, drying, grinding, and dry-process preparation.</li>
+        <li><SourceLink href="https://www.astm.org/c0566-19.html">ASTM C566-19, Standard Test Method for Total Evaporable Moisture Content of Aggregate by Drying</SourceLink>. Definition and sampling context for total evaporable moisture in aggregate; its scope should be assessed before use on cement raw materials.</li>
+        <li><SourceLink href="https://www.cement.org/learn/concrete-technology/how-cement-is-made">Portland Cement Association, “How Cement Is Made”</SourceLink>. Industry process overview for raw-material proportioning, grinding, kiln processing, and dry versus wet grinding context.</li>
+        <li><SourceLink href="https://www.iea.org/reports/cement">International Energy Agency, Cement</SourceLink>. Current sector context for the importance of improving cement-production efficiency while reducing emissions.</li>
+      </ul>
+    </>
+  );
+}
+
 function IronOrePelletizingMoistureControlArticle() {
   return (
     <>
@@ -1910,6 +1980,8 @@ export default async function BlogPostPage({ params }: Props) {
             <MilkPowderMoistureControlArticle />
           ) : slug === "alumina-hydrate-filter-cake-moisture-calciner-feed" ? (
             <AluminaHydrateFilterCakeMoistureArticle />
+          ) : slug === "cement-raw-mill-feed-moisture-control" ? (
+            <CementRawMillFeedMoistureArticle />
           ) : slug === "iron-ore-pelletizing-moisture-control-green-pellets" ? (
             <IronOrePelletizingMoistureControlArticle />
           ) : (
