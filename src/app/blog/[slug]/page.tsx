@@ -1877,6 +1877,77 @@ function IronOrePelletizingMoistureControlArticle() {
   );
 }
 
+function SugarBeetPulpDryingMoistureArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Why beet-pulp moisture deserves its own control strategy</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Sugar-beet processing produces both sugar and co-products. The U.S. Environmental Protection Agency (EPA) describes a typical livestock-feed sequence in which beet pulp leaves the diffuser, passes through a pulp press and a pulp dryer, then moves to pelletizing and pellet cooling. <SourceLink href="https://www.epa.gov/sites/default/files/2020-10/documents/c9s10-1b.pdf">EPA&apos;s AP-42 process diagram</SourceLink> makes an important operational point: moisture is not one number for the whole by-product route. The water condition after diffusion, after pressing, at dryer discharge, after pelletizing, and after cooling can each answer a different production question.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The water load entering drying is substantial. EPA&apos;s sugar-beet-processing background report says wet pulp from diffusion is typically pressed in horizontal double-screw presses from about 95% to about 75% moisture, before molasses addition and drying in a direct-fired horizontal rotating drum. <SourceLink href="https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100RH3S.TXT">The EPA report</SourceLink> also records typical dryer entrance temperatures of 482 to 927 °C (900 to 1,700 °F). These are process-description data, not universal operating settings. They do show why a delayed laboratory result can arrive too late to help a dryer operator respond to a change in press performance, feed rate, or added molasses.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: separate press performance, drying and finished-feed condition</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A measurement immediately after the press is primarily an indicator of dewatering performance and incoming thermal load. A measurement at dryer discharge can support a drying decision. A measurement after the pellet mill or cooler is a finished-product or post-process-pickup check. Treating all three locations as interchangeable makes it harder to find the source of a moisture excursion.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The scale of the water balance is easy to underestimate. At 75% moisture on a wet basis, one metric tonne of pressed pulp contains 250 kg of dry solids and 750 kg of water. If the dry-solids mass is conserved, the product mass at a site-selected final moisture fraction <em>M</em> is 250/(1 − <em>M</em>) kg; the difference from the incoming tonne is water removed. That is a transparent mass-balance aid for comparing process conditions, not a specification for pellet moisture. The final acceptance value must come from the customer, feed-product definition, and the plant&apos;s validated method.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Definitions matter at the front end as well. EU feed-material legislation defines wet beet pulp as extracted beet slices with a minimum 82% moisture and pressed beet pulp as mechanically pressed material with a maximum 82% moisture; it separately defines dried beet pulp as pressed material that has been dried. <SourceLink href="https://eur-lex.europa.eu/eli/reg/2017/1017/oj/eng">Commission Regulation (EU) 2017/1017</SourceLink> is useful classification context, not a universal dryer target or a substitute for a commercial contract.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a consistent, exposed layer of pressed pulp or dried product on a conveyor, assess a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> when a fast surface trend is sufficient for the operating decision. It needs stable material coverage and sensor distance, a clean optical path, manageable steam and dust, and reference samples taken from the same material presented to the sensor. NIR should not be assumed to represent the average moisture through a deep, uneven or compacted bed.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where the decision depends on moisture through a deeper, changing conveyor layer or a dense bulk stream, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-layer arrangement with loading compensation can be the stronger engineering fit when bed depth varies and a bulk-stream value is needed. The selection should follow material presentation, sampling access and the intended control action—not a generic accuracy claim. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">technology overview</Link> explains the practical difference between surface-oriented NIR and through-layer microwave measurement.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Installation points that support a named operator action</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Press discharge:</strong> trend press performance and incoming dryer water load before added molasses or other later changes obscure the cause.</li>
+        <li><strong>Dryer discharge:</strong> use a representative stream with enough transport time to investigate feed rate, thermal input, gas flow or residence-time changes.</li>
+        <li><strong>Before pelletizing:</strong> use this as a separate conditioning point when the question is how dryer-outlet material is arriving at the pellet mill.</li>
+        <li><strong>After pellet cooling, before storage or load-out:</strong> verify the material condition closer to dispatch and investigate moisture pickup from cooling air, storage or transfer.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Select the location through a site survey rather than structural convenience. Document pulp type, press configuration, molasses-addition point, conveyor speed and coverage, layer depth, dryer configuration, product temperature, dust and vapour, cooler air, ambient humidity, storage residence time, maintenance access, and the travel time between sensor, sample point and potential control action.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and verification: define the reference before fitting the model</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Do not calibrate an online instrument to an undefined &ldquo;oven loss.&rdquo; ICUMSA Method GS8-6 (2019) is an accepted vacuum-oven gravimetric method for moisture of dry sugar-beet pulp. Its published summary states repeatability and reproducibility limits of 0.49 and 1.60 g per 100 g, respectively, under the stated conditions. <SourceLink href="https://www.icumsa.org/methods/icumsa-method-gs8-6-2019/">The ICUMSA method record</SourceLink> provides a clear example of the kind of named method an online trend should be compared with; confirm that its scope, sample preparation and reporting basis match the plant&apos;s product and contract.
+      </p>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Time-align samples:</strong> collect and promptly seal reference samples from the stream observed by the sensor, allowing for belt travel, mixer or pellet-mill residence time, cooling and laboratory delay.</li>
+        <li><strong>Cover real variation:</strong> include press condition, molasses rate, pulp particle presentation, product temperature, bed depth, throughput, normal moisture range and genuine excursions in the validation set.</li>
+        <li><strong>Protect the measurement environment:</strong> engineer for steam, dust, condensation, window fouling, vibration, cleaning access and safe maintenance isolation.</li>
+        <li><strong>Commission in stages:</strong> first demonstrate stable trend direction against the approved method; then establish averaging, alarms, resampling rules and named operator responses; consider automatic changes only after transport delays and process effects are proven.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to prove with plant data</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Continuous moisture measurement can shorten the time between a press or dryer disturbance and a targeted investigation. With a defined response plan, it can help teams distinguish an upstream dewatering change from a dryer issue or post-cooler pickup, focus laboratory checks on meaningful excursions, and avoid operating with an unnecessarily broad drying margin. It cannot establish a fixed energy saving, pellet-durability improvement or finished-moisture result on its own.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Build the business case from the plant&apos;s own data: matched online and reference results, wet-feed and dry-product mass, press performance, molasses rate, dryer fuel and airflow, throughput, pellet-mill load, cooler conditions, rejected or reworked product, and storage or load-out events. This connects a live measurement to outcomes that operations, quality and feed customers can verify.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.epa.gov/sites/default/files/2020-10/documents/c9s10-1b.pdf">U.S. EPA, AP-42 Section 9.10.1.2: Sugarbeet Processing</SourceLink>. Official flow diagram from diffuser through press, dryer, pelletizing and pellet cooling.</li>
+        <li><SourceLink href="https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100RH3S.TXT">U.S. EPA, Emission Factor Documentation for AP-42 Section 9.10.1.2</SourceLink>. Pressed-pulp moisture context, dryer type and reported dryer-entry temperature range.</li>
+        <li><SourceLink href="https://www.icumsa.org/methods/icumsa-method-gs8-6-2019/">ICUMSA Method GS8-6 (2019), Moisture of Beet Pulp by Vacuum Oven Drying</SourceLink>. Accepted gravimetric moisture method and published precision limits.</li>
+        <li><SourceLink href="https://eur-lex.europa.eu/eli/reg/2017/1017/oj/eng">Commission Regulation (EU) 2017/1017</SourceLink>. Definitions and moisture-declaration context for wet, pressed and dried sugar-beet pulp feed materials.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -1984,6 +2055,8 @@ export default async function BlogPostPage({ params }: Props) {
             <CementRawMillFeedMoistureArticle />
           ) : slug === "iron-ore-pelletizing-moisture-control-green-pellets" ? (
             <IronOrePelletizingMoistureControlArticle />
+          ) : slug === "sugar-beet-pulp-drying-moisture-control-pelletizing" ? (
+            <SugarBeetPulpDryingMoistureArticle />
           ) : (
             paragraphs.map((paragraph, i) => (
               <p key={i} className="mb-6 text-base leading-relaxed text-primary/80">

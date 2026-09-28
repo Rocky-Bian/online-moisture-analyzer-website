@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "sugar-beet-pulp-drying-moisture-control-pelletizing",
+    title: "Sugar-Beet Pulp Drying Moisture: A Measurement Strategy Before Pelletizing",
+    excerpt:
+      "How beet-sugar plants can make the large water load after pulp pressing visible before the dryer, link an online trend to an accepted vacuum-oven reference, and distinguish dryer control from finished-pellet verification.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-09-28",
+    readTime: "10 min",
+    tags: [
+      "sugar beet pulp drying moisture control",
+      "beet pulp press moisture measurement",
+      "beet pulp pelletizing moisture",
+      "online microwave moisture measurement",
+      "online NIR moisture analyzer",
+      "sugar beet dryer energy management",
+      "ICUMSA GS8-6 beet pulp moisture",
+    ],
+  },
+  {
     slug: "cement-raw-mill-feed-moisture-control",
     title: "Cement Raw-Mill Feed Moisture: A Measurement Strategy Before Grinding",
     excerpt:
