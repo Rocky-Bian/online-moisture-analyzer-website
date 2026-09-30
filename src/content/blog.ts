@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "ddgs-dryer-discharge-moisture-control-ethanol-coproducts",
+    title: "DDGS Dryer-Discharge Moisture: A Measurement Strategy for Ethanol Co-Products",
+    excerpt:
+      "How ethanol plants can separate wet-cake variability, syrup-blending effects, dryer performance and post-cooler moisture pickup—then connect a continuous online trend to a defined DDGS laboratory reference.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-09-30",
+    readTime: "10 min",
+    tags: [
+      "DDGS dryer discharge moisture control",
+      "distillers dried grains with solubles moisture",
+      "ethanol coproduct drying measurement",
+      "DDGS storage and flowability",
+      "online NIR moisture analyzer",
+      "online microwave moisture measurement",
+      "NFTA 2.2.2.5 DDGS moisture",
+    ],
+  },
+  {
     slug: "sugar-beet-pulp-drying-moisture-control-pelletizing",
     title: "Sugar-Beet Pulp Drying Moisture: A Measurement Strategy Before Pelletizing",
     excerpt:
