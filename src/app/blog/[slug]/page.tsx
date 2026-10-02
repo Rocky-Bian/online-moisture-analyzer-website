@@ -2025,6 +2025,74 @@ function DdgsDryerDischargeMoistureArticle() {
   );
 }
 
+function PaddyRiceDryingMoistureArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Define the moisture decision before specifying the instrument</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Paddy rice arrives at the drying section in a condition that is unsuitable for stable storage, not as a finished milling material. The International Rice Research Institute (IRRI) says harvested rice can contain up to 25% moisture and advises drying paddy within 12–24 hours after cutting to limit quality deterioration. Its published guidance lists 14% or less for storage lasting weeks to a few months, 13% or less for 8–12 months, and 12% or less for seed storage; it also says to maintain 14% moisture when drying for milling. <SourceLink href="https://www.knowledgebank.irri.org/step-by-step-production/postharvest/drying">IRRI&apos;s drying guidance</SourceLink> is useful operating context, not a universal specification: the accepted value still depends on variety, market, storage time, local climate, process configuration, contractual requirements, and the plant&apos;s quality plan.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        That distinction changes the measurement project. A dryer-discharge signal supports a dryer decision; a silo-reclaim signal describes the condition after handling and possible rewetting; and a mill-intake result may be used to manage milling readiness. They should not be treated as interchangeable. IRRI&apos;s service laboratory describes 12–14% as the ideal moisture range for its head-rice-yield procedure, while its drying material cautions against mixing grain held at different moisture contents because cracking can result. <SourceLink href="https://isl.irri.org/services/rice-plant-grain-and-soil-physico-chemical-analyses/hry">Its head-rice-yield procedure</SourceLink> reinforces a practical point: moisture control needs to be linked to the product decision, not merely displayed as a number.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: average moisture can hide a non-uniform dryer bed</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A batch or continuous-flow dryer can produce a useful average result while still carrying zones with different grain condition. Feed-rate changes, uneven grain depth, air distribution, inlet temperature, recirculation pattern, fines, foreign material, and changing incoming moisture can all affect what reaches the discharge. A single grab sample may miss a short wet excursion, while a reading taken at a conveyor edge can misrepresent the average product stream. The online measurement point must therefore represent the grain involved in the operating action.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Quantifying the water load helps put the trend in context. As an illustration, 20 t/h of paddy at 22% wet-basis moisture contains 15.6 t/h of dry solids. If those dry solids leave at 14% wet-basis moisture, the product flow is about 18.14 t/h, so the dryer has removed about 1.86 t/h of water. This is a mass-balance example, not a recommended setpoint or dryer rating. It shows why a two-percentage-point feed change can be operationally important at commercial throughput, and why the moisture trend should be reviewed together with wet-feed rate and dryer conditions.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where clean paddy forms a stable, exposed layer on a discharge conveyor, evaluate a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> for rapid, surface-oriented trend measurement. The application needs repeatable grain coverage, controlled sensor distance, limited steam and dust interference, a clean optical path, and a calibration set that includes the actual varieties, temperature range, moisture range, degree of cleaning, and presentation seen on the line. The U.S. Department of Agriculture notes that NIR measurement depends on a calibration database that matches the material being measured; a model built only on a different type of rice can give a poor result. <SourceLink href="https://agresearchmag.ars.usda.gov/1998/aug/rice/">USDA Agricultural Research Service&apos;s rice NIR overview</SourceLink> provides that calibration caution.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where the required decision is based on moisture through a deeper, changing grain bed or a chute stream, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A bulk-stream approach can be more representative when loading and layer depth vary beyond what a surface-oriented reading can describe. Bed-depth or mass-flow compensation, grain temperature, density variation, metal clearance, dust, vibration, service access, and the time from sensor to control response all belong in the site survey. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online moisture measurement technology overview</Link> explains why material presentation and required sampling volume should guide this choice.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Place the measurement where it supports a named response</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Receiving or pre-cleaning conveyor:</strong> trend incoming paddy variation and calculate the evaporative load before drying; use a representative point after major contamination and segregation have been addressed.</li>
+        <li><strong>Dryer discharge:</strong> support dryer-air, feed-rate, recirculation, or residence-time decisions before grain enters cooling or storage. Allow sufficient transport time for a verified response.</li>
+        <li><strong>After cooling, before the storage silo:</strong> confirm the condition that is actually sent to storage and help distinguish drying variation from cooling or ambient-humidity effects.</li>
+        <li><strong>Silo reclaim or mill intake:</strong> use a separate verification point if storage, blending, or transfer time can change the grain condition. Do not use it to diagnose a dryer event that occurred many hours earlier.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        During the survey, document grain variety and lot mixing, incoming moisture and temperature, cleaner and destoner location, belt speed, bed depth, conveyor coverage, recirculation, ambient humidity, dust extraction, optical-window cleaning, sample access, storage residence time, and the exact PLC or operator response expected from a deviation. For wider food-process measurement considerations, see ALZRO&apos;s <Link href="/industries/grain-noodle-processing" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">grain and noodle processing application page</Link>.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and verification: establish a traceable grain reference</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Agree the reference method, sampling protocol, reporting basis, sample preparation, and acceptable comparison before fitting the online model. For U.S. official grain inspection, the USDA Agricultural Marketing Service identifies the air oven as the reference method for moisture in grains and oilseeds, and explains that the reference laboratory supports field moisture-meter calibration. <SourceLink href="https://www.ams.usda.gov/services/fgis/standardization/reference-methods">USDA AMS reference-method guidance</SourceLink> is a useful model for the principle: the rapid online result must be traceable to an agreed laboratory truth. It does not replace the method or commercial grading rules applicable at a particular mill or country.
+      </p>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Time-align paired data:</strong> record grain travel time from sensor to sampler, dryer and cooler residence time, sample time, and laboratory result so one material state is compared with another.</li>
+        <li><strong>Include normal variation:</strong> build and test the model across expected lots, varieties, temperatures, initial moisture levels, grain presentation, throughput, and genuine excursions—not only stable production.</li>
+        <li><strong>Protect sample integrity:</strong> collect representative increments, seal and identify samples promptly, and avoid allowing a hot or humid sample to gain or lose water before the approved test.</li>
+        <li><strong>Commission in stages:</strong> first prove repeatable trend direction, then define averaging, alarm rules, resampling steps, and named responses before enabling automatic dryer changes.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to demonstrate with plant data</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A validated online trend can shorten the interval between a changed incoming lot or dryer disturbance and a targeted check. It can help the team direct laboratory samples to real excursions, separate an incoming-water-load change from a dryer-control issue, and avoid running with an unnecessarily wide drying margin. It does not by itself guarantee head-rice yield, prevent every storage problem, or prove a fixed energy saving.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Measure the outcome with the plant&apos;s own records: paired online and reference values, feed rate, incoming and discharge moisture, grain and air temperatures, fuel or electrical use, recirculation, cooling conditions, storage observations, broken-rice and head-rice-yield results, and customer or grading outcomes. This creates the evidence needed to decide whether the new measurement is improving dryer control, storage readiness, milling performance, or all three.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.knowledgebank.irri.org/step-by-step-production/postharvest/drying">International Rice Research Institute, Rice Knowledge Bank: Drying</SourceLink>. Harvest moisture, drying timing, storage-duration moisture context, milling guidance, and rewetting caution.</li>
+        <li><SourceLink href="https://isl.irri.org/services/rice-plant-grain-and-soil-physico-chemical-analyses/hry">International Rice Research Institute, Service Laboratories: Head Rice Yield</SourceLink>. Definition of head rice yield and 12–14% moisture context for the stated procedure.</li>
+        <li><SourceLink href="https://www.ams.usda.gov/services/fgis/standardization/reference-methods">U.S. Department of Agriculture, Agricultural Marketing Service: Reference Methods</SourceLink>. Air-oven reference-method and field-instrument calibration context for grain moisture.</li>
+        <li><SourceLink href="https://agresearchmag.ars.usda.gov/1998/aug/rice/">U.S. Department of Agriculture, Agricultural Research Service: Rice and Near-Infrared Analysis</SourceLink>. NIR calibration and matching-material context.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -2136,6 +2204,8 @@ export default async function BlogPostPage({ params }: Props) {
             <SugarBeetPulpDryingMoistureArticle />
           ) : slug === "ddgs-dryer-discharge-moisture-control-ethanol-coproducts" ? (
             <DdgsDryerDischargeMoistureArticle />
+          ) : slug === "paddy-rice-drying-moisture-control-storage-milling" ? (
+            <PaddyRiceDryingMoistureArticle />
           ) : (
             paragraphs.map((paragraph, i) => (
               <p key={i} className="mb-6 text-base leading-relaxed text-primary/80">

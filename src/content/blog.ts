@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "paddy-rice-drying-moisture-control-storage-milling",
+    title: "Paddy Rice Drying Moisture: An Online Measurement Strategy for Storage and Milling",
+    excerpt:
+      "How rice processors can make dryer-endpoint variation visible, distinguish dryer discharge from storage condition, and connect an online trend to a representative approved grain-moisture reference.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-10-02",
+    readTime: "10 min",
+    tags: [
+      "paddy rice drying moisture control",
+      "rice dryer endpoint measurement",
+      "paddy storage moisture monitoring",
+      "rice milling moisture management",
+      "online NIR grain moisture",
+      "microwave bulk moisture measurement",
+      "rice dryer energy management",
+    ],
+  },
+  {
     slug: "ddgs-dryer-discharge-moisture-control-ethanol-coproducts",
     title: "DDGS Dryer-Discharge Moisture: A Measurement Strategy for Ethanol Co-Products",
     excerpt:
