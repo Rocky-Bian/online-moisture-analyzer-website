@@ -2025,6 +2025,77 @@ function DdgsDryerDischargeMoistureArticle() {
   );
 }
 
+function KaolinMoistureControlArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Start by separating process water from the mineral&apos;s thermal behaviour</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Kaolin is processed as a mineral slurry, filter cake, dry powder, ceramic-body ingredient, coating pigment, or calciner feed. These states do not have the same moisture question. In the U.S. Environmental Protection Agency&apos;s clay-processing description, kaolin slurry is filtered and dewatered with equipment such as a filter press, centrifuge, rotary vacuum filter, or tube filter before it is either shipped or dried; the dried material may then be calcined for filler or refractory use. <SourceLink href="https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100NWX7.TXT">The EPA documentation</SourceLink> provides a useful process map: the water an operator must remove after filtration is not automatically the same quantity that a high-temperature calcination test reports.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        That distinction matters when defining the laboratory comparator. Kaolinite contains structurally associated hydroxyl groups, so a broad heating programme can include more than removable process water. ASTM D280 is explicitly titled <em>Standard Test Methods for Hygroscopic Moisture (and Other Matter Volatile Under the Test Conditions) in Pigments</em>; its scope says the result covers hygroscopic moisture <em>and other matter volatile under the test conditions</em>. <SourceLink href="https://store.astm.org/d0280-01r23.html">ASTM&apos;s current listing</SourceLink> is a reminder to record the approved method, temperature, time, sample preparation, and reporting basis rather than calling every result simply “moisture.” For an online model, the reference result must represent the process decision it will support.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: slurry, filter cake, dryer discharge, and calciner feed are different materials</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A number taken on a wet filter cake is useful for dewatering and dryer-load decisions; it is not a release result for a spray-dried ceramic powder. Likewise, a dryer-outlet measurement can guide the dryer, but it cannot by itself show what the product will be after cooling, pneumatic transfer, silo storage, or blending with another mineral. Changes in ore mineralogy, particle-size distribution, dispersion chemistry, slurry solids, filtration performance, feed temperature, cake thickness, product temperature, belt loading, fines, and humidity can each affect the relationship between an online signal and a retained laboratory sample.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The water load can be large even when the finished powder is very dry. In one EPA-documented kaolin spray-dryer test, the slurry was approximately 60% kaolin and 40% water, while the finished product contained less than 1% moisture. That is a documented test condition, not a design value or product specification. It does show why incoming slurry solids and filter-cake moisture deserve to be trended with dryer operation: a modest shift in wet-feed condition changes the evaporation duty long before the final powder fails a check.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Avoid assuming that every kaolin route needs the same endpoint. The required condition depends on whether the material will be sold as a pigment, used in a ceramic body, granulated for pressing, compacted, or calcined. An application example from B&uuml;chi identifies ceramics, paper, and construction materials as common spray-dried-kaolin uses. <SourceLink href="https://www.buchi.com/en/knowledge/applications/kaolin">Its application note</SourceLink> supports the broader point that end use changes the relevant physical properties; the approved customer specification and the plant&apos;s quality plan remain the authority for any limit.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach: match the sampling volume to the decision</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a stable, exposed layer of finished kaolin powder on a conveyor or a well-designed inspection point, evaluate a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> for fast trend measurement. It requires a repeatable stand-off distance, consistent powder presentation, an optical path that is not obscured by dust or steam, and a clean viewing window. Build the calibration with the actual kaolin grades, particle-size distribution, temperature, additives, and expected moisture range—not only a stable production sample.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        At filtration discharge or on a deep, changing filter-cake or bulk-powder bed, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-layer measurement can be a stronger engineering candidate when the operating decision depends on the average through the material bed rather than a surface condition. Record cake or bed thickness, bulk density, belt loading, metal clearance, conveyor geometry, temperature, material build-up, access for cleaning, and the time between sensor location and corrective action. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">technology overview</Link> explains why presentation and required sampling volume should determine the method, not a generic preference for one sensor type.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Installation points that produce actionable data</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>After filtration or dewatering:</strong> trend the free-water load entering a dryer, investigate press or vacuum-filter performance, and support feed-rate or thermal-duty decisions. Do not label this result as finished-powder moisture.</li>
+        <li><strong>At spray-dryer discharge or after a fluid bed:</strong> trend the powder state immediately after the main drying step, then compare it with a time-aligned laboratory sample that represents the same stream.</li>
+        <li><strong>After cooling and classification, before silo or packing:</strong> use this point for finished-product verification when later handling, air transport, or sizing can change what the material represents.</li>
+        <li><strong>Before calcination:</strong> use a separate feed trend to distinguish variable retained process water from thermal changes in the calciner. It complements, rather than replaces, calciner temperature, residence-time, mineralogy, and finished-product testing.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Select one point for one response. If operations need both a rapid drying-control signal and a shipment-condition verification, use two clearly defined measurement objectives instead of forcing one location to answer both questions. For related powder handling and spray-drying context, see ALZRO&apos;s <Link href="/industries/ceramics-mineral-powders" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">ceramics and mineral-powders application page</Link>.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and verification: define a comparator before collecting model data</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Agree the sample protocol and laboratory method before fitting an online correlation. Define whether the result is mass loss under a stated drying condition, a customer-approved moisture result, or a different property; specify sample mass, container, test temperature, drying time, cooling practice, calculation basis, and acceptance rule. When a method reports volatile matter along with moisture under its conditions, preserve that wording in the data record. A change to the laboratory procedure silently changes the target being modelled.
+      </p>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Time-align the pair:</strong> account for dryer, cooler, conveying, silo, sampling, and laboratory delays so the online value and retained sample describe the same material state.</li>
+        <li><strong>Include expected variation:</strong> collect data across actual ore sources, particle sizes, slurry solids, filtration conditions, grades, temperatures, production rates, and genuine process excursions.</li>
+        <li><strong>Preserve the sample:</strong> take representative increments, seal and label promptly, and avoid exposure that lets a hot or hygroscopic powder gain or lose water before the approved test.</li>
+        <li><strong>Commission in stages:</strong> prove trend direction against the approved reference, then establish averaging, alarm limits, resampling rules, and named operator actions before any automatic change is enabled.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to prove with plant records</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A validated trend can reduce the time between a filtration or dryer disturbance and a targeted investigation. It can help separate higher water load from a dryer-control problem, focus laboratory work on real excursions, and reveal whether a conservative drying margin is being applied more often than necessary. It does not establish a universal energy saving, guarantee powder flow, or replace mineralogical and finished-product testing.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Evaluate the result with plant data: slurry density and solids, filter-cake moisture, feed rate, dryer inlet and outlet conditions, fuel or electrical consumption, powder temperature, cooling-air condition, bulk density, particle size, dust-collection observations, laboratory values, rejected material, and customer-release results. That evidence gives production and quality teams a shared basis for deciding whether the measurement is improving dewatering, drying, finished-powder control, or calciner-feed consistency.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100NWX7.TXT">U.S. Environmental Protection Agency, Emission Factor Documentation for AP-42 Section 11.25: Clay Processing</SourceLink>. Process description for filtering, dewatering, drying and calcination, plus documented kaolin spray-dryer test conditions.</li>
+        <li><SourceLink href="https://store.astm.org/d0280-01r23.html">ASTM D280-01(2023), Standard Test Methods for Hygroscopic Moisture (and Other Matter Volatile Under the Test Conditions) in Pigments</SourceLink>. Scope and terminology for defining an appropriate laboratory comparator.</li>
+        <li><SourceLink href="https://www.buchi.com/en/knowledge/applications/kaolin">B&uuml;chi, Spray Drying of Kaolin</SourceLink>. Application context for kaolin in ceramics, paper, and construction materials.</li>
+        <li><SourceLink href="https://www.tandfonline.com/doi/full/10.1080/07373937.2024.2392628">Zhao et al. (2024), Drying Technology: Prediction model of moisture content in spray drying of ceramic slurry</SourceLink>. Peer-reviewed context that final moisture affects processing, product quality, and process energy consumption.</li>
+      </ul>
+    </>
+  );
+}
+
 function PaddyRiceDryingMoistureArticle() {
   return (
     <>
@@ -2148,6 +2219,8 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           {slug === "wood-fiberboard-hot-press-moisture-control" ? (
             <WoodFiberboardArticle />
+          ) : slug === "kaolin-moisture-control-filter-cake-spray-drying" ? (
+            <KaolinMoistureControlArticle />
           ) : slug === "wood-pellet-moisture-control-dryer-bagging-storage" ? (
             <WoodPelletMoistureControlArticle />
           ) : slug === "granular-urea-moisture-control-cooling-caking" ? (

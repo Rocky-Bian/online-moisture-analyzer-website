@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "kaolin-moisture-control-filter-cake-spray-drying",
+    title: "Kaolin Moisture Control: From Filter Cake to Spray Dryer and Calciner Feed",
+    excerpt:
+      "How kaolin producers can separate removable process water from mineral mass loss, measure a representative stream after filtration or drying, and connect an online trend to a defined laboratory reference.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-10-07",
+    readTime: "10 min",
+    tags: [
+      "kaolin moisture control",
+      "kaolin filter cake moisture",
+      "kaolin spray dryer measurement",
+      "clay processing moisture analysis",
+      "online NIR moisture analyzer",
+      "microwave bulk moisture measurement",
+      "kaolin calciner feed control",
+    ],
+  },
+  {
     slug: "paddy-rice-drying-moisture-control-storage-milling",
     title: "Paddy Rice Drying Moisture: An Online Measurement Strategy for Storage and Milling",
     excerpt:
