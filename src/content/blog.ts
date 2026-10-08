@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "ammonium-phosphate-granule-moisture-dryer-cooler",
+    title: "Ammonium Phosphate Granule Moisture: Control from Rotary Dryer to Cooler",
+    excerpt:
+      "How MAP and DAP producers can separate granulator water load, dryer-endpoint control, and post-cooler handling condition—then validate an online moisture trend against a defined, representative reference method.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-10-08",
+    readTime: "10 min",
+    tags: [
+      "ammonium phosphate granule moisture",
+      "MAP DAP dryer moisture control",
+      "fertilizer cooler discharge measurement",
+      "granular fertilizer caking control",
+      "online NIR moisture analyzer",
+      "microwave bulk moisture measurement",
+      "fertilizer granulation process control",
+    ],
+  },
+  {
     slug: "kaolin-moisture-control-filter-cake-spray-drying",
     title: "Kaolin Moisture Control: From Filter Cake to Spray Dryer and Calciner Feed",
     excerpt:

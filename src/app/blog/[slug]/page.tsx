@@ -2025,6 +2025,82 @@ function DdgsDryerDischargeMoistureArticle() {
   );
 }
 
+function AmmoniumPhosphateGranuleMoistureArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Treat the dryer and the cooler as different moisture-control decisions</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Granular ammonium phosphate products such as MAP and DAP pass through a sequence in which water has different meanings: slurry and granulation water establish the wet feed, dryer-discharge moisture indicates the thermal endpoint, and post-cooler moisture describes the condition entering screening, coating, storage, or bagging. The U.S. Environmental Protection Agency&apos;s process description for ammonium phosphate manufacture is a useful map of this sequence. For the traditional process it documents an ammonium-phosphate slurry containing 22% water, granulation in a rotating drum, rotary drying, cooling, and double-deck screening; it describes saleable product in the 1–4 mm range, with off-size material returned to the process. <SourceLink href="https://www.epa.gov/sites/production/files/2020-09/documents/final_background_document_for_phosphate_fertilizers_section_8.5.pdf">EPA&apos;s AP-42 background document</SourceLink> describes a process configuration, not a universal recipe or a moisture specification for every fertilizer grade.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The practical consequence is simple: a correct online reading at one point can still answer the wrong question. A measurement before the dryer helps quantify evaporation duty. A dryer-discharge trend supports a dryer response. A protected measurement after cooling is more relevant to handling and packaging. Do not use one signal to claim all three outcomes, or assume that a generic residual-moisture target applies across MAP, DAP, NPK grades, recycled fines ratios, coatings, storage climates, and customer specifications.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: a bulk average can obscure temperature, fines, and local water effects</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Caking is not predicted by moisture alone. The International Fertilizer Development Center&apos;s physical-properties manual includes distinct procedures for critical relative humidity, moisture absorption and penetration, flowability, caking tendency, particle-size analysis, bulk density, crushing strength, abrasion resistance, dustiness, and conditioner adherence. <SourceLink href="https://hub.ifdc.org/handle/20.500.14297/1712">IFDC&apos;s manual</SourceLink> is important context: moisture control should be part of a product-quality plan that also considers granule size, fines, coating, strength, storage load, and environmental exposure.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Product temperature deserves equal attention. A peer-reviewed study of granular NPK fertilizer reported that, when product is packed warm, water can leave the granules inside moisture-proof packaging, raise local air humidity, and increase moisture at granule-to-granule interfaces; the authors connected that surface condition with agglomeration risk. <SourceLink href="https://www.tandfonline.com/doi/abs/10.1080/07373930008917719">The study</SourceLink> does not create a single permissible packing temperature, but it explains why a cooler-discharge measurement should be trended with product temperature and ambient conditions rather than treated as an isolated number.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Process impact: quantify water removal, then investigate the cause of a shift</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A wet-basis mass balance makes an online trend operationally useful. For example, a 20 t/h granule stream at 4% moisture contains 19.2 t/h dry solids and 0.8 t/h water. If dry solids are conserved and the same stream leaves the dryer at 2% moisture, its product flow is about 19.59 t/h and about 0.41 t/h of water has been removed. This is an illustration, not a MAP, DAP, or NPK setpoint: actual calculations must account for recycle, dust recovery, coating additions, sampling basis, and any composition changes.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Use that calculation to make questions sharper. If wet-feed rate and incoming moisture rise while dryer exhaust conditions and final moisture move together, the evaporative load has changed. If dryer-discharge moisture is stable but the post-cooler signal rises, inspect cooling-air conditions, product temperature, transfer exposure, fines, coating location, and sampling method before changing dryer duty. A reliable trend reduces the time to investigate; it does not identify the root cause by itself.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a stable, exposed layer of finished granules on a conveyor after drying or cooling, evaluate a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> for rapid surface-oriented trend measurement. The application needs repeatable layer coverage, a controlled stand-off distance, a clean optical path, and a window or sensor face protected from dust, steam, condensation, and product build-up. Build the calibration from the actual grade range, particle-size distribution, coating condition, temperature, and material presentation—not just from stable, uncoated production samples.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where the operating decision requires an average through a deeper or changing bulk bed, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link>. A through-layer measurement with loading compensation can be the stronger engineering candidate when bed depth and bulk density vary beyond what a surface trend represents. Review belt geometry, depth variation, metal clearance, fines carryover, temperature, conveyor vibration, service access, and the time between the sensor and the corrective action. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">technology overview</Link> explains why material presentation and the required sampling volume should drive method selection.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Installation points tied to a named response</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Granulator or wet-feed discharge:</strong> trend the water load entering the dryer and investigate slurry, recycle, or granulation changes; do not present this result as finished-product moisture.</li>
+        <li><strong>Rotary-dryer discharge:</strong> use this point for dryer duty, gas condition, feed-rate, and residence-time decisions before cooling changes the material state.</li>
+        <li><strong>Cooler discharge, before screening:</strong> distinguish dryer endpoint from cooling performance and identify whether temperature or ambient exposure is changing the handling condition.</li>
+        <li><strong>After screening and coating, before storage or bagging:</strong> use a representative protected stream for shipment-condition trending and targeted release sampling, especially when recycled fines or coatings change the composition seen upstream.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A site survey should record product grade, normal moisture and temperature range, granule-size distribution, recycle ratio, coating formulation and position, belt coverage, layer depth, airflow, dust extraction, ambient humidity, sample access, maintenance clearance, hazardous-area requirements, and the named PLC or operator response for a deviation. The useful point is not necessarily the first empty section of conveyor; it is the point whose material state matches the decision.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and verification: match the laboratory result to the same material state</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Agree the laboratory reference method, sample preparation, reporting basis, and acceptance rule before fitting an online correlation. The reference must be appropriate for the grade and the site&apos;s quality system. IFDC&apos;s fertilizer guidance and its 2022 bulk-blending material both emphasize that physical quality depends on representative sampling and multiple material properties, not a single unexamined number. <SourceLink href="https://hub.ifdc.org/items/03f43238-3993-4987-b2d4-cf6fe141fa46">The IFDC blending guidance</SourceLink> describes checks for properties including shape, dust content, solubility, and bulk density alongside compatibility.
+      </p>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Time-align pairs:</strong> account for dryer, cooler, screening, coating, conveyor, sampling, and laboratory delays so the online signal and retained sample describe the same material.</li>
+        <li><strong>Include real variation:</strong> collect paired data across product grades, particle sizes, recycle ratios, coating status, throughput, temperature, normal humidity conditions, and actual excursions.</li>
+        <li><strong>Protect sample integrity:</strong> take representative increments, promptly seal and label samples, and prevent a warm or hygroscopic sample from gaining or losing water before the approved test.</li>
+        <li><strong>Commission in stages:</strong> demonstrate repeatable trend direction first, then establish averaging, alarm limits, resampling rules, and operator actions before enabling automatic changes.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to prove with plant data</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A validated online trend can shorten the interval between a granulation, drying, or cooling disturbance and a targeted check. With a defined response plan, it can help direct laboratory work to real excursions and reveal when the dryer is operating with a wider margin than current feed conditions require. It does not prove a fixed energy reduction, eliminate every caking event, or replace tests for granule strength, size, dust, coating, flowability, and storage behavior.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Evaluate the result using the plant&apos;s own record: paired online and laboratory values, wet-feed rate, recycle mass, product temperature, dryer inlet and outlet conditions, fuel or electrical use, cooling-air data, coating rate, fines and oversize fraction, caking observations, bagging interruptions, and storage results. This evidence lets production and quality teams decide whether the measurement is improving dryer control, cooler operation, product handling, or the transition between them.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.epa.gov/sites/production/files/2020-09/documents/final_background_document_for_phosphate_fertilizers_section_8.5.pdf">U.S. Environmental Protection Agency, AP-42 Background Document for Phosphate Fertilizers, Section 8.5</SourceLink>. Traditional ammonium-phosphate slurry, granulation, rotary drying, cooling, screening, recycle, and documented particle-size context.</li>
+        <li><SourceLink href="https://hub.ifdc.org/handle/20.500.14297/1712">International Fertilizer Development Center, Manual for Determining Physical Properties of Fertilizer</SourceLink>. Procedures and terminology for humidity response, moisture absorption, flowability, caking, size, strength, dust, and related physical properties.</li>
+        <li><SourceLink href="https://www.tandfonline.com/doi/abs/10.1080/07373930008917719">Walker et al., Drying Technology: Granular Fertilizer Drying and Agglomeration in Storage</SourceLink>. Peer-reviewed temperature, local humidity, and agglomeration context for granular NPK fertilizer.</li>
+        <li><SourceLink href="https://hub.ifdc.org/items/03f43238-3993-4987-b2d4-cf6fe141fa46">International Fertilizer Development Center, Fertilizer Bulk Blending: Checking Compatibility of Raw Materials</SourceLink>. Physical-compatibility and representative-sampling context for granular fertilizer handling.</li>
+      </ul>
+    </>
+  );
+}
+
 function KaolinMoistureControlArticle() {
   return (
     <>
@@ -2219,6 +2295,8 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           {slug === "wood-fiberboard-hot-press-moisture-control" ? (
             <WoodFiberboardArticle />
+          ) : slug === "ammonium-phosphate-granule-moisture-dryer-cooler" ? (
+            <AmmoniumPhosphateGranuleMoistureArticle />
           ) : slug === "kaolin-moisture-control-filter-cake-spray-drying" ? (
             <KaolinMoistureControlArticle />
           ) : slug === "wood-pellet-moisture-control-dryer-bagging-storage" ? (
