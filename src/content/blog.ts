@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "cocoa-powder-moisture-control-milling-packing",
+    title: "Cocoa Powder Moisture Control: From Cake Milling to Hygienic Packing",
+    excerpt:
+      "How cocoa processors can distinguish a hot milling-line trend from the packed-product condition, select a representative online measurement point, and validate it against an agreed moisture reference without assuming one universal limit.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-10-10",
+    readTime: "10 min",
+    tags: [
+      "cocoa powder moisture control",
+      "cocoa cake milling moisture measurement",
+      "cocoa powder hygroscopicity",
+      "cocoa powder packing moisture",
+      "online NIR moisture analyzer",
+      "food powder moisture calibration",
+      "cocoa powder process control",
+    ],
+  },
+  {
     slug: "ammonium-phosphate-granule-moisture-dryer-cooler",
     title: "Ammonium Phosphate Granule Moisture: Control from Rotary Dryer to Cooler",
     excerpt:

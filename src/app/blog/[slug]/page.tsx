@@ -2240,6 +2240,75 @@ function PaddyRiceDryingMoistureArticle() {
   );
 }
 
+function CocoaPowderMoistureControlArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Define the finished-product decision before selecting a moisture target</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Cocoa powder is made by transforming cocoa cake into powder; it is not the same process state as fermented cocoa beans, nibs, or cocoa liquor. The <SourceLink href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&amp;url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B105-1981%252FCXS_105e.pdf">Codex standard for cocoa powders</SourceLink> defines the product categories, while the International Cocoa Organization describes drying beans from about 60% to about 7.5% moisture before storage and shipment. Those bean figures are useful upstream context, but they are not a finished-cocoa-powder setpoint. The release limit for a powder line should come from the product specification, cocoa-butter level, alkalisation and processing route, destination-market rules, packaging design, shelf-life validation, and the plant&apos;s approved quality plan.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        This distinction matters because moisture is both a mass-balance variable and a quality signal. At 10 t/h, a change from 4.0% to 4.5% moisture at a constant wet throughput changes the water carried with product by about 50 kg/h. That calculation is an illustration, not a recommended control band: it shows why a small percentage change can be meaningful to a cooling, packing, or quality team. The practical question is whether the observed change represents cocoa cake leaving the mill, powder after cooling and sifting, or powder actually entering the pack.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: a hygroscopic powder can change after the process step you are trying to control</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The Food and Agriculture Organization notes that cocoa powder is hygroscopic and should be protected from moisture pickup, especially in humid climates. <SourceLink href="https://www.fao.org/4/x0560e/x0560e12.htm">Its cocoa-processing guide</SourceLink> specifically recommends sealed packaging. That makes the period after milling important: powder temperature, cooling time, ambient humidity, pneumatic conveying air, sieve and hopper residence time, leakage, and packing delay can all change the relationship between a process reading and a retained finished-product sample.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Water activity is not interchangeable with moisture content, but it is a useful companion in a hygroscopic-powder quality plan. A U.S. Food and Drug Administration study of its cocoa-powder in-house reference material found that its mass equilibrated with surrounding relative humidity and reported an estimated 0.7% standard uncertainty for immediate mass measurement over 15%–50% relative humidity. <SourceLink href="https://pubmed.ncbi.nlm.nih.gov/23942587/">That study</SourceLink> concerns a laboratory reference material, not an operating specification for commercial powder; it nevertheless reinforces the need to protect samples, record ambient conditions, and avoid comparing a hot online trend with a moisture-gained laboratory sample.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        On a clean, consistently presented cocoa-powder stream, assess a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> for rapid trend measurement. The optical path needs a stable powder surface or a suitable viewing arrangement, repeatable sensor distance, controlled background, limited dust or steam interference, and access to clean the window. Near-infrared feasibility is supported by a peer-reviewed study of 100 cocoa-powder samples: its NIR moisture model covered 1.60%–7.80% moisture, with R² of 0.94 and relative cross-validation error of 5.2%. <SourceLink href="https://www.sciencedirect.com/science/article/pii/S0003267007013955/pdfft?md5=42963c99765dbf56f488daa1b0714983&amp;pid=1-s2.0-S0003267007013955-main.pdf">The study</SourceLink> is evidence that cocoa-powder NIR models can work; it is not an accuracy promise for a production installation.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        If the required control value is an average through a deeper or variable bulk layer, evaluate a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link> during the site survey. A bulk-stream measurement can better match a transfer conveyor or chute when bed depth changes, but the plant must still establish a product-specific model at the relatively low moisture values common in powder applications. Compare the actual material presentation, powder depth, flow rate, cocoa-butter level, particle-size distribution, temperature, metal clearance, dust control, and control decision rather than selecting a technology from a generic accuracy figure. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">technology overview</Link> explains why the measurement volume and installation geometry matter.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Place the instrument where an operator can make a named decision</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Mill or classifier discharge:</strong> use a protected, representative point to see changes caused by cake feed, milling heat, or mill operating conditions. Treat this as an upstream process trend, not proof of packed-product moisture.</li>
+        <li><strong>After cooling and sifting, before the packer surge hopper:</strong> this is usually the most actionable finished-stream point when the plant needs to investigate cooling, conveying, or ambient-humidity pickup before a large amount is packed.</li>
+        <li><strong>At bulk-loadout or bagging feed:</strong> use this as a final verification trend when the transfer from the cooler to packing can introduce delay, blending, or humidity exposure. Do not use it alone to diagnose a milling event that occurred much earlier.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A site survey should document natural versus alkalised product, fat range, particle-size distribution, line temperature, belt or chute geometry, powder depth, material velocity, pneumatic-air condition, dust extraction, window-cleaning access, nearby vibration, sample access, sample travel time, and the exact response expected after an alarm. For food-powder measurement context, see ALZRO&apos;s <Link href="/industries/grain-noodle-processing" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">grain and noodle processing page</Link>.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and verification: make the online value traceable to the approved comparator</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Agree the laboratory comparator before collecting calibration data. The Codex Committee on Methods of Analysis and Sampling&apos;s 2025 report lists IOCCC ICA No. 26 and AOAC 977.10 (Karl Fischer) for moisture determined as water in cocoa powders and dry cocoa-sugar mixtures. <SourceLink href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/tr/?lnk=1&amp;url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FMeetings%252FCX-715-44%252FREPORT%252FREP25_MASs.pdf">The report</SourceLink> provides method-selection context; the plant should use the version, scope, and method named in its applicable specification or contract. A loss-on-drying result and a Karl Fischer result need not be assumed interchangeable without a documented comparison.
+      </p>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Sample the same material state:</strong> time-align every retained sample with sensor-to-sampler travel and hopper residence time. Seal, identify, and analyse samples promptly to limit moisture exchange.</li>
+        <li><strong>Cover real formulation variation:</strong> include natural and alkalised grades where relevant, expected fat and particle-size ranges, warm and cooled product, ordinary production, and genuine high/low excursions. Do not build a model only on one stable campaign.</li>
+        <li><strong>Prove the trend before automation:</strong> first establish repeatability and bias against the agreed reference, then set averaging, alarms, resampling rules, and named operator actions before sending the signal to a control loop.</li>
+        <li><strong>Revalidate after meaningful change:</strong> review the model after a change in cake source, pressing route, alkalisation, mill/classifier settings, cooling airflow, package route, or reference method.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to prove with plant data</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A validated online trend can shorten the time between a cooling, conveying, or ambient-condition change and a targeted check. It can help the team separate a milling event from downstream moisture pickup, focus laboratory work on excursions, and avoid running a cooling or drying margin that is wider than the product needs. It does not by itself demonstrate improved shelf life, prevent every agglomeration event, or prove a fixed energy saving.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Track the outcome with the plant&apos;s own paired online and reference results, powder and ambient temperature, relative humidity, cooling-air condition, throughput, bagging delay, package seal checks, caking or flow observations, rework, quality holds, and energy records. That evidence is the appropriate basis for deciding whether the measurement is improving milling control, post-cooling stability, packing readiness, or all three.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&amp;url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXS%2B105-1981%252FCXS_105e.pdf">Codex Alimentarius, CXS 105-1981: Standard for Cocoa Powders (Cocoas) and Dry Mixtures of Cocoa and Sugars</SourceLink>. Product-definition and food-hygiene context.</li>
+        <li><SourceLink href="https://www.icco.org/harvesting-post-harvest-new/">International Cocoa Organization, Harvesting and Post-harvest Processing</SourceLink>. Cocoa-bean drying context and the stated reduction from about 60% to about 7.5% moisture.</li>
+        <li><SourceLink href="https://www.fao.org/4/x0560e/x0560e12.htm">Food and Agriculture Organization, Small-scale Food Processing: Cocoa Products</SourceLink>. Cocoa-powder hygroscopicity and sealed-packaging context.</li>
+        <li><SourceLink href="https://www.sciencedirect.com/science/article/pii/S0003267007013955/pdfft?md5=42963c99765dbf56f488daa1b0714983&amp;pid=1-s2.0-S0003267007013955-main.pdf">Veselá et al. (2007), Analytica Chimica Acta</SourceLink>. NIR/FTIR analysis of fat, nitrogen, and moisture in 100 cocoa-powder samples.</li>
+        <li><SourceLink href="https://pubmed.ncbi.nlm.nih.gov/23942587/">Koeberl et al. (2013), Journal of AOAC International</SourceLink>. Water-activity and relative-humidity behavior of FDA cocoa-powder reference material.</li>
+        <li><SourceLink href="https://www.fao.org/fao-who-codexalimentarius/sh-proxy/tr/?lnk=1&amp;url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FMeetings%252FCX-715-44%252FREPORT%252FREP25_MASs.pdf">Codex Committee on Methods of Analysis and Sampling, REP25/MAS</SourceLink>. Listed moisture-method context for cocoa powders and dry cocoa-sugar mixtures.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -2295,6 +2364,8 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           {slug === "wood-fiberboard-hot-press-moisture-control" ? (
             <WoodFiberboardArticle />
+          ) : slug === "cocoa-powder-moisture-control-milling-packing" ? (
+            <CocoaPowderMoistureControlArticle />
           ) : slug === "ammonium-phosphate-granule-moisture-dryer-cooler" ? (
             <AmmoniumPhosphateGranuleMoistureArticle />
           ) : slug === "kaolin-moisture-control-filter-cake-spray-drying" ? (
