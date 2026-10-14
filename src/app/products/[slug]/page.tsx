@@ -42,6 +42,7 @@ export default async function ProductPage({ params }: Props) {
   const relatedFaqs = getFeaturedFAQs(3);
   const relatedPosts = getFeaturedPosts(2);
   const otherProducts = products.filter((p) => p.slug !== slug);
+  const isLaboratory = product.category === "laboratory";
 
   return (
     <>
@@ -109,7 +110,11 @@ export default async function ProductPage({ params }: Props) {
       <Section>
         <SectionHeader
           label="Key Features"
-          title="Engineered for Industrial Reliability"
+          title={
+            isLaboratory
+              ? "Built for Fast, Repeatable Reference Testing"
+              : "Engineered for Industrial Reliability"
+          }
           align="left"
         />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -158,8 +163,16 @@ export default async function ProductPage({ params }: Props) {
           <div>
             <SectionHeader
               label="Applications"
-              title="Industrial Applications"
-              description="Typical inline installation targets based on ALZRO product positioning and real process requirements."
+              title={
+                isLaboratory
+                  ? "Laboratory and Calibration Applications"
+                  : "Industrial Applications"
+              }
+              description={
+                isLaboratory
+                  ? "Typical uses for rapid sample testing, quality control, and verification of inline moisture measurements."
+                  : "Typical inline installation targets based on ALZRO product positioning and real process requirements."
+              }
               align="left"
             />
             <ul className="space-y-3">
@@ -182,12 +195,16 @@ export default async function ProductPage({ params }: Props) {
             </p>
             <SiteImage
               src={
-                product.slug === "microwave-moisture-system"
+                product.applicationImage
+                  ? product.applicationImage
+                  : product.slug === "microwave-moisture-system"
                   ? product.image
                   : siteImages.nirBeamEffect
               }
               alt={
-                product.slug === "microwave-moisture-system"
+                isLaboratory
+                  ? "AL-1201 halogen moisture analyzer used for laboratory reference testing and calibration"
+                  : product.slug === "microwave-moisture-system"
                   ? "Microwave moisture measurement installation across a conveyor-belt bulk material stream"
                   : "Online NIR moisture analyzer installed outside an inspection window for non-contact measurement"
               }
@@ -261,7 +278,11 @@ export default async function ProductPage({ params }: Props) {
           <SectionHeader
             label="Reference Industries"
             title="Application References"
-            description="Representative industries where this product can support online process moisture control."
+            description={
+              isLaboratory
+                ? "Representative laboratory and quality-control uses for rapid reference moisture testing."
+                : "Representative industries where this product can support online process moisture control."
+            }
           />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {product.referenceIndustries.map((industry) => (
@@ -361,8 +382,16 @@ export default async function ProductPage({ params }: Props) {
       )}
 
       <CTASection
-        headline={`Ready to Deploy ${product.name}?`}
-        description="Get a free application assessment and installation quote from our engineering team."
+        headline={
+          isLaboratory
+            ? `Need a Reference Method for ${product.name}?`
+            : `Ready to Deploy ${product.name}?`
+        }
+        description={
+          isLaboratory
+            ? "Share your material, expected moisture range, and current oven method for a test-method and quotation recommendation."
+            : "Get a free application assessment and installation quote from our engineering team."
+        }
       />
     </>
   );

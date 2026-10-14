@@ -59,6 +59,7 @@ export function productSchema(product: {
   name: string;
   description: string;
   slug: string;
+  category?: "online" | "laboratory";
 }) {
   return {
     "@context": "https://schema.org",
@@ -67,7 +68,10 @@ export function productSchema(product: {
     description: product.description,
     brand: { "@type": "Brand", name: "ALZRO" },
     url: `https://www.alzro.com/products/${product.slug}`,
-    category: "Industrial Moisture Analyzer",
+    category:
+      product.category === "laboratory"
+        ? "Laboratory Moisture Analyzer"
+        : "Industrial Online Moisture Analyzer",
   };
 }
 

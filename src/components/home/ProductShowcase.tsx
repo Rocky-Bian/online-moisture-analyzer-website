@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Gauge, Radio } from "lucide-react";
+import { ArrowRight, FlaskConical, Gauge, Radio } from "lucide-react";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { SiteImage } from "@/components/ui/SiteImage";
 import { products } from "@/content/products";
@@ -11,9 +11,15 @@ import { FadeIn } from "@/components/ui/AnimatedCounter";
 const methodIcons: Record<string, React.ElementType> = {
   "Near-Infrared (NIR) Spectroscopy": Radio,
   "Microwave Transmission Technology": Gauge,
+  "Laboratory Halogen Loss-on-Drying": FlaskConical,
 };
 
 export function ProductShowcase() {
+  const onlineProducts = products.filter((product) => product.category === "online");
+  const laboratoryProduct = products.find(
+    (product) => product.category === "laboratory"
+  );
+
   return (
     <Section id="products">
       <SectionHeader
@@ -23,7 +29,7 @@ export function ProductShowcase() {
       />
 
       <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
-        {products.map((product, i) => {
+        {onlineProducts.map((product, i) => {
           const MethodIcon = methodIcons[product.method] ?? Gauge;
           return (
             <FadeIn key={product.slug} delay={i * 0.1}>
@@ -77,6 +83,45 @@ export function ProductShowcase() {
           );
         })}
       </div>
+
+      {laboratoryProduct && (
+        <FadeIn delay={0.2}>
+          <div className="mx-auto mt-8 grid max-w-5xl overflow-hidden rounded-sm border border-border bg-surface shadow-sm md:grid-cols-[280px_1fr]">
+            <SiteImage
+              src={laboratoryProduct.image}
+              alt={laboratoryProduct.name}
+              variant="product"
+              className="aspect-[4/3] w-full md:aspect-auto md:min-h-64"
+            />
+            <div className="flex flex-col justify-center p-6 md:p-8">
+              <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-accent">
+                <FlaskConical className="h-3.5 w-3.5" />
+                Laboratory & Calibration Equipment
+              </div>
+              <h3 className="mt-3 text-2xl font-bold text-primary">
+                {laboratoryProduct.name}
+              </h3>
+              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
+                Fast sample-based reference testing for quality control,
+                commissioning, and routine verification of online NIR or
+                microwave moisture measurements.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-sm text-primary">
+                <span><strong>120 g</strong> capacity</span>
+                <span><strong>0.001 g</strong> mass readability</span>
+                <span><strong>40-230°C</strong> heating range</span>
+              </div>
+              <Link
+                href={`/products/${laboratoryProduct.slug}`}
+                className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-accent hover:gap-2 transition-all"
+              >
+                View Laboratory Analyzer
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </div>
+        </FadeIn>
+      )}
 
       <div className="mt-10 text-center">
         <Link

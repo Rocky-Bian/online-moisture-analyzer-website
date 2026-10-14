@@ -2,6 +2,7 @@ import { productImages } from "@/lib/images";
 
 export interface Product {
   slug: string;
+  category: "online" | "laboratory";
   name: string;
   tagline: string;
   description: string;
@@ -15,6 +16,7 @@ export interface Product {
   integration?: string[];
   referenceIndustries?: string[];
   installationOverview?: string;
+  applicationImage?: string;
   heroImage: string;
   image: string;
 }
@@ -22,6 +24,7 @@ export interface Product {
 export const products: Product[] = [
   {
     slug: "online-nir-moisture-analyzer",
+    category: "online",
     name: "Online NIR Moisture Analyzer",
     tagline: "Non-contact inline moisture control for dryers, conveyors, and powder process lines",
     description:
@@ -93,6 +96,7 @@ export const products: Product[] = [
   },
   {
     slug: "microwave-moisture-system",
+    category: "online",
     name: "Microwave Moisture Measurement System",
     tagline: "Non-contact total-moisture measurement for conveyor belts and dense bulk solids",
     description:
@@ -156,6 +160,88 @@ export const products: Product[] = [
       "Install the microwave transmitter and receiver on opposite sides of the conveyor or process chute so the signal passes through the full material layer. Use the evaluation computer for calibration during commissioning, and add ultrasonic or belt-load compensation where bed depth changes significantly across the process.",
     heroImage: "microwave-system",
     image: productImages["microwave-moisture-system"],
+  },
+  {
+    slug: "halogen-moisture-analyzer-al-1201",
+    category: "laboratory",
+    name: "AL-1201 Halogen Moisture Analyzer",
+    tagline:
+      "Fast laboratory reference testing for quality control and inline sensor calibration",
+    description:
+      "The AL-1201 combines a 1 mg weighing system with a 450 W ring halogen heater to measure moisture by loss on drying. It gives production and laboratory teams a faster reference result for incoming inspection, process checks, method development, and verification of online NIR or microwave moisture measurements.",
+    accuracy: "0.01% moisture readability",
+    method: "Laboratory Halogen Loss-on-Drying",
+    applications: [
+      "Reference testing for online moisture analyzer calibration",
+      "Incoming-material and finished-product quality control",
+      "Plastics, resin pellets, powders, and chemical raw materials",
+      "Grain, flour, feed, food, tea, and agricultural products",
+      "Paper, tobacco, textiles, and pharmaceutical materials",
+      "Rapid comparison with an established oven-drying method",
+    ],
+    features: [
+      "120 g maximum sample capacity with 0.001 g mass readability",
+      "0.01% moisture-content readability",
+      "40°C to 230°C programmable temperature range",
+      "450 W high-efficiency ring halogen heating system",
+      "Gentle, standard, and fast heating programs",
+      "Automatic, manual, and timed end-point modes",
+      "5-inch HD touchscreen with drying curve and live test data",
+      "Displays moisture, solids, dry weight, weight loss, time, and temperature",
+      "Standard RS-232 interface for printer or PC connection",
+    ],
+    specifications: {
+      Model: "AL-1201",
+      "Measurement Principle": "Halogen loss on drying / thermogravimetric method",
+      "Maximum Capacity": "120 g",
+      "Mass Readability": "0.001 g (1 mg)",
+      "Moisture Readability": "0.01%",
+      "Moisture Display Range": "0.01% to 100%",
+      "Weighing Sensor": "Germany HBM",
+      "Temperature Range": "40°C to 230°C",
+      "Heating Source": "450 W high-efficiency ring halogen lamp",
+      "Heating Programs": "Gentle, standard, fast",
+      "End-Point Modes": "Automatic, manual, timed",
+      Display: "5-inch HD touchscreen",
+      Interface: "RS-232 standard; USB customization available",
+      "Sample Pan": "90 mm stainless-steel pan",
+      "Operating Environment": "10°C to 40°C",
+      "Product Size": "370 × 215 × 195 mm",
+      "Packing Size": "445 × 300 × 330 mm",
+      Weight: "3.8 kg net / 4.8 kg gross",
+    },
+    bestFor: [
+      "Plants that need faster reference checks than a conventional drying oven",
+      "Online moisture projects that require routine calibration and verification samples",
+      "Laboratories that test multiple materials with saved heating and end-point methods",
+      "Quality teams that need printed or computer-recorded test results",
+    ],
+    benefits: [
+      "Shorten routine moisture checks from hours to minutes for many suitable samples",
+      "Create a repeatable reference method for commissioning online analyzers",
+      "View the drying curve and live moisture trend during each test",
+      "Reduce manual calculations with automatic moisture and solids reporting",
+    ],
+    integration: [
+      "Standard RS-232 connection for compatible printers and PCs",
+      "Optional customized USB communication",
+      "Use alongside oven-method samples when establishing a material test method",
+      "Pair with ALZRO online NIR or microwave systems for calibration checks",
+    ],
+    referenceIndustries: [
+      "Plastics and polymer pellets",
+      "Grain, food, flour, and feed",
+      "Powders and chemical raw materials",
+      "Paper, tobacco, and textiles",
+      "Pharmaceutical and laboratory testing",
+      "Online analyzer commissioning and verification",
+    ],
+    installationOverview:
+      "Place the analyzer on a stable, level laboratory bench away from vibration and strong airflow. Prepare a representative sample, spread it evenly across the stainless-steel pan, and select a validated heating temperature and end-point method. For online sensor calibration, collect the reference sample at the measuring point and keep the sampling, preparation, and test method consistent.",
+    applicationImage:
+      "/images/site-real/halogen-moisture-analyzer-laboratory-calibration.jpg",
+    heroImage: "halogen-analyzer",
+    image: productImages["halogen-moisture-analyzer-al-1201"],
   },
 ];
 

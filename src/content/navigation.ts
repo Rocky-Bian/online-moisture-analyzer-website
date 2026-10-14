@@ -13,6 +13,7 @@ export const footerLinks = {
   products: [
     { label: "Online NIR Moisture Analyzer", href: "/products/online-nir-moisture-analyzer" },
     { label: "Microwave Moisture System", href: "/products/microwave-moisture-system" },
+    { label: "AL-1201 Halogen Moisture Analyzer", href: "/products/halogen-moisture-analyzer-al-1201" },
   ],
   industries: [
     { label: "Starch & Corn Processing", href: "/industries/starch-corn-processing" },

@@ -18,6 +18,7 @@ export const siteImages = {
 export const productImages: Record<string, string> = {
   "online-nir-moisture-analyzer": siteImages.productMain,
   "microwave-moisture-system": `${base}/online-microwave-moisture-measurement-system-product-white-bg.png`,
+  "halogen-moisture-analyzer-al-1201": `${base}/halogen-moisture-analyzer-al-1201-product.jpg`,
 };
 
 export const industryImages: Record<string, string> = {

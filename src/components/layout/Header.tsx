@@ -21,10 +21,6 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    setIsMobileOpen(false);
-  }, [pathname]);
-
   return (
     <header
       className={cn(
@@ -96,6 +92,7 @@ export function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
+                  onClick={() => setIsMobileOpen(false)}
                   className={cn(
                     "block px-3 py-3 text-sm font-medium rounded-sm",
                     pathname === item.href
@@ -112,6 +109,7 @@ export function Header() {
                   variant="primary"
                   size="md"
                   className="w-full"
+                  onClick={() => setIsMobileOpen(false)}
                 >
                   Request Datasheet
                 </Button>
