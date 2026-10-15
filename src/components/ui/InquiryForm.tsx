@@ -62,7 +62,7 @@ export function InquiryForm({
           setSubmitted(true);
         } catch {
           setError(
-            "We could not send your inquiry right now. Please email rocky@alzro.com or contact us on WhatsApp: +8615165848866."
+            "We could not send your inquiry right now. Please email rocky@alzro.com or reya@alzro.com, or contact us on WhatsApp: +8615165848866."
           );
         } finally {
           setIsSubmitting(false);

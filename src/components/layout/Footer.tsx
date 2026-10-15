@@ -20,7 +20,21 @@ export function Footer() {
             <div className="mt-6 space-y-2 text-sm text-white/60">
               <p className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-accent" />
-                rocky@alzro.com
+                <a
+                  href="mailto:rocky@alzro.com"
+                  className="hover:text-white transition-colors"
+                >
+                  rocky@alzro.com
+                </a>
+              </p>
+              <p className="flex items-center gap-2">
+                <Mail className="h-4 w-4 text-accent" />
+                <a
+                  href="mailto:reya@alzro.com"
+                  className="hover:text-white transition-colors"
+                >
+                  reya@alzro.com
+                </a>
               </p>
               <p className="flex items-center gap-2">
                 <MessageCircle className="h-4 w-4 text-accent" />

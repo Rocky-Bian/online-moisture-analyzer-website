@@ -46,7 +46,24 @@ export default async function ContactPage({ searchParams }: Props) {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-primary">Email</p>
-                  <p className="text-sm text-muted">rocky@alzro.com</p>
+                  <div className="space-y-1 text-sm text-muted">
+                    <p>
+                      <a
+                        href="mailto:rocky@alzro.com"
+                        className="hover:text-accent transition-colors"
+                      >
+                        rocky@alzro.com
+                      </a>
+                    </p>
+                    <p>
+                      <a
+                        href="mailto:reya@alzro.com"
+                        className="hover:text-accent transition-colors"
+                      >
+                        reya@alzro.com
+                      </a>
+                    </p>
+                  </div>
                 </div>
               </div>
 

@@ -23,13 +23,21 @@ export function organizationSchema() {
     logo: "https://www.alzro.com/logo.png",
     description:
       "Industrial moisture measurement solutions for drying, powder processing, bulk solids, chemicals, minerals, and building-material applications.",
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "sales",
-      email: "rocky@alzro.com",
-      telephone: "+86 15165848866",
-      availableLanguage: ["English", "Chinese"],
-    },
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        email: "rocky@alzro.com",
+        telephone: "+86 15165848866",
+        availableLanguage: ["English", "Chinese"],
+      },
+      {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        email: "reya@alzro.com",
+        availableLanguage: ["English", "Chinese"],
+      },
+    ],
     address: {
       "@type": "PostalAddress",
       addressLocality: "Zibo",
