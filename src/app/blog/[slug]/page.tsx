@@ -2309,6 +2309,71 @@ function CocoaPowderMoistureControlArticle() {
   );
 }
 
+function GreenPetroleumCokeMoistureArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Start by separating commercial gross moisture from the kiln-control question</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Green petroleum coke is a moving bulk solid whose moisture can matter for more than one reason. For purchase and sale, the relevant question may be the agreed gross-moisture result on a lot. ASTM D4931-23 states that moisture adds mass to green petroleum coke and that its purchase and sale are conducted on a dry basis. <SourceLink href="https://store.astm.org/d4931-23.html">The active ASTM listing</SourceLink> also makes an important sampling point: when free water is present, obtaining a representative sample becomes more difficult. That commercial or release result should not be casually substituted with a live process trend.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        At the calciner, the operating question is different: how much water is arriving at a particular feed point, how quickly is that load changing, and is there enough time to adjust the process safely? A South Coast AQMD calciner process description explains that dried green coke enters the high end of a rotary kiln and moves counter-current to hot combustion air to drive off moisture, impurities, and hydrocarbons. Its documented facility has approximately one hour of kiln residence time. <SourceLink href="https://www.aqmd.gov/docs/default-source/rule-book/Proposed-Rules/1109.1/pdsr_pr-1109-1_75_day.pdf?sfvrsn=aca1ad61_6">That regulatory process description</SourceLink> is one operating example, not a universal residence time or moisture target, but it shows why a feed-moisture disturbance needs to be detected upstream rather than discovered only in a later laboratory result.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: rain, particle size, segregation, and water are not the same variable</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The coke presented to an instrument can change with stockpile exposure, spraying or wash water, drainage, rail or truck unloading, crushing, screening, recirculation, belt loading, fines generation, and transfer-point segregation. A wet surface on a coarse lump stream may not represent the average water carried by a deeper bed; a fine-rich zone can also present a different surface area and density than the nominal blend. ASTM D5709 notes that particle-size distribution is significant because physical characteristics including bulk density and surface area are related to it. <SourceLink href="https://store.astm.org/d5709-22.html">The ASTM D5709 summary</SourceLink> is therefore useful context for deciding whether a surface measurement or a through-layer measurement can represent the operating decision.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Define the water result precisely before specifying equipment. ASTM D4931 covers gross moisture in green petroleum coke and includes a preparation procedure for samples containing free water; it does not turn every site&apos;s process signal into a contractual measurement. For calcined or other high-temperature coke products, ISO 579:2013 specifies total-moisture determination and was confirmed by ISO in 2025. <SourceLink href="https://www.iso.org/standard/62608.html">The ISO record</SourceLink> should be used only where its scope matches the product and agreement. Record the relevant standard or approved local method, reporting basis, sampling plan, sample sealing, laboratory timing, and the product state to which each result applies.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Choose the online point by the action it enables</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Receiving or stockpile reclaim:</strong> use this point to make rain exposure, lot changes, or reclaiming conditions visible before they become a kiln-feed disturbance. It is useful for feed planning, but may be too early to represent the final blended feed.</li>
+        <li><strong>After crushing and screening:</strong> use a stable, representative conveyor where a change in moisture, fines, or bed presentation can be interpreted alongside the intended calciner feed. This is often a practical place for a control-oriented trend.</li>
+        <li><strong>Immediately before the kiln or surge bin:</strong> use this point when the decision is feed-rate, thermal-input, or laboratory-verification action. Check that silo residence, segregation, and any final blending do not disconnect the reading from the material actually entering the kiln.</li>
+        <li><strong>After calcination and cooling:</strong> treat this as a separate product-condition or handling trend. It should not be used to retrospectively assume what the green-coke feed moisture was, particularly where quenching or dust-control treatment occurs.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Map each location to a named response. A wetter reclaimed-coke trend might trigger a stockpile, drainage, or blending review; a kiln-feed shift might prompt verification of feed rate, kiln thermal conditions, gas flow, or a targeted reference sample. A display that does not have an agreed response and a known transport delay is data, not control.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach: match the sensing geometry to the coke bed</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a shallow, consistently spread and exposed coke layer, evaluate a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> for rapid surface-trend measurement. It needs repeatable belt coverage, a controlled stand-off distance, a clean optical path, and calibration samples taken from the same moving stream. Large lumps, gaps, changing fines content, steam, dust, or a wet surface over a dry bulk can make an optical surface signal less representative of the average feed condition.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        When the decision depends on moisture through a deeper or changing bulk layer, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link> with a suitable through-layer geometry and loading compensation. Review bed-depth range, belt coverage, mass flow, particle size, bulk density, metal clearances, dust, temperature, vibration, and safe access. The correct choice follows the material presentation and the process decision; it is not established by a single brochure accuracy number. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">moisture-measurement technology overview</Link> explains the practical distinction between exposed-surface optical measurement and bulk through-layer measurement.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration and installation: protect the connection to the approved reference</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Write the reference plan first:</strong> specify the approved method, result name, moisture basis, lot definition, number and location of increments, sample mass, sealing method, and maximum delay to analysis. Keep contractual sampling distinct from routine process calibration unless both parties have agreed otherwise.</li>
+        <li><strong>Time-match every pair:</strong> collect laboratory samples from the same material stream and align them with belt speed, sensor averaging, transfer time, crusher or screen residence, and sample handling. A sample collected after a bin or during different weather exposure may not be a valid comparator.</li>
+        <li><strong>Represent the real operating envelope:</strong> include dry and wet incoming lots, expected size distributions, fines levels, bed depths, throughput, temperature, stockpile conditions, and genuine process excursions. A model developed on one dry campaign cannot be assumed to remain valid after rain or a feed-source change.</li>
+        <li><strong>Commission in stages:</strong> establish safe installation and repeatable trend direction first; then verify the relation to the agreed reference; then implement averaging, alarms, sample investigation, and named operating actions. Consider any advisory or closed-loop use only after performance across normal variation is demonstrated.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Quality and energy benefits to prove with plant data</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Continuous feed-moisture data can shorten the time between a weather, handling, or feed change and a targeted investigation. Used with a disciplined sampling plan, it can help distinguish a material-condition issue from a thermal-process issue, direct laboratory work toward actual excursions, and reduce blind adjustment of kiln conditions. It does not itself establish a fixed fuel saving, calcined-coke quality improvement, or commercial moisture result.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Evaluate the business case with the line&apos;s own paired online and reference results, feed rate, kiln temperature and gas conditions, residence-time proxy, energy per tonne, particle-size distribution, product quality measures, stockpile-weather record, and quality-hold history. That evidence connects a moisture instrument to a specific operating decision while retaining the traceability needed for product and commercial testing.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://store.astm.org/d4931-23.html">ASTM D4931-23, Standard Test Method for Gross Moisture in Green Petroleum Coke</SourceLink>. Active-method scope and the importance of representative sampling where free water is present.</li>
+        <li><SourceLink href="https://store.astm.org/d5709-22.html">ASTM D5709-22, Standard Test Method for Sieve Analysis of Petroleum Coke</SourceLink>. Particle-size context for bulk density, surface area, quality control, and process performance.</li>
+        <li><SourceLink href="https://www.aqmd.gov/docs/default-source/rule-book/Proposed-Rules/1109.1/pdsr_pr-1109-1_75_day.pdf?sfvrsn=aca1ad61_6">South Coast AQMD, Petroleum Coke Calciner process description</SourceLink>. Regulatory description of green-coke calcination, cooling, and one facility&apos;s approximately one-hour kiln residence time.</li>
+        <li><SourceLink href="https://www.iso.org/standard/62608.html">ISO 579:2013, Coke — Determination of total moisture</SourceLink>. Current (confirmed 2025) total-moisture method context for coke within its stated scope.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -2364,6 +2429,8 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           {slug === "wood-fiberboard-hot-press-moisture-control" ? (
             <WoodFiberboardArticle />
+          ) : slug === "green-petroleum-coke-moisture-control-calcination" ? (
+            <GreenPetroleumCokeMoistureArticle />
           ) : slug === "cocoa-powder-moisture-control-milling-packing" ? (
             <CocoaPowderMoistureControlArticle />
           ) : slug === "ammonium-phosphate-granule-moisture-dryer-cooler" ? (

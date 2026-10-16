@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "green-petroleum-coke-moisture-control-calcination",
+    title: "Green Petroleum Coke Moisture: A Measurement Strategy Before Calcination",
+    excerpt:
+      "How calciner operators can separate delivered gross moisture from kiln-feed variation, select a representative online measurement point, and preserve the link between a live trend and an agreed laboratory moisture result.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-10-16",
+    readTime: "9 min",
+    tags: [
+      "green petroleum coke moisture",
+      "petcoke calciner feed control",
+      "gross moisture ASTM D4931",
+      "petroleum coke conveyor measurement",
+      "online microwave moisture measurement",
+      "online NIR moisture analyzer",
+      "calcined petroleum coke process control",
+    ],
+  },
+  {
     slug: "cocoa-powder-moisture-control-milling-packing",
     title: "Cocoa Powder Moisture Control: From Cake Milling to Hygienic Packing",
     excerpt:
