@@ -2309,6 +2309,88 @@ function CocoaPowderMoistureControlArticle() {
   );
 }
 
+function DextrinMoistureControlArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Treat moisture as a conversion variable, not only a finished-powder result</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Dextrin is a modified starch made by controlled fragmentation, and the water condition of the starch can influence the conversion itself. A United States Department of Agriculture technical petition describes a conventional sequence of acidification, pre-drying, dextrinization, and cooling. In that description, temperature, pH, and moisture determine product properties; it gives a pre-drying range of about 1% to 5% moisture and a conversion temperature range of 95°C to 195°C. <SourceLink href="https://www.ams.usda.gov/sites/default/files/media/Dextrin%202007%20Petition.pdf">The petition&apos;s process description</SourceLink> is useful technical context, not a universal recipe or product specification.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        That distinction matters on a production line. A moisture trend before conversion is a process-input signal: it can help interpret the thermal history and repeatability of a particular grade. A reading after cooling or at the packer is a finished-condition signal: it can reveal drying drift or moisture pickup. Both can be valuable, but they should not be compared as though they represent the same material state or make the same operating decision.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Why one generic moisture target is the wrong starting point</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Dextrin is sold into different applications and can be made from different starch sources. FAO/JECFA&apos;s discussion of dextrin roasted starch describes dry-heat treatment with hydrochloric or orthophosphoric acid, notes minor fragmentation, and states that the article of commerce may be further specified for loss on drying, sulfated ash, protein, and fat. <SourceLink href="https://www.fao.org/fileadmin/user_upload/agns/pdf/jecfa/2015_02_22_Modified_Starches.pdf">That specification context</SourceLink> is a practical reminder that the moisture requirement belongs to the relevant grade, contract, market, and validated test method—not to a copied instrument setpoint.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Before selecting a sensor range or alarm, define the result name and its basis. Is the line controlling wet-basis moisture, loss on drying, or water measured by a particular method? Is the reference taken after conversion, after cooling, or after a packaging hold? Does the customer specification include all volatile loss under its stated test conditions, rather than water alone? Put those answers in the calibration plan. This avoids the common error of presenting a fast online trend as interchangeable with a release test that measures a differently prepared sample by a different method.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">The measurement challenge: process state changes from reactor to bag</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Acidification and pre-drying:</strong> water is intentionally introduced with the acid solution, while feed starch, acid dose, mixer distribution, residence time, and heat transfer determine how uniform the pre-dried material becomes. This point is about reproducible conversion conditions, not finished-goods release.</li>
+        <li><strong>Dextrinization:</strong> the material experiences thermal conversion. A moisture change here must be read alongside temperature, residence time, pH or acid addition, grade, and the intended functional properties. A moisture number alone does not confirm degree of conversion or viscosity.</li>
+        <li><strong>Cooling and screening:</strong> hot powder can continue to lose heat and exchange moisture with air. Fines, particle size, conveying velocity, dust extraction, and hopper residence can change the surface presented to a sensor and the sample collected by quality control.</li>
+        <li><strong>Packaging and storage:</strong> an open transfer, a humid filling room, or a long packaging-buffer residence can make the packed condition differ from the dryer or cooler discharge. Locate a measurement where it can distinguish a thermal-process change from downstream pickup.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Each change in product grade should be visible in the data model. Corn, tapioca, potato, or wheat starch bases; different acid treatments; colour grades; and changes in particle size or bulk density can alter the relation between a sensor response and the approved reference result. A calibration built on one product state should not silently become the release model for every other grade.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Choose the online measurement point by the action it enables</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>After pre-drying, before the converter:</strong> use this point to detect shifts in conditioned feed and support review of feed rate, heating, or acidification consistency. Protect the installation from hot dust, vibration, and changing powder presentation.</li>
+        <li><strong>At final dryer or cooler discharge:</strong> use this point for the earliest practical view of residual-moisture direction before the product reaches storage. Record product temperature and transport delay so operators understand which upstream adjustment can still affect the reading.</li>
+        <li><strong>On a stable screw or belt between cooling and packing:</strong> use this position when the operating question is whether the material approaching packaging remains within its approved process window. It can also reveal downstream moisture pickup when compared with an upstream trend.</li>
+        <li><strong>At the packing buffer:</strong> use this as a final-condition trend and sample-investigation trigger. Do not assume it represents the conversion zone if silo residence, blending, or ambient exposure lie between the two.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Write the response beside the location. For example, a sustained high pre-converter trend might prompt review of acidification, pre-dryer duty, or feed rate; a final-transfer shift might trigger a cooler, dust-extraction, or room-humidity check and a reference sample. A value with no agreed response, sampling rule, or process-delay estimate is useful observation data, but it is not yet a control variable.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommended instrumentation approach: start with material presentation</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a consistently spread, visible powder layer or a stable inspection window, evaluate a non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link>. It is a practical option for a rapid surface-trend signal when the optical path is clean, the stand-off is repeatable, and product coverage is stable. In a dusty dextrin line, purging, window cleaning, vibration control, and an installation that avoids intermittent empty flights or screw gaps may matter as much as the analyzer specification.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Where the operating decision depends on the average condition through a deeper, denser, or changing bed, assess a <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture measurement system</Link> with appropriate loading compensation and geometry. Review material depth, mass flow, belt coverage, bulk-density variation, metal clearances, temperature, and access for representative samples. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">moisture-measurement technology overview</Link> explains why exposed-surface optical and through-layer microwave methods answer different measurement problems.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a production-line review, combine the sensor choice with the relevant <Link href="/industries/starch-corn-processing" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">starch and corn-processing application context</Link>: grade range, moisture range, particle size, conveyor or screw layout, product temperature, target response time, dust classification, and the exact decision the team wants the signal to improve.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Calibration: build the online-to-reference relationship deliberately</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A reference method must be stated before calibration begins. The Corn Refiners Association&apos;s D-38 dextrin method describes a vacuum-oven procedure using about 5 g of sample at 120°C, at no more than 100 torr, for four hours; it also notes that substituting gravity-convection or forced-draft ovens generally changes moisture values by 0.1 to 0.3 percentage points. <SourceLink href="https://corn.org/wp-content/uploads/2009/12/D-38.pdf">The method document</SourceLink> is strong evidence that method, sample preparation, and equipment configuration can matter at the same order as a tight process-control band. Use the customer-approved method where it differs.
+      </p>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Define the comparator:</strong> name the method, reporting basis, product grade, sample mass, grinding requirement, container, sealing approach, and maximum time to analysis. If the approved test is loss on drying, do not casually label it “water” without confirming the method&apos;s scope.</li>
+        <li><strong>Time-match the samples:</strong> take reference increments from the same moving stream and align them with residence time, sensor averaging, transfer delay, and any cooler or buffer between the analyzer and sampler.</li>
+        <li><strong>Cover genuine variation:</strong> include the expected grade mix, low and high operating conditions, seasonal humidity, temperatures, particle sizes, densities, and rates. Do not make a model only from steady, ideal production.</li>
+        <li><strong>Commission in stages:</strong> first establish safe, repeatable installation and trend direction; then verify the relationship to the reference method; then set averaging, alarms, sample investigations, and named operator responses. Consider advisory or automatic control only after repeatability has been demonstrated across normal production variation.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Prove quality and energy benefits with plant evidence</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A continuous signal can reduce the delay between a process shift and a targeted investigation. It can help an operating team separate conditioned-feed variability, dryer or cooler behaviour, and downstream pickup; direct laboratory work toward real excursions; and avoid unnecessary drying when product is already at the validated condition. It does not by itself prove a fixed energy saving, a functional-property result, or a commercial release value.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Evaluate results using paired online and reference values together with feed rate, air temperature and humidity, product temperature, residence-time proxy, dust-collector condition, grade, packaging-room humidity, and customer quality results such as viscosity or solubility where relevant. That record gives engineers the evidence to connect a moisture signal to the operating action it was intended to support.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.ams.usda.gov/sites/default/files/media/Dextrin%202007%20Petition.pdf">USDA technical petition, Dextrin (2007)</SourceLink>. Process description for acidification, pre-drying, dextrinization, cooling, and the cited 1%–5% pre-drying context.</li>
+        <li><SourceLink href="https://www.fao.org/fileadmin/user_upload/agns/pdf/jecfa/2015_02_22_Modified_Starches.pdf">FAO/JECFA, Modified Starches: Dextrin Roasted Starch</SourceLink>. Definition, permitted treatment context, and the fact that commercial material may be further specified for loss on drying.</li>
+        <li><SourceLink href="https://corn.org/wp-content/uploads/2009/12/D-38.pdf">Corn Refiners Association, D-38 Dextrin Analysis: Moisture (Oven)</SourceLink>. Vacuum-oven procedure and the stated 0.1–0.3 percentage-point method difference when other oven types are substituted.</li>
+        <li><SourceLink href="https://www.iso.org/committee/50564/x/catalogue/">ISO/TC 93 catalogue: Starch, including derivatives and by-products</SourceLink>. Current catalogue context for ISO 1666:1996 starch moisture by oven drying and ISO 5381:1983 water content in starch hydrolysis products by modified Karl Fischer method.</li>
+      </ul>
+    </>
+  );
+}
+
 function GreenPetroleumCokeMoistureArticle() {
   return (
     <>
@@ -2429,6 +2511,8 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           {slug === "wood-fiberboard-hot-press-moisture-control" ? (
             <WoodFiberboardArticle />
+          ) : slug === "dextrin-moisture-control-predrying-conversion-cooling" ? (
+            <DextrinMoistureControlArticle />
           ) : slug === "green-petroleum-coke-moisture-control-calcination" ? (
             <GreenPetroleumCokeMoistureArticle />
           ) : slug === "cocoa-powder-moisture-control-milling-packing" ? (

@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "dextrin-moisture-control-predrying-conversion-cooling",
+    title: "Dextrin Moisture Control: From Pre-Drying Through Conversion and Cooling",
+    excerpt:
+      "How dextrin producers can treat moisture as a conversion variable—not only a dryer endpoint—then install an online signal at the process point that supports a defined operating response and a traceable laboratory reference.",
+    content: "technical guide",
+    category: "Application Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-10-18",
+    readTime: "10 min",
+    tags: [
+      "dextrin moisture control",
+      "dextrin pre-drying",
+      "modified starch moisture measurement",
+      "dextrin conversion process",
+      "dextrin cooling and packaging",
+      "online NIR moisture analyzer",
+      "starch derivative moisture calibration",
+    ],
+  },
+  {
     slug: "green-petroleum-coke-moisture-control-calcination",
     title: "Green Petroleum Coke Moisture: A Measurement Strategy Before Calcination",
     excerpt:
