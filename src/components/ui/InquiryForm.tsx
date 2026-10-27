@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 interface InquiryFormProps {
   defaultType?: string;
   productName?: string;
+  productCategory?: "online" | "laboratory";
   className?: string;
   compact?: boolean;
 }
@@ -14,6 +15,7 @@ interface InquiryFormProps {
 export function InquiryForm({
   defaultType = "general",
   productName,
+  productCategory,
   className,
   compact,
 }: InquiryFormProps) {
@@ -60,6 +62,11 @@ export function InquiryForm({
           }
 
           setSubmitted(true);
+          window.gtag?.("event", "generate_lead", {
+            inquiry_type: String(formData.get("inquiryType") ?? defaultType),
+            product: productName ?? "general",
+            product_category: productCategory ?? "unspecified",
+          });
         } catch {
           setError(
             "We could not send your inquiry right now. Please email rocky@alzro.com or reya@alzro.com, or contact us on WhatsApp: +8615165848866."
@@ -140,6 +147,8 @@ export function InquiryForm({
               <option value="datasheet">Request Datasheet</option>
               <option value="engineer">Talk to Engineer</option>
               <option value="quote">Request Quote</option>
+              <option value="recommendation">Product Recommendation</option>
+              <option value="sample-test">Sample Test / Method Evaluation</option>
               <option value="oem">OEM/ODM Partnership</option>
             </select>
           </div>
@@ -147,6 +156,44 @@ export function InquiryForm({
           {productName && (
             <input type="hidden" name="product" value={productName} />
           )}
+          {productCategory && (
+            <input type="hidden" name="productLine" value={productCategory} />
+          )}
+
+          {productCategory === "online" && (
+            <div className="rounded-sm border border-border bg-surface p-4">
+              <p className="mb-4 text-sm font-semibold text-primary">Process information</p>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <FormField label="Material *" name="material" required placeholder="e.g. rice straw, starch, sand" />
+                <FormField label="Expected moisture range *" name="moistureRange" required placeholder="e.g. 8-25%" />
+                <FormField label="Layer thickness / line speed" name="processGeometry" placeholder="e.g. 150 mm / 0.8 m/s" />
+                <FormField label="Material temperature" name="materialTemperature" placeholder="e.g. 45°C" />
+                <FormField label="Installation point" name="installationPoint" placeholder="Conveyor, chute, dryer outlet..." />
+                <FormField label="Required communication" name="communication" placeholder="4-20mA, Modbus, Profinet..." />
+              </div>
+            </div>
+          )}
+
+          {productCategory === "laboratory" && (
+            <div className="rounded-sm border border-border bg-surface p-4">
+              <p className="mb-4 text-sm font-semibold text-primary">Sample and method information</p>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <FormField label="Sample material *" name="material" required placeholder="e.g. polymer pellet, flour" />
+                <FormField label="Expected moisture range *" name="moistureRange" required placeholder="e.g. 0.2-12%" />
+                <FormField label="Current reference method" name="currentMethod" placeholder="Oven method, Karl Fischer..." />
+                <FormField label="Typical sample mass / tests per day" name="sampleVolume" placeholder="e.g. 5 g / 20 tests" />
+                <FormField label="Required result time" name="requiredTestTime" placeholder="e.g. under 15 minutes" />
+                <FormField label="Data requirement" name="dataRequirement" placeholder="Printer, PC, USB..." />
+              </div>
+            </div>
+          )}
+
+          <div>
+            <label htmlFor="country" className="block text-sm font-medium text-primary mb-1">
+              Country / Region
+            </label>
+            <input id="country" name="country" autoComplete="country-name" className="w-full rounded-sm border border-border px-4 py-2.5 text-sm focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent" />
+          </div>
 
           <div>
             <label htmlFor="message" className="block text-sm font-medium text-primary mb-1">
@@ -188,4 +235,37 @@ export function InquiryForm({
       </p>
     </form>
   );
+}
+
+function FormField({
+  label,
+  name,
+  placeholder,
+  required,
+}: {
+  label: string;
+  name: string;
+  placeholder: string;
+  required?: boolean;
+}) {
+  return (
+    <div>
+      <label htmlFor={name} className="block text-xs font-medium text-primary mb-1">
+        {label}
+      </label>
+      <input
+        id={name}
+        name={name}
+        required={required}
+        placeholder={placeholder}
+        className="w-full rounded-sm border border-border bg-white px-3 py-2 text-sm focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+      />
+    </div>
+  );
+}
+
+declare global {
+  interface Window {
+    gtag?: (command: "event", eventName: string, params?: Record<string, string>) => void;
+  }
 }

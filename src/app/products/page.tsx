@@ -110,6 +110,13 @@ export default function ProductsPage() {
                 </li>
               ))}
             </ul>
+            <Link
+              href="/resources/online-vs-halogen-moisture-analyzer"
+              className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent"
+            >
+              Compare online and halogen methods
+              <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
         </div>
       </Section>

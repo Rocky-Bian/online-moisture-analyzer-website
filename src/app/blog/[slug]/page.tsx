@@ -27,6 +27,7 @@ export async function generateMetadata({ params }: Props) {
     title: post.title,
     description: post.excerpt,
     path: `/blog/${slug}`,
+    keywords: post.tags,
   });
 }
 
@@ -93,6 +94,77 @@ function SourceLink({ href, children }: { href: string; children: ReactNode }) {
     >
       {children}
     </a>
+  );
+}
+
+function HalogenMethodDevelopmentArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Start by defining the result—not by copying a temperature</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A halogen analyzer method is a controlled loss-on-drying procedure, not a universal water meter. ASTM E1868 describes thermogravimetric loss on drying as the mass driven off under specified temperature and time conditions, and explicitly notes that the method identifies mass loss rather than its chemical identity. <SourceLink href="https://store.astm.org/e1868-09.html">Its published scope</SourceLink> is a useful reminder that water, residual solvent, other volatile compounds, decomposition products, or reaction products can affect a result. Before testing, specify the material and lot state, reporting basis, intended decision, required turnaround, and the approved comparator method, if one exists.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For an incoming-material or in-process decision, the comparator may be a customer-approved oven method. For a low-water or solvent-sensitive material, it may be Karl Fischer or another material-specific procedure. The <Link href="/products/halogen-moisture-analyzer-al-1201" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">AL-1201 halogen moisture analyzer</Link> can provide a rapid loss-on-drying result when the sample and method are suitable; it does not make two different reference methods equivalent. Record the result as, for example, “loss on drying at [conditions]” until the reporting claim is justified.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Build the method around the actual quality decision</h2>
+      <div className="mb-6 overflow-x-auto rounded-sm border border-border">
+        <table className="w-full min-w-[700px] border-collapse bg-white text-left text-sm">
+          <thead className="bg-primary text-white">
+            <tr><th className="px-4 py-3">Decision</th><th className="px-4 py-3">Method evidence to define</th><th className="px-4 py-3">Common risk</th></tr>
+          </thead>
+          <tbody>
+            <tr className="bg-white"><th className="border-t border-border px-4 py-3 font-semibold text-primary">Incoming acceptance</th><td className="border-t border-border px-4 py-3 text-muted">Supplier material, specification basis, sample plan, acceptance limit, retained-sample rule</td><td className="border-t border-border px-4 py-3 text-muted">The small test portion does not represent a variable lot.</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-3 font-semibold text-primary">Process check</th><td className="border-t border-border px-4 py-3 text-muted">Exact sample point, time, container, maximum hold time, action after an excursion</td><td className="border-t border-border px-4 py-3 text-muted">The result arrives after the process state has changed.</td></tr>
+            <tr className="bg-white"><th className="border-t border-border px-4 py-3 font-semibold text-primary">Online-model verification</th><td className="border-t border-border px-4 py-3 text-muted">Time-aligned paired samples, process delay, comparator method, review rule</td><td className="border-t border-border px-4 py-3 text-muted">The laboratory sample is from another material interval.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Treat sampling and preparation as part of the method. Eurachem&apos;s 2024 guidance on validation procedures that include sampling explains that validation should extend beyond the analytical procedure to primary sampling and physical preparation. <SourceLink href="https://www.eurachem.org/index.php/publications/guides/vampis">The guide</SourceLink> recommends considering the whole measurement process through its uncertainty and performance characteristics. For hygroscopic powders, warm material, segregating granules, or a wet-and-dry blend, define who samples, where, how much is combined, how it is mixed or reduced, how quickly it reaches the pan, and how the remainder is protected from moisture gain or loss.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Screen sample preparation, temperature, and end point together</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Use a structured trial rather than changing one setting after an unexpected result. Hold the sample source and preparation rule steady, then evaluate practical combinations of sample mass, evenness of the layer, heating program, temperature, and stop criterion. Record the drying curve, result, test time, visual condition, odor or smoke, spattering, crust formation, and repeat results. A faster condition is not automatically better if it scorches, foams, forms a dry surface over a wet core, or produces a result that no longer agrees with the specified comparator.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The operating window needs to match the material. The manufacturer guidance for halogen method development identifies sample preparation, drying temperature, and switch-off criterion as method parameters and uses a reference moisture value to verify candidate settings. <SourceLink href="https://www.mt.com/gb/en/home/products/Laboratory_Weighing_Solutions/moisture-analyzers/moisture-method-development.html">That workflow</SourceLink> is useful for screening; it is not a substitute for the customer&apos;s approved specification, safety assessment, or a validation plan. Do not test flammable, reactive, strongly volatile, or otherwise hazardous samples in a halogen analyzer until the responsible laboratory has assessed the method and equipment suitability.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Verify performance across the range you actually report</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Set acceptance criteria before reviewing the trial data. ICH Q2(R2), which is written for regulated pharmaceutical analytical procedures, describes the broader validation principle clearly: a reportable range is supported by suitable precision and accuracy, and validation demonstrates fitness for the intended purpose. <SourceLink href="https://database.ich.org/sites/default/files/ICH_Q2%28R2%29_Guideline_2023_1130.pdf">The guideline</SourceLink> should be applied only where its regulatory scope fits, but its planning logic is useful elsewhere. Test the moisture range and material states that create real decisions—not only clean, nominal samples near the middle of the specification.
+      </p>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Repeatability:</strong> test separate prepared portions of a homogeneous material under the same documented conditions; record the spread, not only an average.</li>
+        <li><strong>Intermediate conditions:</strong> where relevant, examine reasonable changes such as analyst, day, instrument, sample lot, or normal laboratory environment.</li>
+        <li><strong>Comparator agreement:</strong> compare with the approved oven, Karl Fischer, or other reference only across the intended range and material variants. Document any bias instead of quietly changing the result label.</li>
+        <li><strong>Robustness:</strong> deliberately test credible small variations in mass, layer preparation, temperature, or end point to identify settings that are too fragile for routine work.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A passing instrument check does not validate the material method by itself. ASTM&apos;s current thermogravimetry guidance includes separate standards for mass-scale and temperature calibration; ASTM E1582 notes that sample size, packing, pan geometry, furnace design, and temperature-sensor characteristics can all contribute to temperature differences. <SourceLink href="https://store.astm.org/standards/e1582">Its scope and significance section</SourceLink> supports documenting both instrument verification and the final sample configuration used in the method.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Turn the trial into a controlled laboratory procedure</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Issue a controlled method sheet before relying on the value for release, supplier comparison, or online calibration. Include the material and exclusions; sample container and hold time; sample mass range; pan and spreading instructions; heating program, temperature, and endpoint; calculation and reporting basis; instrument mass and temperature check records; system-suitability or control-sample rule; repeat or investigation criteria; and change-control requirements. NIST emphasizes that traceability belongs to a measurement result, not to an instrument alone, and requires a documented measurement process and calibration chain. <SourceLink href="https://www.nist.gov/metrology/metrological-traceability">Its traceability guidance</SourceLink> is a useful guardrail against calling a result “traceable” merely because an analyzer was calibrated.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        When this method will support an online model, add a paired-sampling protocol: collect from the same process stream, record timestamps and transport delay, seal or test promptly, and define when a difference triggers investigation. The laboratory result validates the defined sample; the online system observes a moving process. See ALZRO&apos;s <Link href="/resources/online-vs-halogen-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online-versus-halogen selection guide</Link> for the different roles. For a new method or a connected online project, request a <Link href="/contact?type=recommendation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">sample and method evaluation</Link> with the material, moisture range, current comparator, and intended quality decision.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://store.astm.org/e1868-09.html">ASTM E1868, Standard Test Method for Loss-On-Drying by Thermogravimetry</SourceLink>. Published scope explains that the method measures mass loss under stated conditions, not the identity of the lost material.</li>
+        <li><SourceLink href="https://www.eurachem.org/index.php/publications/guides/vampis">Eurachem/EUROLAB/CITAC/Nordtest/AMC, Validation of Measurement Procedures that Include Sampling (2024)</SourceLink>. Sampling and physical preparation as part of validation of the whole measurement procedure.</li>
+        <li><SourceLink href="https://database.ich.org/sites/default/files/ICH_Q2%28R2%29_Guideline_2023_1130.pdf">ICH Q2(R2), Validation of Analytical Procedures</SourceLink>. Intended-purpose, precision, accuracy, and reportable-range validation principles; regulatory scope is primarily pharmaceutical.</li>
+        <li><SourceLink href="https://store.astm.org/standards/e1582">ASTM E1582-25, Temperature Calibration of Thermogravimetric Analyzers</SourceLink>. Temperature-calibration context and influences from sample and apparatus geometry.</li>
+        <li><SourceLink href="https://www.nist.gov/metrology/metrological-traceability">NIST, Metrological Traceability: Frequently Asked Questions and NIST Policy</SourceLink>. Traceability applies to documented measurement results, not to an instrument by itself.</li>
+        <li><SourceLink href="https://www.mt.com/gb/en/home/products/Laboratory_Weighing_Solutions/moisture-analyzers/moisture-method-development.html">METTLER TOLEDO, Moisture Method Development</SourceLink>. Manufacturer guidance on method parameters and use of reference values; not a standard method.</li>
+      </ul>
+    </>
   );
 }
 
@@ -2462,6 +2534,7 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) notFound();
 
   const paragraphs = getArticleContent(slug);
+  const isHalogenMethodArticle = slug === "halogen-moisture-analyzer-method-development-validation";
 
   return (
     <>
@@ -2511,6 +2584,8 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           {slug === "wood-fiberboard-hot-press-moisture-control" ? (
             <WoodFiberboardArticle />
+          ) : slug === "halogen-moisture-analyzer-method-development-validation" ? (
+            <HalogenMethodDevelopmentArticle />
           ) : slug === "dextrin-moisture-control-predrying-conversion-cooling" ? (
             <DextrinMoistureControlArticle />
           ) : slug === "green-petroleum-coke-moisture-control-calcination" ? (
@@ -2600,10 +2675,14 @@ export default async function BlogPostPage({ params }: Props) {
       </Section>
 
       <CTASection
-        headline="Need Help with Your Application?"
-        description="Share your material, measurement point, and moisture target, and we can help you judge whether online measurement is a good fit."
-        primaryLabel="Talk to Engineer"
-        primaryHref="/contact?type=engineer"
+        headline={isHalogenMethodArticle ? "Need a Method Evaluation?" : "Need Help with Your Application?"}
+        description={
+          isHalogenMethodArticle
+            ? "Share the material, current comparator method, moisture range, and quality decision. We can help assess a suitable sample-testing workflow."
+            : "Share your material, measurement point, and moisture target, and we can help you judge whether online measurement is a good fit."
+        }
+        primaryLabel={isHalogenMethodArticle ? "Request Method Evaluation" : "Talk to Engineer"}
+        primaryHref={isHalogenMethodArticle ? "/contact?type=recommendation" : "/contact?type=engineer"}
       />
     </>
   );

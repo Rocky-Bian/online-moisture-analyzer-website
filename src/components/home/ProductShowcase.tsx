@@ -24,8 +24,8 @@ export function ProductShowcase() {
     <Section id="products">
       <SectionHeader
         label="Products"
-        title="Inline Moisture Measurement Systems"
-        description="Built around continuous online detection for industrial drying, conveying, and powder quality control."
+        title="Online and Laboratory Moisture Measurement"
+        description="Continuous online analyzers for process control, supported by rapid halogen testing for laboratory quality control, calibration, and verification."
       />
 
       <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
@@ -129,6 +129,14 @@ export function ProductShowcase() {
           className="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:gap-3 transition-all"
         >
           View All Products
+          <ArrowRight className="h-4 w-4" />
+        </Link>
+        <span className="mx-3 text-border">|</span>
+        <Link
+          href="/resources/online-vs-halogen-moisture-analyzer"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-accent hover:gap-3 transition-all"
+        >
+          Compare Online and Halogen Methods
           <ArrowRight className="h-4 w-4" />
         </Link>
       </div>

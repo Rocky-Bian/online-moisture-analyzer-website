@@ -16,6 +16,10 @@ export interface Product {
   integration?: string[];
   referenceIndustries?: string[];
   installationOverview?: string;
+  limitations?: string[];
+  selectionInputs?: string[];
+  referenceGuidance?: string[];
+  maintenance?: string[];
   applicationImage?: string;
   heroImage: string;
   image: string;
@@ -91,6 +95,23 @@ export const products: Product[] = [
       "PVC additives and rubber additives",
       "Washed sand and sinter mix",
     ],
+    limitations: [
+      "NIR measures the presented surface, so representative and consistent material presentation is essential.",
+      "Free water, a dirty sight glass, large height changes, and changing particle or color conditions can require installation changes or separate calibration models.",
+      "Quoted accuracy and repeatability depend on the material model, reference method, sampling practice, and commissioning data.",
+    ],
+    selectionInputs: [
+      "Material name, composition, color, and particle-size range",
+      "Expected and target moisture range, including whether free water is present",
+      "Measuring-point photos or video, material distance, layer thickness, and line speed",
+      "Process temperature, dust, steam, sunlight, enclosure, and cleaning conditions",
+      "Required PLC/SCADA output and the decision the moisture signal will control",
+    ],
+    referenceGuidance: [
+      "Build the calibration with representative samples collected at the measuring point.",
+      "Use one defined laboratory method consistently and align online readings with sample timing and process delay.",
+      "Recheck the model after meaningful changes in raw material, formulation, particle size, presentation, or reference method.",
+    ],
     heroImage: "nir-analyzer",
     image: productImages["online-nir-moisture-analyzer"],
   },
@@ -158,6 +179,23 @@ export const products: Product[] = [
     ],
     installationOverview:
       "Install the microwave transmitter and receiver on opposite sides of the conveyor or process chute so the signal passes through the full material layer. Use the evaluation computer for calibration during commissioning, and add ultrasonic or belt-load compensation where bed depth changes significantly across the process.",
+    limitations: [
+      "The signal must pass through a defined material path, so transmitter, receiver, metal clearances, and conveyor geometry must be reviewed before selection.",
+      "Changing layer thickness or bulk load can affect the reading unless the installation includes suitable load or distance compensation.",
+      "Quoted accuracy is application-dependent and must be demonstrated with representative samples and a consistent reference method.",
+    ],
+    selectionInputs: [
+      "Material composition, particle size, bulk density, and expected moisture range",
+      "Conveyor or chute width, layer-thickness range, speed, throughput, and side-clearance drawings",
+      "Measuring-point photos or video and available mounting structure",
+      "Ambient and material temperature, dust, rain, vibration, and washdown conditions",
+      "Required analog, Modbus, Profibus, Profinet, or other PLC communication",
+    ],
+    referenceGuidance: [
+      "Calibrate with paired samples that represent low, normal, and high moisture across normal loading conditions.",
+      "Keep sample location, timing, preparation, and laboratory method consistent during commissioning.",
+      "Verify the model when material composition, bed geometry, load compensation, or the reference method changes.",
+    ],
     heroImage: "microwave-system",
     image: productImages["microwave-moisture-system"],
   },
@@ -238,6 +276,30 @@ export const products: Product[] = [
     ],
     installationOverview:
       "Place the analyzer on a stable, level laboratory bench away from vibration and strong airflow. Prepare a representative sample, spread it evenly across the stainless-steel pan, and select a validated heating temperature and end-point method. For online sensor calibration, collect the reference sample at the measuring point and keep the sampling, preparation, and test method consistent.",
+    limitations: [
+      "This is a destructive, sample-based test and does not provide continuous process measurement.",
+      "A representative sample is essential; non-uniform material or poor sample preparation can dominate the result.",
+      "Loss on drying can include volatile compounds other than water, and heat-sensitive, flammable, foaming, or skin-forming samples require method and safety review.",
+      "Halogen and oven results are not automatically equivalent; the method must be validated for each material and reporting basis.",
+    ],
+    selectionInputs: [
+      "Sample material, physical form, expected moisture range, and volatile components",
+      "Current oven or reference method, drying temperature, test time, and reporting basis",
+      "Typical sample mass, daily sample volume, and required turnaround time",
+      "Required readability, printer or PC connection, and quality-record needs",
+      "Whether the result will support incoming inspection, finished-product release, or online analyzer calibration",
+    ],
+    referenceGuidance: [
+      "Suggested sample mass and typical test time must be established by method trials for the actual material.",
+      "Repeatability should be demonstrated with replicate tests using fixed sample preparation, mass, temperature, and end-point settings.",
+      "Weight and temperature verification frequency should follow the laboratory quality system and usage; the current datasheet does not state a universal interval.",
+      "Internal result storage is not specified in the current datasheet; RS-232 is standard and USB is available as a customized option.",
+    ],
+    maintenance: [
+      "Allow the chamber to cool, then clean the sample pan and chamber without contaminating or loading the weighing mechanism.",
+      "Keep the instrument level and away from vibration, strong airflow, and rapid ambient-temperature changes.",
+      "Include routine mass and temperature checks in the laboratory quality plan and document any method changes.",
+    ],
     applicationImage:
       "/images/site-real/halogen-moisture-analyzer-laboratory-calibration.jpg",
     heroImage: "halogen-analyzer",

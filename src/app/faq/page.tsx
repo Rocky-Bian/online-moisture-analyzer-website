@@ -1,4 +1,4 @@
-import { Section, SectionHeader } from "@/components/ui/Section";
+import { Section } from "@/components/ui/Section";
 import { FAQAccordion } from "@/components/ui/FAQAccordion";
 import { PageBanner } from "@/components/ui/PageBanner";
 import { CTASection } from "@/components/ui/CTASection";

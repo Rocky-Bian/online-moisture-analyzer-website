@@ -13,9 +13,9 @@ export function Footer() {
               <BrandLogo variant="light" className="h-12" />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/60">
-              Field-proven online moisture measurement solutions for starch,
-              chemicals, ceramics, aggregates, fibers, and other continuous
-              industrial process lines.
+              Online NIR and microwave moisture measurement for industrial
+              process control, plus halogen analyzers for laboratory quality
+              control, calibration, and rapid reference testing.
             </p>
             <div className="mt-6 space-y-2 text-sm text-white/60">
               <p className="flex items-center gap-2">

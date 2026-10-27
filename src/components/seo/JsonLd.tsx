@@ -1,15 +1,16 @@
-import Script from "next/script";
-
 interface JsonLdProps {
   data: Record<string, unknown> | Record<string, unknown>[];
+  id?: string;
 }
 
-export function JsonLd({ data }: JsonLdProps) {
+export function JsonLd({ data, id }: JsonLdProps) {
+  const schemas = Array.isArray(data) ? data : [data];
+  const types = schemas.map((item) => String(item["@type"] ?? "schema")).join("-");
   return (
-    <Script
-      id={`jsonld-${JSON.stringify(data).slice(0, 20)}`}
+    <script
+      id={id ?? `jsonld-${types.toLowerCase()}`}
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }}
     />
   );
 }
@@ -19,10 +20,11 @@ export function organizationSchema() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "ALZRO",
+    legalName: "Shandong Hangyi Energy Conversation Technology Co., Ltd.",
     url: "https://www.alzro.com",
-    logo: "https://www.alzro.com/logo.png",
+    logo: "https://www.alzro.com/icon.svg",
     description:
-      "Industrial moisture measurement solutions for drying, powder processing, bulk solids, chemicals, minerals, and building-material applications.",
+      "Online NIR and microwave moisture analyzers for industrial process control, plus halogen moisture analyzers for laboratory quality control, method development, and reference testing.",
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -48,6 +50,21 @@ export function organizationSchema() {
   };
 }
 
+export function websiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "ALZRO",
+    url: "https://www.alzro.com",
+    publisher: {
+      "@type": "Organization",
+      name: "ALZRO",
+      url: "https://www.alzro.com",
+    },
+    inLanguage: "en",
+  };
+}
+
 export function faqSchema(faqs: { question: string; answer: string }[]) {
   return {
     "@context": "https://schema.org",
@@ -68,6 +85,8 @@ export function productSchema(product: {
   description: string;
   slug: string;
   category?: "online" | "laboratory";
+  image?: string;
+  model?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -75,6 +94,12 @@ export function productSchema(product: {
     name: product.name,
     description: product.description,
     brand: { "@type": "Brand", name: "ALZRO" },
+    manufacturer: { "@type": "Organization", name: "ALZRO" },
+    model: product.model ?? product.name,
+    sku: product.model ?? product.slug,
+    image: product.image
+      ? new URL(product.image, "https://www.alzro.com").toString()
+      : undefined,
     url: `https://www.alzro.com/products/${product.slug}`,
     category:
       product.category === "laboratory"
@@ -107,15 +132,18 @@ export function articleSchema(article: {
 }) {
   return {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: article.title,
     description: article.excerpt,
-    author: { "@type": "Person", name: article.author },
+    author: { "@type": "Organization", name: article.author },
     datePublished: article.publishedAt,
+    dateModified: article.publishedAt,
+    image: "https://www.alzro.com/images/site-real/online-moisture-measurement-blog-diagram.png",
+    mainEntityOfPage: `https://www.alzro.com/blog/${article.slug}`,
     publisher: {
       "@type": "Organization",
       name: "ALZRO",
-      logo: { "@type": "ImageObject", url: "https://www.alzro.com/logo.png" },
+      logo: { "@type": "ImageObject", url: "https://www.alzro.com/icon.svg" },
     },
     url: `https://www.alzro.com/blog/${article.slug}`,
   };

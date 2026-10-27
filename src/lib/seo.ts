@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 
 const siteConfig = {
   name: "ALZRO",
-  title: "ALZRO — Online Moisture Analyzer for Industrial Process Control",
+  title: "ALZRO — Industrial & Laboratory Moisture Analyzers",
   description:
-    "Online industrial moisture measurement solutions for starch, chemicals, ceramics, aggregates, fibers, and bulk solids. Real-time NIR and microwave sensing systems.",
+    "Online NIR and microwave moisture analyzers for industrial process control, plus halogen moisture analyzers for laboratory quality control and reference testing.",
   url: "https://www.alzro.com",
-  ogImage: "/og-image.jpg",
+  ogImage: "/images/site-real/online-nir-moisture-analyzer-hero-clean-factory-conveyor.png",
   locale: "en_US",
 };
 
@@ -16,12 +16,14 @@ export function createMetadata({
   path = "",
   image,
   noIndex = false,
+  keywords = [],
 }: {
   title?: string;
   description?: string;
   path?: string;
   image?: string;
   noIndex?: boolean;
+  keywords?: string[];
 }): Metadata {
   const pageTitle = title ? `${title} | ALZRO` : siteConfig.title;
   const pageDescription = description ?? siteConfig.description;
@@ -61,10 +63,14 @@ export function createMetadata({
       "industrial moisture measurement",
       "NIR moisture sensor",
       "microwave moisture analyzer",
+      "halogen moisture analyzer",
+      "laboratory moisture analyzer",
+      "moisture analyzer calibration",
       "starch moisture control",
       "powder drying moisture control",
       "process moisture monitoring",
       "ALZRO",
+      ...keywords,
     ],
   };
 }

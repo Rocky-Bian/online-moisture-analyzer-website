@@ -1,7 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { GoogleAnalytics } from "@/components/seo/GoogleAnalytics";
-import { JsonLd, organizationSchema } from "@/components/seo/JsonLd";
+import { JsonLd, organizationSchema, websiteSchema } from "@/components/seo/JsonLd";
 import { createMetadata } from "@/lib/seo";
 import "./globals.css";
 
@@ -16,6 +16,7 @@ export default function RootLayout({
     <html lang="en" className="h-full scroll-smooth">
       <body className="min-h-full flex flex-col font-sans antialiased">
         <JsonLd data={organizationSchema()} />
+        <JsonLd data={websiteSchema()} />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

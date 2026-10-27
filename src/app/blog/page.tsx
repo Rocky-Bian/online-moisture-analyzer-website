@@ -10,9 +10,9 @@ import { blogPosts } from "@/content/blog";
 import { formatDate } from "@/lib/utils";
 
 export const metadata = createMetadata({
-  title: "Application Notes & Case Studies",
+  title: "Moisture Measurement Resources",
   description:
-    "Application notes, case studies, and selection guidance for online moisture measurement in starch, chemicals, ceramics, sand, and bulk powder processes.",
+    "Selection guides, application notes, and case studies for online NIR, microwave, and halogen laboratory moisture measurement.",
   path: "/blog",
 });
 
@@ -22,8 +22,8 @@ export default function BlogPage() {
       <PageBanner
         image={siteImages.blogBanner}
         label="Resources"
-        title="Application Notes, Case Studies, and Selection Guides"
-        description="Use these articles to understand where online moisture measurement fits, what problems it solves, and how to choose the right setup for your line."
+        title="Moisture Measurement Guides and Application Notes"
+        description="Compare online and laboratory methods, understand application limits, and select a practical moisture measurement setup for your process or quality-control task."
       />
 
       <Section>

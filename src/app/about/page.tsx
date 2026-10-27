@@ -9,7 +9,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata = createMetadata({
   title: "About ALZRO",
   description:
-    "Learn about ALZRO, an industrial online moisture measurement company providing NIR and microwave solutions for drying, conveying, powder processing, and bulk solids applications.",
+    "Learn about ALZRO, a supplier of online NIR and microwave analyzers for industrial processes and halogen moisture analyzers for laboratory quality control.",
   path: "/about",
 });
 
@@ -18,13 +18,13 @@ const strengths = [
     icon: Microscope,
     title: "Measurement Expertise",
     description:
-      "We focus on online NIR and microwave moisture measurement for real process environments.",
+      "We connect online NIR and microwave process measurement with halogen laboratory reference testing.",
   },
   {
     icon: Globe,
     title: "Industrial Application Focus",
     description:
-      "Our work covers starch, chemicals, minerals, ceramics, fibers, aggregates, carbon black, and other moisture-sensitive materials.",
+      "Our work covers industrial process lines and laboratory quality-control methods across moisture-sensitive materials.",
   },
   {
     icon: Users,
@@ -42,8 +42,8 @@ const strengths = [
 
 const workflow = [
   { step: "01", event: "Review the material, target moisture range, and process pain point" },
-  { step: "02", event: "Select NIR or microwave measurement based on material presentation and control objective" },
-  { step: "03", event: "Confirm installation position, communication output, and calibration plan" },
+  { step: "02", event: "Select online NIR, microwave, or halogen laboratory measurement based on the decision required" },
+  { step: "03", event: "Confirm installation or sample method, communication output, and calibration plan" },
   { step: "04", event: "Support commissioning, verification, operator use, and routine maintenance" },
 ];
 
@@ -53,8 +53,8 @@ export default function AboutPage() {
       <PageBanner
         image={siteImages.aboutBackground}
         label="About ALZRO"
-        title="Online Moisture Measurement for Real Industrial Processes"
-        description="ALZRO helps manufacturers monitor moisture continuously in drying, conveying, powder processing, and bulk-material handling lines using NIR and microwave measurement technologies."
+        title="Industrial and Laboratory Moisture Measurement"
+        description="ALZRO supplies online NIR and microwave analyzers for continuous process control and halogen analyzers for rapid laboratory quality control and reference testing."
       />
 
       <Section>
@@ -62,24 +62,24 @@ export default function AboutPage() {
           <div>
             <SectionHeader
               label="Who We Are"
-              title="A Practical Partner for Industrial Moisture Control"
-              description="We focus on helping plants move from delayed manual testing to continuous, process-level moisture visibility."
+              title="A Practical Partner for Process and Laboratory Measurement"
+              description="We help plants combine continuous production data with controlled sample-based reference testing."
               align="left"
             />
             <p className="text-muted leading-relaxed">
-              ALZRO provides online moisture measurement solutions for
-              industrial customers who need faster feedback from production
-              lines. Our products and application support are built around
+              ALZRO provides online and laboratory moisture measurement
+              solutions for customers who need faster production feedback and
+              reliable quality-control results. Our application support is built around
               practical questions: where the sensor should be installed, how the
               material is presented, how quickly moisture changes, and how the
               signal will be used by operators, PLC systems, or quality teams.
             </p>
             <p className="mt-4 text-muted leading-relaxed">
-              From near-infrared surface measurement to microwave bulk-moisture
-              monitoring, we help customers choose the right method for their
-              material and process. The goal is simple: reduce delayed manual
-              checks, stabilize product quality, avoid unnecessary over-drying,
-              and make moisture data useful in daily plant operation.
+              From near-infrared surface measurement and microwave bulk-moisture
+              monitoring to halogen loss-on-drying tests, we help customers choose
+              the method that matches the operating decision. The goal is to reduce
+              delayed checks, stabilize product quality, build dependable reference
+              methods, and make moisture data useful in daily operation.
             </p>
           </div>
 
@@ -107,8 +107,8 @@ export default function AboutPage() {
       <Section className="bg-surface">
         <SectionHeader
           label="What We Do"
-          title="Industrial Measurement, Application Engineering, and Integration"
-          description="Moisture measurement is not only a sensor choice. It is a project decision that connects material behavior, installation conditions, calibration, and plant control."
+          title="Process Measurement, Laboratory Methods, and Integration"
+          description="Moisture measurement connects material behavior, installation or sample preparation, calibration, and the decision made from the result."
         />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {strengths.map((item) => (
@@ -132,7 +132,7 @@ export default function AboutPage() {
         <SectionHeader
           label="Project Support"
           title="How We Work With Customers"
-          description="A good online moisture project starts with the production problem, not only the instrument model."
+          description="A good moisture project starts with the production or quality-control decision, not only the instrument model."
         />
         <div className="mx-auto max-w-2xl">
           {workflow.map((item, i) => (
@@ -156,7 +156,7 @@ export default function AboutPage() {
 
       <CTASection
         headline="Discuss Your Moisture Measurement Project"
-        description="Tell us your material, process line, and control objective. We will help review whether NIR or microwave measurement is the better fit."
+        description="Tell us your material, process or laboratory method, and control objective. We will help review whether online NIR, microwave, or halogen measurement is the better fit."
         primaryLabel="Contact Us"
         primaryHref="/contact"
       />

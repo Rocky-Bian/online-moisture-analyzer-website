@@ -12,6 +12,26 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "halogen-moisture-analyzer-method-development-validation",
+    title: "Halogen Moisture Analyzer Method Development: A Practical Validation Workflow",
+    excerpt:
+      "Laboratory teams developing a halogen loss-on-drying method should first define the material, reporting basis, decision limit, and comparator method; then control sampling, sample preparation, temperature, sample mass, heating program, and end point as one documented procedure. This approach is for quality-control staff who need a rapid sample result for incoming inspection, process checks, release support, or online-sensor verification. The main limitation is fundamental: a loss-on-drying result measures mass lost under stated conditions, which can include volatile material other than water. A halogen method is therefore not automatically interchangeable with an oven or Karl Fischer result without material-specific comparison and validation.",
+    content: "technical guide",
+    category: "Laboratory Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-10-24",
+    readTime: "9 min",
+    tags: [
+      "halogen moisture analyzer method development",
+      "loss on drying validation",
+      "laboratory moisture testing",
+      "moisture sampling procedure",
+      "halogen analyzer temperature and endpoint",
+      "moisture method verification",
+      "online analyzer reference testing",
+    ],
+  },
+  {
     slug: "dextrin-moisture-control-predrying-conversion-cooling",
     title: "Dextrin Moisture Control: From Pre-Drying Through Conversion and Cooling",
     excerpt:

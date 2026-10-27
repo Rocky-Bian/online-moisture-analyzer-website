@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { SiteImage } from "@/components/ui/SiteImage";
@@ -27,7 +28,7 @@ export function Hero() {
             transition={{ duration: 0.7 }}
           >
             <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-accent">
-              Online Near-Infrared Moisture Analyzer
+              Industrial & Laboratory Moisture Measurement
             </p>
             <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl lg:text-[3.5rem] lg:leading-[1.1]">
               Real-Time Moisture Control for Drying, Conveying, and Powder Processing
@@ -63,6 +64,12 @@ export function Hero() {
                 Talk to Engineer
               </Button>
             </div>
+            <p className="mt-5 text-sm text-white/60">
+              Need sample-based quality control?{" "}
+              <Link href="/products/halogen-moisture-analyzer-al-1201" className="font-semibold text-white hover:text-accent">
+                View the AL-1201 halogen moisture analyzer.
+              </Link>
+            </p>
           </motion.div>
 
           <motion.div

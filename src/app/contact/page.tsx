@@ -121,6 +121,10 @@ export default async function ContactPage({ searchParams }: Props) {
                   ? "Request Product Datasheet"
                   : inquiryType === "engineer"
                     ? "Talk to an Engineer"
+                    : inquiryType === "recommendation"
+                      ? "Request a Product Recommendation"
+                      : inquiryType === "sample-test"
+                        ? "Request a Sample or Method Evaluation"
                     : "Submit Your Inquiry"}
               </h2>
               <InquiryForm defaultType={inquiryType} />

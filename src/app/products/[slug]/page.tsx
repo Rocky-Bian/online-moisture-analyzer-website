@@ -31,6 +31,11 @@ export async function generateMetadata({ params }: Props) {
     title: product.name,
     description: product.description,
     path: `/products/${slug}`,
+    image: product.image,
+    keywords:
+      product.category === "laboratory"
+        ? ["halogen moisture analyzer price", "rapid moisture tester", "loss on drying analyzer"]
+        : ["inline moisture sensor", "real-time moisture measurement", `${product.method} moisture analyzer`],
   });
 }
 
@@ -297,6 +302,47 @@ export default async function ProductPage({ params }: Props) {
         </Section>
       )}
 
+      {(product.limitations || product.selectionInputs || product.referenceGuidance) && (
+        <Section className="bg-surface">
+          <SectionHeader
+            label="Selection and Validation"
+            title={isLaboratory ? "Build a Reliable Laboratory Method" : "Confirm Fit Before Installation"}
+            description={
+              isLaboratory
+                ? "Sample preparation, heating method, and the reporting basis must be defined for the actual material."
+                : "A useful online result depends on the material, measuring point, reference method, and control objective—not the sensor specification alone."
+            }
+          />
+          <div className="grid gap-6 lg:grid-cols-3">
+            {product.selectionInputs && (
+              <GuidanceCard title="Information Needed" items={product.selectionInputs} />
+            )}
+            {product.referenceGuidance && (
+              <GuidanceCard
+                title={isLaboratory ? "Method Development" : "Calibration and Verification"}
+                items={product.referenceGuidance}
+              />
+            )}
+            {product.limitations && (
+              <GuidanceCard title="Limits to Consider" items={product.limitations} />
+            )}
+          </div>
+          {product.maintenance && (
+            <div className="mt-6 rounded-sm border border-border bg-white p-6 shadow-sm">
+              <h3 className="font-bold text-primary">Routine Care and Quality Checks</h3>
+              <ul className="mt-4 grid gap-3 md:grid-cols-3">
+                {product.maintenance.map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-primary">
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </Section>
+      )}
+
       {/* Inquiry + Related */}
       <Section className="bg-surface">
         <div className="grid gap-12 lg:grid-cols-2">
@@ -310,6 +356,7 @@ export default async function ProductPage({ params }: Props) {
             <InquiryForm
               defaultType="datasheet"
               productName={product.name}
+              productCategory={product.category}
             />
           </div>
 
@@ -394,5 +441,21 @@ export default async function ProductPage({ params }: Props) {
         }
       />
     </>
+  );
+}
+
+function GuidanceCard({ title, items }: { title: string; items: string[] }) {
+  return (
+    <div className="rounded-sm border border-border bg-white p-6 shadow-sm">
+      <h3 className="font-bold text-primary">{title}</h3>
+      <ul className="mt-4 space-y-3">
+        {items.map((item) => (
+          <li key={item} className="flex items-start gap-3 text-sm text-primary">
+            <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }

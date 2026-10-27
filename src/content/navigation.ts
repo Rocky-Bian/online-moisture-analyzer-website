@@ -4,7 +4,7 @@ export const mainNav = [
   { label: "Industries", href: "/industries" },
   { label: "Technology", href: "/technology" },
   { label: "FAQ", href: "/faq" },
-  { label: "Blog", href: "/blog" },
+  { label: "Resources", href: "/blog" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ] as const;
@@ -32,7 +32,8 @@ export const footerLinks = {
   company: [
     { label: "About ALZRO", href: "/about" },
     { label: "Technology", href: "/technology" },
-    { label: "Blog", href: "/blog" },
+    { label: "Technical Resources", href: "/blog" },
+    { label: "Online vs Halogen", href: "/resources/online-vs-halogen-moisture-analyzer" },
     { label: "FAQ", href: "/faq" },
     { label: "Contact", href: "/contact" },
   ],
