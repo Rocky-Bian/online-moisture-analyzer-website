@@ -53,10 +53,10 @@ export default function BlogPage() {
                     {post.readTime}
                   </span>
                 </div>
-                <h2 className="mt-3 text-lg font-bold text-primary group-hover:text-accent transition-colors">
+                <h2 className="mt-3 line-clamp-3 text-lg font-bold text-primary group-hover:text-accent transition-colors">
                   {post.title}
                 </h2>
-                <p className="mt-2 text-sm leading-relaxed text-muted flex-1">
+                <p className="mt-2 line-clamp-4 text-sm leading-relaxed text-muted flex-1">
                   {post.excerpt}
                 </p>
                 <div className="mt-4 flex items-center justify-between border-t border-border pt-4">
