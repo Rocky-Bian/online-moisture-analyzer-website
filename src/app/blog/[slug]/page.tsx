@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props) {
   if (!post) return {};
   return createMetadata({
     title: post.title,
-    description: post.excerpt,
+    description: post.metaDescription ?? post.excerpt,
     path: `/blog/${slug}`,
     keywords: post.tags,
   });
@@ -2528,6 +2528,100 @@ function GreenPetroleumCokeMoistureArticle() {
   );
 }
 
+function HalogenRoutineVerificationArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">What routine verification can—and cannot—show</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A halogen analyzer is both a weighing instrument and a controlled heating system. Routine verification should therefore produce evidence that the balance, the heater, and the combined measurement process remain suitable between formal calibrations. It is not a substitute for a material method. USP&apos;s <SourceLink href="https://doi.usp.org/USPNF/USPNF_M99510_02_01.html">Loss on Drying &lt;731&gt;</SourceLink> defines the result as volatile matter driven off under the specified conditions; it is not automatically a water-specific result. If a result will support release, a customer specification, or online-sensor calibration, retain the approved material method, sample plan, and reporting basis alongside the instrument records.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        This distinction is practical. A successful routine check gives confidence that the instrument behaved as expected under the documented test conditions. It does not prove that a heat-sensitive sample did not decompose, that residual solvent was absent, or that the laboratory portion represented a mixed lot. Those questions belong in <Link href="/blog/halogen-moisture-analyzer-method-development-validation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">method development and validation</Link>, not in an instrument-only check.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Use three checks with different purposes</h2>
+      <div className="mb-8 overflow-x-auto rounded-sm border border-border">
+        <table className="w-full min-w-[640px] border-collapse text-left text-sm">
+          <thead className="bg-primary text-white">
+            <tr>
+              <th className="px-4 py-3 font-semibold">Check</th>
+              <th className="px-4 py-3 font-semibold">What it addresses</th>
+              <th className="px-4 py-3 font-semibold">Record and decision</th>
+            </tr>
+          </thead>
+          <tbody className="text-primary/80">
+            <tr className="bg-white">
+              <th className="border-t border-border px-4 py-4 font-semibold text-primary">Weighing function</th>
+              <td className="border-t border-border px-4 py-4">Response to a suitable known mass at a stable, level, draft-protected bench.</td>
+              <td className="border-t border-border px-4 py-4">Mass ID and certificate status, observed value, acceptance rule, operator, date, and any adjustment or hold decision.</td>
+            </tr>
+            <tr className="bg-surface">
+              <th className="border-t border-border px-4 py-4 font-semibold text-primary">Heating function</th>
+              <td className="border-t border-border px-4 py-4">Whether the heating unit reaches the documented test condition when assessed with a suitable device and procedure.</td>
+              <td className="border-t border-border px-4 py-4">Target and observed condition, device identity, correction if applicable, tolerance, and cool-down or repeat-test result.</td>
+            </tr>
+            <tr className="bg-white">
+              <th className="border-t border-border px-4 py-4 font-semibold text-primary">Whole-system performance</th>
+              <td className="border-t border-border px-4 py-4">The balance and heater together, using a qualified reference material or vendor-supported procedure.</td>
+              <td className="border-t border-border px-4 py-4">Lot and expiry, environmental conditions when required, result, control limits, trend, and investigation outcome.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The three checks should not be treated as interchangeable. Mettler Toledo&apos;s current moisture-analyzer guidance, for example, describes separate weighing and heating tests in addition to a whole-instrument performance test, and states that the overall test does not replace periodic weight or temperature tests. <SourceLink href="https://www.mt.com/ca/en/home/products/Laboratory_Weighing_Solutions/moisture-analyzers/smartcal-substance/smartcal-for-moisture-analyzer.html">Its routine-testing guidance</SourceLink> is a useful equipment-specific example; use the procedure, controls, and tolerances approved for the analyzer and quality system actually in use.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Set the interval from risk and evidence</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Do not invent a daily, weekly, or annual interval simply because another laboratory uses one. NIST says it does not prescribe one fixed recalibration interval and instead points to accuracy needs, contractual or regulatory requirements, inherent stability, environmental factors, and measurement-assurance data. <SourceLink href="https://www.nist.gov/calibrations/recommended-calibration-interval">NIST&apos;s interval guidance</SourceLink> supports starting with a documented risk assessment, then using results and trends to refine the interval.
+      </p>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Start tighter when risk is higher:</strong> increase scrutiny for release decisions, narrow decision margins, high sample throughput, low test masses, frequent temperature changes, vibration, drafts, dust, corrosive residues, or recent repair and relocation.</li>
+        <li><strong>Define event-triggered checks:</strong> require an appropriate check after a failed control result, service, transport, a power or environmental upset, a dropped test mass, or a method complaint—not only on the normal schedule.</li>
+        <li><strong>Trend rather than merely pass/fail:</strong> review direction, scatter, repeats, and interventions. A result inside a broad tolerance can still be a signal to investigate if it has shifted from the established baseline.</li>
+        <li><strong>Keep calibration and verification distinct:</strong> a routine check demonstrates continued control against a defined rule; formal calibration or service establishes the documented instrument status using appropriate traceability and scope.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Build a usable verification record</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For the weighing check, select a mass that is suitable for the intended test range and maintain its identity and calibration status. NIST describes working laboratory balances being supported by regularly recertified mass standards, and notes that ambient conditions can matter in high-accuracy mass work. <SourceLink href="https://www.nist.gov/mml/acmd/fluid-characterization-group/calibration-facilities">Its mass-calibration facilities overview</SourceLink> provides helpful traceability context. In a routine laboratory check, follow the applicable procedure rather than copying a national-metrology laboratory design.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Before any performance run, check that the instrument is level, clean, cool if the procedure requires it, and operating in the same environment in which it is normally used. Record the instrument ID, method or test procedure revision, check-material or device ID, result, acceptance criterion, ambient condition where relevant, and the person who reviewed the result. For a temperature-sensitive whole-system material, control its storage, lot, expiry, handling, distribution on the pan, and start time because those factors can affect the response. <SourceLink href="https://www.mt.com/dam/MT-NA/WeighMatter/SOPs_for_SmartCal_Calibration.pdf">One published vendor SOP</SourceLink> illustrates these controls; it is not a universal procedure or acceptance limit.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">When a check fails: protect the decision first</h2>
+      <ol className="mb-6 list-decimal space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li>Stop using the affected result for new quality decisions until the documented procedure permits release.</li>
+        <li>Confirm simple, permitted causes: instrument warm-up or cool-down state, leveling, pan condition, cleanliness, airflow, selected program, reference-material status, and data-entry error.</li>
+        <li>Repeat only as the SOP allows, documenting the original failure and the reason for any repeat. Do not discard an out-of-control result.</li>
+        <li>If the problem remains, place the analyzer under the quality system&apos;s hold or out-of-service status, arrange qualified assessment or calibration, and assess the scope of potentially affected work according to the laboratory&apos;s deviation procedure.</li>
+        <li>After resolution, document the as-found and as-left condition, any required method check, and the evidence needed before returning the analyzer to service.</li>
+      </ol>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Connect laboratory control to online measurement carefully</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A well-controlled <Link href="/products/halogen-moisture-analyzer-al-1201" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">halogen moisture analyzer</Link> can support sample-based quality control and reference testing for an online model. It does not turn a grab sample into a continuous measurement. When using the laboratory result to evaluate an online NIR or microwave trend, define the sampling point, increments, timing, transport delay, sample preparation, test method, and comparison window before collecting pairs. The <Link href="/resources/online-vs-halogen-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online-versus-halogen selection guide</Link> explains why the two systems have different roles and why many processes need both.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommendation</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Write one short, controlled plan that names the material method, the three relevant instrument checks, risk-based frequency, acceptance rules, record fields, escalation path, and review owner. Then establish a baseline before tightening specifications or using the result as an online-model reference. For the AL-1201, start with the approved method and the laboratory&apos;s quality requirements; its 1 mg readability and 40–230°C programmable range do not determine a verification interval or a material acceptance limit on their own.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://doi.usp.org/USPNF/USPNF_M99510_02_01.html">USP &lt;731&gt;, Loss on Drying</SourceLink>. Defines loss on drying as volatile matter driven off under specified conditions and distinguishes it from water determination where applicable.</li>
+        <li><SourceLink href="https://www.nist.gov/calibrations/recommended-calibration-interval">NIST, Recommended Calibration Interval</SourceLink>. Explains why intervals depend on application risk, requirements, stability, environment, and measurement-assurance evidence rather than a fixed universal period.</li>
+        <li><SourceLink href="https://www.nist.gov/mml/acmd/fluid-characterization-group/calibration-facilities">NIST, Calibration Facilities</SourceLink>. Background on traceable mass standards and conditions relevant to high-accuracy weighing.</li>
+        <li><SourceLink href="https://www.mt.com/ca/en/home/products/Laboratory_Weighing_Solutions/moisture-analyzers/smartcal-substance/smartcal-for-moisture-analyzer.html">Mettler Toledo, Moisture Analyzer Performance Testing with SmartCal</SourceLink>. Manufacturer guidance on separate weighing, heating, and whole-instrument checks; example only, subject to instrument-specific instructions.</li>
+        <li><SourceLink href="https://www.mt.com/dam/MT-NA/WeighMatter/SOPs_for_SmartCal_Calibration.pdf">Mettler Toledo, SOP for Periodic SmartCal Test</SourceLink>. Example controls for a temperature-sensitive performance-test material, including environment, handling, control limits, and failure response.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -2535,6 +2629,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   const paragraphs = getArticleContent(slug);
   const isHalogenMethodArticle = slug === "halogen-moisture-analyzer-method-development-validation";
+  const isHalogenRoutineVerificationArticle = slug === "halogen-moisture-analyzer-routine-verification";
 
   return (
     <>
@@ -2584,6 +2679,8 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           {slug === "wood-fiberboard-hot-press-moisture-control" ? (
             <WoodFiberboardArticle />
+          ) : slug === "halogen-moisture-analyzer-routine-verification" ? (
+            <HalogenRoutineVerificationArticle />
           ) : slug === "halogen-moisture-analyzer-method-development-validation" ? (
             <HalogenMethodDevelopmentArticle />
           ) : slug === "dextrin-moisture-control-predrying-conversion-cooling" ? (
@@ -2675,14 +2772,14 @@ export default async function BlogPostPage({ params }: Props) {
       </Section>
 
       <CTASection
-        headline={isHalogenMethodArticle ? "Need a Method Evaluation?" : "Need Help with Your Application?"}
+        headline={isHalogenMethodArticle || isHalogenRoutineVerificationArticle ? "Need a Method Evaluation?" : "Need Help with Your Application?"}
         description={
-          isHalogenMethodArticle
+          isHalogenMethodArticle || isHalogenRoutineVerificationArticle
             ? "Share the material, current comparator method, moisture range, and quality decision. We can help assess a suitable sample-testing workflow."
             : "Share your material, measurement point, and moisture target, and we can help you judge whether online measurement is a good fit."
         }
-        primaryLabel={isHalogenMethodArticle ? "Request Method Evaluation" : "Talk to Engineer"}
-        primaryHref={isHalogenMethodArticle ? "/contact?type=recommendation" : "/contact?type=engineer"}
+        primaryLabel={isHalogenMethodArticle || isHalogenRoutineVerificationArticle ? "Request Method Evaluation" : "Talk to Engineer"}
+        primaryHref={isHalogenMethodArticle || isHalogenRoutineVerificationArticle ? "/contact?type=recommendation" : "/contact?type=engineer"}
       />
     </>
   );

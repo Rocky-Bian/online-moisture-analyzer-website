@@ -2,6 +2,7 @@ export interface BlogPost {
   slug: string;
   title: string;
   excerpt: string;
+  metaDescription?: string;
   content: string;
   category: string;
   author: string;
@@ -11,6 +12,28 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "halogen-moisture-analyzer-routine-verification",
+    title: "Halogen Moisture Analyzer Verification: A Risk-Based Routine Check Plan",
+    excerpt:
+      "Laboratory supervisors and quality-control teams should verify a halogen moisture analyzer as a measurement system: check the weighing function with a suitable traceable mass, assess heating with a suitable temperature device, and use a documented whole-system performance test where the procedure supports one. Choose frequency from the product-risk, use, environment, and quality-system requirements—not from a universal calendar. The main limitation is equally important: passing instrument checks does not prove that a material-specific loss-on-drying method is selective for water or that a small laboratory sample represents a larger batch or process stream.",
+    metaDescription:
+      "Build a risk-based routine verification plan for halogen moisture analyzers: balance, heater, whole-system checks, records, trends, and failure response.",
+    content: "technical guide",
+    category: "Laboratory Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-10-30",
+    readTime: "8 min",
+    tags: [
+      "halogen moisture analyzer verification",
+      "moisture analyzer routine testing",
+      "loss on drying quality control",
+      "laboratory balance verification",
+      "halogen heater temperature check",
+      "moisture analyzer calibration interval",
+      "laboratory moisture testing",
+    ],
+  },
   {
     slug: "halogen-moisture-analyzer-method-development-validation",
     title: "Halogen Moisture Analyzer Method Development: A Practical Validation Workflow",
