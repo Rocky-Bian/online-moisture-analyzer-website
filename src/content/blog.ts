@@ -13,6 +13,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "halogen-moisture-analyzer-vs-karl-fischer",
+    title: "Halogen Moisture Analyzer vs Karl Fischer: How to Choose the Right Test",
+    excerpt:
+      "Laboratory and quality teams should choose a halogen moisture analyzer when a rapid, sample-based loss-on-drying result is fit for the material and decision; choose Karl Fischer when the requirement is specifically water and the method is suitable for the sample. The decision is not made by speed or a generic accuracy claim. Loss on drying measures mass driven off under defined heating conditions, while Karl Fischer titration is designed to determine water. The main limitation is that neither result can be substituted for the other without a documented, material-specific comparison: sample preparation, volatile compounds, thermal stability, solubility, and the applicable specification determine whether the method is valid.",
+    metaDescription:
+      "Compare halogen loss on drying and Karl Fischer water determination: what each measures, method limits, selection criteria, and verification steps.",
+    content: "technical guide",
+    category: "Laboratory Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-11-01",
+    readTime: "8 min",
+    tags: [
+      "halogen moisture analyzer vs Karl Fischer",
+      "loss on drying vs water determination",
+      "Karl Fischer moisture testing",
+      "laboratory moisture method selection",
+      "water-specific moisture analysis",
+      "halogen loss on drying",
+      "moisture test method validation",
+    ],
+  },
+  {
     slug: "halogen-moisture-analyzer-routine-verification",
     title: "Halogen Moisture Analyzer Verification: A Risk-Based Routine Check Plan",
     excerpt:

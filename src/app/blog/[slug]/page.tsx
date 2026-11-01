@@ -2622,6 +2622,79 @@ function HalogenRoutineVerificationArticle() {
   );
 }
 
+function HalogenVsKarlFischerArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Start with the property the specification actually requires</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A halogen moisture analyzer is a fast thermogravimetric loss-on-drying tool: it reports the change in sample mass after the selected heating programme. Karl Fischer (KF) titration is a chemical method intended to determine water. The distinction is not semantic. USP&apos;s <SourceLink href="https://doi.usp.org/USPNF/USPNF_M99510_02_01.html">&lt;731&gt; Loss on Drying</SourceLink> defines the result as volatile matter driven off under the specified conditions, whereas USP&apos;s <SourceLink href="https://doi.usp.org/USPNF/USPNF_M99710_04_01.html">&lt;921&gt; Water Determination</SourceLink> provides water-determination methods selected according to the nature of the article. First identify whether the approved requirement says water, loss on drying, volatile matter, solids, or another named result. That requirement—not a preferred instrument—sets the starting point.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        This guide is for laboratories comparing a rapid halogen result with a KF result for incoming inspection, process checks, release support, or online-sensor reference testing. It is not a substitute for the customer specification, pharmacopeial monograph, safety review, or a material-specific validation. A method can be repeatable and still answer the wrong question if its result definition differs from the decision it supports.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">What each method measures—and what can distort it</h2>
+      <div className="mb-6 overflow-x-auto rounded-sm border border-border">
+        <table className="w-full min-w-[700px] border-collapse bg-white text-left text-sm">
+          <thead className="bg-primary text-white">
+            <tr><th className="px-4 py-3">Question</th><th className="px-4 py-3">Halogen loss on drying</th><th className="px-4 py-3">Karl Fischer titration</th></tr>
+          </thead>
+          <tbody>
+            <tr className="bg-white"><th className="border-t border-border px-4 py-3 font-semibold text-primary">Reported property</th><td className="border-t border-border px-4 py-3 text-muted">Mass lost under stated sample preparation, temperature, time, and endpoint conditions.</td><td className="border-t border-border px-4 py-3 text-muted">Water determined by the KF reaction under a suitable procedure.</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-3 font-semibold text-primary">Useful fit</th><td className="border-t border-border px-4 py-3 text-muted">Rapid routine screening where the relevant loss is demonstrated to represent the required quality result.</td><td className="border-t border-border px-4 py-3 text-muted">A water-specific requirement, including materials where non-water volatile loss would make heating ambiguous.</td></tr>
+            <tr className="bg-white"><th className="border-t border-border px-4 py-3 font-semibold text-primary">Key method risks</th><td className="border-t border-border px-4 py-3 text-muted">Solvents, other volatile constituents, decomposition, oxidation, skin formation, splattering, or incomplete drying can change mass loss.</td><td className="border-t border-border px-4 py-3 text-muted">Solubility, side reactions, reagent choice, extraction, blanks, sample handling, and endpoint conditions can affect the water result.</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-3 font-semibold text-primary">Do matching numbers prove equivalence?</th><td className="border-t border-border px-4 py-3 text-muted" colSpan={2}>No. Agreement must be demonstrated across representative material, concentration range, preparation, and intended use—not inferred from one comparison.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        ASTM <SourceLink href="https://store.astm.org/e0203-23.html">E203-23</SourceLink> describes volumetric KF as a method for free water and water of hydration in many organic and inorganic solids and liquids, but its scope also calls for suitable procedure choices where direct determination is not possible. ISO <SourceLink href="https://www.iso.org/standard/5037.html">760:1978</SourceLink>, confirmed in 2021, likewise frames KF as determination of water by a defined titration method. Neither standard makes every sample simple: choose the procedure, sample size, reagent system, and preparation for the material at hand.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Use the decision, material, and method limits to select the test</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Choose loss on drying first</strong> when the approved requirement is loss on drying or an oven-loss result, and trials show that the halogen method agrees with that required procedure for the material and range. It is often useful when rapid routine feedback matters and heating does not introduce an unacceptable bias.</li>
+        <li><strong>Choose KF first</strong> when the requirement is specifically water, when the sample contains meaningful non-water volatiles, or when a heat-based loss would be difficult to interpret. ASTM E203 notes that coulometric KF should be considered for routine very-low-water work, while volumetric KF is used across a wide water range; the applicable standard and lab procedure should govern the final choice.</li>
+        <li><strong>Do not choose either method on convenience alone</strong> for reactive, heat-sensitive, foaming, poorly soluble, multiphase, or hazardous samples. Confirm compatibility, safe handling, and the laboratory&apos;s validated procedure before testing.</li>
+        <li><strong>Separate process control from release testing</strong> when needed. A fast loss-on-drying trend can support an operational decision, while a water-specific reference method supports a different specification. Label each result with its method and conditions instead of silently treating them as one number.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The <Link href="/products/halogen-moisture-analyzer-al-1201" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">AL-1201 halogen moisture analyzer</Link> is designed for rapid sample-based loss-on-drying work. Its temperature range and readability do not establish that a result is water-specific or make it interchangeable with KF. For thermal method setup, see ALZRO&apos;s <Link href="/blog/halogen-moisture-analyzer-method-development-validation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">halogen method-development workflow</Link>.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Run a comparison study before changing a reported result</h2>
+      <ol className="mb-6 list-decimal space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Write the intended claim:</strong> name the property, reporting basis, specification or contract, decision limit, and whether the method supports screening, release, or calibration.</li>
+        <li><strong>Control sampling and preparation:</strong> collect representative material, define container and maximum hold time, and minimize water gain or loss before both tests. A poor comparison can reflect sample handling rather than a method difference.</li>
+        <li><strong>Test the relevant range and variants:</strong> include low, normal, and high conditions plus realistic changes in grade, particle size, formulation, solvent content, and temperature. Use separate prepared portions and record the full method conditions.</li>
+        <li><strong>Evaluate bias and repeatability for the decision:</strong> document the observed relationship and acceptance approach; do not relabel a loss-on-drying result as water merely because a few results happen to be close.</li>
+        <li><strong>Lock the procedure and keep verifying it:</strong> state the heating programme or KF procedure, sample mass, endpoint, reagents where relevant, equipment checks, records, change control, and investigation path. Review after a material, supplier, formulation, or procedure change.</li>
+      </ol>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Instrument control remains necessary but does not validate the material method. A documented mass, heater, and whole-system check plan supports the halogen side of the work; read the <Link href="/blog/halogen-moisture-analyzer-routine-verification" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">risk-based routine verification guide</Link> for that separate layer of assurance.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Connecting laboratory results to online moisture data</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        An online instrument and a laboratory test have complementary roles. Online NIR and microwave systems observe a moving process continuously; a halogen analyzer or KF method characterizes a collected sample. Before using either laboratory result to calibrate or verify an online trend, define the sample point, increments, sealing, process and transport delay, laboratory method, time-alignment window, and response to disagreement. ALZRO&apos;s <Link href="/resources/online-vs-halogen-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online-versus-halogen selection guide</Link> explains how to assign those roles without presenting a grab sample as continuous measurement.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommendation</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        If the decision asks for water, start with the named water method and establish that the material is compatible with it. If the decision asks for loss on drying or a rapid, validated thermal proxy, use a halogen method with controlled sampling and documented conditions. Where both methods are relevant, keep their names and purposes separate, then prove any relationship with representative comparison data. For a method-selection review, <Link href="/contact?type=recommendation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">request a sample and method evaluation</Link> with the material, present method, specification wording, expected range, and intended decision.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://doi.usp.org/USPNF/USPNF_M99510_02_01.html">USP &lt;731&gt;, Loss on Drying</SourceLink>. Defines loss on drying as volatile matter driven off under specified conditions and points to water determination when water is the only volatile constituent.</li>
+        <li><SourceLink href="https://doi.usp.org/USPNF/USPNF_M99710_04_01.html">USP &lt;921&gt;, Water Determination</SourceLink>. Water-determination methods and method-selection context for pharmacopeial articles.</li>
+        <li><SourceLink href="https://store.astm.org/e0203-23.html">ASTM E203-23, Standard Test Method for Water Using Volumetric Karl Fischer Titration</SourceLink>. Scope, application range, interference context, and distinction between volumetric and coulometric KF.</li>
+        <li><SourceLink href="https://www.iso.org/standard/5037.html">ISO 760:1978, Determination of Water — Karl Fischer Method</SourceLink>. General KF titration principle; ISO records this edition as confirmed in 2021.</li>
+      </ul>
+    </>
+  );
+}
+
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
@@ -2630,6 +2703,7 @@ export default async function BlogPostPage({ params }: Props) {
   const paragraphs = getArticleContent(slug);
   const isHalogenMethodArticle = slug === "halogen-moisture-analyzer-method-development-validation";
   const isHalogenRoutineVerificationArticle = slug === "halogen-moisture-analyzer-routine-verification";
+  const isHalogenVsKarlFischerArticle = slug === "halogen-moisture-analyzer-vs-karl-fischer";
 
   return (
     <>
@@ -2679,6 +2753,8 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           {slug === "wood-fiberboard-hot-press-moisture-control" ? (
             <WoodFiberboardArticle />
+          ) : slug === "halogen-moisture-analyzer-vs-karl-fischer" ? (
+            <HalogenVsKarlFischerArticle />
           ) : slug === "halogen-moisture-analyzer-routine-verification" ? (
             <HalogenRoutineVerificationArticle />
           ) : slug === "halogen-moisture-analyzer-method-development-validation" ? (
@@ -2772,14 +2848,14 @@ export default async function BlogPostPage({ params }: Props) {
       </Section>
 
       <CTASection
-        headline={isHalogenMethodArticle || isHalogenRoutineVerificationArticle ? "Need a Method Evaluation?" : "Need Help with Your Application?"}
+        headline={isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle ? "Need a Method Evaluation?" : "Need Help with Your Application?"}
         description={
-          isHalogenMethodArticle || isHalogenRoutineVerificationArticle
+          isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle
             ? "Share the material, current comparator method, moisture range, and quality decision. We can help assess a suitable sample-testing workflow."
             : "Share your material, measurement point, and moisture target, and we can help you judge whether online measurement is a good fit."
         }
-        primaryLabel={isHalogenMethodArticle || isHalogenRoutineVerificationArticle ? "Request Method Evaluation" : "Talk to Engineer"}
-        primaryHref={isHalogenMethodArticle || isHalogenRoutineVerificationArticle ? "/contact?type=recommendation" : "/contact?type=engineer"}
+        primaryLabel={isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle ? "Request Method Evaluation" : "Talk to Engineer"}
+        primaryHref={isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle ? "/contact?type=recommendation" : "/contact?type=engineer"}
       />
     </>
   );
