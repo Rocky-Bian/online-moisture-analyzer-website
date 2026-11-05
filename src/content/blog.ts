@@ -13,6 +13,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "halogen-moisture-analyzer-vs-oven-drying",
+    title: "Halogen Moisture Analyzer vs Oven Drying: How to Choose a Laboratory Method",
+    excerpt:
+      "Laboratory and quality teams should keep the approved oven method when a specification, customer, or regulation names it; evaluate a halogen moisture analyzer when a faster loss-on-drying result could support routine control and has been shown to agree for the material and intended decision. Both approaches measure mass loss under defined heating conditions, not automatically water. The main limitation is that changing heat transfer, sample mass, preparation, temperature, endpoint, or timing can change the result, so a halogen result cannot be substituted for an oven result without a documented, material-specific comparison.",
+    metaDescription:
+      "Choose between halogen moisture analysis and oven drying: method differences, comparison studies, sampling controls, and validation steps.",
+    content: "technical guide",
+    category: "Laboratory Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-11-05",
+    readTime: "8 min",
+    tags: [
+      "halogen moisture analyzer vs oven",
+      "loss on drying method selection",
+      "oven drying moisture test",
+      "halogen analyzer method comparison",
+      "laboratory moisture method validation",
+      "loss on drying sampling",
+      "moisture analyzer reference testing",
+    ],
+  },
+  {
     slug: "online-moisture-analyzer-reference-sampling-plan",
     title: "Online Moisture Analyzer Calibration: Build a Reference Sampling Plan",
     excerpt:

@@ -2705,6 +2705,77 @@ function HalogenRoutineVerificationArticle() {
   );
 }
 
+function HalogenVsOvenDryingArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Start with the required result, not the faster instrument</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        An oven method and a halogen moisture analyzer are both thermal loss-on-drying approaches: each reports the mass a prepared sample loses under stated conditions. The result is therefore defined by the complete procedure, not by the word “moisture” on an instrument display. USP&apos;s <SourceLink href="https://doi.usp.org/USPNF/USPNF_M99510_02_01.html">&lt;731&gt; Loss on Drying</SourceLink> states that loss on drying is volatile matter driven off under the specified conditions. ASTM <SourceLink href="https://store.astm.org/e1868-26.html">E1868-26</SourceLink> similarly describes thermogravimetric loss on drying as mass loss under a specific temperature-and-time set, without identifying what was lost.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Keep the named oven procedure when it is the contractual, regulatory, pharmacopeial, or customer-approved reference. Consider a <Link href="/products/halogen-moisture-analyzer-al-1201" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">halogen moisture analyzer</Link> for rapid in-process or laboratory quality-control feedback only after a material-specific study shows that its result is fit for the intended decision. Faster completion does not establish equivalence, water specificity, or release-method status.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Compare the measurement systems by the decision they support</h2>
+      <div className="mb-8 overflow-x-auto rounded-sm border border-border">
+        <table className="w-full min-w-[720px] border-collapse text-left text-sm">
+          <thead className="bg-primary text-white">
+            <tr><th className="px-4 py-3">Decision question</th><th className="px-4 py-3">Oven drying</th><th className="px-4 py-3">Halogen loss on drying</th></tr>
+          </thead>
+          <tbody className="text-primary/80">
+            <tr className="bg-white"><th className="border-t border-border px-4 py-3 font-semibold text-primary">Best starting point</th><td className="border-t border-border px-4 py-3">A named or approved reference procedure, especially where an external requirement specifies oven conditions.</td><td className="border-t border-border px-4 py-3">Rapid, sample-based control where a thermal method has been demonstrated fit for the material and decision.</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-3 font-semibold text-primary">What controls the result</th><td className="border-t border-border px-4 py-3">Sample preparation, container, oven type and airflow, temperature, duration, cooling/desiccation, and weighing sequence.</td><td className="border-t border-border px-4 py-3">Sample preparation, pan loading, heat programme, sample mass, endpoint, instrument condition, and weighing-and-heating sequence.</td></tr>
+            <tr className="bg-white"><th className="border-t border-border px-4 py-3 font-semibold text-primary">Primary advantage</th><td className="border-t border-border px-4 py-3">Direct alignment with the specified oven method when that is the required reference.</td><td className="border-t border-border px-4 py-3">A shorter feedback cycle that can support routine checks, method development, and targeted process response.</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-3 font-semibold text-primary">Key limitation</th><td className="border-t border-border px-4 py-3">A slow result may be too late for an operating adjustment; it still measures loss under its own procedure.</td><td className="border-t border-border px-4 py-3">A different heating profile or endpoint can create a different loss; it is not automatically interchangeable with an oven result.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        ASTM E1868 says thermogravimetric results <em>may</em> be equivalent to other tests, while also limiting the result to mass lost under the selected conditions. That is the right evidence standard for this choice: test equivalence for the actual material, procedure, and decision rather than inferring it from similar-looking equipment.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Identify the variables most likely to create a difference</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Property and reporting basis:</strong> define whether the requirement is loss on drying, moisture by a named method, water, wet-basis moisture, or dry-basis moisture. Do not relabel a loss-on-drying value as water without evidence that the procedure supports that claim.</li>
+        <li><strong>Sampling and physical preparation:</strong> specify the lot, increments, container, hold time, particle size or grinding, and mixing. Eurachem&apos;s <SourceLink href="https://www.eurachem.org/index.php/60-publications/guides/535-gd-vampis-2024">2024 VaMPIS guidance</SourceLink> treats primary sampling and physical sample preparation as part of validating the whole measurement procedure, not as steps outside it.</li>
+        <li><strong>Heat transfer and exposure:</strong> record oven configuration, air movement, vessel or pan geometry, spread thickness, temperature programme, and endpoint or fixed time. These conditions can affect evaporation, oxidation, decomposition, skin formation, or retained material.</li>
+        <li><strong>Sample mass and presentation:</strong> use the stated mass range and a repeatable thin, even distribution where the procedure calls for it. A clumped, crusted, or segregated portion can produce a method difference that is actually a sample-preparation failure.</li>
+        <li><strong>Instrument status and records:</strong> confirm the weighing and heating functions using the laboratory&apos;s approved plan. A calibrated instrument alone does not make every result traceable or fit for purpose; NIST makes that distinction explicitly in its <SourceLink href="https://www.nist.gov/metrology/metrological-traceability">traceability guidance</SourceLink>.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Run an equivalence study before changing a reported method</h2>
+      <ol className="mb-6 list-decimal space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Write the intended use:</strong> state whether the halogen result will be used for screening, process adjustment, supplier comparison, release support, or an online-analyzer reference. Preserve the named oven method where the requirement requires it.</li>
+        <li><strong>Lock the comparator:</strong> identify the approved oven procedure and its version, sample preparation, result basis, acceptance rule, and uncertainty or tolerance appropriate to the decision.</li>
+        <li><strong>Collect representative material:</strong> include the expected low, normal, and high loss range plus meaningful product grades, particle sizes, formulations, temperatures, and seasonal or supplier variation. Test separately prepared portions from the same controlled sample.</li>
+        <li><strong>Compare repeatability and bias:</strong> record every condition and examine the difference against the decision margin. Do not accept a shortcut because a small set of matched results looks close.</li>
+        <li><strong>Approve, control, and recheck:</strong> document the selected halogen programme, sample mass, endpoint, acceptance approach, verification plan, and change triggers. Reassess after material, supplier, formulation, or procedure changes.</li>
+      </ol>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The detailed thermal setup belongs in ALZRO&apos;s <Link href="/blog/halogen-moisture-analyzer-method-development-validation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">halogen method-development workflow</Link>. Once the procedure is in routine use, maintain its measuring system through the separate <Link href="/blog/halogen-moisture-analyzer-routine-verification" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">risk-based verification plan</Link>.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Use a halogen method as a reference for online data only with a sampling plan</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A validated halogen method can be a practical rapid comparator for an online NIR or microwave trend, but it still characterizes a collected sample. Define the process point, increments, sample sealing, transport delay, laboratory hold time, online averaging window, and disagreement response before collecting calibration pairs. The <Link href="/blog/online-moisture-analyzer-reference-sampling-plan" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online reference-sampling guide</Link> explains why a defensible pair must represent the same material interval.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommendation</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Retain the oven method whenever it is the required reference. Add a halogen analyzer when rapid feedback has value and a documented comparison demonstrates fitness for the material, range, and decision. If the requirement is specifically water, review the separate <Link href="/blog/halogen-moisture-analyzer-vs-karl-fischer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">halogen-versus-Karl-Fischer selection guide</Link> instead of assuming either thermal result is water-specific. For a method review, request a <Link href="/contact?type=recommendation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">sample and method evaluation</Link> with the material, present oven procedure, required result, expected range, and intended decision.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://store.astm.org/e1868-26.html">ASTM E1868-26, Standard Test Methods for Loss-On-Drying by Thermogravimetry</SourceLink>. Defines the method as mass loss under specified temperature-and-time conditions, notes that the identity of the lost material is not determined, and states that equivalence to other test methods may occur.</li>
+        <li><SourceLink href="https://doi.usp.org/USPNF/USPNF_M99510_02_01.html">USP &lt;731&gt;, Loss on Drying</SourceLink>. Defines loss on drying as volatile matter driven off under specified conditions and distinguishes it from water determination where water is the only volatile constituent.</li>
+        <li><SourceLink href="https://www.eurachem.org/index.php/60-publications/guides/535-gd-vampis-2024">Eurachem/EUROLAB/CITAC/Nordtest/AMC, Validation of Measurement Procedures that Include Sampling (2024)</SourceLink>. Includes primary sampling and physical sample preparation in validation of the overall measurement procedure.</li>
+        <li><SourceLink href="https://www.nist.gov/metrology/metrological-traceability">NIST, Metrological Traceability: Frequently Asked Questions and NIST Policy</SourceLink>. Explains that traceability is a property of a documented measurement result, not of an instrument by itself, and does not automatically establish fitness for purpose.</li>
+      </ul>
+    </>
+  );
+}
+
 function HalogenVsKarlFischerArticle() {
   return (
     <>
@@ -2787,6 +2858,7 @@ export default async function BlogPostPage({ params }: Props) {
   const isHalogenMethodArticle = slug === "halogen-moisture-analyzer-method-development-validation";
   const isHalogenRoutineVerificationArticle = slug === "halogen-moisture-analyzer-routine-verification";
   const isHalogenVsKarlFischerArticle = slug === "halogen-moisture-analyzer-vs-karl-fischer";
+  const isHalogenVsOvenDryingArticle = slug === "halogen-moisture-analyzer-vs-oven-drying";
   const isOnlineReferenceSamplingArticle = slug === "online-moisture-analyzer-reference-sampling-plan";
 
   return (
@@ -2839,6 +2911,8 @@ export default async function BlogPostPage({ params }: Props) {
             <WoodFiberboardArticle />
           ) : slug === "online-moisture-analyzer-reference-sampling-plan" ? (
             <OnlineMoistureReferenceSamplingArticle />
+          ) : slug === "halogen-moisture-analyzer-vs-oven-drying" ? (
+            <HalogenVsOvenDryingArticle />
           ) : slug === "halogen-moisture-analyzer-vs-karl-fischer" ? (
             <HalogenVsKarlFischerArticle />
           ) : slug === "halogen-moisture-analyzer-routine-verification" ? (
@@ -2937,26 +3011,26 @@ export default async function BlogPostPage({ params }: Props) {
         headline={
           isOnlineReferenceSamplingArticle
             ? "Need a Measurement Plan Review?"
-            : isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle
+            : isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle
               ? "Need a Method Evaluation?"
               : "Need Help with Your Application?"
         }
         description={
           isOnlineReferenceSamplingArticle
             ? "Share the material, current comparator method, moisture range, and quality decision. We can help assess a suitable sampling and measurement workflow."
-            : isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle
+            : isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle
               ? "Share the material, current comparator method, moisture range, and quality decision. We can help assess a suitable sample-testing workflow."
               : "Share your material, measurement point, and moisture target, and we can help you judge whether online measurement is a good fit."
         }
         primaryLabel={
           isOnlineReferenceSamplingArticle
             ? "Request Measurement Review"
-            : isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle
+            : isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle
               ? "Request Method Evaluation"
               : "Talk to Engineer"
         }
         primaryHref={
-          isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isOnlineReferenceSamplingArticle
+          isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle || isOnlineReferenceSamplingArticle
             ? "/contact?type=recommendation"
             : "/contact?type=engineer"
         }
