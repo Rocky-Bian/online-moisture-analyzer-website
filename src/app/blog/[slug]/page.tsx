@@ -97,6 +97,89 @@ function SourceLink({ href, children }: { href: string; children: ReactNode }) {
   );
 }
 
+function OnlineMoistureReferenceSamplingArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Treat the online reading and laboratory result as one comparison system</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        An online NIR or microwave analyzer observes material at its installed process point; a laboratory method reports the condition of a collected portion under defined preparation and test conditions. A useful calibration or verification pair therefore needs more than two numbers. It needs an agreed property and reporting basis, a process point, a sampling procedure, a reference method, timestamps, transport and averaging delays, and an acceptance rule. ASTM <SourceLink href="https://store.astm.org/e1655-00.html">E1655</SourceLink> describes infrared multivariate calibration and validation as a relationship between spectra and accurately measured reference properties. It also requires the instrument to operate under its specified conditions; it does not make a convenient grab sample representative by default.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Begin by naming the decision: dryer adjustment, wet-feed diversion, trend alarm, lot verification, or product release. A continuous process trend can support a fast operating response, while the laboratory method may support a different quality or contractual decision. FDA&apos;s PAT guidance distinguishes in-line, on-line, and at-line measurements and notes that the analyzer, process equipment, and their interfaces need to produce data relevant and representative of the process or product attribute. <SourceLink href="https://www.fda.gov/media/71012/download">That principle</SourceLink> is broadly useful engineering guidance, although the document&apos;s regulatory context is pharmaceutical manufacturing.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Define the reference before collecting the first pair</h2>
+      <div className="mb-6 overflow-x-auto rounded-sm border border-border">
+        <table className="w-full min-w-[720px] border-collapse bg-white text-left text-sm">
+          <thead className="bg-primary text-white">
+            <tr><th className="px-4 py-3">Plan element</th><th className="px-4 py-3">What to document</th><th className="px-4 py-3">Failure if it is missing</th></tr>
+          </thead>
+          <tbody>
+            <tr className="bg-white"><th className="border-t border-border px-4 py-3 font-semibold text-primary">Property and basis</th><td className="border-t border-border px-4 py-3 text-muted">Moisture, water, or loss on drying; wet or dry basis; units; decision limit; intended use.</td><td className="border-t border-border px-4 py-3 text-muted">A valid result is compared with a different reported property or basis.</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-3 font-semibold text-primary">Reference method</th><td className="border-t border-border px-4 py-3 text-muted">Approved procedure, sample mass, preparation, container, maximum hold time, and any repeat rule.</td><td className="border-t border-border px-4 py-3 text-muted">Reference noise or method bias is mistaken for sensor error.</td></tr>
+            <tr className="bg-white"><th className="border-t border-border px-4 py-3 font-semibold text-primary">Paired material interval</th><td className="border-t border-border px-4 py-3 text-muted">Sensor point, sample point, increment pattern, sensor average, material travel time, and sample timestamp.</td><td className="border-t border-border px-4 py-3 text-muted">The sample and online value describe different material.</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-3 font-semibold text-primary">Decision rule</th><td className="border-t border-border px-4 py-3 text-muted">Expected agreement, investigation trigger, outlier handling, escalation owner, and change-control events.</td><td className="border-t border-border px-4 py-3 text-muted">The model is adjusted to chase normal process or laboratory variation.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Select the laboratory comparator for the property actually required. A <Link href="/products/halogen-moisture-analyzer-al-1201" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">halogen moisture analyzer</Link> can provide rapid, sample-based loss-on-drying data when the material-specific method is suitable. It does not automatically provide a water-specific result or make its value interchangeable with an oven or Karl Fischer procedure. For this distinction, read ALZRO&apos;s <Link href="/blog/halogen-moisture-analyzer-vs-karl-fischer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">halogen versus Karl Fischer selection guide</Link> before choosing the reference method.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Build representative pairs around process timing</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        First map the material path. Record whether the reference sample is taken immediately beside the sensor or after a chute, silo, mixer, cooler, dryer, transfer conveyor, or other unit operation. Then calculate the material residence time between the observed point and the sample point, including normal changes with line speed, bed depth, feed rate, and holdup. Match the laboratory result with the online average for the material interval that was actually sampled—not simply the display value visible when the sample reaches the laboratory.
+      </p>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Sample across the stream:</strong> take a safely designed set of increments that represents the cross-section and the online averaging window. A single scoop from the surface can miss depth, segregation, particle size, or wet pockets.</li>
+        <li><strong>Preserve the condition:</strong> use the agreed container, promptly seal material that can gain or lose moisture, label the source and timestamps, and follow the reference method&apos;s preparation and hold-time requirements.</li>
+        <li><strong>Capture the process context:</strong> log product or grade, supplier or feed source, particle size or fines where relevant, temperature, throughput, bed depth or load, sensor status, and operator interventions alongside every pair.</li>
+        <li><strong>Sample the range you plan to use:</strong> include expected wet and dry states and normal material variation. Do not claim broad performance from a short, steady-state collection near one moisture level.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The handling plan is part of the measurement procedure. Eurachem&apos;s 2024 guidance on validation procedures that include sampling recommends extending validation beyond the analytical step to primary sampling and physical preparation. <SourceLink href="https://www.eurachem.org/index.php/publications/guides/vampis">Its guidance</SourceLink> supports evaluating the whole chain where sampling variability is material. For a heterogeneous bulk solid, take the sampling risk seriously before tightening a calibration equation.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Match the sensor technology to the material presentation</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A non-contact <Link href="/products/online-nir-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online NIR moisture analyzer</Link> is normally assessed where the material presents a stable, exposed surface and optical distance, coverage, dust, window condition, temperature, particle size, and surface state are controlled well enough for the intended trend. A <Link href="/products/microwave-moisture-system" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">microwave moisture system</Link> can be evaluated where a defined bulk layer and its loading compensation better match the decision. Neither choice eliminates the need to prove that the installed measurement and reference sample represent the same material population.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        ASTM <SourceLink href="https://store.astm.org/standards/d6122">D6122</SourceLink> states that a multivariate model is applicable only to samples within the subset population used to construct it, and that applicability cannot be assumed. Although its scope is petroleum and fuel analyzers, the practical lesson transfers: monitor model outliers and new material states rather than silently extrapolating when grades, particle distribution, loading, or process conditions change. ALZRO&apos;s <Link href="/technology" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">measurement-technology overview</Link> can help frame that site survey.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Commission in stages, then verify independently</h2>
+      <ol className="mb-6 list-decimal space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Confirm the physical installation:</strong> verify safe access, material presentation, stable acquisition, sensor cleanliness, and the process information required to interpret the signal.</li>
+        <li><strong>Run a feasibility collection:</strong> build time-aligned pairs over realistic materials and operating states while holding the reference method and sampling procedure under control.</li>
+        <li><strong>Develop the model and document limits:</strong> establish the approved range, relevant material states, averaging rule, comparison statistics, and model-outlier treatment. Keep calibration pairs distinct from any independent validation set.</li>
+        <li><strong>Validate with new pairs:</strong> compare predictions against reference results from material not used to develop the model. ASTM E1655 identifies separate validation samples and statistical comparison to the reference method as the basis for testing model bias and agreement.</li>
+        <li><strong>Define operating response and continuing checks:</strong> decide whether a deviation triggers resampling, a laboratory check, an inspection of material presentation, an operational adjustment, or model review. Do not move directly to closed-loop control without evidence that the response is safe for the process.</li>
+      </ol>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Routine laboratory control still matters. A documented halogen method, including sample preparation and instrument checks, makes its reference data more defensible; it cannot remove sampling mismatch. See the <Link href="/blog/halogen-moisture-analyzer-routine-verification" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">risk-based halogen verification plan</Link> for that separate assurance layer.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Review changes before they become unexplained bias</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Reassess the pairing plan after any change that can alter the sampled material, its presentation to the sensor, or its reference result. Typical triggers include a new supplier or grade, particle-size or formulation change, new recycle or fines level, a conveyor or chute modification, a different sensor position or window, a revised laboratory method, service work, a shift in moisture range, or sustained outlier flags. FDA&apos;s 2021 NIR guidance applies to drug procedures, but it reinforces the general need to establish, validate, and document chemometric analytical procedures for their intended use rather than relying on a generic model claim. <SourceLink href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/development-and-submission-near-infrared-analytical-procedures">Read the scope</SourceLink> before applying its regulatory recommendations outside that setting.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The practical recommendation is simple: use a laboratory method to anchor a defined reference sample, and use the online instrument to reveal a defined moving process. Write the bridge between them before commissioning. For a selection and sampling-plan review, <Link href="/contact?type=recommendation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">request a system recommendation</Link> with the material, moisture range, current reference method, process diagram, proposed sensor point, and the operating decision the signal must support.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://store.astm.org/e1655-00.html">ASTM E1655-17(2024), Standard Practices for Infrared Multivariate Quantitative Analysis</SourceLink>. Current ASTM listing for calibration data collection, model validation, and application conditions for IR analysis.</li>
+        <li><SourceLink href="https://store.astm.org/standards/d6122">ASTM D6122-25, Validation of Multivariate Online, At-Line, Field and Laboratory Spectrometer-Based Analyzer Systems</SourceLink>. Current practice on instrument performance, model applicability, outliers, and comparison with the primary test method; scope is petroleum and fuels.</li>
+        <li><SourceLink href="https://www.eurachem.org/index.php/publications/guides/vampis">Eurachem/EUROLAB/CITAC/Nordtest/AMC, Validation of Measurement Procedures that Include Sampling (2024)</SourceLink>. Guidance on treating sampling and physical preparation as part of the measurement procedure.</li>
+        <li><SourceLink href="https://www.fda.gov/media/71012/download">U.S. FDA, PAT — A Framework for Innovative Pharmaceutical Development, Manufacturing, and Quality Assurance</SourceLink>. Definitions of in-line, on-line, and at-line measurements and representative process-analysis principles; pharmaceutical context.</li>
+        <li><SourceLink href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/development-and-submission-near-infrared-analytical-procedures">U.S. FDA, Development and Submission of Near Infrared Analytical Procedures (2021)</SourceLink>. Current FDA NIR analytical-procedure development, validation, and use guidance; pharmaceutical submission scope.</li>
+      </ul>
+    </>
+  );
+}
+
 function HalogenMethodDevelopmentArticle() {
   return (
     <>
@@ -2704,6 +2787,7 @@ export default async function BlogPostPage({ params }: Props) {
   const isHalogenMethodArticle = slug === "halogen-moisture-analyzer-method-development-validation";
   const isHalogenRoutineVerificationArticle = slug === "halogen-moisture-analyzer-routine-verification";
   const isHalogenVsKarlFischerArticle = slug === "halogen-moisture-analyzer-vs-karl-fischer";
+  const isOnlineReferenceSamplingArticle = slug === "online-moisture-analyzer-reference-sampling-plan";
 
   return (
     <>
@@ -2753,6 +2837,8 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           {slug === "wood-fiberboard-hot-press-moisture-control" ? (
             <WoodFiberboardArticle />
+          ) : slug === "online-moisture-analyzer-reference-sampling-plan" ? (
+            <OnlineMoistureReferenceSamplingArticle />
           ) : slug === "halogen-moisture-analyzer-vs-karl-fischer" ? (
             <HalogenVsKarlFischerArticle />
           ) : slug === "halogen-moisture-analyzer-routine-verification" ? (
@@ -2848,14 +2934,32 @@ export default async function BlogPostPage({ params }: Props) {
       </Section>
 
       <CTASection
-        headline={isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle ? "Need a Method Evaluation?" : "Need Help with Your Application?"}
-        description={
-          isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle
-            ? "Share the material, current comparator method, moisture range, and quality decision. We can help assess a suitable sample-testing workflow."
-            : "Share your material, measurement point, and moisture target, and we can help you judge whether online measurement is a good fit."
+        headline={
+          isOnlineReferenceSamplingArticle
+            ? "Need a Measurement Plan Review?"
+            : isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle
+              ? "Need a Method Evaluation?"
+              : "Need Help with Your Application?"
         }
-        primaryLabel={isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle ? "Request Method Evaluation" : "Talk to Engineer"}
-        primaryHref={isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle ? "/contact?type=recommendation" : "/contact?type=engineer"}
+        description={
+          isOnlineReferenceSamplingArticle
+            ? "Share the material, current comparator method, moisture range, and quality decision. We can help assess a suitable sampling and measurement workflow."
+            : isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle
+              ? "Share the material, current comparator method, moisture range, and quality decision. We can help assess a suitable sample-testing workflow."
+              : "Share your material, measurement point, and moisture target, and we can help you judge whether online measurement is a good fit."
+        }
+        primaryLabel={
+          isOnlineReferenceSamplingArticle
+            ? "Request Measurement Review"
+            : isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle
+              ? "Request Method Evaluation"
+              : "Talk to Engineer"
+        }
+        primaryHref={
+          isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isOnlineReferenceSamplingArticle
+            ? "/contact?type=recommendation"
+            : "/contact?type=engineer"
+        }
       />
     </>
   );

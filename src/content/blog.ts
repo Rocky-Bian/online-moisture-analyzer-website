@@ -13,6 +13,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "online-moisture-analyzer-reference-sampling-plan",
+    title: "Online Moisture Analyzer Calibration: Build a Reference Sampling Plan",
+    excerpt:
+      "Process engineers, laboratory teams, and quality managers should build an online-moisture calibration around paired, time-aligned measurements from the same material interval: define the decision, choose the approved reference method, collect representative increments, preserve the sample, and compare it with the correctly delayed online average. This is especially important when a halogen analyzer supplies rapid loss-on-drying reference data. The main limitation is that a laboratory value confirms only the sampled material under its stated method; it cannot automatically represent a moving stream, a different process point, or a moisture property outside the calibration range.",
+    metaDescription:
+      "Build a defensible reference sampling plan for online NIR or microwave moisture calibration: pairing, timing, laboratory methods, validation, and change control.",
+    content: "technical guide",
+    category: "Calibration Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-11-05",
+    readTime: "9 min",
+    tags: [
+      "online moisture analyzer calibration",
+      "moisture reference sampling plan",
+      "NIR moisture calibration",
+      "microwave moisture verification",
+      "halogen analyzer reference testing",
+      "process sampling time alignment",
+      "online moisture model validation",
+    ],
+  },
+  {
     slug: "halogen-moisture-analyzer-vs-karl-fischer",
     title: "Halogen Moisture Analyzer vs Karl Fischer: How to Choose the Right Test",
     excerpt:
