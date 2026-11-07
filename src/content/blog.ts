@@ -13,6 +13,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "halogen-moisture-analyzer-sample-preparation",
+    title: "Halogen Moisture Analyzer Sample Preparation: Protect the Test Portion",
+    excerpt:
+      "Laboratory and quality teams should treat sample preparation as part of the moisture measurement, not as a task completed before it: take increments that represent the lot or process interval, protect the material from moisture gain or loss, homogenize or reduce it only by a documented method, and begin the halogen test within the defined hold time. This workflow is for loss-on-drying decisions in incoming inspection, process checks, release support, and online-sensor reference testing. The main limitation is that good handling cannot make an unsuitable thermal method water-specific or a small portion representative by default; the material, reporting basis, and sampling plan still determine fitness for purpose.",
+    metaDescription:
+      "Prepare representative samples for halogen moisture analysis: sampling, sealing, homogenization, test portions, and handling limits.",
+    content: "technical guide",
+    category: "Laboratory Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-11-07",
+    readTime: "8 min",
+    tags: [
+      "halogen moisture analyzer sample preparation",
+      "loss on drying sampling",
+      "moisture test portion handling",
+      "representative laboratory sample",
+      "moisture sample preservation",
+      "laboratory moisture quality control",
+      "online moisture reference samples",
+    ],
+  },
+  {
     slug: "halogen-moisture-analyzer-vs-oven-drying",
     title: "Halogen Moisture Analyzer vs Oven Drying: How to Choose a Laboratory Method",
     excerpt:

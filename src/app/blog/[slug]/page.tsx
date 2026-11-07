@@ -2611,6 +2611,99 @@ function GreenPetroleumCokeMoistureArticle() {
   );
 }
 
+function HalogenSamplePreparationArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">The test portion is not the lot</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A halogen moisture analyzer reports the loss in mass from the portion placed on its pan under a defined heating program. The result can be useful only when that portion still represents the material and condition named in the decision. Eurachem&apos;s <SourceLink href="https://www.eurachem.org/images/stories/Guides/pdf/VaMPIS_2024_EN_v1.pdf">VaMPIS guidance</SourceLink> treats primary sampling, preservation, transport, storage, and physical preparation as parts of the measurement procedure—not external conveniences. Start by defining the measurand and reporting basis: for example, loss on drying on an as-received basis, not simply “moisture.” If a contract, regulation, customer specification, or validated procedure names a sampling or test method, keep that method in control.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        This is especially important for hygroscopic powders, warm material, volatile-containing products, blends that segregate, and material taken from a changing process stream. ASTM <SourceLink href="https://store.astm.org/d6403-99r20.html">D6403</SourceLink>, a material-specific oven method, notes that sampling should be done quickly enough to avoid moisture change and that particle size, specimen quantity, temperature, time, container shape, and oven type can influence mass loss. Those are not universal halogen settings; they are reminders to validate the complete material-specific procedure.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Write one chain from lot to pan</h2>
+      <div className="mb-8 overflow-x-auto rounded-sm border border-border">
+        <table className="w-full min-w-[760px] border-collapse text-left text-sm">
+          <thead className="bg-primary text-white">
+            <tr><th className="px-4 py-3 font-semibold">Stage</th><th className="px-4 py-3 font-semibold">Control to define</th><th className="px-4 py-3 font-semibold">Question to answer before testing</th></tr>
+          </thead>
+          <tbody className="text-primary/80">
+            <tr className="bg-white"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Sampling target</th><td className="border-t border-border px-4 py-4">Lot, package, silo, belt interval, or batch; required reporting basis and decision.</td><td className="border-t border-border px-4 py-4">What material condition must the reported value represent?</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Primary increments</th><td className="border-t border-border px-4 py-4">Location, timing, number, equipment, and safe pattern across expected heterogeneity.</td><td className="border-t border-border px-4 py-4">Could surface, fines, wet pockets, or segregated fractions dominate one grab?</td></tr>
+            <tr className="bg-white"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Preservation and transfer</th><td className="border-t border-border px-4 py-4">Container, seal, temperature condition, maximum hold time, label, and custody record.</td><td className="border-t border-border px-4 py-4">Can the material gain, lose, condense, evaporate, or separate before the test?</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Laboratory preparation</th><td className="border-t border-border px-4 py-4">Mixing, splitting, grinding, sieving, and their order; permitted equipment and clean-up.</td><td className="border-t border-border px-4 py-4">Does preparation change particle size, temperature, composition, or volatile loss?</td></tr>
+            <tr className="bg-white"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Test portion</th><td className="border-t border-border px-4 py-4">Mass, distribution on the pan, start time, replicates, and repeat rule.</td><td className="border-t border-border px-4 py-4">Is the portion within the validated method and evenly exposed to heating?</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The sampling procedure should name these controls rather than relying on “representative sample” as an instruction. Eurachem specifically lists the target, number of increments, transport container and conditions, preservation, physical preparation, final laboratory sample, and number of test portions among the information to document. If actual conditions require a departure from the plan, record the deviation and assess its effect on the result instead of silently treating the sample as equivalent.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Protect the sample before you improve the measurement</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The fastest way to make a precise-looking but misleading result is to leave a moisture-sensitive sample open while waiting for the test. The exact container and hold time depend on the product and approved method, but the decision should be intentional: use a suitable, clean, closed container; label it at collection; minimize uncontrolled headspace exposure; and avoid unnecessary temperature swings. NIST Handbook 44 requires measures to prevent condensation or moisture loss when a temperature change occurs between grain sampling and testing. Its grain-specific example is not a universal laboratory SOP, but the underlying risk—changing sample condition before measurement—applies broadly.
+      </p>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Hot process sample:</strong> do not assume cooling in an open scoop preserves the process state. Define whether the approved method requires a sealed cooling period, immediate test, or another controlled transfer.</li>
+        <li><strong>Hygroscopic powder or granule:</strong> control exposure time and ambient conditions; transfer promptly and keep the lid closed except during the documented preparation steps.</li>
+        <li><strong>Volatile-containing or reactive material:</strong> check whether loss on drying is even the required property. A thermal mass loss can include non-water volatiles or decomposition products.</li>
+        <li><strong>Coarse or segregating material:</strong> avoid selecting only the top layer, fines, or visually wet pieces. Build the increment pattern around the known heterogeneity.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A <Link href="/products/halogen-moisture-analyzer-al-1201" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">halogen moisture analyzer</Link> can provide rapid sample-based loss-on-drying data, but its speed does not recover a sample that has changed in transit. Where the requirement is specifically water rather than a defined thermal mass loss, review the material and method selection first; ALZRO&apos;s <Link href="/blog/halogen-moisture-analyzer-vs-karl-fischer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">halogen versus Karl Fischer guide</Link> explains that distinction.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Reduce a laboratory sample without changing what it represents</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        When the collected sample is larger than the analyzer portion, reduction is another measurement step. Mix or homogenize only in the way the material can tolerate, then use the documented splitter, quartering approach, or other reduction technique. Grinding, sieving, or milling can be necessary for a repeatable thermal response, yet each can also generate heat, expose fresh surface, lose fines, or redistribute moisture. For that reason, record the equipment, screen, duration, sequence, and maximum delay—not merely that a sample was “prepared.”
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        ASTM <SourceLink href="https://store.astm.org/d2654-22.html">D2654</SourceLink> describes this same issue in textile moisture testing: when a test specimen cannot be weighed immediately, intermediate compositing or subsampling can require controls to prevent moisture loss or gain. It also cautions that oven drying can lose volatile matter other than water. The standard is not a halogen-analyzer validation protocol, but it supports the engineering principle that sample handling and the analytical result are inseparable.
+      </p>
+      <ol className="mb-6 list-decimal space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li>Confirm that the original sample container, identification, and maximum hold time are still acceptable.</li>
+        <li>Mix or otherwise homogenize only as the material procedure permits; do not create a new bias by discarding a visible fraction.</li>
+        <li>Reduce to a workable laboratory sample using the defined equipment and sequence, preserving a retained portion when the quality system requires it.</li>
+        <li>Prepare the test portion at the stated mass and distribute it as the validated method requires so heating is repeatable.</li>
+        <li>Start the program promptly, record the method revision and any deviation, and apply the documented repeat or investigation rule rather than retesting until a preferred value appears.</li>
+      </ol>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Choose the sample plan by the decision, not by convenience</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A release or customer-conformance decision usually needs the sample plan named by the governing method or quality system. A routine incoming check may use a different, justified plan. A process-control check may need timed increments that capture variation across a shift. Do not use a small, convenient laboratory test portion to answer a larger question than the plan supports. Eurachem&apos;s sampling guidance recommends setting the number of increments, locations, transport conditions, and physical preparation around the heterogeneity of the sampling target and the purpose of the measurement.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For online-system calibration or verification, the laboratory portion must describe the same material interval as the sensor value. Pair the sample point, time window, transport delay, and online average before comparing numbers. A laboratory test is not a substitute for a continuous measurement, and a process trend is not a substitute for a controlled test portion. The <Link href="/blog/online-moisture-analyzer-reference-sampling-plan" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online moisture reference sampling plan</Link> gives the companion workflow for those paired measurements.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">A practical pre-test checklist</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li>The required property, reporting basis, decision, and approved method are known.</li>
+        <li>The collection point and increments are suitable for the lot or process interval being reported.</li>
+        <li>Container, seal, hold time, temperature condition, sample ID, and collection time are documented.</li>
+        <li>Any mixing, reduction, milling, or sieving follows the written method and is completed without an unexplained delay.</li>
+        <li>The analyzer program, test mass, pan preparation, sample distribution, and repeat criteria match the controlled procedure.</li>
+        <li>Any departure, abnormal sample condition, or disagreement is recorded and assessed before the result supports a quality decision.</li>
+      </ul>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommendation</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Create a one-page handling instruction that follows the material from collection through the analyzer start button. Define the target, increments, container, preservation, maximum hold time, reduction method, test mass, and action for deviations; then demonstrate that the procedure is fit for the material and decision. Keep the result described as loss on drying unless a separate, suitable water method proves otherwise. For a combined laboratory and process workflow, request a <Link href="/contact?type=recommendation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">sample and method evaluation</Link> with the material, current procedure, expected range, and intended use of the result.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.eurachem.org/images/stories/Guides/pdf/VaMPIS_2024_EN_v1.pdf">Eurachem/EUROLAB/CITAC/Nordtest/AMC, Validation of Measurement Procedures that Include Sampling (VaMPIS), 2024</SourceLink>. Guidance on defining and validating sampling, preservation, transport, and physical preparation as parts of a measurement procedure.</li>
+        <li><SourceLink href="https://store.astm.org/d6403-99r20.html">ASTM D6403-99(2020), Determining Moisture in Raw and Spent Materials</SourceLink>. Material-specific example of moisture change during sampling and variables that influence thermal mass loss.</li>
+        <li><SourceLink href="https://store.astm.org/d2654-22.html">ASTM D2654-22, Moisture in Textiles</SourceLink>. Material-specific example covering intermediate sample handling, moisture gain or loss, and non-water volatile loss in oven drying.</li>
+        <li><SourceLink href="https://nvlpubs.nist.gov/nistpubs/hb/2018/NIST.HB.44-2018.pdf">NIST Handbook 44, Section 5.56</SourceLink>. Grain-sample integrity requirements relevant to managing condensation and moisture loss during temperature change; apply only with a material-appropriate procedure.</li>
+      </ul>
+    </>
+  );
+}
+
 function HalogenRoutineVerificationArticle() {
   return (
     <>
@@ -2856,6 +2949,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   const paragraphs = getArticleContent(slug);
   const isHalogenMethodArticle = slug === "halogen-moisture-analyzer-method-development-validation";
+  const isHalogenSamplePreparationArticle = slug === "halogen-moisture-analyzer-sample-preparation";
   const isHalogenRoutineVerificationArticle = slug === "halogen-moisture-analyzer-routine-verification";
   const isHalogenVsKarlFischerArticle = slug === "halogen-moisture-analyzer-vs-karl-fischer";
   const isHalogenVsOvenDryingArticle = slug === "halogen-moisture-analyzer-vs-oven-drying";
@@ -2915,6 +3009,8 @@ export default async function BlogPostPage({ params }: Props) {
             <HalogenVsOvenDryingArticle />
           ) : slug === "halogen-moisture-analyzer-vs-karl-fischer" ? (
             <HalogenVsKarlFischerArticle />
+          ) : slug === "halogen-moisture-analyzer-sample-preparation" ? (
+            <HalogenSamplePreparationArticle />
           ) : slug === "halogen-moisture-analyzer-routine-verification" ? (
             <HalogenRoutineVerificationArticle />
           ) : slug === "halogen-moisture-analyzer-method-development-validation" ? (
@@ -3011,26 +3107,26 @@ export default async function BlogPostPage({ params }: Props) {
         headline={
           isOnlineReferenceSamplingArticle
             ? "Need a Measurement Plan Review?"
-            : isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle
+            : isHalogenMethodArticle || isHalogenSamplePreparationArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle
               ? "Need a Method Evaluation?"
               : "Need Help with Your Application?"
         }
         description={
           isOnlineReferenceSamplingArticle
             ? "Share the material, current comparator method, moisture range, and quality decision. We can help assess a suitable sampling and measurement workflow."
-            : isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle
+            : isHalogenMethodArticle || isHalogenSamplePreparationArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle
               ? "Share the material, current comparator method, moisture range, and quality decision. We can help assess a suitable sample-testing workflow."
               : "Share your material, measurement point, and moisture target, and we can help you judge whether online measurement is a good fit."
         }
         primaryLabel={
           isOnlineReferenceSamplingArticle
             ? "Request Measurement Review"
-            : isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle
+            : isHalogenMethodArticle || isHalogenSamplePreparationArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle
               ? "Request Method Evaluation"
               : "Talk to Engineer"
         }
         primaryHref={
-          isHalogenMethodArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle || isOnlineReferenceSamplingArticle
+          isHalogenMethodArticle || isHalogenSamplePreparationArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle || isOnlineReferenceSamplingArticle
             ? "/contact?type=recommendation"
             : "/contact?type=engineer"
         }
