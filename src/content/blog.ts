@@ -13,6 +13,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "wet-basis-dry-basis-loss-on-drying-reporting",
+    title: "Wet Basis, Dry Basis, and Loss on Drying: How to Report Moisture Results",
+    excerpt:
+      "Laboratory teams and process engineers should report every moisture result with its property, calculation basis, method, and sample state: use wet basis when water is expressed against the original total sample mass, dry basis when it is expressed against dry solids, and name a halogen result as loss on drying unless the method supports a more specific claim. This guide helps teams compare laboratory, supplier, and online-process data without mixing unlike numbers. The main limitation is that correct arithmetic cannot make different sampling plans, thermal methods, or measurands equivalent; the approved material-specific procedure still controls the decision.",
+    metaDescription:
+      "Understand wet-basis and dry-basis moisture reporting, convert results correctly, and report halogen loss-on-drying data without false comparisons.",
+    content: "technical guide",
+    category: "Laboratory Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-11-11",
+    readTime: "8 min",
+    tags: [
+      "wet basis vs dry basis moisture",
+      "moisture content calculation",
+      "loss on drying reporting",
+      "halogen moisture analyzer results",
+      "laboratory moisture reporting",
+      "online moisture reference testing",
+      "moisture measurement basis",
+    ],
+  },
+  {
     slug: "halogen-moisture-analyzer-sample-preparation",
     title: "Halogen Moisture Analyzer Sample Preparation: Protect the Test Portion",
     excerpt:

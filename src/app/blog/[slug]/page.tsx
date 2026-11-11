@@ -97,6 +97,90 @@ function SourceLink({ href, children }: { href: string; children: ReactNode }) {
   );
 }
 
+function WetBasisDryBasisReportingArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Name the property before comparing the number</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        “Moisture” is not enough information for a laboratory report, a certificate of analysis, or an online-model reference. State whether the value is wet-basis moisture, dry-basis moisture, water by a named method, or loss on drying; then state the method, sample state, and units. ISO <SourceLink href="https://committee.iso.org/cms/live/live/en/sites/isoorg/contents/data/standard/08/31/83191.html?browse=tc">18134-1:2022</SourceLink>, for example, specifies that as-received solid-biofuel moisture is reported on the total mass of the test sample—wet basis. That is a material-specific reference-method convention, not a universal rule for every product.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A halogen analyzer can provide a rapid thermal result, but the result should be described as loss on drying under the documented conditions unless the material method justifies another claim. USP <SourceLink href="https://doi.usp.org/USPNF/USPNF_M99510_02_01.html">&lt;731&gt; Loss on Drying</SourceLink> defines the value as volatile matter driven off under the specified conditions; it does not identify the lost matter as water. This distinction matters before converting, trending, or comparing the result with supplier data and an online signal.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Use the denominator that the requirement actually names</h2>
+      <div className="mb-8 overflow-x-auto rounded-sm border border-border">
+        <table className="w-full min-w-[760px] border-collapse text-left text-sm">
+          <thead className="bg-primary text-white">
+            <tr><th className="px-4 py-3 font-semibold">Reported value</th><th className="px-4 py-3 font-semibold">Calculation basis</th><th className="px-4 py-3 font-semibold">What must accompany the result</th></tr>
+          </thead>
+          <tbody className="text-primary/80">
+            <tr className="bg-white"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Wet-basis moisture</th><td className="border-t border-border px-4 py-4">Mass lost ÷ initial total sample mass × 100.</td><td className="border-t border-border px-4 py-4">The named method, as-received or other sample state, and confirmation that the loss represents the required property.</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Dry-basis moisture</th><td className="border-t border-border px-4 py-4">Mass lost ÷ final dry-solids mass × 100.</td><td className="border-t border-border px-4 py-4">The named method, final-mass definition, and the dry-basis convention used by the specification or calculation.</td></tr>
+            <tr className="bg-white"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Loss on drying</th><td className="border-t border-border px-4 py-4">Mass loss under the stated sample preparation, heating program, and endpoint; the calculation basis must be declared.</td><td className="border-t border-border px-4 py-4">Temperature or program, endpoint or duration, sample mass, preparation, reporting basis, and method revision.</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Water by a named method</th><td className="border-t border-border px-4 py-4">The method-specific calculation and reporting convention.</td><td className="border-t border-border px-4 py-4">The named water method and any sample-treatment or interference controls required by that method.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a true gravimetric water result, wet basis uses water mass divided by wet sample mass; dry basis uses water mass divided by dry-solids mass. The USDA Forest Products Laboratory gives both definitions and the relationship between them in its <SourceLink href="https://www.fpl.fs.usda.gov/documnts/usda/ah188/chapter01.pdf">wood-drying handbook</SourceLink>. The arithmetic is general, but the reportable property is not: do not silently apply the equations to a thermal loss that may include non-water volatile material.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Convert only after the measurement basis is controlled</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        When the underlying result is suitable for conversion, use dry-basis moisture = wet-basis moisture ÷ (100 − wet-basis moisture) × 100. The reverse conversion is wet-basis moisture = dry-basis moisture ÷ (100 + dry-basis moisture) × 100. For example, 8.0% wet-basis moisture corresponds to about 8.7% dry basis; 8.0% dry-basis moisture corresponds to about 7.4% wet basis. Keep sufficient digits during the calculation, then apply the reporting and rounding rules in the approved procedure.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Never treat a conversion as a method comparison. Converting a laboratory result changes the denominator, not the sample, thermal program, sampling uncertainty, or identity of the material lost. A change from “8.0% wet basis” to “8.7% dry basis” is valid only when both values describe the same defined result. It does not prove agreement with an oven, a Karl Fischer method, or a supplier certificate using another procedure.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Prevent the four report failures that create false disagreements</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Basis omitted:</strong> a display value, spreadsheet cell, PLC tag, or certificate shows “moisture %” without wet basis, dry basis, or another defined basis.</li>
+        <li><strong>Property renamed:</strong> a loss-on-drying value is relabelled as water without evidence that the specified thermal procedure is selective for water in that material.</li>
+        <li><strong>Sample state changed:</strong> an as-received sample is compared with a cooled, conditioned, ground, or post-process sample without stating the difference.</li>
+        <li><strong>Method conditions missing:</strong> the report does not identify the sample preparation, mass, heating conditions, endpoint, or method revision needed to reproduce the result.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Put the full result definition in the controlled method and in the data handoff. A practical record might read: “Loss on drying, 6.2% wet basis, as received; halogen method HM-07 rev. 3; 105°C endpoint; 5.0 g test portion.” If water is the required analyte, use the approved water-specific method name instead. ALZRO&apos;s <Link href="/blog/halogen-moisture-analyzer-vs-karl-fischer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">halogen versus Karl Fischer guide</Link> explains why those claims need to remain separate.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Build the reporting basis into the laboratory procedure</h2>
+      <ol className="mb-6 list-decimal space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Start with the decision:</strong> identify whether the value supports incoming acceptance, release, dryer adjustment, mass balance, supplier comparison, or calibration of an online signal.</li>
+        <li><strong>State the measurand:</strong> define water, loss on drying, or another required property; include wet basis, dry basis, or another named reporting convention.</li>
+        <li><strong>Control the sample state:</strong> record sampling point, collection time, container, maximum hold time, preparation, and the condition the result is intended to represent.</li>
+        <li><strong>Fix the method conditions:</strong> document sample mass, pan loading, heating program, endpoint, replicates, calculation, rounding, and the acceptable repeat or investigation rule.</li>
+        <li><strong>Preserve the definition in every system:</strong> carry the same property and basis into the LIMS, certificate, spreadsheet, PLC tag, online-model file, and deviation record.</li>
+      </ol>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Sampling and physical preparation are not outside the measurement procedure. Eurachem&apos;s <SourceLink href="https://www.eurachem.org/index.php/60-publications/guides/535-gd-vampis-2024">VaMPIS guidance</SourceLink> treats both as part of validation of the complete procedure. That is especially relevant when a small halogen test portion is used to represent a variable lot or process stream. Use the related <Link href="/blog/halogen-moisture-analyzer-sample-preparation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">sample-preparation workflow</Link> to define the path from lot or process interval to the analyzer pan.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Match the laboratory result to online data without changing its meaning</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        An online NIR or microwave system provides a continuous process measurement; a halogen result describes a collected test portion under its selected thermal method. Before using the laboratory number to train or verify an online model, specify the same property and reporting basis on both sides. Then pair the sample point, collection interval, material travel time, sample preservation, laboratory hold time, and online averaging window. A wet-basis process tag and a dry-basis laboratory column are not a valid pair until their definitions are reconciled.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The <Link href="/blog/online-moisture-analyzer-reference-sampling-plan" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online reference-sampling plan</Link> covers this timing and representativeness work in detail. Where the business question is whether to use continuous process measurement, laboratory testing, or both, ALZRO&apos;s <Link href="/resources/online-vs-halogen-moisture-analyzer" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online-versus-halogen comparison</Link> can frame the selection.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommendation</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Do not approve a moisture result that lacks its property, basis, method, and sample state. Keep the contractual or regulatory reporting convention where one is named; otherwise, select the basis that serves the decision and document it once across the laboratory and process-data workflow. A <Link href="/products/halogen-moisture-analyzer-al-1201" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">halogen moisture analyzer</Link> can deliver fast loss-on-drying data, but it does not determine the reporting basis or establish water specificity. For a method and measurement-basis review, request a <Link href="/contact?type=recommendation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">selection recommendation</Link> with the material, specification wording, current method, sample path, expected range, and intended decision.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://doi.usp.org/USPNF/USPNF_M99510_02_01.html">USP &lt;731&gt;, Loss on Drying</SourceLink>. Defines loss on drying as volatile matter driven off under specified conditions and distinguishes it from water determination where appropriate.</li>
+        <li><SourceLink href="https://committee.iso.org/cms/live/live/en/sites/isoorg/contents/data/standard/08/31/83191.html?browse=tc">ISO 18134-1:2022, Solid biofuels — Determination of moisture content — Part 1: Reference method</SourceLink>. States that as-received solid-biofuel moisture is reported on the total test-sample mass, or wet basis; material-specific reference-method context.</li>
+        <li><SourceLink href="https://www.fpl.fs.usda.gov/documnts/usda/ah188/chapter01.pdf">USDA Forest Products Laboratory, Wood Handbook: Properties of Wood Related to Drying</SourceLink>. Defines wet-basis and dry-basis moisture content and gives their conversion relationship; wood-material context.</li>
+        <li><SourceLink href="https://www.eurachem.org/index.php/60-publications/guides/535-gd-vampis-2024">Eurachem/EUROLAB/CITAC/Nordtest/AMC, Validation of Measurement Procedures that Include Sampling (2024)</SourceLink>. Guidance on validating the complete measurement procedure, including sampling and physical sample preparation.</li>
+      </ul>
+    </>
+  );
+}
+
 function OnlineMoistureReferenceSamplingArticle() {
   return (
     <>
@@ -2954,6 +3038,7 @@ export default async function BlogPostPage({ params }: Props) {
   const isHalogenVsKarlFischerArticle = slug === "halogen-moisture-analyzer-vs-karl-fischer";
   const isHalogenVsOvenDryingArticle = slug === "halogen-moisture-analyzer-vs-oven-drying";
   const isOnlineReferenceSamplingArticle = slug === "online-moisture-analyzer-reference-sampling-plan";
+  const isWetBasisDryBasisArticle = slug === "wet-basis-dry-basis-loss-on-drying-reporting";
 
   return (
     <>
@@ -3003,6 +3088,8 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           {slug === "wood-fiberboard-hot-press-moisture-control" ? (
             <WoodFiberboardArticle />
+          ) : slug === "wet-basis-dry-basis-loss-on-drying-reporting" ? (
+            <WetBasisDryBasisReportingArticle />
           ) : slug === "online-moisture-analyzer-reference-sampling-plan" ? (
             <OnlineMoistureReferenceSamplingArticle />
           ) : slug === "halogen-moisture-analyzer-vs-oven-drying" ? (
@@ -3107,6 +3194,8 @@ export default async function BlogPostPage({ params }: Props) {
         headline={
           isOnlineReferenceSamplingArticle
             ? "Need a Measurement Plan Review?"
+            : isWetBasisDryBasisArticle
+              ? "Need a Measurement-Basis Review?"
             : isHalogenMethodArticle || isHalogenSamplePreparationArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle
               ? "Need a Method Evaluation?"
               : "Need Help with Your Application?"
@@ -3114,6 +3203,8 @@ export default async function BlogPostPage({ params }: Props) {
         description={
           isOnlineReferenceSamplingArticle
             ? "Share the material, current comparator method, moisture range, and quality decision. We can help assess a suitable sampling and measurement workflow."
+            : isWetBasisDryBasisArticle
+              ? "Share the material, specification wording, current method, reporting basis, and intended decision. We can help assess a suitable workflow."
             : isHalogenMethodArticle || isHalogenSamplePreparationArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle
               ? "Share the material, current comparator method, moisture range, and quality decision. We can help assess a suitable sample-testing workflow."
               : "Share your material, measurement point, and moisture target, and we can help you judge whether online measurement is a good fit."
@@ -3121,12 +3212,14 @@ export default async function BlogPostPage({ params }: Props) {
         primaryLabel={
           isOnlineReferenceSamplingArticle
             ? "Request Measurement Review"
+            : isWetBasisDryBasisArticle
+              ? "Request Basis Review"
             : isHalogenMethodArticle || isHalogenSamplePreparationArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle
               ? "Request Method Evaluation"
               : "Talk to Engineer"
         }
         primaryHref={
-          isHalogenMethodArticle || isHalogenSamplePreparationArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle || isOnlineReferenceSamplingArticle
+          isHalogenMethodArticle || isHalogenSamplePreparationArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle || isOnlineReferenceSamplingArticle || isWetBasisDryBasisArticle
             ? "/contact?type=recommendation"
             : "/contact?type=engineer"
         }
