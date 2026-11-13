@@ -97,6 +97,80 @@ function SourceLink({ href, children }: { href: string; children: ReactNode }) {
   );
 }
 
+function HalogenRepeatabilityReproducibilityArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Measure the method, not only the instrument</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A completed heater or balance check shows that part of a <Link href="/products/halogen-moisture-analyzer-al-1201" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">halogen moisture analyzer</Link> is behaving as expected. It does not show whether independently prepared portions of the actual material will give results close enough for receiving, process, release, or calibration decisions. ISO <SourceLink href="https://www.iso.org/standard/69418.html">5725-1:2023</SourceLink> distinguishes trueness from precision and applies its principles to continuous-scale methods that return a single result. For a thermal loss-on-drying procedure, the measurement system includes the material, sampling and preparation, pan loading, heating programme, endpoint, analyst, instrument, and calculation—not the analyzer alone.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Start by writing the decision at risk. A method used to trend a dryer may tolerate more variation than one used near a customer acceptance limit. A result used as a reference for an online model needs controlled, time-aligned sampling as well as laboratory precision. Do not borrow a generic gauge R&amp;R limit from another product or measurement technology: the appropriate study size and acceptance rule depend on the material&apos;s variability, reporting range, specification margin, and consequence of an incorrect classification.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Separate the kinds of variation before calculating a percentage</h2>
+      <div className="mb-8 overflow-x-auto rounded-sm border border-border">
+        <table className="w-full min-w-[760px] border-collapse text-left text-sm">
+          <thead className="bg-primary text-white">
+            <tr><th className="px-4 py-3 font-semibold">Question</th><th className="px-4 py-3 font-semibold">Study condition</th><th className="px-4 py-3 font-semibold">What it can reveal</th></tr>
+          </thead>
+          <tbody className="text-primary/80">
+            <tr className="bg-white"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Repeatability</th><td className="border-t border-border px-4 py-4">Same documented method, analyst, analyzer, laboratory, and short time interval; use separate, independently prepared portions where the material permits.</td><td className="border-t border-border px-4 py-4">Short-term spread from pan loading, thermal operation, calculation, and remaining within-run sample variation.</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Intermediate precision</th><td className="border-t border-border px-4 py-4">Deliberately include routine, within-laboratory changes such as day, analyst, analyzer, or normal environmental condition, and record exactly what changed.</td><td className="border-t border-border px-4 py-4">Whether a result remains usable beyond one favorable shift or operator.</td></tr>
+            <tr className="bg-white"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Bias or comparator agreement</th><td className="border-t border-border px-4 py-4">Compare with an appropriate accepted value or approved reference procedure across the material and range that drive decisions.</td><td className="border-t border-border px-4 py-4">A persistent difference that precision alone cannot expose; agreement does not make two differently defined measurands identical.</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Sampling and preparation</th><td className="border-t border-border px-4 py-4">Collect, preserve, reduce, and prepare portions under the intended routine procedure rather than treating those steps as outside the study.</td><td className="border-t border-border px-4 py-4">Variation from a non-uniform lot or process stream that may dominate the laboratory readout.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        NIST defines repeatability as precision under the same procedure, operator, measuring system, conditions, location, and short time interval; reproducibility requires changed conditions to be specified. <SourceLink href="https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-d1-terminology">Its metrology terminology</SourceLink> is a useful guardrail against calling a single shift of duplicate runs “reproducibility.” In many plant laboratories, intermediate precision is the more practical question: what happens when normal operators, days, or instruments change within the same controlled method?
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Build a small study around the actual decision range</h2>
+      <ol className="mb-6 list-decimal space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:font-semibold marker:text-accent">
+        <li><strong>Define the measurand and rule:</strong> state loss on drying or the approved property, reporting basis, range, specification or operating limit, and the action a result will trigger. Preserve a named oven or water method where that is the requirement.</li>
+        <li><strong>Control the sample path:</strong> document the lot or process interval, increments, containers, hold time, homogenization or reduction, and portion preparation. ALZRO&apos;s <Link href="/blog/halogen-moisture-analyzer-sample-preparation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">sample-preparation guide</Link> explains why this is part of the measurement, not pre-test housekeeping.</li>
+        <li><strong>Use independently prepared portions:</strong> do not repeatedly reheat the same pan or treat one well-mixed aliquot as proof of whole-method precision. Record sample mass, pan geometry, spreading, programme, endpoint, analyst, instrument, time, and any deviation.</li>
+        <li><strong>Cover meaningful material states:</strong> include the low, typical, and high conditions that occur around the decision boundary, plus relevant grades, particle sizes, temperatures, or formulations. A study only at the center of the range can hide the variation that matters at the limit.</li>
+        <li><strong>Predefine the analysis:</strong> specify the planned precision statistic, comparison approach, outlier-investigation process, and acceptance rule before viewing the results. Do not remove inconvenient values without an evidence-based investigation.</li>
+      </ol>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        ASTM <SourceLink href="https://store.astm.org/standards/e691">E691-23</SourceLink> describes planning, conducting, and analyzing interlaboratory studies to establish a method&apos;s precision statement, including repeatability and reproducibility measures. A single site does not need to claim an interlaboratory precision statement to benefit from that discipline: write the protocol, retain raw results and conditions, investigate unusual observations, and distinguish the test method from the study protocol.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Judge capability against decision risk, not an inherited universal limit</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Review the observed spread alongside the distance from the decision limit and any reference-method difference. If routine variation is large enough that a result near the limit can reasonably change classification, the method needs a clearer decision rule, a larger guard band, a repeat or confirmation step, or further method work. If a consistent comparator difference appears, report it as bias under the studied conditions; do not relabel a loss-on-drying result as water or as an approved oven result merely because average values are close.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Eurachem&apos;s 2026 guide on uncertainty from in-house precision and recovery data identifies repeatability and intermediate precision as relevant sources when evaluating uncertainty from validation or quality-control data. <SourceLink href="https://eurachem.org/images/stories/Guides/pdf/MUPR_2026_EN_v01.pdf">Use that guidance</SourceLink> with the laboratory&apos;s applicable quality system and competent statistical review; it does not provide a universal performance target for every thermal moisture method. Eurachem&apos;s <SourceLink href="https://www.eurachem.org/images/stories/Guides/pdf/VaMPIS_2024_EN_v1.pdf">2024 sampling-validation guide</SourceLink> likewise treats primary sampling and physical preparation as part of the complete procedure.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Keep laboratory capability separate from online-model capability</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A capable laboratory method is a necessary but incomplete foundation for online NIR or microwave calibration. The online signal sees material at an installed process point, while the laboratory result describes a collected portion. Before using the halogen result as a reference, define the sensor average, material travel time, sample increments, sealing, laboratory hold time, matching reporting basis, and response to disagreement. Follow ALZRO&apos;s <Link href="/blog/online-moisture-analyzer-reference-sampling-plan" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">reference-sampling plan</Link> so an apparent sensor residual is not actually a timing or sampling mismatch.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Routine analyzer checks still have a separate purpose: they help detect drift before it reaches a method study. Maintain the documented mass, temperature, and whole-system checks described in the <Link href="/blog/halogen-moisture-analyzer-routine-verification" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">risk-based verification plan</Link>, then repeat a method-capability study after material, supplier, formulation, sample preparation, procedure, or decision-rule changes that could alter the result.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommendation</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Do not approve a halogen moisture method from a calibration certificate or a small set of convenient duplicates alone. Define the business decision, study independently prepared portions across the real operating range, include normal within-laboratory changes, and compare to the approved method when bias evidence is needed. Use the results to create a practical decision rule and change-control plan. For a halogen test or online-reference project, request a <Link href="/contact?type=recommendation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">sample and method evaluation</Link> with the material, current procedure, reporting basis, decision limit, and available reference data.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://www.iso.org/standard/69418.html">ISO 5725-1:2023, Accuracy (trueness and precision) of measurement methods and results — Part 1</SourceLink>. General principles and definitions for evaluating trueness and precision of continuous-scale measurement methods.</li>
+        <li><SourceLink href="https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-d1-terminology">NIST Technical Note 1297, Appendix D1</SourceLink>. Definitions of repeatability and reproducibility and the conditions that distinguish them.</li>
+        <li><SourceLink href="https://store.astm.org/standards/e691">ASTM E691-23, Conducting an Interlaboratory Study to Determine the Precision of a Test Method</SourceLink>. Study planning, data review, and repeatability/reproducibility precision-statement context.</li>
+        <li><SourceLink href="https://eurachem.org/images/stories/Guides/pdf/MUPR_2026_EN_v01.pdf">Eurachem/CITAC, Uncertainty evaluation from precision and recovery data (2026)</SourceLink>. Repeatability and intermediate precision in uncertainty evaluation using in-house performance data.</li>
+        <li><SourceLink href="https://www.eurachem.org/images/stories/Guides/pdf/VaMPIS_2024_EN_v1.pdf">Eurachem/EUROLAB/CITAC/Nordtest/AMC, Validation of Measurement Procedures that Include Sampling (2024)</SourceLink>. Primary sampling and physical preparation as parts of validating the complete procedure.</li>
+      </ul>
+    </>
+  );
+}
+
 function WetBasisDryBasisReportingArticle() {
   return (
     <>
@@ -3039,6 +3113,7 @@ export default async function BlogPostPage({ params }: Props) {
   const isHalogenVsOvenDryingArticle = slug === "halogen-moisture-analyzer-vs-oven-drying";
   const isOnlineReferenceSamplingArticle = slug === "online-moisture-analyzer-reference-sampling-plan";
   const isWetBasisDryBasisArticle = slug === "wet-basis-dry-basis-loss-on-drying-reporting";
+  const isHalogenRepeatabilityReproducibilityArticle = slug === "halogen-moisture-analyzer-repeatability-reproducibility";
 
   return (
     <>
@@ -3088,6 +3163,8 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           {slug === "wood-fiberboard-hot-press-moisture-control" ? (
             <WoodFiberboardArticle />
+          ) : isHalogenRepeatabilityReproducibilityArticle ? (
+            <HalogenRepeatabilityReproducibilityArticle />
           ) : slug === "wet-basis-dry-basis-loss-on-drying-reporting" ? (
             <WetBasisDryBasisReportingArticle />
           ) : slug === "online-moisture-analyzer-reference-sampling-plan" ? (

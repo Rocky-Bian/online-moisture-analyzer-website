@@ -13,6 +13,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "halogen-moisture-analyzer-repeatability-reproducibility",
+    title: "Halogen Moisture Analyzer Repeatability: Test Whether the Method Supports the Decision",
+    excerpt:
+      "Laboratory supervisors and quality teams should evaluate a halogen moisture result as a complete measurement process: use independently prepared test portions to measure short-term repeatability, introduce realistic changes such as analyst or day to assess intermediate precision, and compare against an accepted reference only when the intended decision requires bias evidence. This guide is for routine loss-on-drying methods used in incoming inspection, process checks, release support, or online-reference work. The main limitation is that no universal R&R percentage proves a method fit: sample heterogeneity, the reporting range, specification margin, and the consequence of a wrong decision determine what performance is adequate.",
+    metaDescription:
+      "Assess halogen moisture analyzer repeatability, intermediate precision, and bias to decide whether a loss-on-drying method is fit for use.",
+    content: "technical guide",
+    category: "Laboratory Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-11-13",
+    readTime: "9 min",
+    tags: [
+      "halogen moisture analyzer repeatability",
+      "loss on drying precision study",
+      "moisture analyzer reproducibility",
+      "laboratory moisture method capability",
+      "measurement system analysis moisture",
+      "halogen analyzer bias evaluation",
+      "moisture test decision risk",
+    ],
+  },
+  {
     slug: "wet-basis-dry-basis-loss-on-drying-reporting",
     title: "Wet Basis, Dry Basis, and Loss on Drying: How to Report Moisture Results",
     excerpt:
