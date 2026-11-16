@@ -13,6 +13,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "halogen-moisture-analyzer-endpoint-settings",
+    title: "Halogen Moisture Analyzer Endpoint Settings: Choose Automatic, Timed, or Manual Stop Criteria",
+    excerpt:
+      "Laboratory teams should choose a halogen analyzer endpoint by the result and decision the documented loss-on-drying method must support: use an automatic stability rule when a stable drying curve and repeatable comparator agreement justify it, use a timed endpoint when the procedure requires a fixed exposure, and reserve manual stopping for controlled development or exceptional observation. This guide is for incoming inspection, process checks, release support, and online-reference testing. The main limitation is that an endpoint only defines when heating stops; it cannot prove that the mass lost was water, that the sample was representative, or that a setting transferred from another material is valid.",
+    metaDescription:
+      "Choose automatic, timed, or manual halogen moisture analyzer endpoints with a documented, material-specific loss-on-drying study.",
+    content: "technical guide",
+    category: "Laboratory Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-11-16",
+    readTime: "8 min",
+    tags: [
+      "halogen moisture analyzer endpoint",
+      "moisture analyzer stop criterion",
+      "automatic stability endpoint",
+      "loss on drying test time",
+      "halogen analyzer method development",
+      "laboratory moisture method validation",
+      "loss on drying repeatability",
+    ],
+  },
+  {
     slug: "halogen-moisture-analyzer-repeatability-reproducibility",
     title: "Halogen Moisture Analyzer Repeatability: Test Whether the Method Supports the Decision",
     excerpt:

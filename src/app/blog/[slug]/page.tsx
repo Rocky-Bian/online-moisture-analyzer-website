@@ -338,6 +338,80 @@ function OnlineMoistureReferenceSamplingArticle() {
   );
 }
 
+function HalogenEndpointSettingsArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">An endpoint is part of the method definition</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A halogen analyzer reports a loss-on-drying result at the point its heating programme ends. The endpoint therefore matters just as much as the sample mass, pan loading, temperature, and heating profile. ASTM <SourceLink href="https://store.astm.org/e1868-09.html">E1868</SourceLink> describes thermogravimetric loss on drying as mass driven off under specified temperature and time conditions; it does not identify that lost mass as water. An earlier automatic stop can leave continued mass loss unobserved, while a longer exposure can include slow release of volatile components or thermal change. Neither direction is universally correct. The appropriate endpoint is the one that gives a controlled, fit-for-purpose result for the actual material and stated decision.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Keep the result name honest. A suitable <Link href="/products/halogen-moisture-analyzer-al-1201" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">AL-1201 halogen moisture analyzer</Link> method can support rapid laboratory loss-on-drying checks, but its automatic, timed, and manual end-point modes do not make a result water-specific or interchangeable with an oven or Karl Fischer method. If a specification names a procedure or a fixed exposure, that requirement takes precedence over an instrument&apos;s default setting.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Compare the three endpoint choices against the decision</h2>
+      <div className="mb-8 overflow-x-auto rounded-sm border border-border">
+        <table className="w-full min-w-[760px] border-collapse text-left text-sm">
+          <thead className="bg-primary text-white">
+            <tr><th className="px-4 py-3 font-semibold">Endpoint</th><th className="px-4 py-3 font-semibold">What ends the test</th><th className="px-4 py-3 font-semibold">Where it can fit</th><th className="px-4 py-3 font-semibold">Control needed</th></tr>
+          </thead>
+          <tbody className="text-primary/80">
+            <tr className="bg-white"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Automatic stability</th><td className="border-t border-border px-4 py-4">A configured rate-of-mass-loss condition is met over an instrument-defined observation interval.</td><td className="border-t border-border px-4 py-4">Routine samples that reach a stable, repeatable plateau and have been evaluated against the intended comparator or decision rule.</td><td className="border-t border-border px-4 py-4">Document the actual threshold, interval, starting mass range, heating programme, temperature, and evidence supporting the choice.</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Timed</th><td className="border-t border-border px-4 py-4">A fixed duration expires.</td><td className="border-t border-border px-4 py-4">Methods that prescribe a defined thermal exposure, or materials that do not form a meaningful stable endpoint under the approved conditions.</td><td className="border-t border-border px-4 py-4">Show that the specified time, temperature, sample presentation, and reporting basis are fit for the material and decision.</td></tr>
+            <tr className="bg-white"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Manual</th><td className="border-t border-border px-4 py-4">The analyst stops heating.</td><td className="border-t border-border px-4 py-4">Observed development trials or narrowly controlled exceptions where the stop observation itself is defined.</td><td className="border-t border-border px-4 py-4">A clear operator instruction, recorded stop time and reason, plus evidence that operator judgment does not create unacceptable variation.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        In automatic mode, different analyzers express stability differently. For example, METTLER TOLEDO documents a switch-off criterion based on mean weight loss per unit time, with preset or freely defined settings. <SourceLink href="https://www.mt.com/mt_ext_files/Editorial/Generic/1/HB_43_2003_0x000010083f7a7bd74000931d_files/HB43-BA-e-11780531A.pdf">Its operating instructions</SourceLink> are useful for understanding that mechanism, not for copying a number into another instrument. Read the installed analyzer&apos;s manual and record its exact condition rather than using terms such as “standard auto” without a threshold and interval.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Test candidate settings as a small method study</h2>
+      <ol className="mb-6 list-decimal space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:font-semibold marker:text-accent">
+        <li><strong>Write the decision first:</strong> state whether the result controls an incoming lot, a process adjustment, release support, or an online-reference pair. Include the accepted property, basis, comparator method if any, reporting range, and consequence of a borderline result.</li>
+        <li><strong>Lock the sample path:</strong> use representative material, a defined container and hold time, a controlled reduction or homogenization step, and independently prepared portions. See ALZRO&apos;s <Link href="/blog/halogen-moisture-analyzer-sample-preparation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">sample-preparation guide</Link>; a curve can be stable even when the pan does not represent the lot.</li>
+        <li><strong>Hold the other conditions fixed:</strong> choose a practical sample-mass range, pan, layer thickness, heating programme, and temperature. Then test candidate automatic thresholds or times across low, typical, and high material states rather than optimizing on one convenient portion.</li>
+        <li><strong>Record more than the final percentage:</strong> retain the drying curve, end time, mass loss, visual changes, smoke, spattering, crusting, odour, sample mass, analyst, and condition of the material. A later result cannot explain a distorted curve by itself.</li>
+        <li><strong>Compare against the defined need:</strong> assess replicate spread, comparator agreement where relevant, and whether the time saved changes the decision risk. Do not choose the shortest setting solely because its average happens to match one reference result.</li>
+      </ol>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The broader validation principle is to demonstrate suitability under the intended operating environment. FDA&apos;s <SourceLink href="https://www.fda.gov/media/161201/download">Q2(R2) guidance</SourceLink>, written for pharmaceutical analytical procedures, says robustness testing should show reliability under deliberate variations in analytical-procedure parameters and considers the stability of sample preparations where appropriate. Its regulatory scope is not a universal laboratory rule, but the planning logic applies: test credible variation before routine use rather than changing the stop rule after each unexpected result.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recognize endpoint problems before releasing the method</h2>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>The curve stops early but later portions keep losing mass:</strong> investigate whether the stability condition is too permissive, the layer is too thick, or the sample mass is outside the evaluated range.</li>
+        <li><strong>Longer heating shifts results upward or creates discoloration, smoke, or a changed residue:</strong> investigate decomposition, volatile material, or an unsuitable temperature/profile. Do not assume the longest dry time is the truest result.</li>
+        <li><strong>Timed results are stable only for one grade or moisture level:</strong> test the meaningful material range; a fixed exposure may be valid only within documented boundaries.</li>
+        <li><strong>Manual stopping differs by analyst or shift:</strong> convert the observation into a measurable procedure where possible, or limit the method to development until precision is demonstrated.</li>
+        <li><strong>One endpoint matches a comparator but replicates are wide:</strong> examine sampling, sample preparation, weighing, temperature, and the comparator itself before treating the endpoint as the sole cause.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Eurachem&apos;s 2025 guidance lists repeatability, intermediate precision, trueness, working range, and ruggedness among the performance characteristics to select according to the analytical application, and notes that sampling and subsampling can be part of the measurement procedure. <SourceLink href="https://eurachem.org/images/stories/leaflets/mv/mvintro_2nd_ed/Eurachem_MV_leaflet_EN_2nd_edn_2025.pdf">Use that fitness-for-purpose approach</SourceLink> instead of imposing a universal endpoint rule or universal precision percentage.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Release a controlled setting—and re-evaluate it when the material changes</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        The issued method should name the material scope and exclusions; sampling and preparation rule; pan and mass range; heating programme and temperature; endpoint type and actual parameter; reporting basis; expected test-time window; repeat and investigation rules; reference comparison, if required; and change-control triggers. Change or re-evaluate the method when supplier, formulation, particle size, moisture range, volatile content, sample presentation, analyzer, or the specified comparator changes. Routine analyzer checks are necessary, but they do not prove that an old endpoint remains valid for a new material state; maintain the separate <Link href="/blog/halogen-moisture-analyzer-routine-verification" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">risk-based verification plan</Link> as well.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommendation</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Start with the endpoint named by the approved method or specification. If the laboratory is developing a rapid loss-on-drying procedure, evaluate automatic stability, timed, or manual stopping alongside the complete sample and heating method; select the setting that supports the intended decision with documented evidence, not a factory default. For an ALZRO halogen-testing project or a laboratory reference method that will support online data, <Link href="/contact?type=recommendation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">request a sample and method evaluation</Link> with the material, current procedure, expected range, and decision limit.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://store.astm.org/e1868-09.html">ASTM E1868, Standard Test Method for Loss-On-Drying by Thermogravimetry</SourceLink>. Published scope for loss on drying as mass driven off under stated conditions.</li>
+        <li><SourceLink href="https://www.mt.com/mt_ext_files/Editorial/Generic/1/HB_43_2003_0x000010083f7a7bd74000931d_files/HB43-BA-e-11780531A.pdf">METTLER TOLEDO HB43 Operating Instructions</SourceLink>. Manufacturer description of a rate-of-mass-loss switch-off criterion; instrument-specific implementation.</li>
+        <li><SourceLink href="https://www.fda.gov/media/161201/download">U.S. FDA / ICH Q2(R2), Validation of Analytical Procedures</SourceLink>. Intended-use and robustness principles; pharmaceutical regulatory context.</li>
+        <li><SourceLink href="https://www.eurachem.org/index.php/working-groups/3-publications/guides/144-gdmv2014">Eurachem, The Fitness for Purpose of Analytical Methods (3rd ed., 2025)</SourceLink>. Method-validation performance characteristics and sampling context.</li>
+        <li><SourceLink href="https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-appendix-d1-terminology">NIST TN 1297, Appendix D1: Terminology</SourceLink>. Definitions and conditions for repeatability and reproducibility.</li>
+      </ul>
+    </>
+  );
+}
+
 function HalogenMethodDevelopmentArticle() {
   return (
     <>
@@ -3107,6 +3181,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   const paragraphs = getArticleContent(slug);
   const isHalogenMethodArticle = slug === "halogen-moisture-analyzer-method-development-validation";
+  const isHalogenEndpointSettingsArticle = slug === "halogen-moisture-analyzer-endpoint-settings";
   const isHalogenSamplePreparationArticle = slug === "halogen-moisture-analyzer-sample-preparation";
   const isHalogenRoutineVerificationArticle = slug === "halogen-moisture-analyzer-routine-verification";
   const isHalogenVsKarlFischerArticle = slug === "halogen-moisture-analyzer-vs-karl-fischer";
@@ -3165,6 +3240,8 @@ export default async function BlogPostPage({ params }: Props) {
             <WoodFiberboardArticle />
           ) : isHalogenRepeatabilityReproducibilityArticle ? (
             <HalogenRepeatabilityReproducibilityArticle />
+          ) : isHalogenEndpointSettingsArticle ? (
+            <HalogenEndpointSettingsArticle />
           ) : slug === "wet-basis-dry-basis-loss-on-drying-reporting" ? (
             <WetBasisDryBasisReportingArticle />
           ) : slug === "online-moisture-analyzer-reference-sampling-plan" ? (
