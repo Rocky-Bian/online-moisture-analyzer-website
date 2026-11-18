@@ -412,6 +412,87 @@ function HalogenEndpointSettingsArticle() {
   );
 }
 
+function HalogenSafetyVolatileSamplesArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">A heated loss-on-drying test begins with a suitability decision</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        A halogen moisture analyzer combines a balance with a high-temperature heating source; it is not automatically suitable for every material called a powder, liquid, paste, or “moist sample.” Before a test, identify the actual material and formulation, review the current safety data sheet (SDS), check the analyzer&apos;s instructions and intended environment, and determine what heating can release or create. The question is not only whether water will evaporate. A sample can contain flammable solvent, generate flammable vapor, release toxic or corrosive gas, decompose, react, or form combustible dust. ASTM <SourceLink href="https://store.astm.org/e1868-09.html">E1868&apos;s published scope</SourceLink> is a useful measurement reminder: thermal loss on drying determines mass lost under stated conditions, not the identity of that loss.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Stop the proposed bench test and obtain competent EHS, process-safety, and method-owner review whenever the hazard is unclear or the SDS, instrument manual, or site procedure does not support it. This is not a conservative formality. A lower programmed temperature, a small sample, or a fume hood cannot convert an ordinary laboratory analyzer into equipment approved for a classified hazardous location. If the material is suitable, a controlled <Link href="/products/halogen-moisture-analyzer-al-1201" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">halogen moisture analyzer</Link> method still reports loss on drying under documented conditions; it does not establish water specificity or make a hazardous sample low-risk by default.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Classify the sample risk before choosing the test</h2>
+      <div className="mb-8 overflow-x-auto rounded-sm border border-border">
+        <table className="w-full min-w-[760px] border-collapse text-left text-sm">
+          <thead className="bg-primary text-white">
+            <tr><th className="px-4 py-3 font-semibold">Potential condition</th><th className="px-4 py-3 font-semibold">Why heating changes the decision</th><th className="px-4 py-3 font-semibold">Required next step</th></tr>
+          </thead>
+          <tbody className="text-primary/80">
+            <tr className="bg-white"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Flammable or explosive material, solvent, vapor, or gas</th><td className="border-t border-border px-4 py-4">Heating can raise vapor generation and introduce an ignition source; mixture behavior depends on the actual composition, concentration, temperature, and enclosure.</td><td className="border-t border-border px-4 py-4">Do not improvise a trial. Follow the analyzer instructions and site chemical-hygiene process; obtain a documented risk assessment that determines whether another method or approved equipment is required.</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Combustible powder or a dust-generating sample</th><td className="border-t border-border px-4 py-4">Fine dust, ignition sources, oxygen, dispersion, and confinement can create a deflagration hazard; a material&apos;s behavior can change with particle size, moisture, and contamination.</td><td className="border-t border-border px-4 py-4">Review SDS information and site dust-hazard data with the responsible safety team. Do not infer safety from the bulk material name or from a past routine test.</td></tr>
+            <tr className="bg-white"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Toxic, corrosive, or sensitizing components</th><td className="border-t border-border px-4 py-4">Drying can release harmful gas or vapor and leave hazardous residues on the chamber, pan, or surrounding surfaces.</td><td className="border-t border-border px-4 py-4">Use only the containment, ventilation, PPE, decontamination, waste, and monitoring controls established by the safety review and instrument maker; otherwise select another procedure.</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Thermally unstable, reactive, or unknown formulation</th><td className="border-t border-border px-4 py-4">The method can drive decomposition or reaction products into the reported mass loss while introducing an uncontrolled safety and result-quality risk.</td><td className="border-t border-border px-4 py-4">Do not use exploratory heating as a safety screen. Obtain formulation, compatibility, and thermal-behavior information from a qualified source before defining an approved method.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        OSHA&apos;s laboratory standard treats flammable, explosive, self-reactive, pyrophoric, oxidizing, and combustible-dust hazards as physical hazards and requires a chemical-hygiene approach for laboratory use of hazardous chemicals. <SourceLink href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1450">Read the laboratory-standard scope</SourceLink> in the context of applicable local law and site procedures. It is not a substitute for the material supplier&apos;s SDS or a process-safety assessment, but it makes clear why an instrument method cannot be separated from hazard information and laboratory controls.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Use the SDS and instrument instructions as inputs, not as a box-ticking exercise</h2>
+      <ol className="mb-6 list-decimal space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:font-semibold marker:text-accent">
+        <li><strong>Confirm identity and condition:</strong> record the product name, grade, lot, additives, solvent content, particle-size form, and anticipated moisture range. “Same material” can be unsafe shorthand when a supplier, formulation, or process condition has changed.</li>
+        <li><strong>Review current hazard information:</strong> use the current SDS and any available thermal-stability, dust-explosibility, or compatibility information. Escalate missing, contradictory, or non-representative information instead of assuming an old method remains valid.</li>
+        <li><strong>Check the exact analyzer manual:</strong> instrument-specific warnings, permitted environment, ventilation constraints, temperature capability, cleaning instructions, and service limits control. Do not generalize a competitor&apos;s warning, accessory, or published example to an ALZRO installation.</li>
+        <li><strong>Evaluate the complete exposure path:</strong> consider sampling, pan loading, heating, released vapor or dust, removal, cleaning, waste, spill response, and nearby combustible materials—not only the result on the display.</li>
+        <li><strong>Authorize or reject the method in writing:</strong> retain the hazard review, controls, responsibilities, operating conditions, stop criteria, incident response, and change triggers with the controlled test method.</li>
+      </ol>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Manufacturer warnings are useful examples of the kind of information that must be assessed, not a transfer-ready procedure. METTLER TOLEDO&apos;s HX204 instructions identify flammable or explosive substances, solvent-containing material, and samples that evolve flammable gases or vapors as cases requiring careful risk analysis; its safety text also distinguishes toxic or caustic samples that may need a fume cupboard. <SourceLink href="https://www.mt.com/dam/product_organizations/laboratory_weighing/moisture/products/firefox/documentation/en/30019565_HX204_OperatingInstructions_EN.pdf">The operating instructions</SourceLink> apply to that instrument, not to every analyzer or laboratory. The responsible owner must follow the manual and risk controls for the actual equipment in use.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Do not confuse a result-development study with a safety qualification</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Method development normally evaluates sample preparation, mass, heating programme, temperature, endpoint, repeatability, and comparison with the required reference. Those studies address whether the result supports a decision; they do not prove that a material is safe to heat in the instrument. A method that matches an oven or reference result on several samples may still be unsuitable if it creates hazardous vapor, residue, dust dispersion, or thermal decomposition under a changed condition. Keep the two questions separate in the protocol: <em>may this material be safely tested here?</em> and <em>does this defined procedure provide a fit-for-purpose result?</em>
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        OSHA&apos;s combustible-dust guidance notes that hazard evaluation depends on material-specific characteristics such as particle size, moisture, minimum ignition energy, and minimum explosible concentration where known. <SourceLink href="https://www.osha.gov/publications/3371combustible-dust">Its hazard-communication guidance</SourceLink> also explains that a dust explosion requires more than fuel and heat, including dispersion and confinement. That is a reason to involve qualified site experts—not a checklist that authorizes a heated bench test when one condition seems absent.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Build a controlled approval and change process</h2>
+      <div className="mb-8 overflow-x-auto rounded-sm border border-border">
+        <table className="w-full min-w-[760px] border-collapse text-left text-sm">
+          <thead className="bg-primary text-white">
+            <tr><th className="px-4 py-3 font-semibold">Before release</th><th className="px-4 py-3 font-semibold">During routine use</th><th className="px-4 py-3 font-semibold">Trigger a new review</th></tr>
+          </thead>
+          <tbody className="text-primary/80">
+            <tr className="bg-white"><td className="border-t border-border px-4 py-4">Approved method, current SDS, analyzer-specific instruction review, accountable EHS/method owner, defined controls, and documented emergency or deviation path.</td><td className="border-t border-border px-4 py-4">Use the released method only; keep equipment status, chamber condition, ventilation and housekeeping controls, training, records, and abnormal observations under the laboratory quality system.</td><td className="border-t border-border px-4 py-4">Supplier or grade change, altered formulation, new solvent or additive, particle-size change, different moisture range, new heating condition, changed installation, incident, unusual odor/smoke/residue, or revised SDS.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        For a general risk-assessment structure, METTLER TOLEDO&apos;s <SourceLink href="https://www.mt.com/sg/en/home/library/guides/laboratory-weighing/risk-analysis-guideline-for-moisture-analysis.html">moisture-analysis risk guideline</SourceLink> highlights review of sample information, sample size, behavior under heat, expert evaluation, and documentation. Use it as a supplier example only. The approved controls must come from the material&apos;s hazards, the actual analyzer&apos;s instructions, the facility&apos;s assessment, and applicable regulations.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommendation</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Treat an unknown, volatile, flammable, reactive, toxic, or combustible-dust sample as a stop-and-review condition—not as a candidate for a quick temperature trial. First establish the material hazard, analyzer suitability, environment, and controls through the responsible safety and method owners. Then, and only then, develop a loss-on-drying method with controlled sampling, temperature, endpoint, and reporting basis. For routine non-hazardous sample-based quality control or a laboratory reference method that supports online data, see ALZRO&apos;s <Link href="/blog/halogen-moisture-analyzer-method-development-validation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">halogen method-development workflow</Link>. For a material and method-selection discussion, <Link href="/contact?type=recommendation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">request a sample and method evaluation</Link> with the SDS, current procedure, material form, and intended quality decision.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://store.astm.org/e1868-09.html">ASTM E1868, Standard Test Method for Loss-On-Drying by Thermogravimetry</SourceLink>. Published scope for thermal loss on drying as mass loss under stated temperature and time conditions, without identifying the mass lost.</li>
+        <li><SourceLink href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1450">U.S. OSHA, 29 CFR 1910.1450, Occupational Exposure to Hazardous Chemicals in Laboratories</SourceLink>. Chemical-hygiene and physical-hazard context for laboratory hazardous-chemical use.</li>
+        <li><SourceLink href="https://www.osha.gov/publications/3371combustible-dust">U.S. OSHA, Hazard Communication Guidance for Combustible Dusts</SourceLink>. Material-specific dust-hazard characteristics and the conditions associated with dust explosions.</li>
+        <li><SourceLink href="https://www.mt.com/dam/product_organizations/laboratory_weighing/moisture/products/firefox/documentation/en/30019565_HX204_OperatingInstructions_EN.pdf">METTLER TOLEDO HX204 Operating Instructions</SourceLink>. Instrument-specific warnings for flammable, explosive, solvent-containing, toxic, and caustic samples; cited as a manufacturer example, not as ALZRO instructions.</li>
+        <li><SourceLink href="https://www.mt.com/sg/en/home/library/guides/laboratory-weighing/risk-analysis-guideline-for-moisture-analysis.html">METTLER TOLEDO, Risk Analysis Guideline for Moisture Analysis</SourceLink>. Supplier framework for sample information, heat behavior, expert review, and documentation; not a substitute for the applicable safety program.</li>
+      </ul>
+    </>
+  );
+}
+
 function HalogenMethodDevelopmentArticle() {
   return (
     <>
@@ -3182,6 +3263,7 @@ export default async function BlogPostPage({ params }: Props) {
   const paragraphs = getArticleContent(slug);
   const isHalogenMethodArticle = slug === "halogen-moisture-analyzer-method-development-validation";
   const isHalogenEndpointSettingsArticle = slug === "halogen-moisture-analyzer-endpoint-settings";
+  const isHalogenSafetyVolatileSamplesArticle = slug === "halogen-moisture-analyzer-safety-volatile-samples";
   const isHalogenSamplePreparationArticle = slug === "halogen-moisture-analyzer-sample-preparation";
   const isHalogenRoutineVerificationArticle = slug === "halogen-moisture-analyzer-routine-verification";
   const isHalogenVsKarlFischerArticle = slug === "halogen-moisture-analyzer-vs-karl-fischer";
@@ -3242,6 +3324,8 @@ export default async function BlogPostPage({ params }: Props) {
             <HalogenRepeatabilityReproducibilityArticle />
           ) : isHalogenEndpointSettingsArticle ? (
             <HalogenEndpointSettingsArticle />
+          ) : isHalogenSafetyVolatileSamplesArticle ? (
+            <HalogenSafetyVolatileSamplesArticle />
           ) : slug === "wet-basis-dry-basis-loss-on-drying-reporting" ? (
             <WetBasisDryBasisReportingArticle />
           ) : slug === "online-moisture-analyzer-reference-sampling-plan" ? (

@@ -13,6 +13,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "halogen-moisture-analyzer-safety-volatile-samples",
+    title: "Halogen Moisture Analyzer Safety: Assess Volatile, Flammable, and Reactive Samples Before Testing",
+    excerpt:
+      "Laboratory managers, EHS teams, and method owners should approve a halogen loss-on-drying test only after assessing the actual sample, its safety data, expected vapors or dust, the instrument instructions, and the laboratory controls. A lower set temperature or smaller portion does not by itself make a flammable, solvent-containing, toxic, reactive, or combustible-dust sample suitable for a heated bench analyzer. This guide helps teams decide when to stop, obtain specialist review, use the approved containment and ventilation, or select a different method. The main limitation is that suitability is material- and instrument-specific: this is a risk-assessment framework, not a universal operating procedure or hazardous-area approval.",
+    metaDescription:
+      "Assess volatile, flammable, reactive, toxic, and combustible-dust samples before halogen moisture analysis; use a documented, instrument-specific safety review.",
+    content: "technical guide",
+    category: "Laboratory Safety Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-11-18",
+    readTime: "8 min",
+    tags: [
+      "halogen moisture analyzer safety",
+      "volatile sample moisture analysis",
+      "flammable solvent loss on drying",
+      "combustible dust laboratory testing",
+      "moisture analyzer risk assessment",
+      "loss on drying safety review",
+      "laboratory moisture method selection",
+    ],
+  },
+  {
     slug: "halogen-moisture-analyzer-endpoint-settings",
     title: "Halogen Moisture Analyzer Endpoint Settings: Choose Automatic, Timed, or Manual Stop Criteria",
     excerpt:
