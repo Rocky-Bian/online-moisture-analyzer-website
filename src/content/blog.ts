@@ -13,6 +13,28 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "halogen-moisture-analyzer-troubleshooting-unexpected-results",
+    title: "Halogen Moisture Analyzer Troubleshooting: Investigate Unexpected Loss-on-Drying Results",
+    excerpt:
+      "Laboratory analysts, supervisors, and process teams should investigate an unexpected halogen loss-on-drying result as a complete measurement event: first protect the decision and confirm the documented sample identity, method, reporting basis, and result transcription; then compare an independently prepared portion before changing a temperature or endpoint. Separate sampling and sample-condition changes from method execution, laboratory environment, and instrument-function evidence. This guide is for routine quality control and for reference results used with online moisture data. The main limitation is that troubleshooting cannot turn loss on drying into a water-specific or representative result; the approved material-specific method and any named specification still govern the decision.",
+    metaDescription:
+      "Troubleshoot unexpected halogen moisture analyzer results with a documented sequence for sampling, method, environment, and instrument checks.",
+    content: "technical guide",
+    category: "Laboratory Troubleshooting Guide",
+    author: "Application Engineering Team",
+    publishedAt: "2026-11-19",
+    readTime: "9 min",
+    tags: [
+      "halogen moisture analyzer troubleshooting",
+      "unexpected loss on drying result",
+      "moisture analyzer result investigation",
+      "loss on drying outlier investigation",
+      "halogen analyzer repeatability issue",
+      "laboratory moisture method troubleshooting",
+      "moisture analyzer environmental effects",
+    ],
+  },
+  {
     slug: "halogen-moisture-analyzer-safety-volatile-samples",
     title: "Halogen Moisture Analyzer Safety: Assess Volatile, Flammable, and Reactive Samples Before Testing",
     excerpt:

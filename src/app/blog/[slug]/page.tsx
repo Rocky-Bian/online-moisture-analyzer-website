@@ -97,6 +97,89 @@ function SourceLink({ href, children }: { href: string; children: ReactNode }) {
   );
 }
 
+function HalogenTroubleshootingArticle() {
+  return (
+    <>
+      <h2 className="mb-4 text-2xl font-bold text-primary">Protect the decision before trying to fix the number</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Do not immediately change the drying programme, average the result away, or adjust an online model. First identify the affected lot or process interval, preserve the raw instrument record, and follow the laboratory&apos;s approved hold, release, deviation, or confirmation procedure. A halogen analyzer reports mass lost from a prepared portion under defined heating conditions. ASTM <SourceLink href="https://store.astm.org/e1868-26.html">E1868-26</SourceLink> describes loss on drying as mass driven off under specified temperature-and-time conditions; it does not identify the material lost. An unexpected value can therefore originate in the sample, the stated procedure, the measurement environment, or the instrument—and it may still be a real change in the material.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Start with the result definition. Confirm the material and lot, sampling point and time, sample state, container, hold time, portion mass, programme, endpoint, reporting basis, units, analyst, and any transcription into a LIMS, spreadsheet, or online-reference file. If a contract, product specification, customer method, or regulation names the method or acceptance rule, do not replace it with an improvised rerun. Record the original observation and the reason for every investigation step.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Use a controlled diagnostic sequence</h2>
+      <div className="mb-6 overflow-x-auto rounded-sm border border-border">
+        <table className="w-full min-w-[720px] border-collapse bg-white text-left text-sm">
+          <thead className="bg-primary text-white">
+            <tr><th className="px-4 py-3 font-semibold">Observed pattern</th><th className="px-4 py-3 font-semibold">First evidence to review</th><th className="px-4 py-3 font-semibold">Next controlled action</th></tr>
+          </thead>
+          <tbody className="text-primary/80">
+            <tr className="bg-white"><th className="border-t border-border px-4 py-4 font-semibold text-primary">One isolated unexpected result</th><td className="border-t border-border px-4 py-4">Sample identity, collection and sealing time, method selection, portion mass, calculation, and data entry.</td><td className="border-t border-border px-4 py-4">Follow the approved confirmation rule using a separately prepared portion; retain both records and do not overwrite the first value.</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Wide spread between portions</th><td className="border-t border-border px-4 py-4">Homogeneity, particle size, segregation, sample condition, pan loading, start time, and repeat procedure.</td><td className="border-t border-border px-4 py-4">Investigate the sampling and preparation path before declaring the analyzer inaccurate.</td></tr>
+            <tr className="bg-white"><th className="border-t border-border px-4 py-4 font-semibold text-primary">A consistent shift over several runs</th><td className="border-t border-border px-4 py-4">Recent check results, method or material changes, operator and laboratory conditions, cleaning, and maintenance history.</td><td className="border-t border-border px-4 py-4">Trend the evidence; perform the approved weighing, heating, or whole-system checks and escalate per the quality procedure.</td></tr>
+            <tr className="bg-surface"><th className="border-t border-border px-4 py-4 font-semibold text-primary">Laboratory and online data disagree</th><td className="border-t border-border px-4 py-4">Property and basis, sensor averaging interval, material travel time, sample point, timestamps, and sample preservation.</td><td className="border-t border-border px-4 py-4">Treat the pair as a sampling-and-timing investigation, not automatic proof of a sensor or laboratory fault.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        NIST&apos;s measurement-process guidance recommends repeating a controlled measurement sequence to distinguish a chance event or setup glitch from a persistent change, then examining recent data for drift. <SourceLink href="https://itl.nist.gov/div898/handbook/mpc/section2/mpc224.htm">Its remedial-action framework</SourceLink> is a useful general model for laboratory investigations; apply the acceptance rule and disposition process defined by the quality system rather than treating a repeat as permission to discard an inconvenient original result.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Rule out sample and method causes first</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Moisture can change between the process or lot and the pan. Check whether the material was warm, hygroscopic, volatile-containing, non-uniform, crusted, segregated, or held in a different container or for a different time. Review whether a new grade, supplier, particle-size distribution, blend ratio, or process condition changed the portion that the laboratory received. Eurachem&apos;s uncertainty guidance treats sampling, sample preparation, calibration, analysis, data processing, and result interpretation as potential contributions to an analytical result. <SourceLink href="https://www.eurachem.org/images/stories/Guides/pdf/QUAM2012_P1.pdf">That structure</SourceLink> helps prevent an instrument-only diagnosis when the material path changed first.
+      </p>
+      <ul className="mb-6 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+        <li><strong>Verify the method revision:</strong> confirm the documented programme, sample mass range, pan or accessory, endpoint, calculation, and reporting basis—not a remembered setting or another product&apos;s recipe.</li>
+        <li><strong>Compare independent portions:</strong> use separately prepared portions drawn according to the approved plan. Reheating one pan does not test portion-to-portion or sampling variation.</li>
+        <li><strong>Look for thermal behavior:</strong> boiling, spattering, skin formation, oxidation, or decomposition can change a thermal mass-loss result. Do not solve those observations by casually relabelling loss on drying as water.</li>
+        <li><strong>Preserve the comparator boundary:</strong> if an oven or water-specific method is named, use the documented comparison or investigation plan. A different thermal profile may legitimately produce a different result.</li>
+      </ul>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        ALZRO&apos;s <Link href="/blog/halogen-moisture-analyzer-sample-preparation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">sample-preparation guide</Link> covers representative increments, sealing, reduction, and hold time. For a formal method change or a disagreement with an oven procedure, use the <Link href="/blog/halogen-moisture-analyzer-vs-oven-drying" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">halogen-versus-oven comparison framework</Link> instead of changing settings during routine testing.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Check the environment and the instrument with approved evidence</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        When sample identity and method execution are controlled, review the measurement conditions. Air currents, vibration, unstable support, thermal disequilibrium, low humidity that promotes electrostatic effects, contamination, and operator handling can affect weighing. NIST&apos;s Good Measurement Practice on weighing identifies environmental control, air currents, thermal equilibrium, electrostatic fields, and handling as potential error sources. <SourceLink href="https://www.nist.gov/system/files/documents/2019/05/14/gmp-10-weighing-operation-factors-20190506.pdf">Use it as weighing context</SourceLink>, not as a universal laboratory setpoint for every analyzer.
+      </p>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Then use only the checks and acceptance criteria approved for the actual instrument and laboratory: a suitable mass check for the weighing function, the applicable heating or temperature check, and any validated whole-system check. A published METTLER TOLEDO operating manual, for example, lists non-homogeneous samples, short drying, incomplete drying, overheating, boiling, dirty protective glass, unstable support, and vibration among possible contributors to non-repeatable results. <SourceLink href="https://www.mt.com/dam/P5/labtec/phased-out/1-documents/Moisture-Analyzer-HR/hr-hg_ba_en.pdf">That manual is an instrument-specific troubleshooting example</SourceLink>, not operating instructions or acceptance limits for an ALZRO analyzer.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Keep a small investigation record that can reveal trends</h2>
+      <div className="mb-6 rounded-sm border border-border bg-surface p-6">
+        <h3 className="text-lg font-bold text-primary">Unexpected-result checklist</h3>
+        <ul className="mt-4 list-disc space-y-3 pl-6 text-base leading-relaxed text-primary/80 marker:text-accent">
+          <li>Original result, units, reporting basis, calculation, lot or process interval, and decision affected.</li>
+          <li>Sample point, increment plan, collection and test timestamps, container, condition, hold time, and preparation details.</li>
+          <li>Method revision, programme, endpoint, portion mass, pan loading, analyst, analyzer ID, and any departure from procedure.</li>
+          <li>Laboratory conditions and observations: vibration, drafts, temperature difference, static, contamination, boiling, spattering, or surface skin.</li>
+          <li>Approved functional-check results, service or cleaning history, comparable prior data, root-cause conclusion, and disposition.</li>
+        </ul>
+      </div>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Review repeated events by pattern, not only by individual failure. NIST notes that changes in long-term variability can arise from environmental control, handling technique, or instrument degradation, while persistent changes in a check-standard result can indicate changes in the reference artifact, procedure, or measurement process. <SourceLink href="https://itl.nist.gov/div898/handbook/mpc/section2/mpc22.htm">Its control guidance</SourceLink> supports trending approved check data before deciding whether service, retraining, environmental correction, or method redevelopment is needed.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Recommendation</h2>
+      <p className="mb-6 text-base leading-relaxed text-primary/80">
+        Treat an unexpected halogen result as evidence to investigate, not a number to tune away. Start with sample traceability and method execution, confirm according to the approved procedure, then use environment and instrument checks to narrow a persistent issue. When the result is paired with continuous process data, reconcile sample timing and basis before changing an online calibration; see ALZRO&apos;s <Link href="/blog/online-moisture-analyzer-reference-sampling-plan" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">online reference-sampling plan</Link>. For a material-specific test review, request a <Link href="/contact?type=recommendation" className="font-medium text-accent underline decoration-accent/40 underline-offset-4 transition-colors hover:text-primary">method evaluation</Link> with the material, approved method, recent raw results, sample path, and the decision at risk.
+      </p>
+
+      <h2 className="mb-4 mt-10 text-2xl font-bold text-primary">Sources</h2>
+      <ul className="mb-8 list-disc space-y-3 pl-6 text-sm leading-relaxed text-primary/80 marker:text-accent">
+        <li><SourceLink href="https://store.astm.org/e1868-26.html">ASTM E1868-26, Standard Test Methods for Loss-On-Drying by Thermogravimetry</SourceLink>. Active standard listing describing loss on drying as mass lost under specified temperature-and-time conditions without determining the identity of the lost material.</li>
+        <li><SourceLink href="https://itl.nist.gov/div898/handbook/mpc/section2/mpc224.htm">NIST/SEMATECH e-Handbook, Remedial Actions</SourceLink>. General framework for repeat measurement, data review, drift investigation, and corrective action after an out-of-control signal.</li>
+        <li><SourceLink href="https://www.nist.gov/system/files/documents/2019/05/14/gmp-10-weighing-operation-factors-20190506.pdf">NIST Good Measurement Practice 10: Understanding Factors Affecting Weighing Operations</SourceLink>. Weighing context on environment, thermal equilibrium, air currents, electrostatics, and handling.</li>
+        <li><SourceLink href="https://www.eurachem.org/images/stories/Guides/pdf/QUAM2012_P1.pdf">Eurachem/CITAC, Quantifying Uncertainty in Analytical Measurement</SourceLink>. Framework for identifying uncertainty contributions from sampling through interpretation.</li>
+        <li><SourceLink href="https://www.mt.com/dam/P5/labtec/phased-out/1-documents/Moisture-Analyzer-HR/hr-hg_ba_en.pdf">METTLER TOLEDO HR/HG Moisture Analyzer Operating Instructions</SourceLink>. Instrument-specific example causes of non-repeatable results; consult the actual analyzer manual and approved laboratory procedure.</li>
+      </ul>
+    </>
+  );
+}
+
 function HalogenRepeatabilityReproducibilityArticle() {
   return (
     <>
@@ -3263,6 +3346,7 @@ export default async function BlogPostPage({ params }: Props) {
   const paragraphs = getArticleContent(slug);
   const isHalogenMethodArticle = slug === "halogen-moisture-analyzer-method-development-validation";
   const isHalogenEndpointSettingsArticle = slug === "halogen-moisture-analyzer-endpoint-settings";
+  const isHalogenTroubleshootingArticle = slug === "halogen-moisture-analyzer-troubleshooting-unexpected-results";
   const isHalogenSafetyVolatileSamplesArticle = slug === "halogen-moisture-analyzer-safety-volatile-samples";
   const isHalogenSamplePreparationArticle = slug === "halogen-moisture-analyzer-sample-preparation";
   const isHalogenRoutineVerificationArticle = slug === "halogen-moisture-analyzer-routine-verification";
@@ -3320,6 +3404,8 @@ export default async function BlogPostPage({ params }: Props) {
           </p>
           {slug === "wood-fiberboard-hot-press-moisture-control" ? (
             <WoodFiberboardArticle />
+          ) : isHalogenTroubleshootingArticle ? (
+            <HalogenTroubleshootingArticle />
           ) : isHalogenRepeatabilityReproducibilityArticle ? (
             <HalogenRepeatabilityReproducibilityArticle />
           ) : isHalogenEndpointSettingsArticle ? (
@@ -3434,7 +3520,7 @@ export default async function BlogPostPage({ params }: Props) {
             ? "Need a Measurement Plan Review?"
             : isWetBasisDryBasisArticle
               ? "Need a Measurement-Basis Review?"
-            : isHalogenMethodArticle || isHalogenSamplePreparationArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle
+            : isHalogenMethodArticle || isHalogenSamplePreparationArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle || isHalogenTroubleshootingArticle
               ? "Need a Method Evaluation?"
               : "Need Help with Your Application?"
         }
@@ -3443,7 +3529,7 @@ export default async function BlogPostPage({ params }: Props) {
             ? "Share the material, current comparator method, moisture range, and quality decision. We can help assess a suitable sampling and measurement workflow."
             : isWetBasisDryBasisArticle
               ? "Share the material, specification wording, current method, reporting basis, and intended decision. We can help assess a suitable workflow."
-            : isHalogenMethodArticle || isHalogenSamplePreparationArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle
+            : isHalogenMethodArticle || isHalogenSamplePreparationArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle || isHalogenTroubleshootingArticle
               ? "Share the material, current comparator method, moisture range, and quality decision. We can help assess a suitable sample-testing workflow."
               : "Share your material, measurement point, and moisture target, and we can help you judge whether online measurement is a good fit."
         }
@@ -3457,7 +3543,7 @@ export default async function BlogPostPage({ params }: Props) {
               : "Talk to Engineer"
         }
         primaryHref={
-          isHalogenMethodArticle || isHalogenSamplePreparationArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle || isOnlineReferenceSamplingArticle || isWetBasisDryBasisArticle
+          isHalogenMethodArticle || isHalogenSamplePreparationArticle || isHalogenRoutineVerificationArticle || isHalogenVsKarlFischerArticle || isHalogenVsOvenDryingArticle || isHalogenTroubleshootingArticle || isOnlineReferenceSamplingArticle || isWetBasisDryBasisArticle
             ? "/contact?type=recommendation"
             : "/contact?type=engineer"
         }
